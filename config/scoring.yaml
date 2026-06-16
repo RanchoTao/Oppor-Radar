@@ -1,0 +1,17 @@
+rules:
+  core_match: 35
+  math_match: 15
+  opportunity_match: 20
+  target_institution: 15
+  undergraduate_friendly: 20
+  mentor_or_research: 15
+  beijing_or_online: 5
+  has_deadline: 10
+  expired: -100
+  negative_match: -80
+
+classes:
+  A: 70
+  B: 45
+  C: 20
+  X: -999
