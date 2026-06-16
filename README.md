@@ -5,7 +5,7 @@
 <div align="center">
 
 
-# OpporR
+# Opportunity Radar (OR)
 
 Opportunity Radar 是面向本科生与科研新人的“学术机会雷达”MVP。它会从高校、研究院、实验室官网抓取信息，筛选数学、人工智能、机器学习、AI for Science、暑期学校、夏令营、科研训练、RA、讲座、竞赛、推免等机会，保存到 SQLite，并生成每日 Markdown 报告。
 
