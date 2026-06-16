@@ -1,0 +1,30 @@
+name: Opportunity Radar Daily
+
+on:
+  schedule:
+    # 08:00 Beijing time = 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run daily job
+        run: python -m src.scheduler.run_daily
+      - name: Commit generated report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reports data/opportunities.sqlite3
+          git diff --cached --quiet || git commit -m "chore: update daily opportunity report"
+          git push
