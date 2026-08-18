@@ -39,7 +39,7 @@ jobs:
           python-version: "3.11"
       - name: Refresh product data
         run: |
-          pip install PyYAML>=6.0
+          pip install 'PyYAML>=6.0'
           python scripts/build_site_data.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
