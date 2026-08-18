@@ -215,6 +215,19 @@ def update_item_intelligence(conn: sqlite3.Connection, key_url: str | None, sour
     )
 
 
+def list_changed_since(conn: sqlite3.Connection, timestamp: str, kept_only: bool = False) -> list[sqlite3.Row]:
+    """Return only information first seen or materially changed during this run."""
+    where_keep = " AND keep = 1" if kept_only else ""
+    return conn.execute(
+        f"""
+        SELECT * FROM information_items
+        WHERE changed_at >= ?{where_keep}
+        ORDER BY relevance DESC, importance DESC, novelty DESC, changed_at DESC
+        """,
+        (timestamp,),
+    ).fetchall()
+
+
 def list_changed_on(conn: sqlite3.Connection, day_prefix: str, kept_only: bool = False) -> list[sqlite3.Row]:
     where_keep = " AND keep = 1" if kept_only else ""
     return conn.execute(
