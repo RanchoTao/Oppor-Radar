@@ -1,0 +1,36 @@
+language: zh-CN
+
+timezone: Asia/Shanghai
+
+interests:
+  - 人工智能
+  - 机器学习
+  - 大模型
+  - Agent
+  - AI for Science
+  - 数学
+  - 概率与随机过程
+  - 科研机会
+  - 量化金融
+  - 宏观经济
+  - 科技产业
+  - 社会与政策
+
+high_priority_signals:
+  - 重要论文与研究成果
+  - 新模型与重要产品发布
+  - 研究机会与申请截止日期
+  - 宏观政策和市场结构变化
+  - 与多个订阅来源同时相关的事件
+
+low_priority_signals:
+  - 重复转载
+  - 营销软文
+  - 纯宣传内容
+  - 与用户兴趣无明显关系的常规新闻
+
+editorial_preferences:
+  max_daily_highlights: 24
+  prefer_primary_sources: true
+  explain_why_it_matters: true
+  surface_cross_group_signals: true
