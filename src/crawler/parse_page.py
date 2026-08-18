@@ -2,24 +2,16 @@ from __future__ import annotations
 
 from html.parser import HTMLParser
 
-from src.storage.models import Opportunity
+from src.storage.models import InformationItem
 from src.utils.text_utils import clean_text, contains_any, normalize_url
 
 
 NAVIGATION_TEXT = {
-    "首页",
-    "主页",
-    "关于我们",
-    "联系我们",
-    "网站地图",
-    "English",
-    "EN",
-    "登录",
-    "注册",
-    "更多",
-    "more",
-    "返回顶部",
+    "首页", "主页", "关于我们", "联系我们", "网站地图", "English", "EN",
+    "登录", "注册", "更多", "more", "返回顶部", "下一页", "上一页",
 }
+
+NAVIGATION_PREFIXES = ("首页", "关于", "联系", "导航", "菜单", "版权", "隐私", "登录", "注册")
 
 
 class _LinkParser(HTMLParser):
@@ -52,7 +44,8 @@ def _links(html: str):
         soup = BeautifulSoup(html, "html.parser")
         for a in soup.find_all("a"):
             title = clean_text(a.get_text(" "))
-            surrounding = clean_text(a.parent.get_text(" ") if a.parent else title)
+            parent = a.find_parent(["article", "li", "section", "div", "p"])
+            surrounding = clean_text(parent.get_text(" ") if parent else title)
             yield a.get("href"), title, surrounding
     except ModuleNotFoundError:
         parser = _LinkParser()
@@ -61,26 +54,37 @@ def _links(html: str):
             yield href, title, title
 
 
-def parse_opportunities(html: str, source: dict, keywords: dict | None = None) -> list[Opportunity]:
-    """Extract feed-like items from any user-selected webpage.
+def _looks_like_content(title: str, surrounding: str) -> bool:
+    if len(title) < 4 or len(title) > 180:
+        return False
+    if title in NAVIGATION_TEXT or any(title.startswith(prefix) for prefix in NAVIGATION_PREFIXES):
+        return False
+    # A little surrounding context is usually a better signal than site navigation.
+    return len(surrounding) >= len(title)
 
-    Opportunity Radar is no longer limited to admissions/applications. A source can
-    optionally define ``watch`` keywords to restrict what is collected. Without a
-    watch list, the crawler keeps contentful links and delegates relevance ranking
-    to the LLM layer. Obvious navigation links are always discarded.
+
+def parse_items(html: str, source: dict) -> list[InformationItem]:
+    """Discover candidate content links from a generic HTML page.
+
+    ``watch`` is an optional inexpensive pre-filter. When it is absent, the system
+    deliberately keeps broad content candidates and lets the later intelligence
+    layer decide what is relevant to the user.
     """
-    watch = [str(x) for x in source.get("watch", []) if str(x).strip()]
-    max_items = int(source.get("max_items", 30))
-    items: list[Opportunity] = []
+    watch = [str(x).strip() for x in source.get("watch", []) if str(x).strip()]
+    max_items = max(1, int(source.get("max_items", 30)))
+    items: list[InformationItem] = []
     seen: set[str] = set()
 
     for href_raw, title, surrounding in _links(html):
         title = clean_text(title)
-        if len(title) < 4 or title in NAVIGATION_TEXT:
+        surrounding = clean_text(surrounding)
+        if not _looks_like_content(title, surrounding):
             continue
 
         href = normalize_url(href_raw, source["url"])
         if not href or href in seen:
+            continue
+        if href.startswith(("mailto:", "tel:", "javascript:")):
             continue
 
         candidate_text = f"{title} {surrounding}"
@@ -89,12 +93,13 @@ def parse_opportunities(html: str, source: dict, keywords: dict | None = None) -
 
         seen.add(href)
         items.append(
-            Opportunity(
+            InformationItem(
                 title=title,
                 url=href,
                 source_name=source["name"],
                 source_url=source["url"],
-                summary=surrounding[:500],
+                group=source.get("group", "未分组"),
+                summary=surrounding[:800],
                 raw_text=surrounding,
             )
         )
@@ -102,3 +107,8 @@ def parse_opportunities(html: str, source: dict, keywords: dict | None = None) -
             break
 
     return items
+
+
+# Compatibility with the old public function name.
+def parse_opportunities(html: str, source: dict, keywords: dict | None = None) -> list[InformationItem]:
+    return parse_items(html, source)
