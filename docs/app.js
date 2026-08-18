@@ -47,7 +47,7 @@ function startLiveClock() {
 }
 
 function formatUpdated(value) {
-  if (!value) return "等待首次新架构运行";
+  if (!value) return "尚无更新记录";
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
   return `最后更新 ${new Intl.DateTimeFormat("zh-CN", {
@@ -117,7 +117,7 @@ function renderDigest(report, payload) {
       <p class="report-overview">${escapeHtml(digest.overview || "今天没有需要占用注意力的新信息。")}</p>
       ${reportDownloads(report)}
     </div>
-    ${groupHtml || '<div class="empty-state">今天没有条目通过信息筛选。</div>'}
+    ${groupHtml || '<div class="empty-state">今天没有值得占用注意力的新信息。</div>'}
     ${signalHtml}
     ${actionHtml}
   `;
@@ -130,12 +130,12 @@ async function loadReport(report) {
   viewer.textContent = "正在载入日报…";
   const filename = report?.files?.json;
   if (!filename) {
-    viewer.textContent = "这份日报没有结构化数据。";
+    viewer.textContent = "这份日报暂时无法读取。";
     return;
   }
   const payload = await loadJson(`./reports/${filename}`, null);
   if (!payload || payload.schema_version !== 2) {
-    viewer.textContent = "日报数据不可用。";
+    viewer.textContent = "日报暂时无法读取。";
     return;
   }
   renderDigest(report, payload);
@@ -145,8 +145,8 @@ function renderReports() {
   const select = $("#report-select");
   select.innerHTML = "";
   if (!state.reports.length) {
-    select.innerHTML = '<option value="">等待首次日报</option>';
-    $("#report-viewer").textContent = "首次新架构 Daily 完成后，日报会出现在这里。";
+    select.innerHTML = '<option value="">暂无日报</option>';
+    $("#report-viewer").textContent = "今天的日报尚未生成。";
     return;
   }
 
