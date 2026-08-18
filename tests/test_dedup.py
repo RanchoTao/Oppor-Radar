@@ -29,6 +29,28 @@ def test_url_dedup_and_content_change_detection(tmp_path):
     assert count == 1
 
 
+def test_same_title_from_same_source_can_exist_at_distinct_urls(tmp_path):
+    conn = connect(str(tmp_path / "db.sqlite3"))
+    first = InformationItem(
+        title="了解更多",
+        url="https://example.com/a",
+        source_name="测试源",
+        source_url="https://example.com",
+        content_hash="hash-a",
+    )
+    second = InformationItem(
+        title="了解更多",
+        url="https://example.com/b",
+        source_name="测试源",
+        source_url="https://example.com",
+        content_hash="hash-b",
+    )
+
+    assert upsert_item(conn, first) == "new"
+    assert upsert_item(conn, second) == "new"
+    assert conn.execute("SELECT COUNT(*) FROM information_items").fetchone()[0] == 2
+
+
 def test_title_source_dedup_when_url_missing(tmp_path):
     conn = connect(str(tmp_path / "db.sqlite3"))
     item = InformationItem(
