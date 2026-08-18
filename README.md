@@ -33,9 +33,9 @@ Source Registry + User Profile
 
 ## 核心设计
 
-### 1. Source Registry
+### Source Registry
 
-`config/sources.yaml` 是单用户版本的信息源注册表。每个来源支持：
+`config/sources.yaml` 是信息源注册表。每个来源支持：
 
 - `group`：归属信息域
 - `enabled`：是否启用
@@ -59,29 +59,13 @@ Source Registry + User Profile
   fetch_details: true
 ```
 
-### 2. Groups
+### Groups
 
-`config/groups.yaml` 定义信息域。当前默认包含：
+`config/groups.yaml` 定义信息域。默认包含学术、AI / 科技、金融、社会 / 政策，可以增加、删除、重命名和排序。
 
-- 学术
-- AI / 科技
-- 金融
-- 社会 / 政策
+### User Profile
 
-可以直接增加、删除、重命名和调整顺序。
-
-### 3. User Profile
-
-`config/profile.yaml` 描述“我长期关心什么”，而不是把所有兴趣重复写到每个来源里。
-
-它包含：
-
-- `interests`
-- `high_priority_signals`
-- `low_priority_signals`
-- `editorial_preferences`
-
-产品的核心关系是：
+`config/profile.yaml` 描述“我长期关心什么”，避免把所有兴趣重复写到每个来源里。
 
 ```text
 Source = 世界告诉我什么
@@ -101,7 +85,7 @@ Profile = 我关心什么
 5. 计算正文 `content_hash`。
 6. 只有新 URL 或正文发生实质变化时，才进入本次智能处理。
 
-因此重复运行同一天的 Daily，不会把旧内容机械重复送给大模型。
+URL 是有 URL 条目的主身份键；只有 URL 缺失时，才使用 `title + source_name` 作为 fallback。这避免同一来源不同页面使用相同标题时发生冲突。
 
 当前仍以静态 HTML 为主，不执行浏览器 JavaScript。动态渲染站点后续需要单独的 browser worker。
 
@@ -109,7 +93,7 @@ Profile = 我关心什么
 
 ### Level 1: Item Intelligence
 
-先逐批判断每条新信息：
+逐批判断每条新信息是否值得进入日报，并输出：
 
 ```json
 {
@@ -125,23 +109,15 @@ Profile = 我关心什么
 }
 ```
 
-这一步负责把导航、广告、常规重复内容和明显无关信息压掉。
-
 ### Level 2: Daily Editor
 
-再把通过筛选的条目整体交给日报主编层：
+再把通过筛选的条目整体编辑成日报：合并重复事件、按分组形成摘要、发现可靠的跨领域信号、只保留真正需要行动的事项，并控制最终长度。
 
-- 合并重复事件
-- 按分组形成今日摘要
-- 提取跨来源 / 跨领域信号
-- 只保留真正需要用户行动的事项
-- 控制最终日报长度
-
-DeepSeek 不可用时，系统会使用确定性 fallback，保证定时任务仍能产出日报；大模型调用诊断只保存在结构化数据的 diagnostics 中，不展示在产品首页。
+DeepSeek 不可用时使用确定性 fallback，保证定时任务仍能产出；模型调用诊断只写入 JSON `diagnostics`，不展示在产品首页。
 
 ## 报告数据
 
-每日主要产物：
+每日产物：
 
 ```text
 data/reports/YYYY-MM-DD.json   # 主数据
@@ -149,39 +125,57 @@ data/reports/YYYY-MM-DD.json   # 主数据
  data/reports/YYYY-MM-DD.tex   # LaTeX 视图
 ```
 
-JSON 使用 `schema_version: 2`。GitHub Pages 只发布 v2 日报，旧版 A/B/C/X 申请清单不会继续出现在产品界面。
-
-PDF 可以从同一份 `.tex` 编译得到；当前仓库先生成 `.tex`，避免在每日任务中强制安装完整 TeX 环境。
+JSON 使用 `schema_version: 2`。Pages 只发布 v2 日报，旧版 A/B/C/X 申请清单不会继续出现在产品界面。PDF 可以从同一份 `.tex` 编译；当前 Daily 不强制安装完整 TeX 环境。
 
 ## GitHub Pages
 
-Pages 是当前产品输出窗口，不展示内部 pipeline。
+Pages 是产品输出窗口，不展示内部 pipeline。首页只展示实时时间、来源数量、今日新增、入选日报、来源健康度、日报和分组来源。
 
-首页只显示：
+`docs/admin.html` 是真正的 Source Registry 管理客户端。只有 `docs/data/runtime.json` 配置了 Registry API URL 后，主页才会显示“管理信息源”入口；后端不存在时不会展示假按钮或 localStorage CRUD。
 
-- 实时时间 + “世界正在发生。”
-- 监控来源数
-- 今日新增
-- 入选日报数
-- 来源健康数量
-- 个性化日报
-- 分组信息源
+## Source Registry API
 
-当前是单用户版本，因此网页不再提供只写入 localStorage 的“假 CRUD”。需要修改分组、兴趣画像或来源时，直接编辑：
+仓库包含一个可部署到 Vercel Python Functions 的管理后端：
+
+```text
+api/registry.py
+src/registry/github_store.py
+src/registry/validation.py
+```
+
+管理客户端通过 Bearer Admin Token 连接该 API；API 再使用服务端 GitHub Token 读写：
 
 - `config/groups.yaml`
-- `config/profile.yaml`
 - `config/sources.yaml`
+- `config/profile.yaml`
 
-真正的网页增删改需要安全的持久化后端和身份验证，应该作为下一阶段基础设施实现，而不是在静态 Pages 上伪装成功。
+保存后修改直接进入 GitHub `main`，因此下一次 Daily 会使用新配置。`pages.yml` 也会在 `config/**` 变化时重新构建 Pages 数据。
+
+### Vercel 环境变量
+
+部署管理 API 时在服务端设置：
+
+```text
+OPPOR_GITHUB_TOKEN       # fine-grained GitHub token，只给本仓库 Contents read/write
+OPPOR_ADMIN_TOKEN        # 你自己生成的高熵管理口令
+OPPOR_GITHUB_REPO        # 默认 RanchoTao/Oppor-Radar
+OPPOR_GITHUB_BRANCH      # 默认 main
+OPPOR_ALLOWED_ORIGINS    # 例如 https://ranchotao.github.io
+```
+
+不要把 `OPPOR_GITHUB_TOKEN` 或 `OPPOR_ADMIN_TOKEN` 写入仓库。
+
+部署后，把 API 地址写入：
+
+```json
+{
+  "registry_api_url": "https://YOUR-PROJECT.vercel.app/api/registry"
+}
+```
+
+文件位置：`docs/data/runtime.json`。此后首页会自动显示 Registry 管理入口。
 
 ## DeepSeek 配置
-
-复制环境变量：
-
-```bash
-cp .env.example .env
-```
 
 本地 `.env`：
 
@@ -192,17 +186,7 @@ DEEPSEEK_MODEL=deepseek-v4-flash
 OPPOR_LLM_ITEM_BATCH=32
 ```
 
-不要提交真实 API Key。
-
-GitHub Actions 通过仓库 Secret 注入：
-
-```text
-Settings
-→ Secrets and variables
-→ Actions
-→ New repository secret
-→ DEEPSEEK_API_KEY
-```
+不要提交真实 API Key。GitHub Actions 使用仓库 Secret `DEEPSEEK_API_KEY`。
 
 ## 本地运行
 
@@ -220,17 +204,11 @@ Windows PowerShell：
 .\.venv\Scripts\Activate.ps1
 ```
 
-数据库仍使用：
-
-```text
-data/opportunities.sqlite3
-```
-
-文件名暂时保留是为了兼容现有 GitHub Actions 和历史数据。内部主表已经迁移到 `information_items`，旧 `opportunities` 表只作为迁移来源，不再参与新的 A/B/C/X 产品逻辑。
+数据库文件仍保留为 `data/opportunities.sqlite3` 以兼容历史数据和 Actions，但内部主表已经迁移到 `information_items`。旧 `opportunities` 表仅作为迁移来源。
 
 ## 自动运行
 
-`.github/workflows/daily.yml` 每天北京时间 08:00 运行：
+`.github/workflows/daily.yml` 每天北京时间 08:00：
 
 1. 测试
 2. 抓取来源
@@ -241,34 +219,30 @@ data/opportunities.sqlite3
 7. 刷新 Pages 数据
 8. 提交报告和数据库
 
-Pages 部署工作流位于 `.github/workflows/pages.yml`。
+`.github/workflows/pages.yml` 负责 Pages 部署；来源配置变化和 Daily 完成都能触发重新构建。
 
 ## 当前边界
 
 已经实现：
 
-- 通用信息源与分组
-- 独立用户兴趣画像
-- RSS / Atom
-- HTML 内容发现
-- 详情页正文抽取
-- Content hash / change detection
+- 通用信息源、分组和独立用户兴趣画像
+- RSS / Atom、HTML 内容发现和详情页正文抽取
+- Content hash / run-scoped change detection
+- URL-first identity 和历史数据库迁移
 - Source health
 - DeepSeek 两级智能层
 - JSON / Markdown / LaTeX
 - 结构化 GitHub Pages 日报
-- 历史数据库迁移
+- 认证 Source Registry API 与管理客户端
 
-尚未实现：
+仍需要外部部署/凭证或后续工程：
 
-- JavaScript 动态站点的浏览器渲染 worker
-- 真正的网页 Source Registry CRUD 后端
-- 多用户账户与权限
-- 外部数据库 / 队列
+- 为 Registry API 配置 Vercel 服务端 Secret 并填入 runtime URL
+- 为 GitHub Actions 配置真实 `DEEPSEEK_API_KEY`
+- JavaScript 动态站点的 browser worker
+- 多用户账户 / 权限 / 外部数据库 / 队列
 - 自动 PDF 编译
 - 邮件 / 消息推送
-
-这些都可以在不推倒当前 crawler、information model 和 report schema 的前提下继续增加。
 
 ## 测试
 
