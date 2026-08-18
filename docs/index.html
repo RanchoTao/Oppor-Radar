@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Opportunity Radar：自动扫描科研与学术机会，生成每日机会日报。" />
+  <title>Opportunity Radar</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">OR<span>Opportunity Radar</span></a>
+    <nav>
+      <a href="#reports">日报</a>
+      <a href="#sources">信息源</a>
+      <a href="#pipeline">工作流</a>
+      <a href="https://github.com/RanchoTao/Oppor-Radar">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ACADEMIC OPPORTUNITY INTELLIGENCE</p>
+        <h1>把分散在官网里的机会，变成每天可读的一份报告。</h1>
+        <p class="hero-copy">Opportunity Radar 定时扫描高校、研究院、实验室与自定义 URL，提取科研训练、RA、暑校、讲座、竞赛等信息，并按相关性整理成日报。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#reports">查看最新日报</a>
+          <a class="button ghost" href="#sources">管理信息源</a>
+        </div>
+      </div>
+      <aside class="status-card">
+        <span class="status-dot"></span>
+        <div>
+          <strong>每日自动扫描</strong>
+          <p>默认北京时间 08:00</p>
+        </div>
+        <dl>
+          <div><dt>已配置来源</dt><dd id="source-count">—</dd></div>
+          <div><dt>可查看日报</dt><dd id="report-count">—</dd></div>
+          <div><dt>最新日期</dt><dd id="latest-date">—</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="reports" class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">DAILY REPORTS</p><h2>日报</h2></div>
+        <select id="report-select" aria-label="选择日报"></select>
+      </div>
+      <article id="report-viewer" class="report-viewer loading">正在载入日报…</article>
+    </section>
+
+    <section id="sources" class="section grid-two">
+      <div>
+        <p class="eyebrow">SOURCES</p>
+        <h2>信息源</h2>
+        <p class="section-copy">当前仓库中的官方来源会自动展示在这里。你也可以先在浏览器里建立自己的来源清单；下一阶段会把这套界面接到后端，让用户保存 URL 并进入每日调度。</p>
+        <div id="source-list" class="source-list"></div>
+      </div>
+      <aside class="panel">
+        <h3>添加自定义 URL</h3>
+        <form id="source-form">
+          <label>名称<input id="source-name" required placeholder="例如：某实验室招生页" /></label>
+          <label>URL<input id="source-url" required type="url" placeholder="https://example.edu/lab/" /></label>
+          <label>标签<input id="source-tags" placeholder="AI, RA, 北京" /></label>
+          <button class="button primary" type="submit">保存到本机</button>
+        </form>
+        <div id="local-sources" class="local-sources"></div>
+        <button id="export-sources" class="button ghost full" type="button">导出 sources.yaml</button>
+        <p class="note">当前 GitHub Pages 是静态前端，新增来源只保存在浏览器 localStorage，不会自动修改仓库或启动云端任务。</p>
+      </aside>
+    </section>
+
+    <section id="pipeline" class="section">
+      <p class="eyebrow">PIPELINE</p>
+      <h2>建议的长期架构</h2>
+      <div class="pipeline">
+        <div><span>01</span><strong>Source</strong><p>用户预设来源 + 自定义 URL</p></div>
+        <div><span>02</span><strong>Crawl</strong><p>定时抓取、去重、详情页解析</p></div>
+        <div><span>03</span><strong>LLM</strong><p>结构化抽取、相关性判断、摘要</p></div>
+        <div><span>04</span><strong>Report</strong><p>JSON 为主数据，渲染 Markdown / LaTeX / PDF</p></div>
+        <div><span>05</span><strong>Deliver</strong><p>网页归档 + 邮件/消息推送</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Opportunity Radar · RanchoTao/Oppor-Radar</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
