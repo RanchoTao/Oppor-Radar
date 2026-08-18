@@ -5,6 +5,7 @@ const state = {
   sources: [],
   groups: [],
   status: {},
+  runtime: {},
   activeGroup: "全部",
 };
 
@@ -204,19 +205,27 @@ function renderSources() {
   `).join("") || '<div class="empty-state">这个分组还没有启用的信息源。</div>';
 }
 
+function renderRuntimeFeatures() {
+  if (state.runtime?.registry_api_url) {
+    $("#registry-admin-button")?.classList.remove("hidden");
+  }
+}
+
 async function init() {
   startLiveClock();
-  [state.sources, state.groups, state.reports, state.status] = await Promise.all([
+  [state.sources, state.groups, state.reports, state.status, state.runtime] = await Promise.all([
     loadJson("./data/sources.json", []),
     loadJson("./data/groups.json", []),
     loadJson("./data/reports.json", []),
     loadJson("./data/status.json", {}),
+    loadJson("./data/runtime.json", {}),
   ]);
 
   renderStatus();
   renderReports();
   renderGroupTabs();
   renderSources();
+  renderRuntimeFeatures();
 }
 
 init();
