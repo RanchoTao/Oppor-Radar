@@ -33,10 +33,21 @@ CREATE TABLE IF NOT EXISTS information_items (
   time_sensitive INTEGER NOT NULL DEFAULT 0,
   first_seen_at TEXT NOT NULL,
   last_seen_at TEXT NOT NULL,
-  changed_at TEXT NOT NULL,
-  UNIQUE(url),
-  UNIQUE(title, source_name)
+  changed_at TEXT NOT NULL
 );
+"""
+
+ITEM_INDEXES = """
+CREATE UNIQUE INDEX IF NOT EXISTS idx_information_items_url
+  ON information_items(url)
+  WHERE url IS NOT NULL AND url <> '';
+CREATE UNIQUE INDEX IF NOT EXISTS idx_information_items_title_source_no_url
+  ON information_items(title, source_name)
+  WHERE url IS NULL OR url = '';
+CREATE INDEX IF NOT EXISTS idx_information_items_changed_at
+  ON information_items(changed_at);
+CREATE INDEX IF NOT EXISTS idx_information_items_source_group
+  ON information_items(source_group);
 """
 
 HEALTH_SCHEMA = """
@@ -51,12 +62,19 @@ CREATE TABLE IF NOT EXISTS source_health (
 );
 """
 
+ITEM_COLUMNS = (
+    "id", "title", "url", "source_name", "source_url", "source_group",
+    "publish_date", "deadline", "event_date", "location", "summary", "content",
+    "raw_text", "content_hash", "topics_json", "importance", "relevance", "novelty",
+    "keep", "reason", "action", "time_sensitive", "first_seen_at", "last_seen_at", "changed_at",
+)
+
 
 def connect(db_path: str = "data/opportunities.sqlite3") -> sqlite3.Connection:
     Path(db_path).parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
-    conn.execute(ITEM_SCHEMA)
+    _ensure_information_schema(conn)
     conn.execute(HEALTH_SCHEMA)
     _migrate_legacy_opportunities(conn)
     conn.commit()
@@ -67,6 +85,49 @@ def _table_exists(conn: sqlite3.Connection, name: str) -> bool:
     return conn.execute(
         "SELECT 1 FROM sqlite_master WHERE type='table' AND name=?", (name,)
     ).fetchone() is not None
+
+
+def _ensure_information_schema(conn: sqlite3.Connection) -> None:
+    """Create v2 storage and repair the short-lived over-strict uniqueness schema.
+
+    A content site can legitimately publish two different URLs with the same anchor
+    title (for example repeated "Learn more" / translated titles). URL is therefore
+    the primary identity whenever it exists. ``title + source`` is only a fallback
+    for rows that truly have no URL.
+    """
+    if not _table_exists(conn, "information_items"):
+        conn.execute(ITEM_SCHEMA)
+        conn.executescript(ITEM_INDEXES)
+        return
+
+    row = conn.execute(
+        "SELECT sql FROM sqlite_master WHERE type='table' AND name='information_items'"
+    ).fetchone()
+    schema_sql = (row["sql"] or "") if row else ""
+    normalized = "".join(schema_sql.split()).lower()
+    has_legacy_constraint = (
+        "unique(title,source_name)" in normalized
+        or "unique(url)" in normalized
+    )
+
+    if has_legacy_constraint:
+        backup = "information_items_legacy_identity"
+        if _table_exists(conn, backup):
+            conn.execute(f"DROP TABLE {backup}")
+        conn.execute(f"ALTER TABLE information_items RENAME TO {backup}")
+        conn.execute(ITEM_SCHEMA)
+
+        old_columns = {
+            column["name"] for column in conn.execute(f"PRAGMA table_info({backup})")
+        }
+        shared = [column for column in ITEM_COLUMNS if column in old_columns]
+        names = ", ".join(shared)
+        conn.execute(
+            f"INSERT OR IGNORE INTO information_items ({names}) SELECT {names} FROM {backup}"
+        )
+        conn.execute(f"DROP TABLE {backup}")
+
+    conn.executescript(ITEM_INDEXES)
 
 
 def _migrate_legacy_opportunities(conn: sqlite3.Connection) -> None:
@@ -114,7 +175,7 @@ def _migrate_legacy_opportunities(conn: sqlite3.Connection) -> None:
 def _key(item: InformationItem) -> tuple[str, tuple]:
     if item.url:
         return "url = ?", (item.url,)
-    return "title = ? AND source_name = ?", (item.title, item.source_name)
+    return "url IS NULL AND title = ? AND source_name = ?", (item.title, item.source_name)
 
 
 def upsert_item(conn: sqlite3.Connection, item: InformationItem) -> str:
@@ -191,7 +252,7 @@ def update_item_intelligence(conn: sqlite3.Connection, key_url: str | None, sour
     key_clause, params = (
         ("url = ?", (key_url,))
         if key_url
-        else ("title = ? AND source_name = ?", (title, source_name))
+        else ("url IS NULL AND title = ? AND source_name = ?", (title, source_name))
     )
     conn.execute(
         f"""
