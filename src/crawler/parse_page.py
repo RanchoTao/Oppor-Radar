@@ -6,6 +6,22 @@ from src.storage.models import Opportunity
 from src.utils.text_utils import clean_text, contains_any, normalize_url
 
 
+NAVIGATION_TEXT = {
+    "首页",
+    "主页",
+    "关于我们",
+    "联系我们",
+    "网站地图",
+    "English",
+    "EN",
+    "登录",
+    "注册",
+    "更多",
+    "more",
+    "返回顶部",
+}
+
+
 class _LinkParser(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -45,19 +61,22 @@ def _links(html: str):
             yield href, title, title
 
 
-def parse_opportunities(html: str, source: dict, keywords: dict) -> list[Opportunity]:
-    """Extract candidate opportunity links from a source page.
+def parse_opportunities(html: str, source: dict, keywords: dict | None = None) -> list[Opportunity]:
+    """Extract feed-like items from any user-selected webpage.
 
-    Source tags describe the institution and topic context, but they must not make
-    an otherwise irrelevant navigation link pass the candidate filter. Only text
-    attached to the actual link is used for the first-pass keyword match.
+    Opportunity Radar is no longer limited to admissions/applications. A source can
+    optionally define ``watch`` keywords to restrict what is collected. Without a
+    watch list, the crawler keeps contentful links and delegates relevance ranking
+    to the LLM layer. Obvious navigation links are always discarded.
     """
-    wanted = sum((keywords.get(k, []) for k in ("core", "math", "opportunity")), [])
+    watch = [str(x) for x in source.get("watch", []) if str(x).strip()]
+    max_items = int(source.get("max_items", 30))
     items: list[Opportunity] = []
     seen: set[str] = set()
 
     for href_raw, title, surrounding in _links(html):
-        if len(title) < 4:
+        title = clean_text(title)
+        if len(title) < 4 or title in NAVIGATION_TEXT:
             continue
 
         href = normalize_url(href_raw, source["url"])
@@ -65,7 +84,7 @@ def parse_opportunities(html: str, source: dict, keywords: dict) -> list[Opportu
             continue
 
         candidate_text = f"{title} {surrounding}"
-        if not contains_any(candidate_text, wanted):
+        if watch and not contains_any(candidate_text, watch):
             continue
 
         seen.add(href)
@@ -75,9 +94,11 @@ def parse_opportunities(html: str, source: dict, keywords: dict) -> list[Opportu
                 url=href,
                 source_name=source["name"],
                 source_url=source["url"],
-                summary=surrounding[:300],
+                summary=surrounding[:500],
                 raw_text=surrounding,
             )
         )
+        if len(items) >= max_items:
+            break
 
     return items
