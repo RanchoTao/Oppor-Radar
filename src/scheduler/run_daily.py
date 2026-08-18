@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 try:
@@ -39,11 +39,11 @@ def load_yaml(path: str):
 
 
 def _today(profile: dict) -> str:
-    timezone = profile.get("timezone", "Asia/Shanghai")
+    timezone_name = profile.get("timezone", "Asia/Shanghai")
     try:
-        return datetime.now(ZoneInfo(timezone)).date().isoformat()
+        return datetime.now(ZoneInfo(timezone_name)).date().isoformat()
     except Exception:
-        return datetime.utcnow().date().isoformat()
+        return datetime.now(timezone.utc).date().isoformat()
 
 
 def _apply_intelligence(conn, rows, results: list[dict]) -> None:
@@ -112,17 +112,21 @@ def main() -> None:
         )
         conn.commit()
 
-    today = _today(profile)
-    candidate_rows = list_changed_on(conn, today, kept_only=False)
+    report_date = _today(profile)
+    # Database timestamps are UTC. Keeping selection anchored to UTC avoids losing
+    # items when a manual run occurs just after local midnight in Asia/Shanghai.
+    storage_day = datetime.now(timezone.utc).date().isoformat()
+    candidate_rows = list_changed_on(conn, storage_day, kept_only=False)
     item_results, item_llm = rank_items(candidate_rows, sources, profile)
     _apply_intelligence(conn, candidate_rows, item_results)
     conn.commit()
 
-    selected_rows = list_changed_on(conn, today, kept_only=True)
-    digest = build_daily_digest(selected_rows, sources, today, profile)
+    selected_rows = list_changed_on(conn, storage_day, kept_only=True)
+    digest = build_daily_digest(selected_rows, sources, report_date, profile)
     health_rows = list_source_health(conn)
     healthy = sum(1 for row in health_rows if row["status"] == "healthy")
 
+    timezone_name = profile.get("timezone", "Asia/Shanghai")
     source_stats = {
         "configured": len(sources),
         "healthy": healthy,
@@ -133,13 +137,13 @@ def main() -> None:
         "candidate_items": len(candidate_rows),
         "selected_items": len(selected_rows),
         "item_intelligence": item_llm,
-        "last_updated_at": datetime.now(ZoneInfo(profile.get("timezone", "Asia/Shanghai"))).isoformat(),
+        "last_updated_at": datetime.now(ZoneInfo(timezone_name)).isoformat(),
         "source_health": [dict(row) for row in health_rows],
     }
 
     report = generate_report(
         selected_rows,
-        today,
+        report_date,
         os.getenv("OPPORTUNITY_RADAR_REPORT_DIR", "data/reports"),
         digest=digest,
         source_stats=source_stats,
