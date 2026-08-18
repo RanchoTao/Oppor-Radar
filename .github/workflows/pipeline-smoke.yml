@@ -1,8 +1,9 @@
 name: Pipeline Smoke
 
 on:
-  push:
-    branches: [test/pipeline-smoke]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
