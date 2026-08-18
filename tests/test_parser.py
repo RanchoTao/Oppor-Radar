@@ -1,16 +1,7 @@
-from src.crawler.parse_page import parse_opportunities
+from src.crawler.parse_page import parse_items
 
 
-def keywords():
-    return {
-        "core": ["AI", "人工智能", "机器学习"],
-        "math": ["数学", "概率"],
-        "opportunity": ["夏令营", "科研训练", "本科生", "报名"],
-        "negative": [],
-    }
-
-
-def test_source_tags_alone_do_not_make_irrelevant_navigation_candidate():
+def test_navigation_is_not_a_candidate():
     html = """
     <html><body>
       <div><a href="/about">联系我们</a></div>
@@ -19,35 +10,35 @@ def test_source_tags_alone_do_not_make_irrelevant_navigation_candidate():
     source = {
         "name": "Example AI Institute",
         "url": "https://example.edu/",
+        "group": "学术",
         "tags": ["人工智能", "数学"],
     }
 
-    items = parse_opportunities(html, source, keywords())
-
-    assert items == []
+    assert parse_items(html, source) == []
 
 
-def test_relevant_link_text_is_kept_without_application_only_filter():
+def test_domain_neutral_content_links_are_kept():
     html = """
     <html><body>
       <div>面向本科生开放 <a href="/summer">AI 科研训练报名</a></div>
       <div><a href="/paper">新的机器学习研究结果发布</a></div>
+      <div><a href="/macro">央行发布季度货币政策执行报告</a></div>
     </body></html>
     """
     source = {
-        "name": "Example AI Institute",
+        "name": "Example Feed",
         "url": "https://example.edu/",
-        "tags": ["人工智能"],
+        "group": "综合",
     }
 
-    items = parse_opportunities(html, source, keywords())
+    items = parse_items(html, source)
 
-    assert len(items) == 2
-    assert items[0].url == "https://example.edu/summer"
-    assert items[1].url == "https://example.edu/paper"
+    assert len(items) == 3
+    assert items[0].group == "综合"
+    assert items[2].url == "https://example.edu/macro"
 
 
-def test_watch_keywords_support_finance_or_any_other_group():
+def test_watch_keywords_support_any_group():
     html = """
     <html><body>
       <div><a href="/macro">央行发布最新宏观政策报告</a></div>
@@ -61,6 +52,5 @@ def test_watch_keywords_support_finance_or_any_other_group():
         "watch": ["宏观", "央行"],
     }
 
-    items = parse_opportunities(html, source, keywords())
-
+    items = parse_items(html, source)
     assert [item.title for item in items] == ["央行发布最新宏观政策报告"]

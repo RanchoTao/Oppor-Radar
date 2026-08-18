@@ -8,9 +8,14 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_PATH = ROOT / "config" / "sources.yaml"
+GROUPS_PATH = ROOT / "config" / "groups.yaml"
 REPORTS_DIR = ROOT / "data" / "reports"
 DOCS_DATA_DIR = ROOT / "docs" / "data"
 DOCS_REPORTS_DIR = ROOT / "docs" / "reports"
+
+
+def _write_json(path: Path, value) -> None:
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> None:
@@ -18,45 +23,50 @@ def main() -> None:
     DOCS_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
     sources = yaml.safe_load(SOURCES_PATH.read_text(encoding="utf-8")) or []
-    (DOCS_DATA_DIR / "sources.json").write_text(
-        json.dumps(sources, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    groups = yaml.safe_load(GROUPS_PATH.read_text(encoding="utf-8")) or []
+    _write_json(DOCS_DATA_DIR / "sources.json", sources)
+    _write_json(DOCS_DATA_DIR / "groups.json", groups)
 
-    reports = sorted(REPORTS_DIR.glob("????-??-??.md"), reverse=True)
     manifest = []
-    active_names = set()
+    active_names: set[str] = set()
+    latest_public_status = {
+        "configured_sources": len([s for s in sources if s.get("enabled", True)]),
+        "healthy_sources": None,
+        "new_items": 0,
+        "selected_items": 0,
+        "last_updated_at": None,
+    }
 
-    for report in reports:
-        md_target = DOCS_REPORTS_DIR / report.name
-        shutil.copyfile(report, md_target)
-        active_names.add(report.name)
+    # JSON schema v2 is the source of truth. Legacy A/B/C/X Markdown is deliberately
+    # not published into the product UI anymore.
+    for json_source in sorted(REPORTS_DIR.glob("????-??-??.json"), reverse=True):
+        try:
+            payload = json.loads(json_source.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if payload.get("schema_version") != 2:
+            continue
 
-        json_source = report.with_suffix(".json")
-        json_filename = None
-        if json_source.exists():
-            json_target = DOCS_REPORTS_DIR / json_source.name
-            shutil.copyfile(json_source, json_target)
-            active_names.add(json_source.name)
-            json_filename = json_source.name
+        stem = json_source.stem
+        files = {}
+        for suffix in (".json", ".md", ".tex", ".pdf"):
+            source = REPORTS_DIR / f"{stem}{suffix}"
+            if source.exists():
+                target = DOCS_REPORTS_DIR / source.name
+                shutil.copyfile(source, target)
+                active_names.add(source.name)
+                files[suffix.lstrip(".")] = source.name
 
-        manifest.append(
-            {
-                "date": report.stem,
-                "filename": report.name,
-                "json_filename": json_filename,
-                "format": "personalized-v2" if json_filename else "legacy-v1",
-            }
-        )
+        manifest.append({"date": stem, "files": files})
+        if len(manifest) == 1:
+            latest_public_status.update(payload.get("metrics") or {})
 
     for stale in DOCS_REPORTS_DIR.glob("*.*"):
-        if stale.suffix in {".md", ".json"} and stale.name not in active_names:
+        if stale.suffix in {".md", ".json", ".tex", ".pdf"} and stale.name not in active_names:
             stale.unlink()
 
-    (DOCS_DATA_DIR / "reports.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    _write_json(DOCS_DATA_DIR / "reports.json", manifest)
+    _write_json(DOCS_DATA_DIR / "status.json", latest_public_status)
 
 
 if __name__ == "__main__":

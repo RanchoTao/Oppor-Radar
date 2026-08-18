@@ -1,0 +1,15 @@
+- name: 学术
+  order: 10
+  enabled: true
+
+- name: AI / 科技
+  order: 20
+  enabled: true
+
+- name: 金融
+  order: 30
+  enabled: true
+
+- name: 社会 / 政策
+  order: 40
+  enabled: true
