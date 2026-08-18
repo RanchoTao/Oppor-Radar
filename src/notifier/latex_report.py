@@ -22,6 +22,15 @@ def esc(value) -> str:
     return "".join(LATEX_REPLACEMENTS.get(ch, ch) for ch in text)
 
 
+def _link(url: str) -> str:
+    if not url:
+        return ""
+    # \url handles common URL punctuation more robustly than hand-escaping a
+    # \href target. Keeping the URL visible is also useful in exported briefs.
+    safe = url.replace("\\", "").replace("{", "%7B").replace("}", "%7D")
+    return rf"\url{{{safe}}}"
+
+
 def generate_latex(digest: dict, report_date: str, report_dir: str) -> Path:
     root = Path(report_dir)
     root.mkdir(parents=True, exist_ok=True)
@@ -52,12 +61,13 @@ def generate_latex(digest: dict, report_date: str, report_dir: str) -> Path:
         for item in group.get("highlights") or []:
             title = esc(item.get("title") or "未命名条目")
             source = esc(item.get("source") or "未知来源")
-            why = esc(item.get("why") or "")
-            action = esc(item.get("action") or "")
-            url = str(item.get("url") or "")
-            link = rf"\href{{{url}}}{{原文}}" if url else ""
-            detail = "；".join(x for x in [why, action] if x)
-            parts.append(rf"\item \textbf{{{title}}}（{source}） {esc(detail)} {link}")
+            raw_detail = "；".join(
+                str(x)
+                for x in [item.get("why") or "", item.get("action") or ""]
+                if x
+            )
+            link = _link(str(item.get("url") or ""))
+            parts.append(rf"\item \textbf{{{title}}}（{source}） {esc(raw_detail)} {link}")
         parts.append(r"\end{itemize}")
 
     signals = digest.get("cross_group_signals") or []
