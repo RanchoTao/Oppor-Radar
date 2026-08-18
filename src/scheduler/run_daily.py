@@ -22,13 +22,14 @@ from src.llm.deepseek_digest import build_daily_digest, rank_items
 from src.notifier.markdown_report import generate_report
 from src.storage.db import (
     connect,
-    list_changed_on,
+    list_changed_since,
     list_source_health,
     update_item_intelligence,
     update_source_health,
     upsert_item,
 )
 from src.utils.logging_utils import setup_logging
+from src.utils.time_utils import utc_now_iso
 
 LOGGER = logging.getLogger(__name__)
 
@@ -73,6 +74,7 @@ def _apply_intelligence(conn, rows, results: list[dict]) -> None:
 def main() -> None:
     load_dotenv()
     setup_logging()
+    run_started_at = utc_now_iso()
 
     sources = load_yaml("config/sources.yaml") or []
     profile = load_yaml("config/profile.yaml") or {}
@@ -113,20 +115,24 @@ def main() -> None:
         conn.commit()
 
     report_date = _today(profile)
-    # Database timestamps are UTC. Keeping selection anchored to UTC avoids losing
-    # items when a manual run occurs just after local midnight in Asia/Shanghai.
-    storage_day = datetime.now(timezone.utc).date().isoformat()
-    candidate_rows = list_changed_on(conn, storage_day, kept_only=False)
+    candidate_rows = list_changed_since(conn, run_started_at, kept_only=False)
     item_results, item_llm = rank_items(candidate_rows, sources, profile)
     _apply_intelligence(conn, candidate_rows, item_results)
     conn.commit()
 
-    selected_rows = list_changed_on(conn, storage_day, kept_only=True)
+    selected_rows = list_changed_since(conn, run_started_at, kept_only=True)
     digest = build_daily_digest(selected_rows, sources, report_date, profile)
     health_rows = list_source_health(conn)
-    healthy = sum(1 for row in health_rows if row["status"] == "healthy")
+    configured_names = {source["name"] for source in sources}
+    active_health_rows = [row for row in health_rows if row["source_name"] in configured_names]
+    healthy = sum(1 for row in active_health_rows if row["status"] == "healthy")
 
     timezone_name = profile.get("timezone", "Asia/Shanghai")
+    try:
+        last_updated_at = datetime.now(ZoneInfo(timezone_name)).isoformat()
+    except Exception:
+        last_updated_at = datetime.now(timezone.utc).isoformat()
+
     source_stats = {
         "configured": len(sources),
         "healthy": healthy,
@@ -137,8 +143,8 @@ def main() -> None:
         "candidate_items": len(candidate_rows),
         "selected_items": len(selected_rows),
         "item_intelligence": item_llm,
-        "last_updated_at": datetime.now(ZoneInfo(timezone_name)).isoformat(),
-        "source_health": [dict(row) for row in health_rows],
+        "last_updated_at": last_updated_at,
+        "source_health": [dict(row) for row in active_health_rows],
     }
 
     report = generate_report(
