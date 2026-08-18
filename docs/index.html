@@ -33,7 +33,7 @@
       <aside class="status-card">
         <div class="status-heading">
           <span class="status-dot"></span>
-          <div><strong>Radar Online</strong><p id="last-updated">等待首次新架构运行</p></div>
+          <div><strong>Radar Online</strong><p id="last-updated">尚无更新记录</p></div>
         </div>
         <dl>
           <div><dt>监控来源</dt><dd id="source-count">—</dd></div>
@@ -49,11 +49,11 @@
         <div>
           <p class="eyebrow">DAILY INTELLIGENCE</p>
           <h2>个性化日报</h2>
-          <p class="section-copy">这里只展示已经进入新数据结构的日报。旧版 A/B/C/X 申请清单不会继续出现在产品界面。</p>
+          <p class="section-copy">把今天真正值得注意的变化放在一起，而不是把所有新内容都交给你处理。</p>
         </div>
         <select id="report-select" aria-label="选择日报"></select>
       </div>
-      <article id="report-viewer" class="report-viewer loading">等待首次新架构日报…</article>
+      <article id="report-viewer" class="report-viewer loading">今天的日报尚未生成。</article>
     </section>
 
     <section id="sources" class="section">
@@ -61,7 +61,7 @@
         <div>
           <p class="eyebrow">SOURCE REGISTRY</p>
           <h2>信息源</h2>
-          <p class="section-copy">来源按你的认知结构分组。每个来源可以独立设置标签、关注关键词、抓取数量和是否深入详情页。</p>
+          <p class="section-copy">按领域组织你长期关注的来源。每个来源都可以设置标签和重点关注的主题。</p>
         </div>
         <a id="registry-admin-button" class="button primary hidden" href="./admin.html">管理信息源</a>
       </div>
@@ -73,12 +73,12 @@
       <div>
         <p class="eyebrow">PERSONALIZATION</p>
         <h2>设置</h2>
-        <p class="section-copy">个性化由信息源和兴趣画像共同决定。管理 API 未配置时只提供仓库配置入口；服务部署完成后，页面会自动出现真正写回仓库的 Source Registry 管理入口。</p>
+        <p class="section-copy">信息源决定你观察世界的窗口，兴趣画像决定什么值得占用你的注意力。</p>
       </div>
       <div class="settings-actions">
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/groups.yaml"><strong>分组</strong><span>创建、删除、排序信息域</span></a>
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/profile.yaml"><strong>兴趣画像</strong><span>定义你长期关心什么</span></a>
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml"><strong>来源配置</strong><span>后端未部署时的真实持久化入口</span></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/groups.yaml"><strong>分组</strong><span>组织你的信息领域</span></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/profile.yaml"><strong>兴趣画像</strong><span>定义长期关注与优先信号</span></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml"><strong>来源</strong><span>维护当前监控清单</span></a>
       </div>
     </section>
   </main>
