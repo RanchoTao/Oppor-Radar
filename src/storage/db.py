@@ -56,3 +56,11 @@ def upsert_opportunity(conn: sqlite3.Connection, opp: Opportunity) -> bool:
 
 def list_by_last_seen(conn: sqlite3.Connection, day_prefix: str) -> list[sqlite3.Row]:
     return conn.execute("SELECT * FROM opportunities WHERE last_seen_at LIKE ? ORDER BY category, score DESC", (f"{day_prefix}%",)).fetchall()
+
+
+def list_by_first_seen(conn: sqlite3.Connection, day_prefix: str) -> list[sqlite3.Row]:
+    """Return only items first discovered today so daily briefs do not repeat old links."""
+    return conn.execute(
+        "SELECT * FROM opportunities WHERE first_seen_at LIKE ? ORDER BY first_seen_at DESC",
+        (f"{day_prefix}%",),
+    ).fetchall()

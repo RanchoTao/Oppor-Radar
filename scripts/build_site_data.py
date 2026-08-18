@@ -28,13 +28,29 @@ def main() -> None:
     active_names = set()
 
     for report in reports:
-        target = DOCS_REPORTS_DIR / report.name
-        shutil.copyfile(report, target)
+        md_target = DOCS_REPORTS_DIR / report.name
+        shutil.copyfile(report, md_target)
         active_names.add(report.name)
-        manifest.append({"date": report.stem, "filename": report.name})
 
-    for stale in DOCS_REPORTS_DIR.glob("*.md"):
-        if stale.name not in active_names:
+        json_source = report.with_suffix(".json")
+        json_filename = None
+        if json_source.exists():
+            json_target = DOCS_REPORTS_DIR / json_source.name
+            shutil.copyfile(json_source, json_target)
+            active_names.add(json_source.name)
+            json_filename = json_source.name
+
+        manifest.append(
+            {
+                "date": report.stem,
+                "filename": report.name,
+                "json_filename": json_filename,
+                "format": "personalized-v2" if json_filename else "legacy-v1",
+            }
+        )
+
+    for stale in DOCS_REPORTS_DIR.glob("*.*"):
+        if stale.suffix in {".md", ".json"} and stale.name not in active_names:
             stale.unlink()
 
     (DOCS_DATA_DIR / "reports.json").write_text(

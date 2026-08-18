@@ -22,6 +22,9 @@ jobs:
       - name: Run tests
         run: pytest -q
       - name: Run daily job
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
         run: python -m src.scheduler.run_daily
       - name: Build GitHub Pages data
         run: python scripts/build_site_data.py
@@ -31,5 +34,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/reports docs/data docs/reports
           git add -f data/opportunities.sqlite3
-          git diff --cached --quiet || git commit -m "chore: update daily opportunity report"
+          git diff --cached --quiet || git commit -m "chore: update daily intelligence brief"
           git push

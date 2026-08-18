@@ -1,31 +1,47 @@
 - name: 清华丘成桐数学科学中心
   url: https://ymsc.tsinghua.edu.cn/
+  group: 学术
   tags: [清华, 数学, AI, 暑期学校]
+  max_items: 30
 
 - name: BIMSA
   url: https://www.bimsa.cn/
+  group: 学术
   tags: [BIMSA, 数学, 人工智能, 讲座, 课程]
+  max_items: 30
 
 - name: 清华计算机系
   url: https://www.cs.tsinghua.edu.cn/
+  group: 学术
   tags: [清华, 计算机, AI, 通知]
+  max_items: 30
 
 - name: 清华交叉信息研究院
   url: https://iiis.tsinghua.edu.cn/
+  group: 学术
   tags: [清华, 交叉信息, 理论计算机, AI]
+  max_items: 30
 
 - name: 北京大学人工智能研究院
   url: https://www.ai.pku.edu.cn/
+  group: 学术
   tags: [北大, 人工智能, 学术交流]
+  max_items: 30
 
 - name: 北京大学智能学院
   url: https://sai.pku.edu.cn/
+  group: 学术
   tags: [北大, 智能学院, AI]
+  max_items: 30
 
 - name: 中国科学院数学与系统科学研究院
   url: https://amss.cas.cn/
+  group: 学术
   tags: [中科院, 数学, 系统科学, 招生]
+  max_items: 30
 
 - name: 中国人民大学高瓴人工智能学院
   url: https://ai.ruc.edu.cn/
+  group: 学术
   tags: [人大, AI, 高瓴, 讲座]
+  max_items: 30
