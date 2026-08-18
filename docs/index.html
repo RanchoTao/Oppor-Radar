@@ -62,7 +62,7 @@
           <h2>信息源</h2>
           <p class="section-copy">来源按你的认知结构分组。每个来源可以独立设置标签、关注关键词、抓取数量和是否深入详情页。</p>
         </div>
-        <a class="button ghost" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml">编辑来源配置</a>
+        <a id="registry-admin-button" class="button primary hidden" href="./admin.html">管理信息源</a>
       </div>
       <div id="source-groups" class="group-tabs"></div>
       <div id="source-list" class="source-list"></div>
@@ -72,12 +72,12 @@
       <div>
         <p class="eyebrow">PERSONALIZATION</p>
         <h2>设置</h2>
-        <p class="section-copy">个性化由信息源和兴趣画像共同决定。当前单用户版本把配置作为代码管理：能工作的配置直接进入仓库，不再在网页上展示只写入 localStorage 的假管理界面。</p>
+        <p class="section-copy">个性化由信息源和兴趣画像共同决定。管理 API 未配置时只提供仓库配置入口；服务部署完成后，页面会自动出现真正写回仓库的 Source Registry 管理入口。</p>
       </div>
       <div class="settings-actions">
         <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/groups.yaml"><strong>分组</strong><span>创建、删除、排序信息域</span></a>
         <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/profile.yaml"><strong>兴趣画像</strong><span>定义你长期关心什么</span></a>
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml"><strong>来源</strong><span>增加、暂停、移动 URL</span></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml"><strong>来源配置</strong><span>后端未部署时的真实持久化入口</span></a>
       </div>
     </section>
   </main>
