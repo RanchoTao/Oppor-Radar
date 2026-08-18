@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Opportunity Radar：自动扫描科研与学术机会，生成每日机会日报。" />
+  <meta name="description" content="Opportunity Radar：订阅自选网页信息源，由爬虫与大模型生成个性化日报。" />
   <title>Opportunity Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -21,9 +21,9 @@
   <main id="top">
     <section class="hero">
       <div>
-        <p class="eyebrow">ACADEMIC OPPORTUNITY INTELLIGENCE</p>
-        <h1>把分散在官网里的机会，变成每天可读的一份报告。</h1>
-        <p class="hero-copy">Opportunity Radar 定时扫描高校、研究院、实验室与自定义 URL，提取科研训练、RA、暑校、讲座、竞赛等信息，并按相关性整理成日报。</p>
+        <p class="eyebrow">PERSONAL INFORMATION INTELLIGENCE</p>
+        <h1 class="live-headline"><span id="live-time">----</span><span>世界正在发生。</span></h1>
+        <p class="hero-copy">你不需要自己打开几十、上百个网页。Opportunity Radar 按你定义的信息源与分组持续扫描，把新出现的学术、金融、社会、科技或任何你关心的信息统一交给大模型筛选、关联和压缩，最后生成一份真正属于你的日报。</p>
         <div class="hero-actions">
           <a class="button primary" href="#reports">查看最新日报</a>
           <a class="button ghost" href="#sources">管理信息源</a>
@@ -33,19 +33,23 @@
         <span class="status-dot"></span>
         <div>
           <strong>每日自动扫描</strong>
-          <p>默认北京时间 08:00</p>
+          <p>默认北京时间 08:00 · DeepSeek 日报层</p>
         </div>
         <dl>
           <div><dt>已配置来源</dt><dd id="source-count">—</dd></div>
           <div><dt>可查看日报</dt><dd id="report-count">—</dd></div>
-          <div><dt>最新日期</dt><dd id="latest-date">—</dd></div>
+          <div><dt>大模型</dt><dd id="llm-status">—</dd></div>
         </dl>
       </aside>
     </section>
 
     <section id="reports" class="section">
       <div class="section-heading">
-        <div><p class="eyebrow">DAILY REPORTS</p><h2>日报</h2></div>
+        <div>
+          <p class="eyebrow">DAILY INTELLIGENCE</p>
+          <h2>个性化日报</h2>
+          <p class="section-copy">日报不再限定“夏令营 / 申请机会”。它应该回答：今天从我订阅的所有信息源里，究竟发生了什么，哪些值得我看，哪些需要我行动。</p>
+        </div>
         <select id="report-select" aria-label="选择日报"></select>
       </div>
       <article id="report-viewer" class="report-viewer loading">正在载入日报…</article>
@@ -53,34 +57,49 @@
 
     <section id="sources" class="section grid-two">
       <div>
-        <p class="eyebrow">SOURCES</p>
-        <h2>信息源</h2>
-        <p class="section-copy">当前仓库中的官方来源会自动展示在这里。你也可以先在浏览器里建立自己的来源清单；下一阶段会把这套界面接到后端，让用户保存 URL 并进入每日调度。</p>
+        <p class="eyebrow">SOURCE REGISTRY</p>
+        <h2>信息源与分组</h2>
+        <p class="section-copy">把信息源按你的认知结构组织，而不是按网站类型组织。学术、金融、社会只是示例；你可以建立、删除自己的分组，并为每个 URL 指定关注关键词。</p>
+        <div id="source-groups" class="group-tabs"></div>
         <div id="source-list" class="source-list"></div>
       </div>
-      <aside class="panel">
-        <h3>添加自定义 URL</h3>
-        <form id="source-form">
-          <label>名称<input id="source-name" required placeholder="例如：某实验室招生页" /></label>
-          <label>URL<input id="source-url" required type="url" placeholder="https://example.edu/lab/" /></label>
-          <label>标签<input id="source-tags" placeholder="AI, RA, 北京" /></label>
-          <button class="button primary" type="submit">保存到本机</button>
-        </form>
-        <div id="local-sources" class="local-sources"></div>
-        <button id="export-sources" class="button ghost full" type="button">导出 sources.yaml</button>
-        <p class="note">当前 GitHub Pages 是静态前端，新增来源只保存在浏览器 localStorage，不会自动修改仓库或启动云端任务。</p>
+
+      <aside class="panel source-control-panel">
+        <section class="control-block">
+          <h3>管理分组</h3>
+          <form id="group-form" class="inline-form">
+            <input id="group-name" required placeholder="例如：金融" />
+            <button class="button ghost" type="submit">添加组</button>
+          </form>
+          <div id="local-groups" class="local-groups"></div>
+        </section>
+
+        <section class="control-block">
+          <h3>添加自定义 URL</h3>
+          <form id="source-form">
+            <label>名称<input id="source-name" required placeholder="例如：某研究机构 / 某媒体 / 某公司 IR" /></label>
+            <label>URL<input id="source-url" required type="url" placeholder="https://example.com/" /></label>
+            <label>分组<select id="source-group"></select></label>
+            <label>关注关键词<input id="source-watch" placeholder="例如：Agent, 宏观, 政策（可留空交给大模型判断）" /></label>
+            <label>标签<input id="source-tags" placeholder="例如：AI, 北京, 官方" /></label>
+            <button class="button primary" type="submit">保存到本机</button>
+          </form>
+          <div id="local-sources" class="local-sources"></div>
+          <button id="export-sources" class="button ghost full" type="button">导出 sources.yaml</button>
+          <p class="note">当前 Pages 仍是静态前端：这里的增删只保存在浏览器。导出的 YAML 可以直接进入仓库配置；下一步再把它接到真正的多用户后端 Source Registry。</p>
+        </section>
       </aside>
     </section>
 
     <section id="pipeline" class="section">
       <p class="eyebrow">PIPELINE</p>
-      <h2>建议的长期架构</h2>
+      <h2>现在要跑通的完整链路</h2>
       <div class="pipeline">
-        <div><span>01</span><strong>Source</strong><p>用户预设来源 + 自定义 URL</p></div>
-        <div><span>02</span><strong>Crawl</strong><p>定时抓取、去重、详情页解析</p></div>
-        <div><span>03</span><strong>LLM</strong><p>结构化抽取、相关性判断、摘要</p></div>
-        <div><span>04</span><strong>Report</strong><p>JSON 为主数据，渲染 Markdown / LaTeX / PDF</p></div>
-        <div><span>05</span><strong>Deliver</strong><p>网页归档 + 邮件/消息推送</p></div>
+        <div><span>01</span><strong>Source</strong><p>用户分组 + 自定义 URL + 关注关键词</p></div>
+        <div><span>02</span><strong>Crawl</strong><p>定时抓取、去重、只保留新出现的条目</p></div>
+        <div><span>03</span><strong>DeepSeek</strong><p>统一筛选、跨来源关联、摘要与行动判断</p></div>
+        <div><span>04</span><strong>Report</strong><p>结构化 JSON 为底层，同时生成 Markdown / PDF</p></div>
+        <div><span>05</span><strong>Deliver</strong><p>网页归档，后续接邮件与消息推送</p></div>
       </div>
     </section>
   </main>
