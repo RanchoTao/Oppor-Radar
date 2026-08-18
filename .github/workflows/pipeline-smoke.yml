@@ -1,0 +1,46 @@
+name: Pipeline Smoke
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: pytest -q
+      - name: Run real source pipeline
+        env:
+          OPPORTUNITY_RADAR_DB: /tmp/oppor-smoke.sqlite3
+          OPPORTUNITY_RADAR_REPORT_DIR: /tmp/oppor-reports
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
+        run: python -m src.scheduler.run_daily
+      - name: Validate generated v2 report
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          reports = sorted(Path('/tmp/oppor-reports').glob('*.json'))
+          assert reports, 'no structured report generated'
+          data = json.loads(reports[-1].read_text(encoding='utf-8'))
+          assert data['schema_version'] == 2
+          assert data['metrics']['configured_sources'] == 8
+          print('report:', reports[-1].name)
+          print('metrics:', data['metrics'])
+          print('item_intelligence_used:', data['diagnostics']['item_intelligence'].get('used'))
+          print('daily_editor_used:', data['diagnostics']['daily_editor'].get('used'))
+          print('groups:', [g.get('name') for g in data['digest'].get('groups', [])])
+          PY
