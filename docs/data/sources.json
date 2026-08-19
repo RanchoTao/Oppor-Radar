@@ -4,7 +4,11 @@
     "url": "https://ymsc.tsinghua.edu.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["清华", "数学", "AI"],
+    "tags": [
+      "清华",
+      "数学",
+      "AI"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -15,7 +19,11 @@
     "url": "https://www.bimsa.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["BIMSA", "数学", "人工智能"],
+    "tags": [
+      "BIMSA",
+      "数学",
+      "人工智能"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -26,7 +34,11 @@
     "url": "https://www.cs.tsinghua.edu.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["清华", "计算机", "AI"],
+    "tags": [
+      "清华",
+      "计算机",
+      "AI"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -37,7 +49,12 @@
     "url": "https://iiis.tsinghua.edu.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["清华", "交叉信息", "理论计算机", "AI"],
+    "tags": [
+      "清华",
+      "交叉信息",
+      "理论计算机",
+      "AI"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -48,7 +65,10 @@
     "url": "https://www.ai.pku.edu.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["北大", "人工智能"],
+    "tags": [
+      "北大",
+      "人工智能"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -59,7 +79,11 @@
     "url": "https://sai.pku.edu.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["北大", "智能学院", "AI"],
+    "tags": [
+      "北大",
+      "智能学院",
+      "AI"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -70,7 +94,11 @@
     "url": "https://amss.cas.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["中科院", "数学", "系统科学"],
+    "tags": [
+      "中科院",
+      "数学",
+      "系统科学"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
@@ -81,7 +109,11 @@
     "url": "https://ai.ruc.edu.cn/",
     "group": "学术",
     "enabled": true,
-    "tags": ["人大", "AI", "高瓴"],
+    "tags": [
+      "人大",
+      "AI",
+      "高瓴"
+    ],
     "watch": [],
     "max_items": 24,
     "max_detail_items": 16,
