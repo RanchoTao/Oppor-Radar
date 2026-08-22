@@ -1,0 +1,389 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-22",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 7,
+    "candidate_items": 7,
+    "selected_items": 7,
+    "last_updated_at": "2026-08-22T08:56:44.071947+08:00"
+  },
+  "digest": {
+    "report_date": "2026-08-22",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 7 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 7 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "Beijing Institute of Mathematical Sciences and Applications",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/"
+          },
+          {
+            "title": "北京雁栖湖应用数学研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/zh-CN"
+          },
+          {
+            "title": "Academic Support",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/academic-support.html"
+          },
+          {
+            "title": "Seminars",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/research/seminar/current/page_1.html"
+          },
+          {
+            "title": "ENGLISH",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华丘成桐数学科学中心",
+            "url": "https://ymsc.tsinghua.edu.cn/en"
+          },
+          {
+            "title": "学生动态-清华大学数学科学中心",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华丘成桐数学科学中心",
+            "url": "https://ymsc.tsinghua.edu.cn/rcpy/xsdt.htm"
+          },
+          {
+            "title": "学术日历-清华大学数学科学中心",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华丘成桐数学科学中心",
+            "url": "https://ymsc.tsinghua.edu.cn/xsrl.htm"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 25,
+      "title": "Beijing Institute of Mathematical Sciences and Applications",
+      "url": "https://www.bimsa.cn/",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session 26th May, 2026 New Issue: Beijing J. Pure Appl. Math. Vol. 3 No. 1 MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Sp",
+      "content": "29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session 26th May, 2026 New Issue: Beijing J. Pure Appl. Math. Vol. 3 No. 1 MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 24th August Riemann Surfaces Course Zhen Li 24th August Quantum Theory and Operator Theory 2026 Workshop Zhengfeng Ji , Song Cheng , Chunlan Jiang , Hanru Jiang , Jinpeng Liu , Zhengwei Liu , Ziwen Liu , Shunlong Luo , Jinsong Wu 26th August AI and Finance Course Zhen Li 26th August Recent developments in three-dimensional gravity I Course Luis Apolo 27th August BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar 28th August BIMSA Lecture Seminar Jiebo Song Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "raw_text": "29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session 26th May, 2026 New Issue: Beijing J. Pure Appl. Math. Vol. 3 No. 1 MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 24th August Riemann Surfaces Course Zhen Li 24th August Quantum Theory and Operator Theory 2026 Workshop Zhengfeng Ji , Song Cheng , Chunlan Jiang , Hanru Jiang , Jinpeng Liu , Zhengwei Liu , Ziwen Liu , Shunlong Luo , Jinsong Wu 26th August AI and Finance Course Zhen Li 26th August Recent developments in three-dimensional gravity I Course Luis Apolo 27th August BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar 28th August BIMSA Lecture Seminar Jiebo Song Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "content_hash": "3e8d7d797b3ace09524072b00b92d881e380cfad488533eddd7c97ed70f019b6",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-22T00:54:55+00:00",
+      "changed_at": "2026-08-22T00:54:55+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 26,
+      "title": "北京雁栖湖应用数学研究院",
+      "url": "https://www.bimsa.cn/zh-CN",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-02-23",
+      "location": null,
+      "summary": "2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 2026-05-26 《北京纯粹与应用数学杂志》（BPAM）2026年第一期现已正式出版！ 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 24 8月 Riemann Surfaces 课程 李震 24 8月 Quantum Theory and Operator Theory 2026 工作坊 季铮锋 , 程嵩 , 蒋春澜 , 蒋瀚如 , 刘锦鹏 , 刘正伟 , 刘子文 , 骆顺龙 , 吴劲松 26 8月 AI and Finance 课程 李振 26 8月 Recent developments in three-dimensional gravity I 课程 路易斯·阿波罗 27 8月 BIMSA Topology Seminar 研讨会 吴杰 , 李京艳 , 普拉文·库马尔 28 8月 BIMSA 讲座 研讨会 宋洁博 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和",
+      "content": "2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 2026-05-26 《北京纯粹与应用数学杂志》（BPAM）2026年第一期现已正式出版！ 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 24 8月 Riemann Surfaces 课程 李震 24 8月 Quantum Theory and Operator Theory 2026 工作坊 季铮锋 , 程嵩 , 蒋春澜 , 蒋瀚如 , 刘锦鹏 , 刘正伟 , 刘子文 , 骆顺龙 , 吴劲松 26 8月 AI and Finance 课程 李振 26 8月 Recent developments in three-dimensional gravity I 课程 路易斯·阿波罗 27 8月 BIMSA Topology Seminar 研讨会 吴杰 , 李京艳 , 普拉文·库马尔 28 8月 BIMSA 讲座 研讨会 宋洁博 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "raw_text": "2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 2026-05-26 《北京纯粹与应用数学杂志》（BPAM）2026年第一期现已正式出版！ 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 24 8月 Riemann Surfaces 课程 李震 24 8月 Quantum Theory and Operator Theory 2026 工作坊 季铮锋 , 程嵩 , 蒋春澜 , 蒋瀚如 , 刘锦鹏 , 刘正伟 , 刘子文 , 骆顺龙 , 吴劲松 26 8月 AI and Finance 课程 李振 26 8月 Recent developments in three-dimensional gravity I 课程 路易斯·阿波罗 27 8月 BIMSA Topology Seminar 研讨会 吴杰 , 李京艳 , 普拉文·库马尔 28 8月 BIMSA 讲座 研讨会 宋洁博 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "content_hash": "eaa26da6a9e417af62e9f7ae741dbb1a8bc29d27776907982359f9f62cf580e2",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-22T00:54:55+00:00",
+      "changed_at": "2026-08-22T00:54:55+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 40,
+      "title": "Academic Support",
+      "url": "https://www.bimsa.cn/academic-support.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "BIMSA > Academic Support Academic Support Department of ICBS Conference Affairs Telephone： 010-60661776 Telephone： 010-60661776 Ruihua Wang Manager of ICBS Conference Affairs Department ivy@bimsa.cn Aziza Abudula Special events management Aziza@bimsa.cn Yang Chen Information Coordination & Traffic management chenyang@bimsa.cn Hanze Jia Emergency Medical, Safety, and Food Hygiene Measures jiahanze@bimsa.cn Yajuan Liu Material management for large-scale events & Administrative logistics liuyajuan@bimsa.cn Lei Yu Vendor management yulei@bimsa.cn Zhenyao Zhang Accommodation and catering management zhangzy@bimsa.cn Library Chunlei Lu Librarian luchunlei@bimsa.cn Na Lv Circulation Services lvna@bimsa.cn Yuan Tian Acquisition and Cataloging tianyuan@bimsa.cn Jimao Wang IT Support wangjimao@bimsa.cn Journal Editorial YuShan Deng Responsible for the project management of all journal and book publishing related to BIMSA dengyushan@bimsa.cn Chanyu Shang Mainly in charge of the journal Beijing Jou",
+      "content": "BIMSA > Academic Support Academic Support Department of ICBS Conference Affairs Telephone： 010-60661776 Telephone： 010-60661776 Ruihua Wang Manager of ICBS Conference Affairs Department ivy@bimsa.cn Aziza Abudula Special events management Aziza@bimsa.cn Yang Chen Information Coordination & Traffic management chenyang@bimsa.cn Hanze Jia Emergency Medical, Safety, and Food Hygiene Measures jiahanze@bimsa.cn Yajuan Liu Material management for large-scale events & Administrative logistics liuyajuan@bimsa.cn Lei Yu Vendor management yulei@bimsa.cn Zhenyao Zhang Accommodation and catering management zhangzy@bimsa.cn Library Chunlei Lu Librarian luchunlei@bimsa.cn Na Lv Circulation Services lvna@bimsa.cn Yuan Tian Acquisition and Cataloging tianyuan@bimsa.cn Jimao Wang IT Support wangjimao@bimsa.cn Journal Editorial YuShan Deng Responsible for the project management of all journal and book publishing related to BIMSA dengyushan@bimsa.cn Chanyu Shang Mainly in charge of the journal Beijing Journal of Pure and Applied Mathematics shangchanyu@bimsa.cn Tina Tian Responsible for the journals Data Analytics and Topology and The Review of Mathematical Economics tianfang@bimsa.cn",
+      "raw_text": "BIMSA > Academic Support Academic Support Department of ICBS Conference Affairs Telephone： 010-60661776 Telephone： 010-60661776 Ruihua Wang Manager of ICBS Conference Affairs Department ivy@bimsa.cn Aziza Abudula Special events management Aziza@bimsa.cn Yang Chen Information Coordination & Traffic management chenyang@bimsa.cn Hanze Jia Emergency Medical, Safety, and Food Hygiene Measures jiahanze@bimsa.cn Yajuan Liu Material management for large-scale events & Administrative logistics liuyajuan@bimsa.cn Lei Yu Vendor management yulei@bimsa.cn Zhenyao Zhang Accommodation and catering management zhangzy@bimsa.cn Library Chunlei Lu Librarian luchunlei@bimsa.cn Na Lv Circulation Services lvna@bimsa.cn Yuan Tian Acquisition and Cataloging tianyuan@bimsa.cn Jimao Wang IT Support wangjimao@bimsa.cn Journal Editorial YuShan Deng Responsible for the project management of all journal and book publishing related to BIMSA dengyushan@bimsa.cn Chanyu Shang Mainly in charge of the journal Beijing Journal of Pure and Applied Mathematics shangchanyu@bimsa.cn Tina Tian Responsible for the journals Data Analytics and Topology and The Review of Mathematical Economics tianfang@bimsa.cn",
+      "content_hash": "a113dd50d052a03045f18e6d29e5f40673ea4fc97ca098ebe40dc11fa1a7fb61",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-22T00:54:55+00:00",
+      "changed_at": "2026-08-22T00:54:55+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 43,
+      "title": "Seminars",
+      "url": "https://www.bimsa.cn/research/seminar/current/page_1.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 3rd August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 3rd August, 2026 - 26th February, 2027 Schedule: Tuesday 14:00 - 16:00, Address: A7-302 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar",
+      "content": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 3rd August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 3rd August, 2026 - 26th February, 2027 Schedule: Tuesday 14:00 - 16:00, Address: A7-302 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301 28th August 2026 BIMSA Lecture Seminar Jiebo Song Date: 28th August, 2026 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303",
+      "raw_text": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 3rd August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 3rd August, 2026 - 26th February, 2027 Schedule: Tuesday 14:00 - 16:00, Address: A7-302 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301 28th August 2026 BIMSA Lecture Seminar Jiebo Song Date: 28th August, 2026 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303",
+      "content_hash": "8b08cb3cb2d164d985c14936fb22461f8c01304cf68a8e751529008df8493fa4",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-22T00:54:55+00:00",
+      "changed_at": "2026-08-22T00:54:55+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 1,
+      "title": "ENGLISH",
+      "url": "https://ymsc.tsinghua.edu.cn/en",
+      "source_name": "清华丘成桐数学科学中心",
+      "source_url": "https://ymsc.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-08-07",
+      "location": "2026年8月7日",
+      "summary": "Chinese Home About YMSC Profile Staff News about us Visit us People Leadership Councils Faculty Postdocs Visiting Scholars ThuRID Education Graduate Program International Graduate Program Summer School Yau Math Camp Graduate Student Students Life Alumni Calendar Activities YMSC Courses Mini Courses Seminars Lectures Conferences YMSC Room Booking Research Research Teams Birational Geometry Group String Theory Group Institute of Applied Mathematics Latest Publications Academic Resources Jobs Seminars Lectures more more Aug 28 2026 Math+ML+X Seminar Series Are you interested in the intersection of Mathematics, Machine Learning, and real-world applications? Join us for a seminar this Fall 2026 that will explore recent advancements in these fields, including practical applications and emerging techniques.Speaker: Tsz Ching Chow (Lehigh University)Title: Convergent Bregman Plug-and-Play with Difference-of-Convex Algorithm for Nonconvex Imaging Pro... Speaker：Tsz Ching Chow (Lehigh University",
+      "content": "Chinese Home About YMSC Profile Staff News about us Visit us People Leadership Councils Faculty Postdocs Visiting Scholars ThuRID Education Graduate Program International Graduate Program Summer School Yau Math Camp Graduate Student Students Life Alumni Calendar Activities YMSC Courses Mini Courses Seminars Lectures Conferences YMSC Room Booking Research Research Teams Birational Geometry Group String Theory Group Institute of Applied Mathematics Latest Publications Academic Resources Jobs Seminars Lectures more more Aug 28 2026 Math+ML+X Seminar Series Are you interested in the intersection of Mathematics, Machine Learning, and real-world applications? Join us for a seminar this Fall 2026 that will explore recent advancements in these fields, including practical applications and emerging techniques.Speaker: Tsz Ching Chow (Lehigh University)Title: Convergent Bregman Plug-and-Play with Difference-of-Convex Algorithm for Nonconvex Imaging Pro... Speaker：Tsz Ching Chow (Lehigh University) Aug 25 2026 ADS seminar Title: Entanglement Bootstrap for 2+1D chiral gapped phasesSpeaker: Xiang Li (University of California, San Diego)Venue: Classroom B627, Shuangqing Complex Building ATime: 13:30-14:30, August 25 (Tuesday)Abstract:2+1D chiral gapped phases exhibit many interesting properties such as robust gapless edges that cannot be gapped out by local perturbations.In this talk, I will discuss the Entanglemen... Speaker：Xiang Li (University of California, San Diego) Aug 17 2026 应用分析讨论班 Applied Analysis Seminar Speaker：谷雨 (Prof. GU Yu, University of Maryland)​ Aug 14 2026 Quantum Scientific Computation and Quantum Artificial Intelligence量子科学计算与量子人工智能 Upcoming talk: Speakers：Songqinghao (Peter) Yang (Ph.D. Student, University of Cambridge)Host: Jin-Peng Liu 刘锦鹏Time: Friday, 16:00-17:00, Aug 14, 2026Venue: Shuangqing B626Title: Locality-Exploiting Algorithms for Quantum Dense OutputAbstract: We study the DenseOutput problem in quantum simulation: computing quantities accumulated over time rather than a single final state. For geometricall... Speaker：Songqinghao (Peter) Yang (Ph.D. Student, University of Cambridge) Aug 07 2026 代数讨论班 Title: AI for moduli of differentials时间和地点：2026年8月7日，周五下午1:30-2:30，教室双清c654主讲人：陈大卫，波士顿学院邀请人：邱宇Abstract: Differentials on Riemann surfaces correspond to translation surfaces with cone points, where the zero orders of differentials determine the cone angles of translation surfaces. Affine transformation acts on translation surfaces and preserves the zero type... Speaker：陈大卫，波士顿学院 Jul 23 2026 Rethinking the theoretical foundation of reinforcement learning Abstract: Given two candidate functions, can we identify which one is the true value function of a large Markov decision process (MDP), given a \"benign\" dataset? Trivial as it might seem, a version of the question was open for 20+ years in reinforcement learning (RL), and the core difficulties are intimately related to the training instability of modern deep RL. In this talk, I will argue that ... Speaker：Nan Jiang (University of Illinois at Urbana-Champaign) Jul 07 2026 The asymptotic Plateau problem: past, current progress and future problems Abstract: The asymptotic Plateau problem is a set of problems in hyperbolic 3-space concerning the existence, multiplicity and applications of minimal surfaces asymptotic to a given Jordan curve on the sphere at infinity. I will address some past results, new progress, and open problems. This is based on joint work with Lowe and Seppi.Bio: Zeno Huang is currently a professor of mathematics at t... Speaker：Zeno Huang （ City University of New York） Jun 15 2026 Quantification of ergodicity for Hamilton–Jacobi equations in a dynamic random environment Abstract:Motivated by the tensionless KPZ equation (a model of stochastic growth), we consider quantitative large-time averages for Hamilton–Jacobi equations in a dynamic random environment that is stationary ergodic and has finite-range dependence in time. In this talk, we establish, up to slowly varying factors, convergence rates with exponent 1/2 for the large-time averages of both the solu... Speaker：Prof. GUO Xiaoqin (郭小钦), University of Cincinnati Jun 15 2026 Toward Convergent Adam-Type Methods Abstract:Adam is one of the most widely used optimizers in modern machine learning, but its convergence theory remains incomplete, even in relatively simple convex settings. A central difficulty is that Adam tightly couples momentum and adaptive preconditioning, which hides the dissipative structure needed for a Lyapunov analysis.In this talk, I will describe a Lyapunov-guided approach to Adam-... Speaker：Long Chen (University of California, Irvine) Jun 11 2026 A deep learning method for computing the spectrum of the Schrödinger operator: numerics and analysis Abstract: We present a novel deep learning method for computing eigenstates of the Schrödinger operator. Our approach combines a novel loss function with an innovative neural network architecture that incorporates a-prior knowledge of the problem. These improvements enable the method to handle both high-dimensional problems and problems posed on irregular bounded domains. We successfully compu... Speaker：Ming Pingbing (CAS) YMSC Courses more Sep 16 2026 Topics in Probabilistic and Analytic Number Theory and Discrete Analysis (PANDA) Description：This is a topics course introducing selected topics in analytic and probabilistic number theory, and discrete analysis. It focuses on the interaction and connections between these areas.Prerequisite：Most of the materials will be self-contained.Reference：Yufei Zhao’s online lecture notes/textbook on additive combinatorics, taught at MIT, might be useful for the discrete analysis ... Speaker：Max Wenqiang Xu (徐文强) Sep 14 2026 Deformation Quantization in Fedosov's approach Description:This course provides an introduction to the deformation quantization of symplectic manifolds, centered around Fedosov’s landmark theorem and its interplay with other quantization schemes in Kähler geometry. Designed for graduate students, the course equips participants with both intuitive foundations and core techniques required for advanced work in this field.This course consists ... Speaker：Yutung Yau (邱宇东) News Latest Publications more more Aug 14 2026 ​Global scientists convene in Beijing for the 2026 International Congress of Basic Science Apr 23 2026 Congratulations to Professor Nicolai Reshetikhin on His Election to the American Academy of Arts and Sciences Aug 17 2026 Lagrangians, SO(3)-instantons and the Atiyah--Floer Conjecture Aliakbar Daemi, Kenji Fukaya, Maksim Lipyanskiy （date of acceptance: 27 July 2026) Jul 20 2026 Large data global solution of the 3D RVM system with cylindircal symmetry I: Iterative smoothing scheme Xuecheng Wang Mini-courses more Oct 08 2026 Moduli spaces and modular forms Lecturer: Gerard van der GeerFields of research: Algebraic geometry, modular formsDescription:Both concepts, moduli spaces and modular forms, were formulated in the 19th century and became prominent in the second half of the 20th century. The course will advocate a geometric approach to modular forms using the geometry of moduli spaces to produce modular forms and uncover their fascinating prop... Speaker：Gerard van der Geer (University of Amsterdam) Sep 15 2026 CaTherine Wheels Abstract: The aim of the lectures will be to describe a unifying picture of dynamics (pseudo-Anosov flows), bounded cohomology (uniform quasimorphisms), Peano curves (CaTherine wheels) and some intermediate structures (laminations; zippers) in hyperbolic 3-manifolds together with applications, including some implications for the Cannon Conjecture (and a corresponding though less well-developed ... Speaker：Danny Calegari (University of Chicago) Jul 01 2026 Birational geometry of foliations Description：We will continue the study of the birational geometry of foliations on complex varieties and in positive characteristic. Although there will be minimal overlap with the previous lectures, no specific background will be assumed beyond general knowledge of birational geometry. We will begin with a review of the basic results in the birational geometry of foliated surfaces. We will th... Speaker：Paolo Cascini (Imperial College, London) Conferences more Jun 29 2026 Quantum Information in Quantum Gravity 2026 (QIQG 2026) QIQG2026 Handbook: QIQG2026-Handbook.pdfDaily Schedule: QIQG2026-Daily Schedule.pdfQIQG2026 News: QIQG2026-News.pdfInvitation letter: QIQG2026_Invitation_Letter.pdfVideo of QIQG2026: Click hereJune 29- July 3, 2026Beijing·Tsinghua UniversityBuilding on the discussions of QIQG 2025, QIQG 2026 will propel the dialogue into a new era of further synthesis of ideas in quantum information theory and ... Organizer：Bartek Czech, Janet Hung, Cheng Peng, Wei Song, Huajia Wang, Qiang Wen, Zhenbin Yang, Yang Zhou Jun 25 2026 Recent Developments in Gravity and Holography Date: June 25–26, 2026 Venue: Shuangqing Building, Yau Mathematical Sciences Center, Tsinghua University Organiser: Gabriel Arenas-Henriquez, YMSC, Tsinghua UniversityThe aim of the workshop is to bring together researchers working on recent developments in gravitational physics, holography, AdS/CFT, black holes, and related aspects of mathematical physics. The programme will consist of invite... Organizer：Gabriel Arenas-Henriquez, YMSC, Tsinghua University Jun 14 2026 The 2nd AI4Science Beijing Meet-up—Learned PDEs! The 2nd AI4Science Beijing Meet-up—Learned PDEs!We are thrilled to announce the 2nd AI4Science Beijing Meet-up — returning on 2026. Confimed Date June 14th, 2026!A huge thank you to everyone who made last year’s inaugural meet-up unforgettable.The reception was overwhelming: we had to close registration only a few days after opening. Many of you couldn’t get a spot — and we heard you.This... Organizer： Videos more Caucher Birkar: The rich world of Fano geometry Kenji Fukaya: Functoriality of open closed map Wei Song: Symmetry and operators in TTbar deformed CFTs Honghao Gao: Legendrian knots and Lagrangian fillings YMSC Mathematicians Li Si Vladimir Markovic Yang Yuhong Zhu Yihang Yitwah Cheung Caucher Birkar Chen Zhijie Yunhui Wu Fu Lei Akito Futaki Ling-Yan Hung Per Johansson Lin Yong Liu Zhengwei Qiu Yu Nicolai Reshetikhin Shan Peng Shi Zuoqiang Song Wei Wu Hao Yang Fan Zheng Hao Zhu Yi HIGH SCHOOL SCIENCE AWARD COLLEGE MATH CONTEST ICCM BEST THESIS AWARD ICCM MEDAL OF MATHEMATICS BEST PAPER AWARD HIGH SCHOOL GIRLS’ MATH CONTEST Home About People Education Calendar Activities Research Jobs Contact Tel：+86-10-62773561 Mail：ymsc@tsinghua.edu.cn Address：Yau Mathematical Sciences Center, Jingzhai, Tsinghua University, Haidian District, Beijing, China Postcode：100084 © YMSC, Tsinghua University. All Rights Reserved Campus links Tsinghua University Department Of Mathematical Sciences, Tsinghua University Tsinghua University Undergraduate Enrollment Network Graduate Enrollment Network Of Tsinghua University Tsinghua University Researcher ID Related links Shanghai Institute for Mathematics and Interdisciplinary Sciences Academy of Mathematics and Systems Science, CAS Center of Mathematical Sciences and Applications, Harvard University Center of Mathematical Sciences, Zhejiang University Morningside Center of Mathematics, Chinese Academy of Sciences Institute Of Mathematical Sciences, Chinese University of Hong Kong Shing-Tung Yau Center, NCTU Shing-Tung Yau Center of Southeast University TSIMF ICCM 2022 ICBS Download links Download",
+      "raw_text": "Chinese Home About YMSC Profile Staff News about us Visit us People Leadership Councils Faculty Postdocs Visiting Scholars ThuRID Education Graduate Program International Graduate Program Summer School Yau Math Camp Graduate Student Students Life Alumni Calendar Activities YMSC Courses Mini Courses Seminars Lectures Conferences YMSC Room Booking Research Research Teams Birational Geometry Group String Theory Group Institute of Applied Mathematics Latest Publications Academic Resources Jobs Seminars Lectures more more Aug 28 2026 Math+ML+X Seminar Series Are you interested in the intersection of Mathematics, Machine Learning, and real-world applications? Join us for a seminar this Fall 2026 that will explore recent advancements in these fields, including practical applications and emerging techniques.Speaker: Tsz Ching Chow (Lehigh University)Title: Convergent Bregman Plug-and-Play with Difference-of-Convex Algorithm for Nonconvex Imaging Pro... Speaker：Tsz Ching Chow (Lehigh University) Aug 25 2026 ADS seminar Title: Entanglement Bootstrap for 2+1D chiral gapped phasesSpeaker: Xiang Li (University of California, San Diego)Venue: Classroom B627, Shuangqing Complex Building ATime: 13:30-14:30, August 25 (Tuesday)Abstract:2+1D chiral gapped phases exhibit many interesting properties such as robust gapless edges that cannot be gapped out by local perturbations.In this talk, I will discuss the Entanglemen... Speaker：Xiang Li (University of California, San Diego) Aug 17 2026 应用分析讨论班 Applied Analysis Seminar Speaker：谷雨 (Prof. GU Yu, University of Maryland)​ Aug 14 2026 Quantum Scientific Computation and Quantum Artificial Intelligence量子科学计算与量子人工智能 Upcoming talk: Speakers：Songqinghao (Peter) Yang (Ph.D. Student, University of Cambridge)Host: Jin-Peng Liu 刘锦鹏Time: Friday, 16:00-17:00, Aug 14, 2026Venue: Shuangqing B626Title: Locality-Exploiting Algorithms for Quantum Dense OutputAbstract: We study the DenseOutput problem in quantum simulation: computing quantities accumulated over time rather than a single final state. For geometricall... Speaker：Songqinghao (Peter) Yang (Ph.D. Student, University of Cambridge) Aug 07 2026 代数讨论班 Title: AI for moduli of differentials时间和地点：2026年8月7日，周五下午1:30-2:30，教室双清c654主讲人：陈大卫，波士顿学院邀请人：邱宇Abstract: Differentials on Riemann surfaces correspond to translation surfaces with cone points, where the zero orders of differentials determine the cone angles of translation surfaces. Affine transformation acts on translation surfaces and preserves the zero type... Speaker：陈大卫，波士顿学院 Jul 23 2026 Rethinking the theoretical foundation of reinforcement learning Abstract: Given two candidate functions, can we identify which one is the true value function of a large Markov decision process (MDP), given a \"benign\" dataset? Trivial as it might seem, a version of the question was open for 20+ years in reinforcement learning (RL), and the core difficulties are intimately related to the training instability of modern deep RL. In this talk, I will argue that ... Speaker：Nan Jiang (University of Illinois at Urbana-Champaign) Jul 07 2026 The asymptotic Plateau problem: past, current progress and future problems Abstract: The asymptotic Plateau problem is a set of problems in hyperbolic 3-space concerning the existence, multiplicity and applications of minimal surfaces asymptotic to a given Jordan curve on the sphere at infinity. I will address some past results, new progress, and open problems. This is based on joint work with Lowe and Seppi.Bio: Zeno Huang is currently a professor of mathematics at t... Speaker：Zeno Huang （ City University of New York） Jun 15 2026 Quantification of ergodicity for Hamilton–Jacobi equations in a dynamic random environment Abstract:Motivated by the tensionless KPZ equation (a model of stochastic growth), we consider quantitative large-time averages for Hamilton–Jacobi equations in a dynamic random environment that is stationary ergodic and has finite-range dependence in time. In this talk, we establish, up to slowly varying factors, convergence rates with exponent 1/2 for the large-time averages of both the solu... Speaker：Prof. GUO Xiaoqin (郭小钦), University of Cincinnati Jun 15 2026 Toward Convergent Adam-Type Methods Abstract:Adam is one of the most widely used optimizers in modern machine learning, but its convergence theory remains incomplete, even in relatively simple convex settings. A central difficulty is that Adam tightly couples momentum and adaptive preconditioning, which hides the dissipative structure needed for a Lyapunov analysis.In this talk, I will describe a Lyapunov-guided approach to Adam-... Speaker：Long Chen (University of California, Irvine) Jun 11 2026 A deep learning method for computing the spectrum of the Schrödinger operator: numerics and analysis Abstract: We present a novel deep learning method for computing eigenstates of the Schrödinger operator. Our approach combines a novel loss function with an innovative neural network architecture that incorporates a-prior knowledge of the problem. These improvements enable the method to handle both high-dimensional problems and problems posed on irregular bounded domains. We successfully compu... Speaker：Ming Pingbing (CAS) YMSC Courses more Sep 16 2026 Topics in Probabilistic and Analytic Number Theory and Discrete Analysis (PANDA) Description：This is a topics course introducing selected topics in analytic and probabilistic number theory, and discrete analysis. It focuses on the interaction and connections between these areas.Prerequisite：Most of the materials will be self-contained.Reference：Yufei Zhao’s online lecture notes/textbook on additive combinatorics, taught at MIT, might be useful for the discrete analysis ... Speaker：Max Wenqiang Xu (徐文强) Sep 14 2026 Deformation Quantization in Fedosov's approach Description:This course provides an introduction to the deformation quantization of symplectic manifolds, centered around Fedosov’s landmark theorem and its interplay with other quantization schemes in Kähler geometry. Designed for graduate students, the course equips participants with both intuitive foundations and core techniques required for advanced work in this field.This course consists ... Speaker：Yutung Yau (邱宇东) News Latest Publications more more Aug 14 2026 ​Global scientists convene in Beijing for the 2026 International Congress of Basic Science Apr 23 2026 Congratulations to Professor Nicolai Reshetikhin on His Election to the American Academy of Arts and Sciences Aug 17 2026 Lagrangians, SO(3)-instantons and the Atiyah--Floer Conjecture Aliakbar Daemi, Kenji Fukaya, Maksim Lipyanskiy （date of acceptance: 27 July 2026) Jul 20 2026 Large data global solution of the 3D RVM system with cylindircal symmetry I: Iterative smoothing scheme Xuecheng Wang Mini-courses more Oct 08 2026 Moduli spaces and modular forms Lecturer: Gerard van der GeerFields of research: Algebraic geometry, modular formsDescription:Both concepts, moduli spaces and modular forms, were formulated in the 19th century and became prominent in the second half of the 20th century. The course will advocate a geometric approach to modular forms using the geometry of moduli spaces to produce modular forms and uncover their fascinating prop... Speaker：Gerard van der Geer (University of Amsterdam) Sep 15 2026 CaTherine Wheels Abstract: The aim of the lectures will be to describe a unifying picture of dynamics (pseudo-Anosov flows), bounded cohomology (uniform quasimorphisms), Peano curves (CaTherine wheels) and some intermediate structures (laminations; zippers) in hyperbolic 3-manifolds together with applications, including some implications for the Cannon Conjecture (and a corresponding though less well-developed ... Speaker：Danny Calegari (University of Chicago) Jul 01 2026 Birational geometry of foliations Description：We will continue the study of the birational geometry of foliations on complex varieties and in positive characteristic. Although there will be minimal overlap with the previous lectures, no specific background will be assumed beyond general knowledge of birational geometry. We will begin with a review of the basic results in the birational geometry of foliated surfaces. We will th... Speaker：Paolo Cascini (Imperial College, London) Conferences more Jun 29 2026 Quantum Information in Quantum Gravity 2026 (QIQG 2026) QIQG2026 Handbook: QIQG2026-Handbook.pdfDaily Schedule: QIQG2026-Daily Schedule.pdfQIQG2026 News: QIQG2026-News.pdfInvitation letter: QIQG2026_Invitation_Letter.pdfVideo of QIQG2026: Click hereJune 29- July 3, 2026Beijing·Tsinghua UniversityBuilding on the discussions of QIQG 2025, QIQG 2026 will propel the dialogue into a new era of further synthesis of ideas in quantum information theory and ... Organizer：Bartek Czech, Janet Hung, Cheng Peng, Wei Song, Huajia Wang, Qiang Wen, Zhenbin Yang, Yang Zhou Jun 25 2026 Recent Developments in Gravity and Holography Date: June 25–26, 2026 Venue: Shuangqing Building, Yau Mathematical Sciences Center, Tsinghua University Organiser: Gabriel Arenas-Henriquez, YMSC, Tsinghua UniversityThe aim of the workshop is to bring together researchers working on recent developments in gravitational physics, holography, AdS/CFT, black holes, and related aspects of mathematical physics. The programme will consist of invite... Organizer：Gabriel Arenas-Henriquez, YMSC, Tsinghua University Jun 14 2026 The 2nd AI4Science Beijing Meet-up—Learned PDEs! The 2nd AI4Science Beijing Meet-up—Learned PDEs!We are thrilled to announce the 2nd AI4Science Beijing Meet-up — returning on 2026. Confimed Date June 14th, 2026!A huge thank you to everyone who made last year’s inaugural meet-up unforgettable.The reception was overwhelming: we had to close registration only a few days after opening. Many of you couldn’t get a spot — and we heard you.This... Organizer： Videos more Caucher Birkar: The rich world of Fano geometry Kenji Fukaya: Functoriality of open closed map Wei Song: Symmetry and operators in TTbar deformed CFTs Honghao Gao: Legendrian knots and Lagrangian fillings YMSC Mathematicians Li Si Vladimir Markovic Yang Yuhong Zhu Yihang Yitwah Cheung Caucher Birkar Chen Zhijie Yunhui Wu Fu Lei Akito Futaki Ling-Yan Hung Per Johansson Lin Yong Liu Zhengwei Qiu Yu Nicolai Reshetikhin Shan Peng Shi Zuoqiang Song Wei Wu Hao Yang Fan Zheng Hao Zhu Yi HIGH SCHOOL SCIENCE AWARD COLLEGE MATH CONTEST ICCM BEST THESIS AWARD ICCM MEDAL OF MATHEMATICS BEST PAPER AWARD HIGH SCHOOL GIRLS’ MATH CONTEST Home About People Education Calendar Activities Research Jobs Contact Tel：+86-10-62773561 Mail：ymsc@tsinghua.edu.cn Address：Yau Mathematical Sciences Center, Jingzhai, Tsinghua University, Haidian District, Beijing, China Postcode：100084 © YMSC, Tsinghua University. All Rights Reserved Campus links Tsinghua University Department Of Mathematical Sciences, Tsinghua University Tsinghua University Undergraduate Enrollment Network Graduate Enrollment Network Of Tsinghua University Tsinghua University Researcher ID Related links Shanghai Institute for Mathematics and Interdisciplinary Sciences Academy of Mathematics and Systems Science, CAS Center of Mathematical Sciences and Applications, Harvard University Center of Mathematical Sciences, Zhejiang University Morningside Center of Mathematics, Chinese Academy of Sciences Institute Of Mathematical Sciences, Chinese University of Hong Kong Shing-Tung Yau Center, NCTU Shing-Tung Yau Center of Southeast University TSIMF ICCM 2022 ICBS Download links Download",
+      "content_hash": "e0b0d8d862fda4f3d950de33c380187384282f78a427fcf1e9b3d78ceef38d61",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:54:40+00:00",
+      "last_seen_at": "2026-08-22T00:54:33+00:00",
+      "changed_at": "2026-08-22T00:54:33+00:00",
+      "topics": [
+        "清华",
+        "数学",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 16,
+      "title": "学生动态-清华大学数学科学中心",
+      "url": "https://ymsc.tsinghua.edu.cn/rcpy/xsdt.htm",
+      "source_name": "清华丘成桐数学科学中心",
+      "source_url": "https://ymsc.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容",
+      "summary": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学生动态 Students Life 2026-08-13 海外实践丨“数问西东”美国实践支队——费城 2026-08-10 海外实践｜\"析理东岸\"美国实践支队——波士顿 2026-08-09 清华大学求真书院学生受SIMIS邀请赴沪交流——走进数学与人工智能交叉创新前沿平台 2026-08-05 沪苏知行｜实践总结篇 2026-07-03 清华大学求真书院2026年毕业典礼举行 2026-06-12 劳动月 | 实用生活技能：行李打包与空间收纳 2026-06-02 2025-2026学年度求真书院党课小组风采展示会顺利举行 共75条 首页 上页 1 2 3 4 5 ... 11 下页 尾页 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "content": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学生动态 Students Life 2026-08-13 海外实践丨“数问西东”美国实践支队——费城 2026-08-10 海外实践｜\"析理东岸\"美国实践支队——波士顿 2026-08-09 清华大学求真书院学生受SIMIS邀请赴沪交流——走进数学与人工智能交叉创新前沿平台 2026-08-05 沪苏知行｜实践总结篇 2026-07-03 清华大学求真书院2026年毕业典礼举行 2026-06-12 劳动月 | 实用生活技能：行李打包与空间收纳 2026-06-02 2025-2026学年度求真书院党课小组风采展示会顺利举行 共75条 首页 上页 1 2 3 4 5 ... 11 下页 尾页 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "raw_text": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学生动态 Students Life 2026-08-13 海外实践丨“数问西东”美国实践支队——费城 2026-08-10 海外实践｜\"析理东岸\"美国实践支队——波士顿 2026-08-09 清华大学求真书院学生受SIMIS邀请赴沪交流——走进数学与人工智能交叉创新前沿平台 2026-08-05 沪苏知行｜实践总结篇 2026-07-03 清华大学求真书院2026年毕业典礼举行 2026-06-12 劳动月 | 实用生活技能：行李打包与空间收纳 2026-06-02 2025-2026学年度求真书院党课小组风采展示会顺利举行 共75条 首页 上页 1 2 3 4 5 ... 11 下页 尾页 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "content_hash": "ab31121d48752ff01330fd8306c3c10bc272da60e1b670d8847ce6246bbb46ec",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:54:40+00:00",
+      "last_seen_at": "2026-08-22T00:54:33+00:00",
+      "changed_at": "2026-08-22T00:54:33+00:00",
+      "topics": [
+        "清华",
+        "数学",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 18,
+      "title": "学术日历-清华大学数学科学中心",
+      "url": "https://ymsc.tsinghua.edu.cn/xsrl.htm",
+      "source_name": "清华丘成桐数学科学中心",
+      "source_url": "https://ymsc.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "首页 >> 学术日历 新增周历 October 2021 2000年 1月 日 一 二 三 四 五 六 现代数学报告/冠",
+      "summary": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 学术日历 当前位置: 首页 >> 学术日历 新增周历 October 2021 2000年 1月 日 一 二 三 四 五 六 现代数学报告/冠名讲座 中心公开课 短期课程 研讨班/特别报告 学术会议 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "content": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 学术日历 当前位置: 首页 >> 学术日历 新增周历 October 2021 2000年 1月 日 一 二 三 四 五 六 现代数学报告/冠名讲座 中心公开课 短期课程 研讨班/特别报告 学术会议 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "raw_text": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 学术日历 当前位置: 首页 >> 学术日历 新增周历 October 2021 2000年 1月 日 一 二 三 四 五 六 现代数学报告/冠名讲座 中心公开课 短期课程 研讨班/特别报告 学术会议 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "content_hash": "90d23bd5329acdac060da5d617d16d55daad179a94179f77ee516ab9017dd12d",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:54:40+00:00",
+      "last_seen_at": "2026-08-22T00:54:33+00:00",
+      "changed_at": "2026-08-22T00:54:33+00:00",
+      "topics": [
+        "清华",
+        "数学",
+        "AI"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:54:55+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:56:44+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:56:23+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:55:34+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:55:47+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:54:33+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:55:21+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-22T00:55:08+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
