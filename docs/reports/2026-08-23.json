@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-23",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 0,
+    "candidate_items": 0,
+    "selected_items": 0,
+    "last_updated_at": "2026-08-23T09:01:18.982003+08:00"
+  },
+  "digest": {
+    "report_date": "2026-08-23",
+    "headline": "世界正在发生，但今天没有足够重要的新信息需要占用你的注意力。",
+    "overview": "订阅源已完成扫描；没有条目通过今日信息筛选。",
+    "groups": [],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T00:59:02+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T01:01:18+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T01:00:51+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T00:59:52+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T01:00:07+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T00:58:35+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T00:59:36+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-23T00:59:19+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "no_items"
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "no_selected_items"
+    }
+  }
+}
