@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-24",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 1,
+    "candidate_items": 1,
+    "selected_items": 1,
+    "last_updated_at": "2026-08-24T08:59:16.723821+08:00"
+  },
+  "digest": {
+    "report_date": "2026-08-24",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 1 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 1 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "Seminars",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/research/seminar/current/page_1.html"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 43,
+      "title": "Seminars",
+      "url": "https://www.bimsa.cn/research/seminar/current/page_1.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/Pro",
+      "content": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 3rd August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 3rd August, 2026 - 26th February, 2027 Schedule: Tuesday 14:00 - 16:00, Address: A7-302 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301 28th August 2026 BIMSA Lecture Seminar Jiebo Song Date: 28th August, 2026 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303",
+      "raw_text": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 3rd August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 3rd August, 2026 - 26th February, 2027 Schedule: Tuesday 14:00 - 16:00, Address: A7-302 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301 28th August 2026 BIMSA Lecture Seminar Jiebo Song Date: 28th August, 2026 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303",
+      "content_hash": "42298523e141f9da7289f0c968316bbf9835e64790ea3fdb6240b1747a6fd95c",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-24T00:57:02+00:00",
+      "changed_at": "2026-08-24T00:57:02+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:57:02+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:59:16+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:58:46+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:57:48+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:58:03+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:56:32+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:57:34+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-24T00:57:18+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
