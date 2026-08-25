@@ -1,0 +1,234 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-25",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 3,
+    "candidate_items": 3,
+    "selected_items": 3,
+    "last_updated_at": "2026-08-25T08:58:49.369627+08:00"
+  },
+  "digest": {
+    "report_date": "2026-08-25",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 3 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 3 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "院系动态-清华大学交叉信息研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华交叉信息研究院",
+            "url": "https://iiis.tsinghua.edu.cn/xwdt/yxdt.htm"
+          },
+          {
+            "title": "Beijing Institute of Mathematical Sciences and Applications",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/"
+          },
+          {
+            "title": "北京雁栖湖应用数学研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/zh-CN"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 78,
+      "title": "院系动态-清华大学交叉信息研究院",
+      "url": "https://iiis.tsinghua.edu.cn/xwdt/yxdt.htm",
+      "source_name": "清华交叉信息研究院",
+      "source_url": "https://iiis.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-07-27",
+      "location": "北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真：",
+      "summary": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 新闻动态 院系动态 媒体聚焦 07-27 2026 交叉信息院教师高阳入选《麻省理工科技评论》“35岁以下科技创新35人”中国区榜单 更多详情 让经典光学“照进”量子世界：孙麓岩教授研究组与合作者实现Fock空间光学控制新框架 清华大学交叉信息院举办2026年毕业典礼 姚期智、约书亚·本吉奥、张亚勤、斯图尔特·罗素等人工智能领域专家联合签署《IDAIS伦敦宣言》 08-19 2026 清华大学交叉信息院举办第二届茶园科研嘉年华 2026年8月16日至17日，清华大学交叉信息研究院于雄安会议中心成功举办第二届茶园科研嘉年华（The 2nd IIIS Retreat）。本次嘉年华聚焦通用人工智能、具身智能、量子信息和理论计算机前沿领域，围绕关键技术路径与产业实践设置五个平行分会场展开深入研讨，致力于构建学术界与产业界高效联动的协作平台。交叉信息院院长姚期智、副院长徐葳出席会议并致辞。参会人员合影姚期智院长致辞近100名师生及50位嘉宾莅临参会，涵盖华为、... 08-24 2026 热烈欢迎姚班六字班！ 姚班迎新2026年8月19日，交叉信息院迎来部分六字班新同学（一招）。院长助理高鸣宇，学生组长张焕晨，新生班主任吕凯风、贺天行、徐梦迪、侯攀宇，院办教师们、新生辅导员和迎新志愿者来到紫荆C楼迎新点欢迎六字班新生。师长们为新同学送上开学礼包与暖心祝福，愿他们以昂扬姿态开启新征程。初入清华园的六字班新同学们满怀憧憬。何墨尘感到：“看到亲切热情的老师、认真负责的辅导员，收到精心准备的入学材料，我从中感受到了... 08-20 2026 香港中文大学学生团到访清华大学交叉信息院 2026年暑期，香港中文大学15名学生到访清华大学交叉信息院，开展交流项目。项目以姚班课程学习、科研研讨、企业参访及学术讲座为主线，促进两校学生",
+      "content": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 新闻动态 院系动态 媒体聚焦 07-27 2026 交叉信息院教师高阳入选《麻省理工科技评论》“35岁以下科技创新35人”中国区榜单 更多详情 让经典光学“照进”量子世界：孙麓岩教授研究组与合作者实现Fock空间光学控制新框架 清华大学交叉信息院举办2026年毕业典礼 姚期智、约书亚·本吉奥、张亚勤、斯图尔特·罗素等人工智能领域专家联合签署《IDAIS伦敦宣言》 08-19 2026 清华大学交叉信息院举办第二届茶园科研嘉年华 2026年8月16日至17日，清华大学交叉信息研究院于雄安会议中心成功举办第二届茶园科研嘉年华（The 2nd IIIS Retreat）。本次嘉年华聚焦通用人工智能、具身智能、量子信息和理论计算机前沿领域，围绕关键技术路径与产业实践设置五个平行分会场展开深入研讨，致力于构建学术界与产业界高效联动的协作平台。交叉信息院院长姚期智、副院长徐葳出席会议并致辞。参会人员合影姚期智院长致辞近100名师生及50位嘉宾莅临参会，涵盖华为、... 08-24 2026 热烈欢迎姚班六字班！ 姚班迎新2026年8月19日，交叉信息院迎来部分六字班新同学（一招）。院长助理高鸣宇，学生组长张焕晨，新生班主任吕凯风、贺天行、徐梦迪、侯攀宇，院办教师们、新生辅导员和迎新志愿者来到紫荆C楼迎新点欢迎六字班新生。师长们为新同学送上开学礼包与暖心祝福，愿他们以昂扬姿态开启新征程。初入清华园的六字班新同学们满怀憧憬。何墨尘感到：“看到亲切热情的老师、认真负责的辅导员，收到精心准备的入学材料，我从中感受到了... 08-20 2026 香港中文大学学生团到访清华大学交叉信息院 2026年暑期，香港中文大学15名学生到访清华大学交叉信息院，开展交流项目。项目以姚班课程学习、科研研讨、企业参访及学术讲座为主线，促进两校学生在计算机前沿领域的深度互动，深化两地青年友谊。前沿之声——计算机科学研讨会交叉信息院院长姚期智先生出席清华大学计算机科学前沿研讨会并致辞。随后，陈婧、段斯斯、邓东灵、房智轩、吕凯风、许华哲等青年学者分别围绕密码学、量子人工智能、可信智能体推理、大模型训练、加... 07-27 2026 交叉信息院教师高阳入选《麻省理工科技评论》“35岁以下科技创新35人”中国区榜单 近日，《麻省理工科技评论》2025年度“35 岁以下科技创新 35 人”（MIT Technology Review Innovators Under 35，简称“TR35”）中国区入选名单揭晓。清华大学交叉信息院助理教授、千寻智能联合创始人高阳入选该榜单。入选理由：“他提出了具身智能“数据金字塔”训练框架，以高效强化学习算法突破数据效率瓶颈，为通用机器人从“能看”到“能动手”提供了可扩展的技术路径。”高阳，现任清华大学交叉信息院助理教授，千寻智能... 07-15 2026 让经典光学“照进”量子世界：孙麓岩教授研究组与合作者实现Fock空间光学控制新框架 近日，清华大学交叉信息研究院孙麓岩教授研究组与中国科学技术大学邹长铃教授、李明副教授研究组，以及北京量子院于海峰研究员研究组合作，在《Nature Physics》发表题为《Principles of optics in Fock space for the scalable manipulation of large quantum states》的研究论文。研究团队提出了Fock空间光学（Fock-space optics）这一全新的量子态操控框架，将经典光学中的传播、折射、透镜、干涉、成像等基本原理引入高维量... 06-25 2026 清华大学交叉信息院举办2026年毕业典礼 6月25日，清华大学交叉信息院2026年毕业典礼在主楼后厅召开。清华大学交叉信息院姚期智院长、2026届全体毕业生及教师代表、在校生代表和毕业生亲友荟萃一堂，共同见证这一庄严时刻。姚期智院长致辞姚期智先生在致辞中祝贺毕业生，并充分肯定同学们完成学业所付出的努力。姚先生表示，未来五年是全球科技格局深刻重塑的关键时期，毕业生们将面临前所未有的技术迭代与范式变革。面对剧变，他殷切期望同学们始终保持独立思考的能力... 共1163条 首页 上页 1 2 3 4 5 ... 194 下页 尾页 到第 页 跳转 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "raw_text": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 新闻动态 院系动态 媒体聚焦 07-27 2026 交叉信息院教师高阳入选《麻省理工科技评论》“35岁以下科技创新35人”中国区榜单 更多详情 让经典光学“照进”量子世界：孙麓岩教授研究组与合作者实现Fock空间光学控制新框架 清华大学交叉信息院举办2026年毕业典礼 姚期智、约书亚·本吉奥、张亚勤、斯图尔特·罗素等人工智能领域专家联合签署《IDAIS伦敦宣言》 08-19 2026 清华大学交叉信息院举办第二届茶园科研嘉年华 2026年8月16日至17日，清华大学交叉信息研究院于雄安会议中心成功举办第二届茶园科研嘉年华（The 2nd IIIS Retreat）。本次嘉年华聚焦通用人工智能、具身智能、量子信息和理论计算机前沿领域，围绕关键技术路径与产业实践设置五个平行分会场展开深入研讨，致力于构建学术界与产业界高效联动的协作平台。交叉信息院院长姚期智、副院长徐葳出席会议并致辞。参会人员合影姚期智院长致辞近100名师生及50位嘉宾莅临参会，涵盖华为、... 08-24 2026 热烈欢迎姚班六字班！ 姚班迎新2026年8月19日，交叉信息院迎来部分六字班新同学（一招）。院长助理高鸣宇，学生组长张焕晨，新生班主任吕凯风、贺天行、徐梦迪、侯攀宇，院办教师们、新生辅导员和迎新志愿者来到紫荆C楼迎新点欢迎六字班新生。师长们为新同学送上开学礼包与暖心祝福，愿他们以昂扬姿态开启新征程。初入清华园的六字班新同学们满怀憧憬。何墨尘感到：“看到亲切热情的老师、认真负责的辅导员，收到精心准备的入学材料，我从中感受到了... 08-20 2026 香港中文大学学生团到访清华大学交叉信息院 2026年暑期，香港中文大学15名学生到访清华大学交叉信息院，开展交流项目。项目以姚班课程学习、科研研讨、企业参访及学术讲座为主线，促进两校学生在计算机前沿领域的深度互动，深化两地青年友谊。前沿之声——计算机科学研讨会交叉信息院院长姚期智先生出席清华大学计算机科学前沿研讨会并致辞。随后，陈婧、段斯斯、邓东灵、房智轩、吕凯风、许华哲等青年学者分别围绕密码学、量子人工智能、可信智能体推理、大模型训练、加... 07-27 2026 交叉信息院教师高阳入选《麻省理工科技评论》“35岁以下科技创新35人”中国区榜单 近日，《麻省理工科技评论》2025年度“35 岁以下科技创新 35 人”（MIT Technology Review Innovators Under 35，简称“TR35”）中国区入选名单揭晓。清华大学交叉信息院助理教授、千寻智能联合创始人高阳入选该榜单。入选理由：“他提出了具身智能“数据金字塔”训练框架，以高效强化学习算法突破数据效率瓶颈，为通用机器人从“能看”到“能动手”提供了可扩展的技术路径。”高阳，现任清华大学交叉信息院助理教授，千寻智能... 07-15 2026 让经典光学“照进”量子世界：孙麓岩教授研究组与合作者实现Fock空间光学控制新框架 近日，清华大学交叉信息研究院孙麓岩教授研究组与中国科学技术大学邹长铃教授、李明副教授研究组，以及北京量子院于海峰研究员研究组合作，在《Nature Physics》发表题为《Principles of optics in Fock space for the scalable manipulation of large quantum states》的研究论文。研究团队提出了Fock空间光学（Fock-space optics）这一全新的量子态操控框架，将经典光学中的传播、折射、透镜、干涉、成像等基本原理引入高维量... 06-25 2026 清华大学交叉信息院举办2026年毕业典礼 6月25日，清华大学交叉信息院2026年毕业典礼在主楼后厅召开。清华大学交叉信息院姚期智院长、2026届全体毕业生及教师代表、在校生代表和毕业生亲友荟萃一堂，共同见证这一庄严时刻。姚期智院长致辞姚期智先生在致辞中祝贺毕业生，并充分肯定同学们完成学业所付出的努力。姚先生表示，未来五年是全球科技格局深刻重塑的关键时期，毕业生们将面临前所未有的技术迭代与范式变革。面对剧变，他殷切期望同学们始终保持独立思考的能力... 共1163条 首页 上页 1 2 3 4 5 ... 194 下页 尾页 到第 页 跳转 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "content_hash": "4012ed251fea537b7aa5e52737057003759530257069a7483d940932df8404b6",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:39+00:00",
+      "last_seen_at": "2026-08-25T00:57:31+00:00",
+      "changed_at": "2026-08-25T00:57:31+00:00",
+      "topics": [
+        "清华",
+        "交叉信息",
+        "理论计算机",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 25,
+      "title": "Beijing Institute of Mathematical Sciences and Applications",
+      "url": "https://www.bimsa.cn/",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session 26th May, 2026 New Issue: Beijing J. Pure Appl. Math. Vol. 3 No. 1 MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Sp",
+      "content": "29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session 26th May, 2026 New Issue: Beijing J. Pure Appl. Math. Vol. 3 No. 1 MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 26th August AI and Finance Course Zhen Li 26th August Recent developments in three-dimensional gravity I Course Luis Apolo 27th August BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar 28th August BIMSA Lecture Seminar Jiebo Song 1st September Introduction to non-Archimedean analytic geometry Course 1st September Introduction to Asymptotic Representation Theory Course Pavel Nikitin Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "raw_text": "29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session 26th May, 2026 New Issue: Beijing J. Pure Appl. Math. Vol. 3 No. 1 MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 26th August AI and Finance Course Zhen Li 26th August Recent developments in three-dimensional gravity I Course Luis Apolo 27th August BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar 28th August BIMSA Lecture Seminar Jiebo Song 1st September Introduction to non-Archimedean analytic geometry Course 1st September Introduction to Asymptotic Representation Theory Course Pavel Nikitin Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "content_hash": "1c992e05545409bb417bc63d9fdb2021bceb8e230eb80b5d7c1278fdf01149fc",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-25T00:57:04+00:00",
+      "changed_at": "2026-08-25T00:57:04+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 26,
+      "title": "北京雁栖湖应用数学研究院",
+      "url": "https://www.bimsa.cn/zh-CN",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-02-23",
+      "location": null,
+      "summary": "2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 2026-05-26 《北京纯粹与应用数学杂志》（BPAM）2026年第一期现已正式出版！ 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 26 8月 AI and Finance 课程 李振 26 8月 Recent developments in three-dimensional gravity I 课程 路易斯·阿波罗 27 8月 BIMSA Topology Seminar 研讨会 吴杰 , 李京艳 , 普拉文·库马尔 28 8月 BIMSA 讲座 研讨会 宋洁博 01 9月 Introduction to non-Archimedean analytic geometry 课程 01 9月 Introduction to Asymptotic Representation Theory 课程 帕维尔·尼基丁 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 ",
+      "content": "2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 2026-05-26 《北京纯粹与应用数学杂志》（BPAM）2026年第一期现已正式出版！ 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 26 8月 AI and Finance 课程 李振 26 8月 Recent developments in three-dimensional gravity I 课程 路易斯·阿波罗 27 8月 BIMSA Topology Seminar 研讨会 吴杰 , 李京艳 , 普拉文·库马尔 28 8月 BIMSA 讲座 研讨会 宋洁博 01 9月 Introduction to non-Archimedean analytic geometry 课程 01 9月 Introduction to Asymptotic Representation Theory 课程 帕维尔·尼基丁 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "raw_text": "2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 2026-05-26 《北京纯粹与应用数学杂志》（BPAM）2026年第一期现已正式出版！ 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 26 8月 AI and Finance 课程 李振 26 8月 Recent developments in three-dimensional gravity I 课程 路易斯·阿波罗 27 8月 BIMSA Topology Seminar 研讨会 吴杰 , 李京艳 , 普拉文·库马尔 28 8月 BIMSA 讲座 研讨会 宋洁博 01 9月 Introduction to non-Archimedean analytic geometry 课程 01 9月 Introduction to Asymptotic Representation Theory 课程 帕维尔·尼基丁 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "content_hash": "1a21580b0291bbabaa147839a10e03ef413c7fd237ce3c6aa30d921576f9f188",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-25T00:57:04+00:00",
+      "changed_at": "2026-08-25T00:57:04+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:57:04+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:58:49+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:58:24+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:57:42+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:57:53+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:56:40+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:57:31+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-25T00:57:17+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
