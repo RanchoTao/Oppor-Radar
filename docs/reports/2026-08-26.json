@@ -1,0 +1,392 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-26",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 1,
+    "changed_items": 6,
+    "candidate_items": 7,
+    "selected_items": 7,
+    "last_updated_at": "2026-08-26T08:59:54.119767+08:00"
+  },
+  "digest": {
+    "report_date": "2026-08-26",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 7 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 7 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "学院新闻_中国人民大学高瓴人工智能学院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/newslist/newsdetail/index.htm"
+          },
+          {
+            "title": "智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "http://ai.ruc.edu.cn/newslist/newsdetail/20260825100.html"
+          },
+          {
+            "title": "现任领导-清华大学交叉信息研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华交叉信息研究院",
+            "url": "https://iiis.tsinghua.edu.cn/yxgk/xrld.htm"
+          },
+          {
+            "title": "人员队伍-清华大学交叉信息研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华交叉信息研究院",
+            "url": "https://iiis.tsinghua.edu.cn/rydw.htm"
+          },
+          {
+            "title": "研究生招生-清华大学交叉信息研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华交叉信息研究院",
+            "url": "https://iiis.tsinghua.edu.cn/yjs/yjszs.htm"
+          },
+          {
+            "title": "Seminars",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/research/seminar/current/page_1.html"
+          },
+          {
+            "title": "来访学者-清华大学数学科学中心",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华丘成桐数学科学中心",
+            "url": "https://ymsc.tsinghua.edu.cn/sxxr/lfxz.htm"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 173,
+      "title": "学院新闻_中国人民大学高瓴人工智能学院",
+      "url": "https://ai.ruc.edu.cn/newslist/newsdetail/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-07-18",
+      "location": "首页 - 新闻公告 - 学院新闻 - 学院新闻 智启新程",
+      "summary": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 您所在的位置： 首页 - 新闻公告 - 学院新闻 - 学院新闻 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 08-25 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 智启新章，AI（爱）聚高瓴｜高瓴人工智能学院2026级本科新生见面会举行 08-25 8月21日下午，高瓴人工智能学院2026级本科新生见面会在公共教学一楼1102教室举行 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 07-27 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 闪耀WAIC！人大高瓴李崇轩副教授获颁云帆奖 07-22 中国人民大学高瓴人工智能学院预聘副教授李崇轩荣获2026 WAIC 云帆奖“璀璨明星”。 高瓴人工智能学院第一时间学习习近平主席2026世界人工智能大会主旨讲话精神 07-18 学院第一时间在立德楼1826报告厅召开全体教师会议，认真学习习近平主席主旨讲话精神。 高瓴人工智能学院召开全体教职工会议 07-14 会议邀请学校雄安未来智造产业研究院副院长沈健、海淀区五方六力人大常设专班组长张莹和中关村科学城公司事业部总监郭晓乐围绕区域科技成果转化和创新创业政策展开介绍。 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 07-14 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 高瓴人工智能学院师生获ACL 2026杰出论文奖 07-14 高瓴人工智能学院师生获ACL 2026杰出论文奖 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 07-14 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 07-14 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 瓴动夏夜！这一晚，毕业音符汇成璀璨星河 06-23 6月12日晚，高瓴人工智能学院2026年“瓴动夏夜”毕业晚会在学生活动中心133陕公大讲堂拉开帷幕。 中国社会科学杂志社与中国人民大学高瓴人工智能学院开展联学交流 06-17 6月11日上午，中国人民大学高瓴人工智能学院与中国社会科学杂志社开展联学交流。 高瓴人工智能学院第三次学生代表大会顺利召开 06-17 2026年6月10日中午",
+      "content": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 您所在的位置： 首页 - 新闻公告 - 学院新闻 - 学院新闻 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 08-25 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 智启新章，AI（爱）聚高瓴｜高瓴人工智能学院2026级本科新生见面会举行 08-25 8月21日下午，高瓴人工智能学院2026级本科新生见面会在公共教学一楼1102教室举行 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 07-27 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 闪耀WAIC！人大高瓴李崇轩副教授获颁云帆奖 07-22 中国人民大学高瓴人工智能学院预聘副教授李崇轩荣获2026 WAIC 云帆奖“璀璨明星”。 高瓴人工智能学院第一时间学习习近平主席2026世界人工智能大会主旨讲话精神 07-18 学院第一时间在立德楼1826报告厅召开全体教师会议，认真学习习近平主席主旨讲话精神。 高瓴人工智能学院召开全体教职工会议 07-14 会议邀请学校雄安未来智造产业研究院副院长沈健、海淀区五方六力人大常设专班组长张莹和中关村科学城公司事业部总监郭晓乐围绕区域科技成果转化和创新创业政策展开介绍。 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 07-14 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 高瓴人工智能学院师生获ACL 2026杰出论文奖 07-14 高瓴人工智能学院师生获ACL 2026杰出论文奖 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 07-14 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 07-14 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 瓴动夏夜！这一晚，毕业音符汇成璀璨星河 06-23 6月12日晚，高瓴人工智能学院2026年“瓴动夏夜”毕业晚会在学生活动中心133陕公大讲堂拉开帷幕。 中国社会科学杂志社与中国人民大学高瓴人工智能学院开展联学交流 06-17 6月11日上午，中国人民大学高瓴人工智能学院与中国社会科学杂志社开展联学交流。 高瓴人工智能学院第三次学生代表大会顺利召开 06-17 2026年6月10日中午，中国人民大学高瓴人工智能学院第三次学生代表大会在立德楼1826报告厅顺利召开 五育并举：他们是“瓴航”院长奖学金获奖者！ 06-12 五育并举，经过评审，最终5支团队和16位个人获评2026年“瓴航”院长奖学金。 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 06-08 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 创业“瓴”航|海淀区人工智能OPC校友行首期活动走进中国人民大学 06-08 人大高瓴人工智能学院创业“瓴”航讲座第五讲暨海淀区人工智能OPC校友行首期活动走进中国人民大学在立德楼607举办 健康“瓴”航|高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名！ 06-08 高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名 人大主办，多国青年携手发布“秉持人类情怀，共建有温度的人工智能”倡议 06-02 活动现场，来自中国、巴基斯坦、德国、俄罗斯、西班牙、希腊、美国、阿根廷等国家的高校、科研机构和业界优秀青年代表共同发布“秉持人类情怀，共建有温度的人工智能”青年倡议。 观点碰撞，思想交锋 | 人工智能青年科学家分论坛精彩纪实 06-02 “智汇未来，青年引领——人工智能青年科学家论坛”青年科学家专场、人工智能伦理与治理专场两场平行分论坛举行。现场嘉宾观点碰撞，思想交锋。 智汇未来，青年引领——人工智能青年科学家论坛成功举办 06-01 5月30日,“智汇未来，青年引领——人工智能青年科学家论坛”在中关村国家自主创新示范区展示中心举行. 共575条新闻，分29页，当前第 1 页 最前页 上一页 下一页 最后页 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "raw_text": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 您所在的位置： 首页 - 新闻公告 - 学院新闻 - 学院新闻 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 08-25 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 智启新章，AI（爱）聚高瓴｜高瓴人工智能学院2026级本科新生见面会举行 08-25 8月21日下午，高瓴人工智能学院2026级本科新生见面会在公共教学一楼1102教室举行 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 07-27 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 闪耀WAIC！人大高瓴李崇轩副教授获颁云帆奖 07-22 中国人民大学高瓴人工智能学院预聘副教授李崇轩荣获2026 WAIC 云帆奖“璀璨明星”。 高瓴人工智能学院第一时间学习习近平主席2026世界人工智能大会主旨讲话精神 07-18 学院第一时间在立德楼1826报告厅召开全体教师会议，认真学习习近平主席主旨讲话精神。 高瓴人工智能学院召开全体教职工会议 07-14 会议邀请学校雄安未来智造产业研究院副院长沈健、海淀区五方六力人大常设专班组长张莹和中关村科学城公司事业部总监郭晓乐围绕区域科技成果转化和创新创业政策展开介绍。 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 07-14 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 高瓴人工智能学院师生获ACL 2026杰出论文奖 07-14 高瓴人工智能学院师生获ACL 2026杰出论文奖 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 07-14 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 07-14 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 瓴动夏夜！这一晚，毕业音符汇成璀璨星河 06-23 6月12日晚，高瓴人工智能学院2026年“瓴动夏夜”毕业晚会在学生活动中心133陕公大讲堂拉开帷幕。 中国社会科学杂志社与中国人民大学高瓴人工智能学院开展联学交流 06-17 6月11日上午，中国人民大学高瓴人工智能学院与中国社会科学杂志社开展联学交流。 高瓴人工智能学院第三次学生代表大会顺利召开 06-17 2026年6月10日中午，中国人民大学高瓴人工智能学院第三次学生代表大会在立德楼1826报告厅顺利召开 五育并举：他们是“瓴航”院长奖学金获奖者！ 06-12 五育并举，经过评审，最终5支团队和16位个人获评2026年“瓴航”院长奖学金。 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 06-08 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 创业“瓴”航|海淀区人工智能OPC校友行首期活动走进中国人民大学 06-08 人大高瓴人工智能学院创业“瓴”航讲座第五讲暨海淀区人工智能OPC校友行首期活动走进中国人民大学在立德楼607举办 健康“瓴”航|高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名！ 06-08 高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名 人大主办，多国青年携手发布“秉持人类情怀，共建有温度的人工智能”倡议 06-02 活动现场，来自中国、巴基斯坦、德国、俄罗斯、西班牙、希腊、美国、阿根廷等国家的高校、科研机构和业界优秀青年代表共同发布“秉持人类情怀，共建有温度的人工智能”青年倡议。 观点碰撞，思想交锋 | 人工智能青年科学家分论坛精彩纪实 06-02 “智汇未来，青年引领——人工智能青年科学家论坛”青年科学家专场、人工智能伦理与治理专场两场平行分论坛举行。现场嘉宾观点碰撞，思想交锋。 智汇未来，青年引领——人工智能青年科学家论坛成功举办 06-01 5月30日,“智汇未来，青年引领——人工智能青年科学家论坛”在中关村国家自主创新示范区展示中心举行. 共575条新闻，分29页，当前第 1 页 最前页 上一页 下一页 最后页 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "content_hash": "972461d96e9ec0a6db1e8a53a6d9245eb693c6cc3321b764ab00403459a4ce9a",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-08-26T00:59:54+00:00",
+      "changed_at": "2026-08-26T00:59:54+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 193,
+      "title": "智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成",
+      "url": "http://ai.ruc.edu.cn/newslist/newsdetail/20260825100.html",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成",
+      "content": "智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成",
+      "raw_text": "智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成",
+      "content_hash": "9101278d793b48e30ad5b1eabf14f3da12ba9b168a2dc60632f5ff4e698b6073",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-26T00:59:54+00:00",
+      "last_seen_at": "2026-08-26T00:59:54+00:00",
+      "changed_at": "2026-08-26T00:59:54+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 76,
+      "title": "现任领导-清华大学交叉信息研究院",
+      "url": "https://iiis.tsinghua.edu.cn/yxgk/xrld.htm",
+      "source_name": "清华交叉信息研究院",
+      "source_url": "https://iiis.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真：",
+      "summary": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 院系概况 院系简介 院长寄语 现任领导 院系沿革 院长 姚期智 党委书记 马雄峰 副院长 徐葳 党委副书记 邓东灵 院长助理 袁洋 院长助理 高鸣宇 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "content": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 院系概况 院系简介 院长寄语 现任领导 院系沿革 院长 姚期智 党委书记 马雄峰 副院长 徐葳 党委副书记 邓东灵 院长助理 袁洋 院长助理 高鸣宇 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "raw_text": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 院系概况 院系简介 院长寄语 现任领导 院系沿革 院长 姚期智 党委书记 马雄峰 副院长 徐葳 党委副书记 邓东灵 院长助理 袁洋 院长助理 高鸣宇 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "content_hash": "29061ff2be1c3464189fbee7532fbc3511ba91362e53030c0d6f04fa099e0e16",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:39+00:00",
+      "last_seen_at": "2026-08-26T00:58:18+00:00",
+      "changed_at": "2026-08-26T00:58:18+00:00",
+      "topics": [
+        "清华",
+        "交叉信息",
+        "理论计算机",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 80,
+      "title": "人员队伍-清华大学交叉信息研究院",
+      "url": "https://iiis.tsinghua.edu.cn/rydw.htm",
+      "source_name": "清华交叉信息研究院",
+      "source_url": "https://iiis.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真：",
+      "summary": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 全职教师 姚期智 院长，教授 算法，密码学，量子计算，机制设计，人工智能 MORE 段路明 清华大学姚期智讲座教授，清华大学基础科学讲席教授 离子与超导量子计算、量子网络、量子模拟、量子人工智能 MORE 黄隆波 教授 决策智能，强化学习，大模型，机器学习，随机网络优化 MORE 李建 教授 理论计算机科学，机器学习理论，金融科技 MORE 马雄峰 党委书记, 教授 量子信息科学 MORE 孙麓岩 教授 基于超导的量子信息处理 MORE 徐葳 副院长, 教授 分布式系统，数据中心网络，金融科技，人工智能安全，人工智能+医疗 MORE 邓东灵 党委副书记，长聘副教授 量子人工智能，量子信息与计算，拓扑相物质，量子非平衡态系统 MORE 段然 长聘副教授 图论算法、数据结构、计算理论 MORE 高鸣宇 院长助理，长聘副教授 计算机系统结构（新型存储架构、专用计算系统、硬件系统安全） MORE 马恺声 长聘副教授 AI+Chiplet、AI算法设计 MORE 徐勇 长聘副教授 量子物理与量子信息、非线性物理、量子多体物理 MORE 袁洋 院长助理，长聘副教授 智能医疗、AI基础理论、应用范畴论 MORE 陈建宇 助理教授 机器人学，强化学习，控制，自动驾驶 MORE 陈一镭 助理教授 密码学 MORE 陈彬毅 助理教授 密码学，零知识简洁证明 MORE 杜韬 助理教授 计算机图形学，机器学习，机器人学 MORE 房智轩 助理教授 博弈机制设计，区块链系统，平台设计，网络经济学，群体智能 MORE 高阳 助理教授 计算机视觉，强化学习 MORE 侯攀宇 助理教授 离子量子计算；金刚石色心量子信息应用。 MORE 贺天行 助理教授 电子游戏研发",
+      "content": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 全职教师 姚期智 院长，教授 算法，密码学，量子计算，机制设计，人工智能 MORE 段路明 清华大学姚期智讲座教授，清华大学基础科学讲席教授 离子与超导量子计算、量子网络、量子模拟、量子人工智能 MORE 黄隆波 教授 决策智能，强化学习，大模型，机器学习，随机网络优化 MORE 李建 教授 理论计算机科学，机器学习理论，金融科技 MORE 马雄峰 党委书记, 教授 量子信息科学 MORE 孙麓岩 教授 基于超导的量子信息处理 MORE 徐葳 副院长, 教授 分布式系统，数据中心网络，金融科技，人工智能安全，人工智能+医疗 MORE 邓东灵 党委副书记，长聘副教授 量子人工智能，量子信息与计算，拓扑相物质，量子非平衡态系统 MORE 段然 长聘副教授 图论算法、数据结构、计算理论 MORE 高鸣宇 院长助理，长聘副教授 计算机系统结构（新型存储架构、专用计算系统、硬件系统安全） MORE 马恺声 长聘副教授 AI+Chiplet、AI算法设计 MORE 徐勇 长聘副教授 量子物理与量子信息、非线性物理、量子多体物理 MORE 袁洋 院长助理，长聘副教授 智能医疗、AI基础理论、应用范畴论 MORE 陈建宇 助理教授 机器人学，强化学习，控制，自动驾驶 MORE 陈一镭 助理教授 密码学 MORE 陈彬毅 助理教授 密码学，零知识简洁证明 MORE 杜韬 助理教授 计算机图形学，机器学习，机器人学 MORE 房智轩 助理教授 博弈机制设计，区块链系统，平台设计，网络经济学，群体智能 MORE 高阳 助理教授 计算机视觉，强化学习 MORE 侯攀宇 助理教授 离子量子计算；金刚石色心量子信息应用。 MORE 贺天行 助理教授 电子游戏研发，多模态生成，社会模拟，人工智能安全 MORE 吕凯风 助理教授 机器学习理论，AI安全与对齐，优化 MORE 濮云飞 助理教授 基于离子阱与中性原子阵列的量子网络与量子计算 MORE 宋一凡 助理教授 密码学 MORE 王禹皓 助理教授 因果推断，实验设计，高维统计，计量经济学 MORE 吴宇恺 助理教授 量子计算的物理实现，量子信息 MORE 许华哲 助理教授 强化学习， 机器人学， 计算机视觉，计算机触觉 MORE 徐梦迪 助理教授 机器学习，机器人学，人机交互，人工智能安全 MORE 弋力 助理教授 三维计算机视觉，三维深度学习，机器人感知，计算机图形学，几何处理 MORE 张焕晨 助理教授 数据库管理系统，索引数据结构，数据压缩，云数据库 MORE 张景昭 助理教授 优化，机器学习理论， 强化学习， 动力系统， 异常检测 MORE 赵行 助理教授 计算机视觉，多模态机器学习，自动驾驶，机器人学习 MORE 郑舒冉 助理教授 计算经济学，人工智能，数据估值 MORE 研究系列 宋祎璞 研究员 超导量子计算 MORE 周子超 研究员 离子阱量子信息处理 MORE 常秀英 副研究员 量子传感 MORE 何丽 副研究员 MORE 张宏毅 副研究员 超导量子信息处理，微波量子光学和量子器件 MORE 黄园园 助理研究员 离子阱量子网络 MORE 姜越 助理研究员 离子阱量子计算与量子模拟，离子阱芯片研发 MORE 刘艳青 助理研究员 MORE 祁宾祥 助理研究员 离子阱量子计算控制系统、量子精密测量等相关的电子学技术 MORE 王韦婷 助理研究员 超导量子信息处理，混合量子系统 MORE 荣誉客座 储枫 讲席教授 计算几何与组合算法 MORE 兼职教师 胡事民 兼职教授 MORE 郁昱 访问教授 MORE 楼天城 兼职教师 MORE 博士后 范晓昱 隐私保护计算；多方安全计算；人工智能安全 MORE 冯路 量子网络与量子纠缠 MORE 郭世安 基于离子阱技术的量子模拟与量子计算实验 MORE 华子越 MORE 李炜康 量子信息，量子机器学习理论，量子人工智能 MORE 卢亚男 金刚石色心量子模拟与量子传感 MORE 吕雪广 强化学习，多智能体系统 MORE 孙正之 量子人工智能，拓扑量子计算，张量网络方法 MORE 徐奕放 超导量子计算和量子信息 MORE 杨炎彬 量子物理 MORE 元祎君 MORE 李卓然 强化学习、生成模型、大模型 MORE 张钧翔 金刚石色心量子传感与量子模拟 MORE 行政人员 宋梦婷 院长助理 MORE 吕厦敏 办公室主任 MORE 常予莹 外事 MORE 张燕 姚班事务 MORE 孙帅 学生工作 MORE 尚妤婵 研究生教务、博士后工作 MORE 李响 技术主管 MORE 马佳 资产管理 MORE 李凯琳 科研助理 MORE 张馨 研究生学生工作 MORE 张学朝 AI中心行政助理 MORE 姜月亮 宣传事务 MORE 张宇驰 科研项目助理 MORE 黄鸣悦 党务行政助理 MORE 杨子衿 实验室事务 MORE 实验员 安辰杰 量子信息实验员 MORE 王海艳 量子信息研发 MORE 尹伟 计算机实验员 MORE 离退休人员 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "raw_text": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 全职教师 姚期智 院长，教授 算法，密码学，量子计算，机制设计，人工智能 MORE 段路明 清华大学姚期智讲座教授，清华大学基础科学讲席教授 离子与超导量子计算、量子网络、量子模拟、量子人工智能 MORE 黄隆波 教授 决策智能，强化学习，大模型，机器学习，随机网络优化 MORE 李建 教授 理论计算机科学，机器学习理论，金融科技 MORE 马雄峰 党委书记, 教授 量子信息科学 MORE 孙麓岩 教授 基于超导的量子信息处理 MORE 徐葳 副院长, 教授 分布式系统，数据中心网络，金融科技，人工智能安全，人工智能+医疗 MORE 邓东灵 党委副书记，长聘副教授 量子人工智能，量子信息与计算，拓扑相物质，量子非平衡态系统 MORE 段然 长聘副教授 图论算法、数据结构、计算理论 MORE 高鸣宇 院长助理，长聘副教授 计算机系统结构（新型存储架构、专用计算系统、硬件系统安全） MORE 马恺声 长聘副教授 AI+Chiplet、AI算法设计 MORE 徐勇 长聘副教授 量子物理与量子信息、非线性物理、量子多体物理 MORE 袁洋 院长助理，长聘副教授 智能医疗、AI基础理论、应用范畴论 MORE 陈建宇 助理教授 机器人学，强化学习，控制，自动驾驶 MORE 陈一镭 助理教授 密码学 MORE 陈彬毅 助理教授 密码学，零知识简洁证明 MORE 杜韬 助理教授 计算机图形学，机器学习，机器人学 MORE 房智轩 助理教授 博弈机制设计，区块链系统，平台设计，网络经济学，群体智能 MORE 高阳 助理教授 计算机视觉，强化学习 MORE 侯攀宇 助理教授 离子量子计算；金刚石色心量子信息应用。 MORE 贺天行 助理教授 电子游戏研发，多模态生成，社会模拟，人工智能安全 MORE 吕凯风 助理教授 机器学习理论，AI安全与对齐，优化 MORE 濮云飞 助理教授 基于离子阱与中性原子阵列的量子网络与量子计算 MORE 宋一凡 助理教授 密码学 MORE 王禹皓 助理教授 因果推断，实验设计，高维统计，计量经济学 MORE 吴宇恺 助理教授 量子计算的物理实现，量子信息 MORE 许华哲 助理教授 强化学习， 机器人学， 计算机视觉，计算机触觉 MORE 徐梦迪 助理教授 机器学习，机器人学，人机交互，人工智能安全 MORE 弋力 助理教授 三维计算机视觉，三维深度学习，机器人感知，计算机图形学，几何处理 MORE 张焕晨 助理教授 数据库管理系统，索引数据结构，数据压缩，云数据库 MORE 张景昭 助理教授 优化，机器学习理论， 强化学习， 动力系统， 异常检测 MORE 赵行 助理教授 计算机视觉，多模态机器学习，自动驾驶，机器人学习 MORE 郑舒冉 助理教授 计算经济学，人工智能，数据估值 MORE 研究系列 宋祎璞 研究员 超导量子计算 MORE 周子超 研究员 离子阱量子信息处理 MORE 常秀英 副研究员 量子传感 MORE 何丽 副研究员 MORE 张宏毅 副研究员 超导量子信息处理，微波量子光学和量子器件 MORE 黄园园 助理研究员 离子阱量子网络 MORE 姜越 助理研究员 离子阱量子计算与量子模拟，离子阱芯片研发 MORE 刘艳青 助理研究员 MORE 祁宾祥 助理研究员 离子阱量子计算控制系统、量子精密测量等相关的电子学技术 MORE 王韦婷 助理研究员 超导量子信息处理，混合量子系统 MORE 荣誉客座 储枫 讲席教授 计算几何与组合算法 MORE 兼职教师 胡事民 兼职教授 MORE 郁昱 访问教授 MORE 楼天城 兼职教师 MORE 博士后 范晓昱 隐私保护计算；多方安全计算；人工智能安全 MORE 冯路 量子网络与量子纠缠 MORE 郭世安 基于离子阱技术的量子模拟与量子计算实验 MORE 华子越 MORE 李炜康 量子信息，量子机器学习理论，量子人工智能 MORE 卢亚男 金刚石色心量子模拟与量子传感 MORE 吕雪广 强化学习，多智能体系统 MORE 孙正之 量子人工智能，拓扑量子计算，张量网络方法 MORE 徐奕放 超导量子计算和量子信息 MORE 杨炎彬 量子物理 MORE 元祎君 MORE 李卓然 强化学习、生成模型、大模型 MORE 张钧翔 金刚石色心量子传感与量子模拟 MORE 行政人员 宋梦婷 院长助理 MORE 吕厦敏 办公室主任 MORE 常予莹 外事 MORE 张燕 姚班事务 MORE 孙帅 学生工作 MORE 尚妤婵 研究生教务、博士后工作 MORE 李响 技术主管 MORE 马佳 资产管理 MORE 李凯琳 科研助理 MORE 张馨 研究生学生工作 MORE 张学朝 AI中心行政助理 MORE 姜月亮 宣传事务 MORE 张宇驰 科研项目助理 MORE 黄鸣悦 党务行政助理 MORE 杨子衿 实验室事务 MORE 实验员 安辰杰 量子信息实验员 MORE 王海艳 量子信息研发 MORE 尹伟 计算机实验员 MORE 离退休人员 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "content_hash": "2cabe4d28df6168f25557742c7f1193b1c77eef1b7e5d612fd734d25c6ee891f",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:39+00:00",
+      "last_seen_at": "2026-08-26T00:58:18+00:00",
+      "changed_at": "2026-08-26T00:58:18+00:00",
+      "topics": [
+        "清华",
+        "交叉信息",
+        "理论计算机",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 84,
+      "title": "研究生招生-清华大学交叉信息研究院",
+      "url": "https://iiis.tsinghua.edu.cn/yjs/yjszs.htm",
+      "source_name": "清华交叉信息研究院",
+      "source_url": "https://iiis.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-08-27",
+      "location": "北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真：",
+      "summary": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 研究生 研究生培养 研究生招生 08-25 2026 清华大学交叉信息研究院2027年招收普通招考博士（含硕博连读）研究生综合考核名单公示 公示期：十个工作日（2026年8月26日至9月8日）清华大学交叉信息研究院2027年招收普通招考博士（含硕博连读）研究生入围综合考核的名单已确定，现公布如下：报名号姓名报考专业备注（含专项类别）20271102647陈宝骥070200 物理学20271104495王行宇081200 计算机科学与技术20271107583石清泓070200 物理学20272300088梁天海081200 计算机科学与技术20272300133韩新淼081200 计算机科学与技术20272300229袁承博081200 计算机科学与... 08-25 2026 清华大学2027年交叉信息研究院接收优秀应届本科毕业生免试攻读研究生综合考核名单公示 公示期：十个工作日（2026年8月26日至9月8日）清华大学交叉信息研究院2027年接收优秀应届本科毕业生免试攻读研究生入围综合考核的名单已确定，现公布如下：报名号姓名备注20272400003江衡20272400031叶锦辉20272400176沈子钧20272400535吴泽坤20272400632李沐恒20272400731张兆辰20272400828任恒乐20272400850罗浩民20272400924褚檬20272401230彭邦帅20272401260李昀展20272401360顾万钧20272401426周子凯20272401443向恩泽2027... 08-25 2026 清华大学交叉信息研究院2027年硕士推免生考核及录取办法 一、材料审查交叉信息研究院研究生招生工作领导小组组织材料审查组对全部申请人的材料进行审查，根据综合评价结",
+      "content": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 研究生 研究生培养 研究生招生 08-25 2026 清华大学交叉信息研究院2027年招收普通招考博士（含硕博连读）研究生综合考核名单公示 公示期：十个工作日（2026年8月26日至9月8日）清华大学交叉信息研究院2027年招收普通招考博士（含硕博连读）研究生入围综合考核的名单已确定，现公布如下：报名号姓名报考专业备注（含专项类别）20271102647陈宝骥070200 物理学20271104495王行宇081200 计算机科学与技术20271107583石清泓070200 物理学20272300088梁天海081200 计算机科学与技术20272300133韩新淼081200 计算机科学与技术20272300229袁承博081200 计算机科学与... 08-25 2026 清华大学2027年交叉信息研究院接收优秀应届本科毕业生免试攻读研究生综合考核名单公示 公示期：十个工作日（2026年8月26日至9月8日）清华大学交叉信息研究院2027年接收优秀应届本科毕业生免试攻读研究生入围综合考核的名单已确定，现公布如下：报名号姓名备注20272400003江衡20272400031叶锦辉20272400176沈子钧20272400535吴泽坤20272400632李沐恒20272400731张兆辰20272400828任恒乐20272400850罗浩民20272400924褚檬20272401230彭邦帅20272401260李昀展20272401360顾万钧20272401426周子凯20272401443向恩泽2027... 08-25 2026 清华大学交叉信息研究院2027年硕士推免生考核及录取办法 一、材料审查交叉信息研究院研究生招生工作领导小组组织材料审查组对全部申请人的材料进行审查，根据综合评价结果择优确定参加综合考核名单，通知申请人参加综合考核。材料审查流程：每份申请材料至少5位专家逐一审核，百分制打分并取平均分。按照最终成绩由高到低排序，依招生计划的150%-400%的比例确定入围综合考核名单。二、资格审查资格审查将采用现场审查形式。时间：2026年8月27日9:00—11:30，在清华大学FIT楼1-202室对... 08-25 2026 清华大学交叉信息研究院2027年博士研究生招生综合考核及录取办法 一、资格审查通过材料审查进入综合考核的申请人需于2026年8月27日和30日在清华大学FIT楼1-202室参加资格审查（具体时间另行通知）。未参加资格审查或资格审查不通过者，不准予参加综合考核。应届本科生推荐免试攻读博士学位研究生在资格审查时核验下列材料:1）有效身份证明2）在学证明（学生证）硕博连读攻读博士学位研究生在资格审查时核验下列材料:1）有效身份证明2）在学证明（学生证）普通招考攻读博士学位研究生在资格审查... 05-15 2026 清华大学交叉信息研究院2026年招收港澳台地区研究生拟录取名单公示 公示期：十个工作日（5月18日至5月29日）报名号姓名拟录取专业攻读学位类别综合考核成绩学习方式G202600075施少钧081200 计算机科学与技术硕士85.46全日制G202600385李旻儒081200 计算机科学与技术硕士84.02全日制 注：凡对名单有异议者，请书面具名向本院系反映。联系电话：010-62781643，联系邮箱：iiisgrad@tsinghua.edu.cn清华大学交叉信息研究院2026年5月15 02-03 2026 清华大学交叉信息研究院2026年招收港澳台地区研究生综合考核实施细则及录取办法 交叉信息研究院招收2026年港澳台地区研究生综合考核将采用网络远程的方式进行，具体安排如下：一、资格审查通过材料审查进入综合考核的申请人需通过腾讯会议软件进行资格审查。未参加资格审查或资格审查不通过者不准予参加综合考核。资格审查以网络远程的形式进行，具体时间及安排将通过邮件通知。申请人需出示如下证件，并宣读《清华大学研究生招生网络远程考核考生诚信承诺书》承诺诚信应试，宣读过程会被录音录像存档。1、香... 共37条 首页 上页 1 2 3 4 5 ... 7 下页 尾页 到第 页 跳转 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "raw_text": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 研究生 研究生培养 研究生招生 08-25 2026 清华大学交叉信息研究院2027年招收普通招考博士（含硕博连读）研究生综合考核名单公示 公示期：十个工作日（2026年8月26日至9月8日）清华大学交叉信息研究院2027年招收普通招考博士（含硕博连读）研究生入围综合考核的名单已确定，现公布如下：报名号姓名报考专业备注（含专项类别）20271102647陈宝骥070200 物理学20271104495王行宇081200 计算机科学与技术20271107583石清泓070200 物理学20272300088梁天海081200 计算机科学与技术20272300133韩新淼081200 计算机科学与技术20272300229袁承博081200 计算机科学与... 08-25 2026 清华大学2027年交叉信息研究院接收优秀应届本科毕业生免试攻读研究生综合考核名单公示 公示期：十个工作日（2026年8月26日至9月8日）清华大学交叉信息研究院2027年接收优秀应届本科毕业生免试攻读研究生入围综合考核的名单已确定，现公布如下：报名号姓名备注20272400003江衡20272400031叶锦辉20272400176沈子钧20272400535吴泽坤20272400632李沐恒20272400731张兆辰20272400828任恒乐20272400850罗浩民20272400924褚檬20272401230彭邦帅20272401260李昀展20272401360顾万钧20272401426周子凯20272401443向恩泽2027... 08-25 2026 清华大学交叉信息研究院2027年硕士推免生考核及录取办法 一、材料审查交叉信息研究院研究生招生工作领导小组组织材料审查组对全部申请人的材料进行审查，根据综合评价结果择优确定参加综合考核名单，通知申请人参加综合考核。材料审查流程：每份申请材料至少5位专家逐一审核，百分制打分并取平均分。按照最终成绩由高到低排序，依招生计划的150%-400%的比例确定入围综合考核名单。二、资格审查资格审查将采用现场审查形式。时间：2026年8月27日9:00—11:30，在清华大学FIT楼1-202室对... 08-25 2026 清华大学交叉信息研究院2027年博士研究生招生综合考核及录取办法 一、资格审查通过材料审查进入综合考核的申请人需于2026年8月27日和30日在清华大学FIT楼1-202室参加资格审查（具体时间另行通知）。未参加资格审查或资格审查不通过者，不准予参加综合考核。应届本科生推荐免试攻读博士学位研究生在资格审查时核验下列材料:1）有效身份证明2）在学证明（学生证）硕博连读攻读博士学位研究生在资格审查时核验下列材料:1）有效身份证明2）在学证明（学生证）普通招考攻读博士学位研究生在资格审查... 05-15 2026 清华大学交叉信息研究院2026年招收港澳台地区研究生拟录取名单公示 公示期：十个工作日（5月18日至5月29日）报名号姓名拟录取专业攻读学位类别综合考核成绩学习方式G202600075施少钧081200 计算机科学与技术硕士85.46全日制G202600385李旻儒081200 计算机科学与技术硕士84.02全日制 注：凡对名单有异议者，请书面具名向本院系反映。联系电话：010-62781643，联系邮箱：iiisgrad@tsinghua.edu.cn清华大学交叉信息研究院2026年5月15 02-03 2026 清华大学交叉信息研究院2026年招收港澳台地区研究生综合考核实施细则及录取办法 交叉信息研究院招收2026年港澳台地区研究生综合考核将采用网络远程的方式进行，具体安排如下：一、资格审查通过材料审查进入综合考核的申请人需通过腾讯会议软件进行资格审查。未参加资格审查或资格审查不通过者不准予参加综合考核。资格审查以网络远程的形式进行，具体时间及安排将通过邮件通知。申请人需出示如下证件，并宣读《清华大学研究生招生网络远程考核考生诚信承诺书》承诺诚信应试，宣读过程会被录音录像存档。1、香... 共37条 首页 上页 1 2 3 4 5 ... 7 下页 尾页 到第 页 跳转 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "content_hash": "6b8a247acd5662f9808398bb58c241b9139c14679e378bf49801bea9f3ab97af",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:39+00:00",
+      "last_seen_at": "2026-08-26T00:58:18+00:00",
+      "changed_at": "2026-08-26T00:58:18+00:00",
+      "topics": [
+        "清华",
+        "交叉信息",
+        "理论计算机",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 43,
+      "title": "Seminars",
+      "url": "https://www.bimsa.cn/research/seminar/current/page_1.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shu",
+      "content": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 23rd February, 2027 Schedule: Tuesday 09:50 - 12:15, Address: A14-201 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 22nd February, 2027 Schedule: Tuesday 13:50 - 15:50, Address: A14-201 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301 28th August 2026 BIMSA Lecture Seminar Jiebo Song Date: 28th August, 2026 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303",
+      "raw_text": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 23rd February, 2027 Schedule: Tuesday 09:50 - 12:15, Address: A14-201 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 22nd February, 2027 Schedule: Tuesday 13:50 - 15:50, Address: A14-201 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301 28th August 2026 BIMSA Lecture Seminar Jiebo Song Date: 28th August, 2026 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303",
+      "content_hash": "53cd41a743a5cbb9d3ff46a3d129d330c890ab5b490bd1c516e86d2e5f0d0a5e",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-26T00:57:46+00:00",
+      "changed_at": "2026-08-26T00:57:46+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 9,
+      "title": "来访学者-清华大学数学科学中心",
+      "url": "https://ymsc.tsinghua.edu.cn/sxxr/lfxz.htm",
+      "source_name": "清华丘成桐数学科学中心",
+      "source_url": "https://ymsc.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-09-13",
+      "location": "北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容",
+      "summary": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 学者姓名 研究方向 单位 到访时间 电子邮件 办公室 Danny Calegari Geometry University of Chicago 2026.09.13-2026.09.25 dannyc@uchicago.edu Shuangqing A604 Peter Smillie Differential geometry Max Planck Institute for Mathematics in the Sciences in Leipzig 2026.09.11-2026.09.16 psmilli1@gmail.com Jingzhai 203 Viacheslav Shokurov Algebraic Geometry Steklov Mathematical Institute 2026.09.07-2026.09.21 shokurov@mi-ras.ru Shuangqing A602 Tongmu He Number theory Princeton University 2026.07.28-2026.08.13 hetm@princeton.edu Shuangqing A602 Nero Budur Algebraic Geometry KU Leuven 2026.07.05-2026.07.12 nerobudur@gmail.com Shuangqing A604 Paolo Cascini Algebraic Geometry Imperial College, London 2026.6.27-2026.8.15 p.cascini@imperial.ac.uk Shuangqing A603 Yi H",
+      "content": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 学者姓名 研究方向 单位 到访时间 电子邮件 办公室 Danny Calegari Geometry University of Chicago 2026.09.13-2026.09.25 dannyc@uchicago.edu Shuangqing A604 Peter Smillie Differential geometry Max Planck Institute for Mathematics in the Sciences in Leipzig 2026.09.11-2026.09.16 psmilli1@gmail.com Jingzhai 203 Viacheslav Shokurov Algebraic Geometry Steklov Mathematical Institute 2026.09.07-2026.09.21 shokurov@mi-ras.ru Shuangqing A602 Tongmu He Number theory Princeton University 2026.07.28-2026.08.13 hetm@princeton.edu Shuangqing A602 Nero Budur Algebraic Geometry KU Leuven 2026.07.05-2026.07.12 nerobudur@gmail.com Shuangqing A604 Paolo Cascini Algebraic Geometry Imperial College, London 2026.6.27-2026.8.15 p.cascini@imperial.ac.uk Shuangqing A603 Yi Hu Algebraic Geometry University of Arizona 2026.06.20-2026.07.12 yhu@arizona.edu Shuangqing A610 Peng Ding Statistics University of California, Berkeley 2026.06.17-2026.06.30 pengdingpku@berkeley.edu Shuangqing A502 Susanne C. Brenner Numerical analysis Louisiana State University 2026.06.08-2026.06.14 brenner@math.lsu.edu Jing Zhai 312B Nero Budur Algebraic Geometry KU Leuven 2026.05.15-2026.06.05 nerobudur@gmail.com Shuangqing D05 Cynthia Rush Mathematical statistics Columbia University 2026.05.10-2026.05.23 cgr2130@columbia.edu Shuangqing A603 Dipendra Prasad Automorphic Representations, Number theory Indian Institute of Technology Bombay 2026.04.23-2026.07.22 prasad.dipendra@gmail.com Shuangqing A609 Alexander Bobenko Geometry, mathematical physics Technische Universitaet Berlin 2026.04.02-2026.05.31 bobenko@math.tu-berlin.de Shuangqing A502 Cédric Bonnafé Mathematics CNRS 2026.03.16-2026.05.22 cedric.bonnafe@umontpellier.fr Shuangqing A610 Florin Ambro Algebraic Geometry Institute of Mathematics of the Romanian Academy 2026.03.02-2026.05.29 fambro@imar.ro Shuangqing A602 Paolo Cascini Algebraic Geometry Imperial College, London 2026.02.26-2026.03.26 p.cascini@imperial.ac.uk Shuangqing A603 Bruno Klingler Algebraic geometry Humboldt-Universität zu Berlin 2026.02.20-2026.04.02 bruno.klingler@gmail.com Shuangqing A604 Nero Budur Algebraic Geometry KU Leuven 2026.01.04-2026.01.25 nerobudur(at)gmail.com Shuangqing A604 Tongmu He Number theory Princeton University 2025.12.28-2026.01.15 hetm(at)princeton.edu Shuangqing A610 Peng Ding Statistics University of California, Berkeley 2025.12.18-2025.12.28 pengdingpku(at)berkeley.edu Shuangqing A602 Yi Hu Algebraic Geometry University of Arizona 2025.12.15-2026.01.12 yhu(at)arizona.edu Shuangqing A603 Kasra Rafi Mathematics University of Toronto 2025.11.09-2025.11.29 kasra.rafi(at)gmail.com Shuangqing A603 Anton Zorich Mathematics Université Paris Cité 2025.11.01-2025.11.30 anton.zorich(at)gmail.com Shuangqing A602 Gerard van der Geer Algebraic geometry, modular forms University of Amsterdam 2025.09.02-2025.10.31 g.b.m.vandergeer(at)uva.nl Shuangqing A604 Don Zagier Number Theory Max Planck Institute for Mathematics 2025.08.31-2025.10.31 dbz(at)mpim-bonn.mpg.de Shuangqing A603; Jing Zhai 312B Viacheslav Shokurov Algebraic Geometry Steklov Mathematical Institute 2025.07.01-2025.07.14 shokurov(at)mi-ras.ru Shuangqing A603 Paolo Cascini Algebraic Geometry Imperial College, London 2025.06.29-2025.07.12 2025.08.24-2025.09.27 p.cascini(at)imperial.ac.uk Shuangqing C726 Yinyu Ye Linear and Mathematical Programming Stanford University 2025.06.27-2025.07.03 yyye(at)stanford.edu Jing Zhai 305 Du Pei Theoretical Physics and Mathematical Physics University of Southern Denmark 2025.06.27-2025.08.17 dpei(at)imada.sdu.dk Shuangqing A502 Zhiliang Ying Statistics Columbia University 2025.06.19-2025.06.21 zy9@columbia.edu Jing Zhai 312B Maxim Kontsevich Mathematical physics IHÉS 2025.05.29-2025.05.30 maxim@ihes.fr Jing Zhai 312B Nero Budur Algebraic Geometry KU Leuven 2025.05.23-2025.06.11 nerobudur@gmail.com Shuangqing A602 Rasoul Etesami Multiagent Network Systems University of Illinois Urbana-Champaign 2025.05.19-2025.08.14 rasoul.ete@gmail.com Shuangqing A609 Han Li Homogeneous Dynamics and Number Theory Wesleyan University 2025.05.10-2025.06.08 hli03@wesleyan.edu Shuangqing A505 Sergiu Klainerman Mathematics Princeton University 2025.04.30-2025.05.31 seri@math.princeton.edu Shuangqing C543 Nero Budur Algebraic Geometry KU Leuven 2025.04.18-2025.05.02 nerobudur@gmail.com Shuangqing A602 Florin Ambro Algebraic Geometry Institute of Mathematics of the Romanian Academy 2025.03.31-2025.06.28 fambro@imar.ro Shuangqing C640 Mahesh Kakde Number theory Indian Institute of Science 2025.03.18-2025.06.26 maheshkakde@iisc.ac.in Shuangqing A603 Takao Akahori Mathematics University of Hyogo 2025.03.03-2025.05.27 takagn@hotmail.co.jp Jing Zhai 305 Wee Teck Gan Number Theory and Representation Theory National University of Singapore 2025.02.23-2025.03.01 matgwt@nus.edu.sg Jing Zhai 307 Nero Budur Algebraic Geometry KU Leuven 2025.01.06-2025.01.21 nerobudur@gmail.com Shuangqing A602 Wen Zhou Statistics New York University 2024.12.23-2025.01.03 w.zhou@nyu.edu Shuangqing C634 David Nadler Mathematics University of California, Berkeley 2024.12.23-2024.12.27 nadler@math.berkeley.edu Jing Zhai 312B Du Pei Quantum mathematics University of Southern Denmark 2024.12.16-2025.01.16 dpei@imada.sdu.dk Shuangqing A603 Hiroshi Ooguri Quantum field theory, quantum gravity California Institute of Technology 2024.12.11-2024.12.14 ooguri@caltech.edu Jing Zhai 312B Bjorn Engquist Applied Mathematics The University of Texas at Austin 2024.11.24-2024.11.30 engquist@oden.utexas.edu Jing Zhai 312B George Daskalopoulos Differential Geometry Brown University 2024.10.14-2024.10.28 georgios_daskalopoulos@brown.edu Shuangqing A606 Shu-Hui Yu Mathematical Statistics NUK 2024.10.13-2024.10.28 shuhui@nuk.edu.tw Shuangqing A610 Ching-Kang Ing Mathematical Statistics NTHU 2024.10.13-2024.10.28 cking@stat.nthu.edu.tw Shuangqing C634 Cédric Bonnafé Mathematics CNRS 2024.10.06-2024.11.01 cedric.bonnafe@umontpellier.fr Jingzhai 312B Fabrizio Ruggeri Bayesian Statistics and applications, Decision Analysis National Research Council of Italy 2024.09.18-2024.10.26 fabrizio@mi.imati.cnr.it Shuangqing A602 Albrecht Klemm String Theory Friedrich-Wilhelms-Universität, Bonn 2024.09.13-2024.09.21 albrecht.klemm@gmail.com Yongchang Zhu Representation theory, number theory Hong Kong University of Science and Technology 2024.09.02-2025.01.31 mazhu@ust.hk Shuangqing C643 Gerard van der Geer Algebraic geometry, modular forms University of Amsterdam 2024.09.02-2024.10.28 g.b.m.vandergeer@uva.nl Shuangqing C545 Peter Smillie Differential geometry Max Planck Institute for Mathematics in the Sciences in Leipzig 2024.09.01-2024.09.13 psmilli1@gmail.com Fan Li Statistics Duke University 2024.08.18-2025.07.31 fl35@duke.edu Shuangqing A604 Anton Kapustin Mathematical physics California Institute of Technology 2024.08.03-2024.09.30 kapustin@caltech.edu Carlos Simpson Algebraic Geometry Université Côte d' Azur 2024.05.26-2024.05.31 Carlos.Simpson@unice.fr Nero Budur Algebraic Geometry KU Leuven 2024.05.21-2024.07.28 nerobudur@gmail.com Florin Ambro Algebraic Geometry Institute of Mathematics of the Romanian Academy 2024.05.05-2024.07.31 florin.ambro@gmail.com Mikhail Khovanov Mathematics Columbia University 2024.04.03-2024.05.05 khovanov@math.columbia.edu Agustin Romano Singularity theory, algebraic geometry National Autonomous University of Mexico 2024.04.01-2024.04.30 agustin.romano@im.unam.mx José Antonio Seade Kuri Singularities theory and complex geometry UNAM 2024.03.22-2024.05.11 jseade@im.unam.mx Vladimir Markovic Mathematics University of Oxford 2024.03.13-2024.04.03 markovic@maths.ox.ac.uk Alexander Grigor'yan Geometric Analysis Univeristy of Bielefeld 2024.02.24-2024.04.06 grigor@math.uni-bielefeld.de Pol van Hoften Mathematics VU Amsterdam 2024.01.09-2024.01.20 p.van.hoften@vu.nl Du Pei Quantum mathematics University of Southern Denmark 2023.12.18-2024.02.29 dpei@imada.sdu.dk Fidel Nemenzo Coding Theory, Number Theory University of the Philippines 2023.10.13-2023.12.19 frnemenzo@up.upd.edu Thomas J. Haines Mathematics University of Maryland 2023.10.03-2023.10.29 tjh@umd.edu Jun Zhang Cognitive Psychology, AI The University of Michigan at Ann Arbor 2023.09.15-2024.02.29 junz@umich.edu Jie Ma Extremal Combinatorics, Graph Theory, etc University of Science and Technology of China 2023.09.15-2023.12.31 jiema@ustc.edu.cn Fabrizio Ruggeri Bayesian Statistics and applications, Decision Analysis National Research Council of Italy 2023.09.01-2023.09.27 fabrizio@mi.imati.cnr.it Gerard van der Geer Algebraic geometry, modular forms University of Amsterdam 2023.09.01-2023.10.31 g.b.m.vandergeer@uva.nl Christian Maire Mathematics University of Franche-Comté 2023.08.11-2023.08.31 christian.maire@univ-fcomte.fr Nikolay Moshchevitin Mathematics Israel Institute of Technology (Technion) 2023.08.01-2024.02.29 moshchevitin@gmail.com Zhigang Yao Statistical and mathematical sciences; the interface between statistics and geometry National University of Singapore 2023.06.01-2023.07.31 zhigang.yao@nus.edu.sg Peng Ding Statistics University of California, Berkeley 2023.05.22-2023.08.13 pengdingpku(at)berkeley.edu Du Pei Theoretical physics, mathematical physics University of Southern Denmark 2023.04.18-2023.08.15 dpei(at)imada.sdu.dk José Antonio Seade Kuri Geometry, singularity theory National Autonomous University of Mexico 2023.04.12-2023.05.12 jseade(at)im.unam.mx Ivan Fesenko Number theory University of Warwick 2022.10.25-2023.08.31 Ivan.Fesenko(at)warwick.ac.uk 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "raw_text": "ENGLISH 首页 关于我们 中心简介 行政团队 中心动态 访问指南 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 人才培养 国内博士招生 海外博士招生 暑期学校 中学夏令营 在读研究生 学生动态 人才跟踪 学术日历 学术活动 中心公开课 短期课程 讨论班 学术报告 会议论坛 YMSC教室预约 科学研究 研究团队 双有理几何研究团队 弦论研究团队 应用数学研究团队 科研进展 学术资源 招募英才 教师招聘 博士后招聘 行政招聘 数学学人 领军学者 专业委员会 中心教师 博士后 来访学者 清华学者库 学者姓名 研究方向 单位 到访时间 电子邮件 办公室 Danny Calegari Geometry University of Chicago 2026.09.13-2026.09.25 dannyc@uchicago.edu Shuangqing A604 Peter Smillie Differential geometry Max Planck Institute for Mathematics in the Sciences in Leipzig 2026.09.11-2026.09.16 psmilli1@gmail.com Jingzhai 203 Viacheslav Shokurov Algebraic Geometry Steklov Mathematical Institute 2026.09.07-2026.09.21 shokurov@mi-ras.ru Shuangqing A602 Tongmu He Number theory Princeton University 2026.07.28-2026.08.13 hetm@princeton.edu Shuangqing A602 Nero Budur Algebraic Geometry KU Leuven 2026.07.05-2026.07.12 nerobudur@gmail.com Shuangqing A604 Paolo Cascini Algebraic Geometry Imperial College, London 2026.6.27-2026.8.15 p.cascini@imperial.ac.uk Shuangqing A603 Yi Hu Algebraic Geometry University of Arizona 2026.06.20-2026.07.12 yhu@arizona.edu Shuangqing A610 Peng Ding Statistics University of California, Berkeley 2026.06.17-2026.06.30 pengdingpku@berkeley.edu Shuangqing A502 Susanne C. Brenner Numerical analysis Louisiana State University 2026.06.08-2026.06.14 brenner@math.lsu.edu Jing Zhai 312B Nero Budur Algebraic Geometry KU Leuven 2026.05.15-2026.06.05 nerobudur@gmail.com Shuangqing D05 Cynthia Rush Mathematical statistics Columbia University 2026.05.10-2026.05.23 cgr2130@columbia.edu Shuangqing A603 Dipendra Prasad Automorphic Representations, Number theory Indian Institute of Technology Bombay 2026.04.23-2026.07.22 prasad.dipendra@gmail.com Shuangqing A609 Alexander Bobenko Geometry, mathematical physics Technische Universitaet Berlin 2026.04.02-2026.05.31 bobenko@math.tu-berlin.de Shuangqing A502 Cédric Bonnafé Mathematics CNRS 2026.03.16-2026.05.22 cedric.bonnafe@umontpellier.fr Shuangqing A610 Florin Ambro Algebraic Geometry Institute of Mathematics of the Romanian Academy 2026.03.02-2026.05.29 fambro@imar.ro Shuangqing A602 Paolo Cascini Algebraic Geometry Imperial College, London 2026.02.26-2026.03.26 p.cascini@imperial.ac.uk Shuangqing A603 Bruno Klingler Algebraic geometry Humboldt-Universität zu Berlin 2026.02.20-2026.04.02 bruno.klingler@gmail.com Shuangqing A604 Nero Budur Algebraic Geometry KU Leuven 2026.01.04-2026.01.25 nerobudur(at)gmail.com Shuangqing A604 Tongmu He Number theory Princeton University 2025.12.28-2026.01.15 hetm(at)princeton.edu Shuangqing A610 Peng Ding Statistics University of California, Berkeley 2025.12.18-2025.12.28 pengdingpku(at)berkeley.edu Shuangqing A602 Yi Hu Algebraic Geometry University of Arizona 2025.12.15-2026.01.12 yhu(at)arizona.edu Shuangqing A603 Kasra Rafi Mathematics University of Toronto 2025.11.09-2025.11.29 kasra.rafi(at)gmail.com Shuangqing A603 Anton Zorich Mathematics Université Paris Cité 2025.11.01-2025.11.30 anton.zorich(at)gmail.com Shuangqing A602 Gerard van der Geer Algebraic geometry, modular forms University of Amsterdam 2025.09.02-2025.10.31 g.b.m.vandergeer(at)uva.nl Shuangqing A604 Don Zagier Number Theory Max Planck Institute for Mathematics 2025.08.31-2025.10.31 dbz(at)mpim-bonn.mpg.de Shuangqing A603; Jing Zhai 312B Viacheslav Shokurov Algebraic Geometry Steklov Mathematical Institute 2025.07.01-2025.07.14 shokurov(at)mi-ras.ru Shuangqing A603 Paolo Cascini Algebraic Geometry Imperial College, London 2025.06.29-2025.07.12 2025.08.24-2025.09.27 p.cascini(at)imperial.ac.uk Shuangqing C726 Yinyu Ye Linear and Mathematical Programming Stanford University 2025.06.27-2025.07.03 yyye(at)stanford.edu Jing Zhai 305 Du Pei Theoretical Physics and Mathematical Physics University of Southern Denmark 2025.06.27-2025.08.17 dpei(at)imada.sdu.dk Shuangqing A502 Zhiliang Ying Statistics Columbia University 2025.06.19-2025.06.21 zy9@columbia.edu Jing Zhai 312B Maxim Kontsevich Mathematical physics IHÉS 2025.05.29-2025.05.30 maxim@ihes.fr Jing Zhai 312B Nero Budur Algebraic Geometry KU Leuven 2025.05.23-2025.06.11 nerobudur@gmail.com Shuangqing A602 Rasoul Etesami Multiagent Network Systems University of Illinois Urbana-Champaign 2025.05.19-2025.08.14 rasoul.ete@gmail.com Shuangqing A609 Han Li Homogeneous Dynamics and Number Theory Wesleyan University 2025.05.10-2025.06.08 hli03@wesleyan.edu Shuangqing A505 Sergiu Klainerman Mathematics Princeton University 2025.04.30-2025.05.31 seri@math.princeton.edu Shuangqing C543 Nero Budur Algebraic Geometry KU Leuven 2025.04.18-2025.05.02 nerobudur@gmail.com Shuangqing A602 Florin Ambro Algebraic Geometry Institute of Mathematics of the Romanian Academy 2025.03.31-2025.06.28 fambro@imar.ro Shuangqing C640 Mahesh Kakde Number theory Indian Institute of Science 2025.03.18-2025.06.26 maheshkakde@iisc.ac.in Shuangqing A603 Takao Akahori Mathematics University of Hyogo 2025.03.03-2025.05.27 takagn@hotmail.co.jp Jing Zhai 305 Wee Teck Gan Number Theory and Representation Theory National University of Singapore 2025.02.23-2025.03.01 matgwt@nus.edu.sg Jing Zhai 307 Nero Budur Algebraic Geometry KU Leuven 2025.01.06-2025.01.21 nerobudur@gmail.com Shuangqing A602 Wen Zhou Statistics New York University 2024.12.23-2025.01.03 w.zhou@nyu.edu Shuangqing C634 David Nadler Mathematics University of California, Berkeley 2024.12.23-2024.12.27 nadler@math.berkeley.edu Jing Zhai 312B Du Pei Quantum mathematics University of Southern Denmark 2024.12.16-2025.01.16 dpei@imada.sdu.dk Shuangqing A603 Hiroshi Ooguri Quantum field theory, quantum gravity California Institute of Technology 2024.12.11-2024.12.14 ooguri@caltech.edu Jing Zhai 312B Bjorn Engquist Applied Mathematics The University of Texas at Austin 2024.11.24-2024.11.30 engquist@oden.utexas.edu Jing Zhai 312B George Daskalopoulos Differential Geometry Brown University 2024.10.14-2024.10.28 georgios_daskalopoulos@brown.edu Shuangqing A606 Shu-Hui Yu Mathematical Statistics NUK 2024.10.13-2024.10.28 shuhui@nuk.edu.tw Shuangqing A610 Ching-Kang Ing Mathematical Statistics NTHU 2024.10.13-2024.10.28 cking@stat.nthu.edu.tw Shuangqing C634 Cédric Bonnafé Mathematics CNRS 2024.10.06-2024.11.01 cedric.bonnafe@umontpellier.fr Jingzhai 312B Fabrizio Ruggeri Bayesian Statistics and applications, Decision Analysis National Research Council of Italy 2024.09.18-2024.10.26 fabrizio@mi.imati.cnr.it Shuangqing A602 Albrecht Klemm String Theory Friedrich-Wilhelms-Universität, Bonn 2024.09.13-2024.09.21 albrecht.klemm@gmail.com Yongchang Zhu Representation theory, number theory Hong Kong University of Science and Technology 2024.09.02-2025.01.31 mazhu@ust.hk Shuangqing C643 Gerard van der Geer Algebraic geometry, modular forms University of Amsterdam 2024.09.02-2024.10.28 g.b.m.vandergeer@uva.nl Shuangqing C545 Peter Smillie Differential geometry Max Planck Institute for Mathematics in the Sciences in Leipzig 2024.09.01-2024.09.13 psmilli1@gmail.com Fan Li Statistics Duke University 2024.08.18-2025.07.31 fl35@duke.edu Shuangqing A604 Anton Kapustin Mathematical physics California Institute of Technology 2024.08.03-2024.09.30 kapustin@caltech.edu Carlos Simpson Algebraic Geometry Université Côte d' Azur 2024.05.26-2024.05.31 Carlos.Simpson@unice.fr Nero Budur Algebraic Geometry KU Leuven 2024.05.21-2024.07.28 nerobudur@gmail.com Florin Ambro Algebraic Geometry Institute of Mathematics of the Romanian Academy 2024.05.05-2024.07.31 florin.ambro@gmail.com Mikhail Khovanov Mathematics Columbia University 2024.04.03-2024.05.05 khovanov@math.columbia.edu Agustin Romano Singularity theory, algebraic geometry National Autonomous University of Mexico 2024.04.01-2024.04.30 agustin.romano@im.unam.mx José Antonio Seade Kuri Singularities theory and complex geometry UNAM 2024.03.22-2024.05.11 jseade@im.unam.mx Vladimir Markovic Mathematics University of Oxford 2024.03.13-2024.04.03 markovic@maths.ox.ac.uk Alexander Grigor'yan Geometric Analysis Univeristy of Bielefeld 2024.02.24-2024.04.06 grigor@math.uni-bielefeld.de Pol van Hoften Mathematics VU Amsterdam 2024.01.09-2024.01.20 p.van.hoften@vu.nl Du Pei Quantum mathematics University of Southern Denmark 2023.12.18-2024.02.29 dpei@imada.sdu.dk Fidel Nemenzo Coding Theory, Number Theory University of the Philippines 2023.10.13-2023.12.19 frnemenzo@up.upd.edu Thomas J. Haines Mathematics University of Maryland 2023.10.03-2023.10.29 tjh@umd.edu Jun Zhang Cognitive Psychology, AI The University of Michigan at Ann Arbor 2023.09.15-2024.02.29 junz@umich.edu Jie Ma Extremal Combinatorics, Graph Theory, etc University of Science and Technology of China 2023.09.15-2023.12.31 jiema@ustc.edu.cn Fabrizio Ruggeri Bayesian Statistics and applications, Decision Analysis National Research Council of Italy 2023.09.01-2023.09.27 fabrizio@mi.imati.cnr.it Gerard van der Geer Algebraic geometry, modular forms University of Amsterdam 2023.09.01-2023.10.31 g.b.m.vandergeer@uva.nl Christian Maire Mathematics University of Franche-Comté 2023.08.11-2023.08.31 christian.maire@univ-fcomte.fr Nikolay Moshchevitin Mathematics Israel Institute of Technology (Technion) 2023.08.01-2024.02.29 moshchevitin@gmail.com Zhigang Yao Statistical and mathematical sciences; the interface between statistics and geometry National University of Singapore 2023.06.01-2023.07.31 zhigang.yao@nus.edu.sg Peng Ding Statistics University of California, Berkeley 2023.05.22-2023.08.13 pengdingpku(at)berkeley.edu Du Pei Theoretical physics, mathematical physics University of Southern Denmark 2023.04.18-2023.08.15 dpei(at)imada.sdu.dk José Antonio Seade Kuri Geometry, singularity theory National Autonomous University of Mexico 2023.04.12-2023.05.12 jseade(at)im.unam.mx Ivan Fesenko Number theory University of Warwick 2022.10.25-2023.08.31 Ivan.Fesenko(at)warwick.ac.uk 首页 关于我们 数学学人 人才培养 学术日历 学术活动 科学研究 招募英才 联系我们 电话：+86-10-62773561 邮箱：ymsc@tsinghua.edu.cn 地址：北京市海淀区清华大学静斋丘成桐数学科学中心100084 本网站音视频内容，未经许可，不得转载 版权所有© 2024 丘成桐数学科学中心 校内链接 清华大学 求真书院 清华大学数学科学系 清华大学本科生招生网 清华大学研究生招生网 清华学者库 相关链接 ICBS 国际基础科学大会 中国科学院数学与系统科学研究院 上海数学与交叉学科研究院 哈佛大学数学科学与应用中心 浙江大学数学科学研究中心 中国科学院晨兴数学中心 香港中文大学数学科学研究所 台湾交通大学丘成桐中心 东南大学丘成桐中心 世界华人数学家联盟 清华三亚国际数学论坛网站 ICCM 2022 ICCM 2023 ICCM 2024 ICCM 2025 清华大学丘成桐中学生数学夏令营 下载链接 相关下载",
+      "content_hash": "46733148d7ebd7bff3fe896ff5f39112cfe26f0302ac92fdb6de40d80d294eba",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:54:40+00:00",
+      "last_seen_at": "2026-08-26T00:57:19+00:00",
+      "changed_at": "2026-08-26T00:57:19+00:00",
+      "topics": [
+        "清华",
+        "数学",
+        "AI"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:57:46+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:59:54+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:59:24+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:58:31+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:58:45+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:57:19+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:58:18+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-26T00:58:02+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
