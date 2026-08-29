@@ -1,0 +1,351 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-29",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 6,
+    "candidate_items": 6,
+    "selected_items": 6,
+    "last_updated_at": "2026-08-29T13:17:03.148122+08:00"
+  },
+  "digest": {
+    "report_date": "2026-08-29",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 6 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 6 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "教师主页系统",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/academicfaculty/szdwn/index.htm"
+          },
+          {
+            "title": "教师主页系统",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/academicfaculty/bshdwn/index.htm"
+          },
+          {
+            "title": "党建文化----中国科学院数学与系统科学研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国科学院数学与系统科学研究院",
+            "url": "https://amss.cas.cn/../../dqyd"
+          },
+          {
+            "title": "人员队伍-清华大学交叉信息研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华交叉信息研究院",
+            "url": "https://iiis.tsinghua.edu.cn/rydw.htm"
+          },
+          {
+            "title": "Beijing Institute of Mathematical Sciences and Applications",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/"
+          },
+          {
+            "title": "北京雁栖湖应用数学研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/zh-CN"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 178,
+      "title": "教师主页系统",
+      "url": "https://ai.ruc.edu.cn/academicfaculty/szdwn/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣",
+      "summary": "您所在的位置：首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣，中国人民大学高瓴人工智能学院执行院长，国家高层次人才特聘专家。“大模型与智慧治理”北京市重点实验室主任，担任新一代智能搜索与推荐教育部工程研究中心主任。2018年入选首批“北京市卓越青年科学家... 中文 EN 窦志成 教授 中国人民大学高瓴人工智能学院副院长、教授、长聘教授、博士生导师，现任中国计算机学会大数据专家委员会秘书长，中文信息学会理事、信息检索专委会副主任。主要研究兴趣为智能信息检索、智能体、大模型检索增强、A... 中文 EN 魏哲巍 教授 魏哲巍，教授，博导，国家高层次人才。担任中国人民大学高瓴人工智能学院副院长，新一代智能搜索与推荐教育部工程研究中心副主任。2008年本科毕业于北京大学数学科学学院，2012年博士毕业于香港科技大学计算... 中文 EN 孙浩 教授 孙浩，现任中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家高层次青年人才，哥伦比亚大学博士、麻省理工学院博士后，曾任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高瓴人工智能学院长... 中文 EN 徐君 教授 徐君，中国人民大学高瓴人工智能学院教授、长聘教授、博士生导师。曾就职于微软亚洲研究院、华为诺亚方舟实验室（香港）和中科院计算所。研究领域为互联网搜索与推荐，在重要国际期刊和会议发表论文超过100篇，出... 中文 EN 赵鑫 教授 赵鑫，中国人民大学高瓴人工智能学院教授，长聘副教授，国家优青项目获得者。2014年7月于北京大学获得博士学位，随后进入中国人民大学工作至今。研究领域为信息检索与自然语言处理，共计发表论文200余篇，谷... 中文 EN 卢志武 教授 卢志武博士，中国人民大学高瓴人工智能学院教授，长聘副教授，博士生导师。2005年毕业于北京大学数学科学学院信息科学系，获理学硕士学位；2011年毕业于香港城市大学计算机系，获PhD学位。主要研究方向为... 中文 EN 曹朝 教授 曹朝，中国人民大学高瓴人工智能学院教授，分别于2004年和2010年获得北京理工大学学士和博士学位。于2025年5月加入中国人民大学，曾任华为泊松实验室主任、华为云EI（企业智能）服务产品部架构与设计... 中文 EN 曾毅 教授 曾毅，中国人民大学高瓴人工智能学院，吴玉章讲席教授，博导。北京前瞻",
+      "content": "您所在的位置：首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣，中国人民大学高瓴人工智能学院执行院长，国家高层次人才特聘专家。“大模型与智慧治理”北京市重点实验室主任，担任新一代智能搜索与推荐教育部工程研究中心主任。2018年入选首批“北京市卓越青年科学家... 中文 EN 窦志成 教授 中国人民大学高瓴人工智能学院副院长、教授、长聘教授、博士生导师，现任中国计算机学会大数据专家委员会秘书长，中文信息学会理事、信息检索专委会副主任。主要研究兴趣为智能信息检索、智能体、大模型检索增强、A... 中文 EN 魏哲巍 教授 魏哲巍，教授，博导，国家高层次人才。担任中国人民大学高瓴人工智能学院副院长，新一代智能搜索与推荐教育部工程研究中心副主任。2008年本科毕业于北京大学数学科学学院，2012年博士毕业于香港科技大学计算... 中文 EN 孙浩 教授 孙浩，现任中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家高层次青年人才，哥伦比亚大学博士、麻省理工学院博士后，曾任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高瓴人工智能学院长... 中文 EN 徐君 教授 徐君，中国人民大学高瓴人工智能学院教授、长聘教授、博士生导师。曾就职于微软亚洲研究院、华为诺亚方舟实验室（香港）和中科院计算所。研究领域为互联网搜索与推荐，在重要国际期刊和会议发表论文超过100篇，出... 中文 EN 赵鑫 教授 赵鑫，中国人民大学高瓴人工智能学院教授，长聘副教授，国家优青项目获得者。2014年7月于北京大学获得博士学位，随后进入中国人民大学工作至今。研究领域为信息检索与自然语言处理，共计发表论文200余篇，谷... 中文 EN 卢志武 教授 卢志武博士，中国人民大学高瓴人工智能学院教授，长聘副教授，博士生导师。2005年毕业于北京大学数学科学学院信息科学系，获理学硕士学位；2011年毕业于香港城市大学计算机系，获PhD学位。主要研究方向为... 中文 EN 曹朝 教授 曹朝，中国人民大学高瓴人工智能学院教授，分别于2004年和2010年获得北京理工大学学士和博士学位。于2025年5月加入中国人民大学，曾任华为泊松实验室主任、华为云EI（企业智能）服务产品部架构与设计... 中文 EN 曾毅 教授 曾毅，中国人民大学高瓴人工智能学院，吴玉章讲席教授，博导。北京前瞻人工智能安全与治理研究院院长，人工智能安全与超级对齐北京市重点实验室主任。中国人工智能学会（CAAI）心智计算专委会主任；世界互联网大... 中文 EN 宋睿华 长聘副教授 国家高层次人才特聘教授，现任中国人民大学高瓴人工智能学院长聘副教授。曾任微软亚洲研究院主管研究员、微软小冰首席科学家。近期研究兴趣为多模态理解、创作和交互。发表学术论文100余篇，申请专利30余项。曾... 中文 EN 祁琦 长聘副教授 长聘副教授，博导，国家高层次人才青年专家，CCF中国计算机学会计算经济学专委秘书长。博士毕业于美国斯坦福大学，师从冯·诺依曼奖得主叶荫宇教授。曾任香港科技大学助理教授，博士生导师，获十佳教师奖。主要研... 中文 EN 苏冰 长聘副教授 苏冰，中国人民大学高瓴人工智能学院长聘副教授、博导，国家高层次青年人才。2016年博士毕业于清华大学，2010年本科毕业于北京理工大学。研究方向为计算机视觉、机器学习和模式识别，主要研究序列数据的特征... 中文 EN 许洪腾 长聘副教授 2017年博士毕业于佐治亚理工学院，2013年硕士毕业于上海交通大学，2010年本科毕业于天津大学。其研究方向为通用人工智能技术及其应用，特别是（1）最优传输驱动的机器学习方法；（2）生成式大模型架构... 中文 EN 刘勇 长聘副教授 中国人民大学，长聘副教授、博士生导师、国家级高层次青年人才。从事机器学习研究，特别关注大模型机制分析、强化推理、统计机器学习等。发表高水平论文100多篇，其中以第一作者或通讯作者发表高水平文章60余篇... 中文 EN 王子贺 预聘副教授 本科就读于清华大学计算机科学实验班，2016年在清华大学获博士学位，博士导师为唐平中和姚期智，毕业后在上海财经大学工作4年，后加入中国人民大学高瓴人工智能学院。研究兴趣为理论计算机与经济学的交叉学科，... 中文 EN 毛佳昕 预聘副教授 毛佳昕于2013年和2018年获得清华大学学士和博士学位。博士毕业后曾在清华大学担任博士后研究员，于2020年加入中国人民大学高瓴人工智能学院，任预聘助理教授、预聘副教授。其主要研究方向为信息检索、网... 中文 EN 陈旭 预聘副教授 陈旭，中国人民大学高瓴人工智能学院预聘副教授，博士生导师，国家高层次青年人才。主要研究方向为大语言模型、强化学习、信息检索和因果推断等，发表多篇高水平论文，谷歌引用1万余次。带领团队撰写大模型智能体领... 中文 EN 胡迪 预聘副教授 胡迪，现任中国人民大学高瓴人工智能学院预聘副教授，博导。主要研究方向为多模态交互智能，以主要作者在T-PAMI/ICML/CVPR/CoRL等人工智能顶级期刊及会议发表论文60余篇，六篇荣获CVPR、... 中文 EN 李崇轩 预聘副教授 李崇轩，中国人民大学高瓴人工智能学院预聘副教授、博士生导师，国家高层次青年人才，2010-2019年获清华大学学士和博士学位。主要研究机器学习、深度生成模型，代表性工作部署于DALL·E 2、Stab... 中文 EN 黄文炳 预聘副教授 黄文炳，中国人民大学高瓴人工智能学院预聘副教授、博导，国家高层次青年人才、北京科技新星。中国人民大学智慧治理学院兼职博导，中国人工智能学会组织工作委员会副秘书长。曾任职于清华大学与腾讯公司。主要研究几... 中文 EN 王希廷 预聘副教授 王希廷本科、博士毕业于清华大学，曾是MSRA社会计算组首席研究员。研究兴趣为可解释、负责任的人工智能，相关科研成果落地全球占有量第二的必应搜索引擎。两篇论文被CCF-A类期刊TVCG评选为封面论文，被... 中文 EN 张骁 预聘副教授 张瑞，现任中国人民大学高瓴人工智能学院讲师，青年英才。2024年毕业于中国科学院数学与系统科学研究院，师从马志明院士，获理学博士学位。2024年至2026年在中国人民大学高瓴人工智能学院从事博士后研究... 中文 EN 沈蔚然 预聘副教授 沈蔚然本科毕业于清华大学电子工程系，2019年于清华大学交叉信息研究院获博士学位，2019年至2020年于卡内基梅隆大学担任博士后研究员。主要研究方向为多智能体系统、博弈论、机制设计和机器学习，在相关... 中文 EN 林衍凯 预聘副教授 林衍凯于2014年和2019年获得清华大学学士和博士学位。博士毕业后曾在腾讯微信担任高级研究员，于2022年加入中国人民大学，任助理教授。其主要研究方向为预训练模型、自然语言处理。曾在ACL、EMNL... 中文 EN 周骁 预聘副教授 周骁分别于2015年和2019年获得英国剑桥大学硕士与博士学位，师从英国皇家工程院院士（FREng）、移动计算领域世界知名学者Cecilia Mascolo教授。博士毕业后赴美国麻省理工学院从事博士后... 中文 EN 马彦彪 讲师 马彦彪于2020年和2025年获得西安电子科技大学学士和博士学位。主要关注多模态大模型视觉理解，模态统一范式，长尾学习和联邦学习领域的研究。以第一作者在TPAMI、IJCV、CVPR、ICLR等人工智... 中文 EN 张瑞 讲师 张瑞于2019年获得华东师范大学理学学士学位，于2024年获得中国科学院数学与系统科学研究院理学博士学位。博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为物理驱动的深度学习方法和可解释神... 中文 EN 朱余韬 预聘助理教授 朱余韬于2016年和2019年获得中国人民大学学士和硕士学位，2023年获得蒙特利尔大学博士学位。博士毕业后加入中国人民大学，开始博士后工作。主要研究方向为大语言模型、信息检索和对话系统。在博士期间曾... 中文 EN",
+      "raw_text": "您所在的位置：首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣，中国人民大学高瓴人工智能学院执行院长，国家高层次人才特聘专家。“大模型与智慧治理”北京市重点实验室主任，担任新一代智能搜索与推荐教育部工程研究中心主任。2018年入选首批“北京市卓越青年科学家... 中文 EN 窦志成 教授 中国人民大学高瓴人工智能学院副院长、教授、长聘教授、博士生导师，现任中国计算机学会大数据专家委员会秘书长，中文信息学会理事、信息检索专委会副主任。主要研究兴趣为智能信息检索、智能体、大模型检索增强、A... 中文 EN 魏哲巍 教授 魏哲巍，教授，博导，国家高层次人才。担任中国人民大学高瓴人工智能学院副院长，新一代智能搜索与推荐教育部工程研究中心副主任。2008年本科毕业于北京大学数学科学学院，2012年博士毕业于香港科技大学计算... 中文 EN 孙浩 教授 孙浩，现任中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家高层次青年人才，哥伦比亚大学博士、麻省理工学院博士后，曾任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高瓴人工智能学院长... 中文 EN 徐君 教授 徐君，中国人民大学高瓴人工智能学院教授、长聘教授、博士生导师。曾就职于微软亚洲研究院、华为诺亚方舟实验室（香港）和中科院计算所。研究领域为互联网搜索与推荐，在重要国际期刊和会议发表论文超过100篇，出... 中文 EN 赵鑫 教授 赵鑫，中国人民大学高瓴人工智能学院教授，长聘副教授，国家优青项目获得者。2014年7月于北京大学获得博士学位，随后进入中国人民大学工作至今。研究领域为信息检索与自然语言处理，共计发表论文200余篇，谷... 中文 EN 卢志武 教授 卢志武博士，中国人民大学高瓴人工智能学院教授，长聘副教授，博士生导师。2005年毕业于北京大学数学科学学院信息科学系，获理学硕士学位；2011年毕业于香港城市大学计算机系，获PhD学位。主要研究方向为... 中文 EN 曹朝 教授 曹朝，中国人民大学高瓴人工智能学院教授，分别于2004年和2010年获得北京理工大学学士和博士学位。于2025年5月加入中国人民大学，曾任华为泊松实验室主任、华为云EI（企业智能）服务产品部架构与设计... 中文 EN 曾毅 教授 曾毅，中国人民大学高瓴人工智能学院，吴玉章讲席教授，博导。北京前瞻人工智能安全与治理研究院院长，人工智能安全与超级对齐北京市重点实验室主任。中国人工智能学会（CAAI）心智计算专委会主任；世界互联网大... 中文 EN 宋睿华 长聘副教授 国家高层次人才特聘教授，现任中国人民大学高瓴人工智能学院长聘副教授。曾任微软亚洲研究院主管研究员、微软小冰首席科学家。近期研究兴趣为多模态理解、创作和交互。发表学术论文100余篇，申请专利30余项。曾... 中文 EN 祁琦 长聘副教授 长聘副教授，博导，国家高层次人才青年专家，CCF中国计算机学会计算经济学专委秘书长。博士毕业于美国斯坦福大学，师从冯·诺依曼奖得主叶荫宇教授。曾任香港科技大学助理教授，博士生导师，获十佳教师奖。主要研... 中文 EN 苏冰 长聘副教授 苏冰，中国人民大学高瓴人工智能学院长聘副教授、博导，国家高层次青年人才。2016年博士毕业于清华大学，2010年本科毕业于北京理工大学。研究方向为计算机视觉、机器学习和模式识别，主要研究序列数据的特征... 中文 EN 许洪腾 长聘副教授 2017年博士毕业于佐治亚理工学院，2013年硕士毕业于上海交通大学，2010年本科毕业于天津大学。其研究方向为通用人工智能技术及其应用，特别是（1）最优传输驱动的机器学习方法；（2）生成式大模型架构... 中文 EN 刘勇 长聘副教授 中国人民大学，长聘副教授、博士生导师、国家级高层次青年人才。从事机器学习研究，特别关注大模型机制分析、强化推理、统计机器学习等。发表高水平论文100多篇，其中以第一作者或通讯作者发表高水平文章60余篇... 中文 EN 王子贺 预聘副教授 本科就读于清华大学计算机科学实验班，2016年在清华大学获博士学位，博士导师为唐平中和姚期智，毕业后在上海财经大学工作4年，后加入中国人民大学高瓴人工智能学院。研究兴趣为理论计算机与经济学的交叉学科，... 中文 EN 毛佳昕 预聘副教授 毛佳昕于2013年和2018年获得清华大学学士和博士学位。博士毕业后曾在清华大学担任博士后研究员，于2020年加入中国人民大学高瓴人工智能学院，任预聘助理教授、预聘副教授。其主要研究方向为信息检索、网... 中文 EN 陈旭 预聘副教授 陈旭，中国人民大学高瓴人工智能学院预聘副教授，博士生导师，国家高层次青年人才。主要研究方向为大语言模型、强化学习、信息检索和因果推断等，发表多篇高水平论文，谷歌引用1万余次。带领团队撰写大模型智能体领... 中文 EN 胡迪 预聘副教授 胡迪，现任中国人民大学高瓴人工智能学院预聘副教授，博导。主要研究方向为多模态交互智能，以主要作者在T-PAMI/ICML/CVPR/CoRL等人工智能顶级期刊及会议发表论文60余篇，六篇荣获CVPR、... 中文 EN 李崇轩 预聘副教授 李崇轩，中国人民大学高瓴人工智能学院预聘副教授、博士生导师，国家高层次青年人才，2010-2019年获清华大学学士和博士学位。主要研究机器学习、深度生成模型，代表性工作部署于DALL·E 2、Stab... 中文 EN 黄文炳 预聘副教授 黄文炳，中国人民大学高瓴人工智能学院预聘副教授、博导，国家高层次青年人才、北京科技新星。中国人民大学智慧治理学院兼职博导，中国人工智能学会组织工作委员会副秘书长。曾任职于清华大学与腾讯公司。主要研究几... 中文 EN 王希廷 预聘副教授 王希廷本科、博士毕业于清华大学，曾是MSRA社会计算组首席研究员。研究兴趣为可解释、负责任的人工智能，相关科研成果落地全球占有量第二的必应搜索引擎。两篇论文被CCF-A类期刊TVCG评选为封面论文，被... 中文 EN 张骁 预聘副教授 张瑞，现任中国人民大学高瓴人工智能学院讲师，青年英才。2024年毕业于中国科学院数学与系统科学研究院，师从马志明院士，获理学博士学位。2024年至2026年在中国人民大学高瓴人工智能学院从事博士后研究... 中文 EN 沈蔚然 预聘副教授 沈蔚然本科毕业于清华大学电子工程系，2019年于清华大学交叉信息研究院获博士学位，2019年至2020年于卡内基梅隆大学担任博士后研究员。主要研究方向为多智能体系统、博弈论、机制设计和机器学习，在相关... 中文 EN 林衍凯 预聘副教授 林衍凯于2014年和2019年获得清华大学学士和博士学位。博士毕业后曾在腾讯微信担任高级研究员，于2022年加入中国人民大学，任助理教授。其主要研究方向为预训练模型、自然语言处理。曾在ACL、EMNL... 中文 EN 周骁 预聘副教授 周骁分别于2015年和2019年获得英国剑桥大学硕士与博士学位，师从英国皇家工程院院士（FREng）、移动计算领域世界知名学者Cecilia Mascolo教授。博士毕业后赴美国麻省理工学院从事博士后... 中文 EN 马彦彪 讲师 马彦彪于2020年和2025年获得西安电子科技大学学士和博士学位。主要关注多模态大模型视觉理解，模态统一范式，长尾学习和联邦学习领域的研究。以第一作者在TPAMI、IJCV、CVPR、ICLR等人工智... 中文 EN 张瑞 讲师 张瑞于2019年获得华东师范大学理学学士学位，于2024年获得中国科学院数学与系统科学研究院理学博士学位。博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为物理驱动的深度学习方法和可解释神... 中文 EN 朱余韬 预聘助理教授 朱余韬于2016年和2019年获得中国人民大学学士和硕士学位，2023年获得蒙特利尔大学博士学位。博士毕业后加入中国人民大学，开始博士后工作。主要研究方向为大语言模型、信息检索和对话系统。在博士期间曾... 中文 EN",
+      "content_hash": "f6ab5a178b2385f143748e7dceefbb19b935a1a423751609ba4a90bf9b70b7d7",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-08-29T05:17:03+00:00",
+      "changed_at": "2026-08-29T05:17:03+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 180,
+      "title": "教师主页系统",
+      "url": "https://ai.ruc.edu.cn/academicfaculty/bshdwn/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "首页 - 师资队伍 - 博士后队伍 在站博士后 郑艳萍 博士后 郑艳萍于2024年6月获得中国人民大学高瓴人工智能学院人",
+      "summary": "您所在的位置：首页 - 师资队伍 - 博士后队伍 在站博士后 郑艳萍 博士后 郑艳萍于2024年6月获得中国人民大学高瓴人工智能学院人工智能专业博士学位，于2023年3月至9月在澳大利亚联邦科学与工业研究组织（CSIRO, DATA61）担任访问科学家，合作导师为刘家俊教授。博... 中文 EN 邹睿 博士后 邹睿于2016年获得南京大学学士学位，于2020年和2024年获得华中师范大学硕士和博士学位。博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为人工智能和人类协同发展、大语言模型技术在教育... 中文 EN 程敏杰 ​博士后 程敏杰于2025年6月获得中国人民大学高瓴人工智能学院人工智能专业博士学位，博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为计算最优传输，神经网络设计和AI4Science， 主要工作发... 中文 EN 交叉学科专项博士后 李铭轩 博士后 中国人民大学交叉科学研究院/高瓴人工智能学院博士后，合作导师为文继荣教授。2014年本科毕业于清华大学汽车工程系，2017年获中国人民大学法学硕士学位，2020年获哈佛大学法学硕士学位，2022年获中... 中文 EN 出站博士后",
+      "content": "您所在的位置：首页 - 师资队伍 - 博士后队伍 在站博士后 郑艳萍 博士后 郑艳萍于2024年6月获得中国人民大学高瓴人工智能学院人工智能专业博士学位，于2023年3月至9月在澳大利亚联邦科学与工业研究组织（CSIRO, DATA61）担任访问科学家，合作导师为刘家俊教授。博... 中文 EN 邹睿 博士后 邹睿于2016年获得南京大学学士学位，于2020年和2024年获得华中师范大学硕士和博士学位。博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为人工智能和人类协同发展、大语言模型技术在教育... 中文 EN 程敏杰 ​博士后 程敏杰于2025年6月获得中国人民大学高瓴人工智能学院人工智能专业博士学位，博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为计算最优传输，神经网络设计和AI4Science， 主要工作发... 中文 EN 交叉学科专项博士后 李铭轩 博士后 中国人民大学交叉科学研究院/高瓴人工智能学院博士后，合作导师为文继荣教授。2014年本科毕业于清华大学汽车工程系，2017年获中国人民大学法学硕士学位，2020年获哈佛大学法学硕士学位，2022年获中... 中文 EN 出站博士后",
+      "raw_text": "您所在的位置：首页 - 师资队伍 - 博士后队伍 在站博士后 郑艳萍 博士后 郑艳萍于2024年6月获得中国人民大学高瓴人工智能学院人工智能专业博士学位，于2023年3月至9月在澳大利亚联邦科学与工业研究组织（CSIRO, DATA61）担任访问科学家，合作导师为刘家俊教授。博... 中文 EN 邹睿 博士后 邹睿于2016年获得南京大学学士学位，于2020年和2024年获得华中师范大学硕士和博士学位。博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为人工智能和人类协同发展、大语言模型技术在教育... 中文 EN 程敏杰 ​博士后 程敏杰于2025年6月获得中国人民大学高瓴人工智能学院人工智能专业博士学位，博士毕业后加入中国人民大学，从事博士后研究工作。主要研究方向为计算最优传输，神经网络设计和AI4Science， 主要工作发... 中文 EN 交叉学科专项博士后 李铭轩 博士后 中国人民大学交叉科学研究院/高瓴人工智能学院博士后，合作导师为文继荣教授。2014年本科毕业于清华大学汽车工程系，2017年获中国人民大学法学硕士学位，2020年获哈佛大学法学硕士学位，2022年获中... 中文 EN 出站博士后",
+      "content_hash": "aa36e007902e6e5ceac175db34a38b6dea2ba5bdb24fd3662c3d0f58e3979b9c",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-08-29T05:17:03+00:00",
+      "changed_at": "2026-08-29T05:17:03+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 160,
+      "title": "党建文化----中国科学院数学与系统科学研究院",
+      "url": "https://amss.cas.cn/../../dqyd",
+      "source_name": "中国科学院数学与系统科学研究院",
+      "source_url": "https://amss.cas.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-07-09",
+      "location": "首页 党建文化 筑牢信仰之基",
+      "summary": "ENGLISH SEARCH Close Form 党建文化 您当前的位置： 首页 党建文化 筑牢信仰之基，树立正确政绩观——数学所党支部深入开展专题学习与研讨活动 2026-07-09 “中国航天发展之路”报告会召开 2026-06-07 以案为鉴鸣警钟 科研报国守廉心——党委委员、副院长黄飞敏研究员在应用所三支部讲授廉政专题党课 2026-04-21 应用所二支部召开“科学家精神”学习讨论会 2026-02-11 系统所二支部召开“同上一堂课”学习讨论会 2026-01-09 鉴往知来悟初心 科技赋能担使命——机关党支部联合应用所党支部开展党支部活动 2025-12-31 纪念刘源张院士诞辰100周年—系统所2支部举办短视频设计大赛 2025-05-27 赓续中华文脉，筑牢信仰之基——机关一二党支部联合参观中国国家版本馆 2025-04-10 以史为鉴知兴替，党建引领促融合——应用数学所、机关党支部联合参观首都博物馆 2025-01-25 弘扬伟大抗战精神，牢记党员初心使命——应用所三支部开展主题党日活动 2024-10-29 “抢占科技制高点 科技报国迎华诞”诗文书画摄影大赛获奖名单公布 2024-10-28 系统所三支部开展“党史中的纪律建设”主题联合党建活动 2024-08-23 弘扬红旗渠精神，践行新时代使命——系统所第一、二党支部联合开展专题培训班 2024-06-26 文明的烛火——中国古代科学文化系列论坛：中国古代科学中的系统思想报告会顺利召开 2024-04-18 机关一、二支部联合召开2023年度组织生活会 2023-03-31 数学院召开2022年度领导干部民主生活会 2023-01-17 中国运筹学会党支部组织观看二十大开幕式直播 2022-10-18 计算数学所党支部开展“喜迎二十大 创新正当时” 主题党日活动 2022-10-07 系统所第二党支部举办知识问卷活动及探望党员科学家 2022-10-07 数学院召开中心组学习会 2022-09-21 1 2 3 4 5 查看更多 党 委 书 记： 张 平 副书记： 赵 刚 委 员：（按姓氏笔划排序） 丁晓蕾 田 野 张 平 陈志明 杨翠红 郑伟英 赵 刚 黄飞敏 纪 委 书 记： 赵 刚 委 员：（按姓氏 笔划排序） 王 勇 王晓欢 王翠斌 刘 歆 李启寨 尚 云 赵 刚 工 会 主 席：",
+      "content": "ENGLISH SEARCH Close Form 党建文化 您当前的位置： 首页 党建文化 筑牢信仰之基，树立正确政绩观——数学所党支部深入开展专题学习与研讨活动 2026-07-09 “中国航天发展之路”报告会召开 2026-06-07 以案为鉴鸣警钟 科研报国守廉心——党委委员、副院长黄飞敏研究员在应用所三支部讲授廉政专题党课 2026-04-21 应用所二支部召开“科学家精神”学习讨论会 2026-02-11 系统所二支部召开“同上一堂课”学习讨论会 2026-01-09 鉴往知来悟初心 科技赋能担使命——机关党支部联合应用所党支部开展党支部活动 2025-12-31 纪念刘源张院士诞辰100周年—系统所2支部举办短视频设计大赛 2025-05-27 赓续中华文脉，筑牢信仰之基——机关一二党支部联合参观中国国家版本馆 2025-04-10 以史为鉴知兴替，党建引领促融合——应用数学所、机关党支部联合参观首都博物馆 2025-01-25 弘扬伟大抗战精神，牢记党员初心使命——应用所三支部开展主题党日活动 2024-10-29 “抢占科技制高点 科技报国迎华诞”诗文书画摄影大赛获奖名单公布 2024-10-28 系统所三支部开展“党史中的纪律建设”主题联合党建活动 2024-08-23 弘扬红旗渠精神，践行新时代使命——系统所第一、二党支部联合开展专题培训班 2024-06-26 文明的烛火——中国古代科学文化系列论坛：中国古代科学中的系统思想报告会顺利召开 2024-04-18 机关一、二支部联合召开2023年度组织生活会 2023-03-31 数学院召开2022年度领导干部民主生活会 2023-01-17 中国运筹学会党支部组织观看二十大开幕式直播 2022-10-18 计算数学所党支部开展“喜迎二十大 创新正当时” 主题党日活动 2022-10-07 系统所第二党支部举办知识问卷活动及探望党员科学家 2022-10-07 数学院召开中心组学习会 2022-09-21 1 2 3 4 5 查看更多 党 委 书 记： 张 平 副书记： 赵 刚 委 员：（按姓氏笔划排序） 丁晓蕾 田 野 张 平 陈志明 杨翠红 郑伟英 赵 刚 黄飞敏 纪 委 书 记： 赵 刚 委 员：（按姓氏 笔划排序） 王 勇 王晓欢 王翠斌 刘 歆 李启寨 尚 云 赵 刚 工 会 主 席： 张立群 副主席： 尹永华 委 员：（按姓氏笔画排序） 丁祥茂 王 林 王 勇 支丽红 冯丽平 杨晓光 宋瑞昆 张松懋 赵延龙 胡星标 曹礼群 董 昭 童 佳 团 委 书 记： 宋 超 副书记 ： 李海东 委 员：（按姓氏笔画排序） 李 岩 李海东 肖 惠 宋 超 陈书凝 孟可欣 高 斌 陶 睿 董 越 青促会会员36人 2011年度： 张志芳、赵延龙、郝成春、苏阳、张世华、许志强(2015年度优秀会员)、李启寨(2015年度优秀会员)、 张珣(2015年度优秀会员) 2012年度： 李京安、韩丕功(2016年度优秀会员)、吕金虎(2016年度优秀会员) 2013年度： 邸亚娜 2014年度： 闫振亚、冯如勇、王益、王珏 2015年度： 宋永生、袁春明、袁巍 2016年度： 毛士鹏、万林、彭文娟、 2017年度： 齐洪胜、齐波、刘亚锋、罗德军、万昕、刘歆、庹睿、张新雨 2018年度： 陈绍示、周涛、聂思安、黄祥娣、刘晓东、黄记祖 妇委会 主 任： 王 珏 副主任： 尹永华 委 员：（按姓氏笔画排序） 丁 璐 王晓欢 纪 晔 李广宇 尚 云 戴小英 魏 蕾 秘 书： 魏 蕾 电子政务平台 科技网邮箱 ARP系统 会议服务平台 信息公开 违法违纪举报 联系我们 相关链接",
+      "raw_text": "ENGLISH SEARCH Close Form 党建文化 您当前的位置： 首页 党建文化 筑牢信仰之基，树立正确政绩观——数学所党支部深入开展专题学习与研讨活动 2026-07-09 “中国航天发展之路”报告会召开 2026-06-07 以案为鉴鸣警钟 科研报国守廉心——党委委员、副院长黄飞敏研究员在应用所三支部讲授廉政专题党课 2026-04-21 应用所二支部召开“科学家精神”学习讨论会 2026-02-11 系统所二支部召开“同上一堂课”学习讨论会 2026-01-09 鉴往知来悟初心 科技赋能担使命——机关党支部联合应用所党支部开展党支部活动 2025-12-31 纪念刘源张院士诞辰100周年—系统所2支部举办短视频设计大赛 2025-05-27 赓续中华文脉，筑牢信仰之基——机关一二党支部联合参观中国国家版本馆 2025-04-10 以史为鉴知兴替，党建引领促融合——应用数学所、机关党支部联合参观首都博物馆 2025-01-25 弘扬伟大抗战精神，牢记党员初心使命——应用所三支部开展主题党日活动 2024-10-29 “抢占科技制高点 科技报国迎华诞”诗文书画摄影大赛获奖名单公布 2024-10-28 系统所三支部开展“党史中的纪律建设”主题联合党建活动 2024-08-23 弘扬红旗渠精神，践行新时代使命——系统所第一、二党支部联合开展专题培训班 2024-06-26 文明的烛火——中国古代科学文化系列论坛：中国古代科学中的系统思想报告会顺利召开 2024-04-18 机关一、二支部联合召开2023年度组织生活会 2023-03-31 数学院召开2022年度领导干部民主生活会 2023-01-17 中国运筹学会党支部组织观看二十大开幕式直播 2022-10-18 计算数学所党支部开展“喜迎二十大 创新正当时” 主题党日活动 2022-10-07 系统所第二党支部举办知识问卷活动及探望党员科学家 2022-10-07 数学院召开中心组学习会 2022-09-21 1 2 3 4 5 查看更多 党 委 书 记： 张 平 副书记： 赵 刚 委 员：（按姓氏笔划排序） 丁晓蕾 田 野 张 平 陈志明 杨翠红 郑伟英 赵 刚 黄飞敏 纪 委 书 记： 赵 刚 委 员：（按姓氏 笔划排序） 王 勇 王晓欢 王翠斌 刘 歆 李启寨 尚 云 赵 刚 工 会 主 席： 张立群 副主席： 尹永华 委 员：（按姓氏笔画排序） 丁祥茂 王 林 王 勇 支丽红 冯丽平 杨晓光 宋瑞昆 张松懋 赵延龙 胡星标 曹礼群 董 昭 童 佳 团 委 书 记： 宋 超 副书记 ： 李海东 委 员：（按姓氏笔画排序） 李 岩 李海东 肖 惠 宋 超 陈书凝 孟可欣 高 斌 陶 睿 董 越 青促会会员36人 2011年度： 张志芳、赵延龙、郝成春、苏阳、张世华、许志强(2015年度优秀会员)、李启寨(2015年度优秀会员)、 张珣(2015年度优秀会员) 2012年度： 李京安、韩丕功(2016年度优秀会员)、吕金虎(2016年度优秀会员) 2013年度： 邸亚娜 2014年度： 闫振亚、冯如勇、王益、王珏 2015年度： 宋永生、袁春明、袁巍 2016年度： 毛士鹏、万林、彭文娟、 2017年度： 齐洪胜、齐波、刘亚锋、罗德军、万昕、刘歆、庹睿、张新雨 2018年度： 陈绍示、周涛、聂思安、黄祥娣、刘晓东、黄记祖 妇委会 主 任： 王 珏 副主任： 尹永华 委 员：（按姓氏笔画排序） 丁 璐 王晓欢 纪 晔 李广宇 尚 云 戴小英 魏 蕾 秘 书： 魏 蕾 电子政务平台 科技网邮箱 ARP系统 会议服务平台 信息公开 违法违纪举报 联系我们 相关链接",
+      "content_hash": "53634b80ba0563cbad921a223015b038fc321dfd1c170fc44ebff8f1b3d26d68",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:56:50+00:00",
+      "last_seen_at": "2026-08-29T05:16:28+00:00",
+      "changed_at": "2026-08-29T05:16:28+00:00",
+      "topics": [
+        "中科院",
+        "数学",
+        "系统科学"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 80,
+      "title": "人员队伍-清华大学交叉信息研究院",
+      "url": "https://iiis.tsinghua.edu.cn/rydw.htm",
+      "source_name": "清华交叉信息研究院",
+      "source_url": "https://iiis.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真：",
+      "summary": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 全职教师 姚期智 院长，教授 算法，密码学，量子计算，机制设计，人工智能 MORE 段路明 清华大学姚期智讲座教授，清华大学基础科学讲席教授 离子与超导量子计算、量子网络、量子模拟、量子人工智能 MORE 段然 教授 图论算法、数据结构、计算理论 MORE 黄隆波 教授 决策智能，强化学习，大模型，机器学习，随机网络优化 MORE 李建 教授 理论计算机科学，机器学习理论，金融科技 MORE 马雄峰 党委书记, 教授 量子信息科学 MORE 孙麓岩 教授 基于超导的量子信息处理 MORE 徐葳 副院长, 教授 分布式系统，数据中心网络，金融科技，人工智能安全，人工智能+医疗 MORE 陈建宇 长聘副教授 机器人学，强化学习，控制，自动驾驶 MORE 邓东灵 党委副书记，长聘副教授 量子人工智能，量子信息与计算，拓扑相物质，量子非平衡态系统 MORE 高鸣宇 院长助理，长聘副教授 计算机系统结构（新型存储架构、专用计算系统、硬件系统安全） MORE 马恺声 长聘副教授 AI+Chiplet、AI算法设计 MORE 徐勇 长聘副教授 量子物理与量子信息、非线性物理、量子多体物理 MORE 袁洋 院长助理，长聘副教授 智能医疗、AI基础理论、应用范畴论 MORE 陈一镭 助理教授 密码学 MORE 陈彬毅 助理教授 密码学，零知识简洁证明 MORE 杜韬 助理教授 计算机图形学，机器学习，机器人学 MORE 房智轩 助理教授 博弈机制设计，区块链系统，平台设计，网络经济学，群体智能 MORE 高阳 助理教授 计算机视觉，强化学习 MORE 侯攀宇 助理教授 离子量子计算；金刚石色心量子信息应用。 MORE 贺天行 助理教授 电子游戏研发，多",
+      "content": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 全职教师 姚期智 院长，教授 算法，密码学，量子计算，机制设计，人工智能 MORE 段路明 清华大学姚期智讲座教授，清华大学基础科学讲席教授 离子与超导量子计算、量子网络、量子模拟、量子人工智能 MORE 段然 教授 图论算法、数据结构、计算理论 MORE 黄隆波 教授 决策智能，强化学习，大模型，机器学习，随机网络优化 MORE 李建 教授 理论计算机科学，机器学习理论，金融科技 MORE 马雄峰 党委书记, 教授 量子信息科学 MORE 孙麓岩 教授 基于超导的量子信息处理 MORE 徐葳 副院长, 教授 分布式系统，数据中心网络，金融科技，人工智能安全，人工智能+医疗 MORE 陈建宇 长聘副教授 机器人学，强化学习，控制，自动驾驶 MORE 邓东灵 党委副书记，长聘副教授 量子人工智能，量子信息与计算，拓扑相物质，量子非平衡态系统 MORE 高鸣宇 院长助理，长聘副教授 计算机系统结构（新型存储架构、专用计算系统、硬件系统安全） MORE 马恺声 长聘副教授 AI+Chiplet、AI算法设计 MORE 徐勇 长聘副教授 量子物理与量子信息、非线性物理、量子多体物理 MORE 袁洋 院长助理，长聘副教授 智能医疗、AI基础理论、应用范畴论 MORE 陈一镭 助理教授 密码学 MORE 陈彬毅 助理教授 密码学，零知识简洁证明 MORE 杜韬 助理教授 计算机图形学，机器学习，机器人学 MORE 房智轩 助理教授 博弈机制设计，区块链系统，平台设计，网络经济学，群体智能 MORE 高阳 助理教授 计算机视觉，强化学习 MORE 侯攀宇 助理教授 离子量子计算；金刚石色心量子信息应用。 MORE 贺天行 助理教授 电子游戏研发，多模态生成，社会模拟，人工智能安全 MORE 吕凯风 助理教授 机器学习理论，AI安全与对齐，优化 MORE 濮云飞 助理教授 基于离子阱与中性原子阵列的量子网络与量子计算 MORE 宋一凡 助理教授 密码学 MORE 王禹皓 助理教授 因果推断，实验设计，高维统计，计量经济学 MORE 吴宇恺 助理教授 量子计算的物理实现，量子信息 MORE 许华哲 助理教授 强化学习， 机器人学， 计算机视觉，计算机触觉 MORE 徐梦迪 助理教授 机器学习，机器人学，人机交互，人工智能安全 MORE 弋力 助理教授 三维计算机视觉，三维深度学习，机器人感知，计算机图形学，几何处理 MORE 张焕晨 助理教授 数据库管理系统，索引数据结构，数据压缩，云数据库 MORE 张景昭 助理教授 优化，机器学习理论， 强化学习， 动力系统， 异常检测 MORE 赵行 助理教授 计算机视觉，多模态机器学习，自动驾驶，机器人学习 MORE 郑舒冉 助理教授 计算经济学，人工智能，数据估值 MORE 研究系列 宋祎璞 研究员 超导量子计算 MORE 周子超 研究员 离子阱量子信息处理 MORE 常秀英 副研究员 量子传感 MORE 何丽 副研究员 MORE 张宏毅 副研究员 超导量子信息处理，微波量子光学和量子器件 MORE 黄园园 助理研究员 离子阱量子网络 MORE 姜越 助理研究员 离子阱量子计算与量子模拟，离子阱芯片研发 MORE 刘艳青 助理研究员 MORE 祁宾祥 助理研究员 离子阱量子计算控制系统、量子精密测量等相关的电子学技术 MORE 王韦婷 助理研究员 超导量子信息处理，混合量子系统 MORE 荣誉客座 储枫 讲席教授 计算几何与组合算法 MORE 兼职教师 胡事民 兼职教授 MORE 郁昱 访问教授 MORE 楼天城 兼职教师 MORE 博士后 范晓昱 隐私保护计算；多方安全计算；人工智能安全 MORE 冯路 量子网络与量子纠缠 MORE 郭世安 基于离子阱技术的量子模拟与量子计算实验 MORE 华子越 MORE 李炜康 量子信息，量子机器学习理论，量子人工智能 MORE 卢亚男 金刚石色心量子模拟与量子传感 MORE 吕雪广 强化学习，多智能体系统 MORE 孙正之 量子人工智能，拓扑量子计算，张量网络方法 MORE 徐奕放 超导量子计算和量子信息 MORE 杨炎彬 量子物理 MORE 元祎君 MORE 李卓然 强化学习、生成模型、大模型 MORE 张钧翔 金刚石色心量子传感与量子模拟 MORE 行政人员 宋梦婷 院长助理 MORE 吕厦敏 办公室主任 MORE 常予莹 外事 MORE 张燕 姚班事务 MORE 孙帅 学生工作 MORE 尚妤婵 研究生教务、博士后工作 MORE 李响 技术主管 MORE 马佳 资产管理 MORE 李凯琳 科研助理 MORE 张馨 研究生学生工作 MORE 张学朝 AI中心行政助理 MORE 姜月亮 宣传事务 MORE 张宇驰 科研项目助理 MORE 黄鸣悦 党务行政助理 MORE 杨子衿 实验室事务 MORE 实验员 安辰杰 量子信息实验员 MORE 王海艳 量子信息研发 MORE 尹伟 计算机实验员 MORE 离退休人员 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "raw_text": "首页 热点新闻 讲座预告 院系概况 院系简介 院长寄语 现任领导 院系沿革 新闻动态 院系动态 媒体聚焦 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 姚班本科生 姚班培养 姚班招生 研究生 研究生培养 研究生招生 量子中心 中心简介 师资力量 科研概况 量子中心动态 科学研究 组织架构 课题组介绍 研究动态 科研简报 校园生活 学生活动 衣食住行 公开招聘 教师招聘 博士后招聘 职员招聘 校友频道 校友风采 校友俱乐部 校友捐赠 人员队伍 全职教师 研究系列 荣誉客座 兼职教师 博士后 行政人员 实验员 全职教师 姚期智 院长，教授 算法，密码学，量子计算，机制设计，人工智能 MORE 段路明 清华大学姚期智讲座教授，清华大学基础科学讲席教授 离子与超导量子计算、量子网络、量子模拟、量子人工智能 MORE 段然 教授 图论算法、数据结构、计算理论 MORE 黄隆波 教授 决策智能，强化学习，大模型，机器学习，随机网络优化 MORE 李建 教授 理论计算机科学，机器学习理论，金融科技 MORE 马雄峰 党委书记, 教授 量子信息科学 MORE 孙麓岩 教授 基于超导的量子信息处理 MORE 徐葳 副院长, 教授 分布式系统，数据中心网络，金融科技，人工智能安全，人工智能+医疗 MORE 陈建宇 长聘副教授 机器人学，强化学习，控制，自动驾驶 MORE 邓东灵 党委副书记，长聘副教授 量子人工智能，量子信息与计算，拓扑相物质，量子非平衡态系统 MORE 高鸣宇 院长助理，长聘副教授 计算机系统结构（新型存储架构、专用计算系统、硬件系统安全） MORE 马恺声 长聘副教授 AI+Chiplet、AI算法设计 MORE 徐勇 长聘副教授 量子物理与量子信息、非线性物理、量子多体物理 MORE 袁洋 院长助理，长聘副教授 智能医疗、AI基础理论、应用范畴论 MORE 陈一镭 助理教授 密码学 MORE 陈彬毅 助理教授 密码学，零知识简洁证明 MORE 杜韬 助理教授 计算机图形学，机器学习，机器人学 MORE 房智轩 助理教授 博弈机制设计，区块链系统，平台设计，网络经济学，群体智能 MORE 高阳 助理教授 计算机视觉，强化学习 MORE 侯攀宇 助理教授 离子量子计算；金刚石色心量子信息应用。 MORE 贺天行 助理教授 电子游戏研发，多模态生成，社会模拟，人工智能安全 MORE 吕凯风 助理教授 机器学习理论，AI安全与对齐，优化 MORE 濮云飞 助理教授 基于离子阱与中性原子阵列的量子网络与量子计算 MORE 宋一凡 助理教授 密码学 MORE 王禹皓 助理教授 因果推断，实验设计，高维统计，计量经济学 MORE 吴宇恺 助理教授 量子计算的物理实现，量子信息 MORE 许华哲 助理教授 强化学习， 机器人学， 计算机视觉，计算机触觉 MORE 徐梦迪 助理教授 机器学习，机器人学，人机交互，人工智能安全 MORE 弋力 助理教授 三维计算机视觉，三维深度学习，机器人感知，计算机图形学，几何处理 MORE 张焕晨 助理教授 数据库管理系统，索引数据结构，数据压缩，云数据库 MORE 张景昭 助理教授 优化，机器学习理论， 强化学习， 动力系统， 异常检测 MORE 赵行 助理教授 计算机视觉，多模态机器学习，自动驾驶，机器人学习 MORE 郑舒冉 助理教授 计算经济学，人工智能，数据估值 MORE 研究系列 宋祎璞 研究员 超导量子计算 MORE 周子超 研究员 离子阱量子信息处理 MORE 常秀英 副研究员 量子传感 MORE 何丽 副研究员 MORE 张宏毅 副研究员 超导量子信息处理，微波量子光学和量子器件 MORE 黄园园 助理研究员 离子阱量子网络 MORE 姜越 助理研究员 离子阱量子计算与量子模拟，离子阱芯片研发 MORE 刘艳青 助理研究员 MORE 祁宾祥 助理研究员 离子阱量子计算控制系统、量子精密测量等相关的电子学技术 MORE 王韦婷 助理研究员 超导量子信息处理，混合量子系统 MORE 荣誉客座 储枫 讲席教授 计算几何与组合算法 MORE 兼职教师 胡事民 兼职教授 MORE 郁昱 访问教授 MORE 楼天城 兼职教师 MORE 博士后 范晓昱 隐私保护计算；多方安全计算；人工智能安全 MORE 冯路 量子网络与量子纠缠 MORE 郭世安 基于离子阱技术的量子模拟与量子计算实验 MORE 华子越 MORE 李炜康 量子信息，量子机器学习理论，量子人工智能 MORE 卢亚男 金刚石色心量子模拟与量子传感 MORE 吕雪广 强化学习，多智能体系统 MORE 孙正之 量子人工智能，拓扑量子计算，张量网络方法 MORE 徐奕放 超导量子计算和量子信息 MORE 杨炎彬 量子物理 MORE 元祎君 MORE 李卓然 强化学习、生成模型、大模型 MORE 张钧翔 金刚石色心量子传感与量子模拟 MORE 行政人员 宋梦婷 院长助理 MORE 吕厦敏 办公室主任 MORE 常予莹 外事 MORE 张燕 姚班事务 MORE 孙帅 学生工作 MORE 尚妤婵 研究生教务、博士后工作 MORE 李响 技术主管 MORE 马佳 资产管理 MORE 李凯琳 科研助理 MORE 张馨 研究生学生工作 MORE 张学朝 AI中心行政助理 MORE 姜月亮 宣传事务 MORE 张宇驰 科研项目助理 MORE 黄鸣悦 党务行政助理 MORE 杨子衿 实验室事务 MORE 实验员 安辰杰 量子信息实验员 MORE 王海艳 量子信息研发 MORE 尹伟 计算机实验员 MORE 离退休人员 地址：北京市 海淀区 清华大学 信息科学技术楼(FIT楼) 1-208室 100084 电话：010-62781693 传真： 010-62781693-转2000 邮箱：iiis@mail.tsinghua.edu.cn 版权所有 @ 清华大学交叉信息研究院 TOP",
+      "content_hash": "61599fbb3a1da3e4899a45d3aab0d9883fe281a89ab3a1723d06033fd069f8f1",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:39+00:00",
+      "last_seen_at": "2026-08-29T05:15:23+00:00",
+      "changed_at": "2026-08-29T05:15:23+00:00",
+      "topics": [
+        "清华",
+        "交叉信息",
+        "理论计算机",
+        "AI"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 25,
+      "title": "Beijing Institute of Mathematical Sciences and Applications",
+      "url": "https://www.bimsa.cn/",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Ev",
+      "content": "28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 1st September Introduction to non-Archimedean analytic geometry Course 1st September Introduction to non-Archimedean analytic geometry (Qiuzhen) Course Hang Yuan 3rd September BIMSA Computational Math Seminar Seminar Theory and Computation of PDE Team 4th September 随机过程 Course Shuo Qin 7th September Unitary (higher) algebras I Course Quan Chen 7th September The fundamental evolutionary theory of polygenic trait Course Qi Wu Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "raw_text": "28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals 10th June, 2026 Beyond Scaling: BIMSA AI Team Proposes a Research Framework for Data-Efficient Agentic Learning and Organizes ADMA 2026 Special Session MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 1st September Introduction to non-Archimedean analytic geometry Course 1st September Introduction to non-Archimedean analytic geometry (Qiuzhen) Course Hang Yuan 3rd September BIMSA Computational Math Seminar Seminar Theory and Computation of PDE Team 4th September 随机过程 Course Shuo Qin 7th September Unitary (higher) algebras I Course Quan Chen 7th September The fundamental evolutionary theory of polygenic trait Course Qi Wu Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "content_hash": "1cc1d8d55b7819793efaff686b021cefa728e073ea8d8b3ae22860ecb250d0cf",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-29T05:14:54+00:00",
+      "changed_at": "2026-08-29T05:14:54+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 26,
+      "title": "北京雁栖湖应用数学研究院",
+      "url": "https://www.bimsa.cn/zh-CN",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-02-23",
+      "location": null,
+      "summary": "2026-08-28 我院王雅晴入选IJCAI 2026青年学者聚焦计划 2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 01 9月 Introduction to non-Archimedean analytic geometry 课程 01 9月 Introduction to non-Archimedean analytic geometry (Qiuzhen) 课程 袁航 03 9月 BIMSA 计算数学讨论班 研讨会 Theory and Computation of PDE Team 04 9月 随机过程 课程 秦硕 07 9月 Unitary (higher) algebras I 课程 陈权 07 9月 The fundamental evolutionary theory of polygenic trait 课程 吴琦 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 ",
+      "content": "2026-08-28 我院王雅晴入选IJCAI 2026青年学者聚焦计划 2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 01 9月 Introduction to non-Archimedean analytic geometry 课程 01 9月 Introduction to non-Archimedean analytic geometry (Qiuzhen) 课程 袁航 03 9月 BIMSA 计算数学讨论班 研讨会 Theory and Computation of PDE Team 04 9月 随机过程 课程 秦硕 07 9月 Unitary (higher) algebras I 课程 陈权 07 9月 The fundamental evolutionary theory of polygenic trait 课程 吴琦 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "raw_text": "2026-08-28 我院王雅晴入选IJCAI 2026青年学者聚焦计划 2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 2026-06-10 Beyond Scaling：我院AI团队提出数据高效智能体学习研究框架并组织ADMA 2026专题论坛 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 01 9月 Introduction to non-Archimedean analytic geometry 课程 01 9月 Introduction to non-Archimedean analytic geometry (Qiuzhen) 课程 袁航 03 9月 BIMSA 计算数学讨论班 研讨会 Theory and Computation of PDE Team 04 9月 随机过程 课程 秦硕 07 9月 Unitary (higher) algebras I 课程 陈权 07 9月 The fundamental evolutionary theory of polygenic trait 课程 吴琦 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "content_hash": "3c7a3a99fd97f451d7176aa0916310293d16db4ca258c4583bd8165e61b98e58",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-08-29T05:14:54+00:00",
+      "changed_at": "2026-08-29T05:14:54+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:14:54+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:17:03+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:16:28+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:15:35+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:15:49+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:14:20+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:15:23+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-08-29T05:15:08+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
