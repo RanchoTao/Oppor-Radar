@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -16,7 +17,7 @@ except ModuleNotFoundError:
     def load_dotenv(*args, **kwargs):
         return False
 
-from src.crawler.discovery import crawl_source
+from src.crawler.discovery import CrawlResult, crawl_source
 from src.extractor.rules import enrich_with_rules
 from src.llm.deepseek_digest import build_daily_digest, rank_items
 from src.notifier.markdown_report import generate_report
@@ -45,6 +46,31 @@ def _today(profile: dict) -> str:
         return datetime.now(ZoneInfo(timezone_name)).date().isoformat()
     except Exception:
         return datetime.now(timezone.utc).date().isoformat()
+
+
+def _crawl_all_sources(sources: list[dict]) -> list[tuple[dict, CrawlResult]]:
+    """Run independent source I/O concurrently while keeping DB writes single-threaded."""
+    if not sources:
+        return []
+    workers = max(1, min(int(os.getenv("OPPOR_SOURCE_WORKERS", "4")), len(sources), 8))
+    results: dict[int, tuple[dict, CrawlResult]] = {}
+
+    with ThreadPoolExecutor(max_workers=workers, thread_name_prefix="oppor-source") as pool:
+        futures = {}
+        for index, source in enumerate(sources):
+            LOGGER.info("Scheduling source: %s [%s]", source["name"], source.get("group", "未分组"))
+            futures[pool.submit(crawl_source, source)] = (index, source)
+
+        for future in as_completed(futures):
+            index, source = futures[future]
+            try:
+                result = future.result()
+            except Exception as exc:
+                LOGGER.exception("Source crawl crashed: %s", source["name"])
+                result = CrawlResult([], "error", f"crawl_exception: {exc}")
+            results[index] = (source, result)
+
+    return [results[index] for index in sorted(results)]
 
 
 def _apply_intelligence(conn, rows, results: list[dict]) -> None:
@@ -86,15 +112,20 @@ def main() -> None:
     unchanged_count = 0
     failed = 0
 
-    for source in sources:
-        LOGGER.info("Crawling source: %s [%s]", source["name"], source.get("group", "未分组"))
-        result = crawl_source(source)
+    for source, result in _crawl_all_sources(sources):
         if result.status != "ok":
             failed += 1
             update_source_health(conn, source, "error", result.message, 0)
             conn.commit()
             continue
 
+        LOGGER.info(
+            "Processing source: %s [%s], %s items via %s",
+            source["name"],
+            source.get("group", "未分组"),
+            len(result.items),
+            result.mode,
+        )
         for item in result.items:
             item = enrich_with_rules(item)
             status = upsert_item(conn, item)
