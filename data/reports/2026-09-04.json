@@ -1,0 +1,350 @@
+{
+  "schema_version": 2,
+  "date": "2026-09-04",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 6,
+    "candidate_items": 6,
+    "selected_items": 6,
+    "last_updated_at": "2026-09-04T10:33:25.634526+08:00"
+  },
+  "digest": {
+    "report_date": "2026-09-04",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 6 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 6 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "学院简介_中国人民大学高瓴人工智能学院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/overview/intro/index.htm"
+          },
+          {
+            "title": "数说学院_中国人民大学高瓴人工智能学院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/overview/message/index.htm"
+          },
+          {
+            "title": "学院公告_中国人民大学高瓴人工智能学院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/newslist/notice/index.htm"
+          },
+          {
+            "title": "Beijing Institute of Mathematical Sciences and Applications",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/"
+          },
+          {
+            "title": "北京雁栖湖应用数学研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/zh-CN"
+          },
+          {
+            "title": "ENGLISH",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "清华丘成桐数学科学中心",
+            "url": "https://ymsc.tsinghua.edu.cn/en"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 169,
+      "title": "学院简介_中国人民大学高瓴人工智能学院",
+      "url": "https://ai.ruc.edu.cn/overview/intro/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "学院概况 学院简介 现任领导 数说学院 行政机构 首页 / 学院概况 / 学院简介 / 学院简介 高瓴人工智能学院负责学校人工智能学科的规划与建设。学院由高瓴资本创始人、中国人民大学校友张磊先生捐资支持建设。学院以打造一所能够影响和塑造未来人工智能时代的世界一流学院为愿景，培养有人类情怀（有温度）的人工智能本硕博人才。 作为贯彻落实党中央、国务院关于加快新一代人工智能的重要部署，加快构建赶超世界先进水平的人工智能人才培养体系，学院于2019年4月正式成立，时任中国科学技术协会党组书记怀进鹏院士、科学技术部副部长李萌、中国外文局局长杜占元等出席成立大会。中国工程院原常务副院长潘云鹤院士担任学院首任学术委员会主任，国家高层次人才专家文继荣担任执行院长，李艳丽担任学院党委书记。 引领未来的人才培养愿景 人工智能作为引领未来的技术，正在推动新一轮科技革命、产业变革和社会变革。以ChatGPT、DeepSeek、Sora和OpenClaw为代表的大语言模型和智能体技术不断突破，习近平总书记也多次强调人工智能的国家战略地位。国家紧缺与市场需求旺盛，因此培养更多高层次AI人才，已成为我国人工智能教育的紧迫任务。 高瓴人工智能学院的愿景是打造一所能够影响和塑造未来人工智能时代的世界一流学院，为全球思考并创造“智能而有温度”的未来。凭借国际一流的师资力量与科研实力，着力培育具有全球视野、扎实专业功底和人文关怀的一流人工智能科学家、一流人工智能工程师、具有创新精神的人工智能创业者以及人文社科领域的人工智能开拓者。 有人类情怀（有温度）的人工智能人才培养 “人工智能”本科专业于2020年2月通过教育部备案审批，首届本科、硕士、博士于2020年9月入学，现有学生736人。学院充分发挥人民大学学科优势，注重科技人才的伦理和职业道德教育，注重人文关怀和社会素养，强化人文社科与人工智能的交叉融合，引导学生在“智能而有温度”的道路上成长。一方面，依托中国人民大学完善的通识教育，鼓励学生选修人大精品的人文和社会学科基础课程；另一方面，开展前沿交叉研究，例如AI+司法、AI+经济等，并开设了一系列文理交叉课程。在中国人民大学的沃土中，深植人工智能种子，培养“有人类情怀（有温度）的人工智能”人才。 与国际接轨的课程建设 学院按照人工智能专业课程类型，组建6个课程组，包括专业核心课课程组、跨学科交叉课程组",
+      "content": "学院概况 学院简介 现任领导 数说学院 行政机构 首页 / 学院概况 / 学院简介 / 学院简介 高瓴人工智能学院负责学校人工智能学科的规划与建设。学院由高瓴资本创始人、中国人民大学校友张磊先生捐资支持建设。学院以打造一所能够影响和塑造未来人工智能时代的世界一流学院为愿景，培养有人类情怀（有温度）的人工智能本硕博人才。 作为贯彻落实党中央、国务院关于加快新一代人工智能的重要部署，加快构建赶超世界先进水平的人工智能人才培养体系，学院于2019年4月正式成立，时任中国科学技术协会党组书记怀进鹏院士、科学技术部副部长李萌、中国外文局局长杜占元等出席成立大会。中国工程院原常务副院长潘云鹤院士担任学院首任学术委员会主任，国家高层次人才专家文继荣担任执行院长，李艳丽担任学院党委书记。 引领未来的人才培养愿景 人工智能作为引领未来的技术，正在推动新一轮科技革命、产业变革和社会变革。以ChatGPT、DeepSeek、Sora和OpenClaw为代表的大语言模型和智能体技术不断突破，习近平总书记也多次强调人工智能的国家战略地位。国家紧缺与市场需求旺盛，因此培养更多高层次AI人才，已成为我国人工智能教育的紧迫任务。 高瓴人工智能学院的愿景是打造一所能够影响和塑造未来人工智能时代的世界一流学院，为全球思考并创造“智能而有温度”的未来。凭借国际一流的师资力量与科研实力，着力培育具有全球视野、扎实专业功底和人文关怀的一流人工智能科学家、一流人工智能工程师、具有创新精神的人工智能创业者以及人文社科领域的人工智能开拓者。 有人类情怀（有温度）的人工智能人才培养 “人工智能”本科专业于2020年2月通过教育部备案审批，首届本科、硕士、博士于2020年9月入学，现有学生736人。学院充分发挥人民大学学科优势，注重科技人才的伦理和职业道德教育，注重人文关怀和社会素养，强化人文社科与人工智能的交叉融合，引导学生在“智能而有温度”的道路上成长。一方面，依托中国人民大学完善的通识教育，鼓励学生选修人大精品的人文和社会学科基础课程；另一方面，开展前沿交叉研究，例如AI+司法、AI+经济等，并开设了一系列文理交叉课程。在中国人民大学的沃土中，深植人工智能种子，培养“有人类情怀（有温度）的人工智能”人才。 与国际接轨的课程建设 学院按照人工智能专业课程类型，组建6个课程组，包括专业核心课课程组、跨学科交叉课程组、部类基础课程组、实践类课程组、新生研讨课程组、通识核心课程组。开设一大批面向未来且具有人工智能专业特色的优质专业核心课程，例如《人工智能与Python程序设计》《人工智能引论》《人工智能数学基础》《机器学习基础》《最优化理论与方法》《深度学习导论》等，并开设两门全英文荣誉课程Optimization Theory and Methodology(Honor Course)、Introduction to Machine Learning (Honor Course)。其中，《人工智能与Python程序设计》《人工智能引论》《机器学习基础》《深度学习导论》《概率论与数理统计》《算法分析与设计》等课程已建设成为中国人民大学“123”金课项目。 一流的国际性培养平台 学院开展贯通培养，已与加拿大蒙特利尔大学、香港城市大学、香港理工大学开展双博士学位联培项目，与新加坡国立大学计算机学院签订合作协议，并获国家留基委“创新型人才国际合作培养项目”重点支持。学院支持学生申请校级交换项目，伙伴学校包括英国牛津大学、美国哥伦比亚大学、美国芝加哥大学、德国哥廷根大学等海外一流高校。2025年学院有160位师生赴美国、英国、日本、波兰、希腊等参加国际学术会议和交换访学。培养的学生可与国际顶尖大学学生同台竞争。通过与世界顶尖高校的交流互访和联合培养项目，学生们得以在国际舞台上展现才华，收获丰富的海外学习经历。 一流的实践平台 学院为加强学生科研能力训练和解决复杂问题的能力，设置“本科生科研‘瓴’航计划”。目前学院已和20多家企事业单位成立了实践实训基地，和腾讯、快手、阿里、百川智能、高途、OPPO、百融智能等开展了广泛的科研合作，使科研成果转化落地和学生实践能力培养紧密融合，助力专业建设勇闯一流。 未来已来。我国人工智能人才，尤其是高层次智能科学人才是国家战略急需。毕业生进入字节、阿里、腾讯、华为等科技企业，从事大模型训练、智能体研发等工作，也可凭借人大品牌优势与专业所长，进入国家部委、金融机构和科研院所，深度参与数字中国建设。 选择高瓴人工智能学院，你们将浸润于全球领先的教育资源，跟随国际知名学者的脚步，在人工智能的星辰大海中扬帆远航，让我们携手在人工智能的浪潮中乘风破浪，共同书写新时代的科技华章！ 教师风采 1、 中国人民大学文继荣教授：搜索，从相关性到有用性 2、 窦志成：从微软到人大，只为做有温度的AI 3、 “牛导”来了 | 魏哲巍：33岁破格晋升人大教授，致力于培养有温度的AI人才 4、 中国人民大学卢志武：ChatGPT对多模态通用生成模型的重要启发 5、 专访中国人民大学卢志武教授：AI的新突破，或从“文澜”开始 6、 宋睿华：我们赖以生存的意义 | CHEERS2021湛庐年度大会 7、 人大宋睿华：自然语言理解的重大突破为何是多模态？ 8、 对话33岁人大AI学院博导孙浩：用AI发现物理学规律，成果登Nature子刊 9、 毕业于斯坦福的美女博导祁琦：带你感受AI+计算经济学的温度 10、 AI“青椒”许洪腾：学生眼里的YYDS 11、 AI博导刘勇：行走的“段子手” 12、 人大高瓴人工智能学院李崇轩：我的生成模型修炼之路 13、 对话周骁：MIT归来的90后女科学家，在人大研究“AI+X” 14、 人大高瓴博士后朱倩男：从大厂到教职——行稳致远的科研路 15、 毕业于斯坦福的美女博导祁琦：带你感受AI+计算经济学的温度 16、 五育并举｜牛导制霸运动场，主打一个健康快乐！ 17、 AI“女神”王希廷：春风化雨，亦师亦友 18、 乘风破浪的高瓴人工智能学院 |“导师天团”C位出道！ 19、 人大高瓴沈蔚然：致力于AI+经济学研究的“i人暖男” 20、 人大高瓴王子贺：最强大脑+运动全能，带你感受AI+的魅力！ 21、 为什么来人大高瓴？有温度的AI导师长这样 22、 人大高瓴人工智能学院两位教师入选 “AI100青年先锋” 学生风采 1、 大神来了 | 人大毕业十星、发表7篇CCF-A类论文的高颜值博士长啥样 2、 大神来了 | 14岁上人大，这个博士小哥哥有点不一样！ 3、 2020年吴玉章奖学金得主刘炯楠：在人工智能领域勇攀高峰！ 4、 专访吴玉章奖学金获得者姚菁：天道酬勤，当自律和优秀成为一种习惯 5、 青研青语 | 算法攀登者王涵之：与大数据的“双向奔赴” 6、 “微软学者”、“字节跳动”奖学金双料得主周昆：勇敢追寻科研路上的“白月光” 7、 AI时代带来无限可能：刘炯楠同学在中国人民大学2021-2022学年开学典礼上发言 8、 AI学子之星 | 李军毅：用努力和汗水探寻科研进阶之路 9、 AI学子之星 | 单良：追求初心，从英国留学归来到高瓴人工智能学院读博 10、 保研分享 | 徐晨：为何选择到高瓴人工智能学院读直博 11、 戴孙浩同学：夏令营成功上岸经验分享 12、 夏令营倒计时 | 登上《人民日报》、获奖国际竞赛、还有民乐团鼓手……这届同学tql ！ 13、 徐澜玲：夏令营保研上岸经验分享 14、 刘文涵：夏令营为何选择人大高瓴人工智能学院读直博 15、 王榕甄：夏令营保研上岸经验分享 16、 访学分享| 周雨佳：从中国人民大学到新加坡国立大学——这一年的求学经历 17、 博士联培分享| 李军毅：加拿大蒙特利尔大学联培经历 18、 大神在身边，高瓴AI本科生写了一本200页的书！ 19、 人大高瓴人工智能学院“本科生科研领航”初见成效 20、 当AI遇到游戏+非遗：人大学子勇夺2022腾讯高校游戏大赛优秀作品奖！ 21、 京东特等奖学金获得者李军毅：人大10年，保持热爱，奔赴山海 22、 京东特等奖学金获得者唐天一：凡事尽力而为，但同时接受命运的安排 23、 海外交流经验| 优秀本科生王子涵在美暑期研究分享 24、 优秀博士生治学感悟 | 高瓴人工智能学院博士生钱泓锦:时代的呼唤——人工智能中的探索与自我超越 25、 学子风采| “宝钢优秀学生奖”获得者王子涵：恰同学少年 26、 优秀毕业生林宁：心怀热爱，整理200多页的”书“ 27、 “我在海外做科研”| 人大高瓴学子卡内基梅隆大学访学交流分享 28、 优秀毕业生专访 | 王涵之：追逐热爱、奔赴山海 29、 首届博士毕业生张恒：行而不辍，在热爱中绽放光彩 30、 首届博士毕业生梅朗：11载人大生活，且行且收获 31、 首届本科毕业生关开思：在最珍贵的时光，做好最重要的事 32、 中国人民大学吴玉章奖学金得主侯宇蓬：勇闯人工智能的无人区 33、 优秀毕业生普淏：认真对待每一个当下 34、 曹乾：人大7年，我在这里收获了三个“实” 35、 国家奖学金获得者王振磊：做“有温度”的科研 36、 优秀毕业生|徐澜玲：从“徐老师”到徐老师：我的扎根与绽放之旅 37、 高瓴人工智能学院智子引擎团队问鼎“京东杯”学生创新创业大赛最高奖！多支队伍斩获佳绩 38、 人大高瓴这位同学，上了《人民日报》！ 39、 文理交融、五育并举 | 写代码的TA，喜获人大校园歌手大赛\"十佳歌手\"！ 40、 人大高瓴人工智能学院师生团队荣获The Web Conference 2025 AI智能体比赛银牌 41、 人大高瓴人工智能学院卫雅珂荣获第十二届百度奖学金 42、 就读体验|与耶鲁学霸battle技术、人文关怀拉满，人大AI有爱有温度！ 43、 张令：平芜尽处是春山，追风赶月莫停留 44、 张鑫恺：国奖三连、参加人大-耶鲁对话，在算法和世界之间寻找答案 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "raw_text": "学院概况 学院简介 现任领导 数说学院 行政机构 首页 / 学院概况 / 学院简介 / 学院简介 高瓴人工智能学院负责学校人工智能学科的规划与建设。学院由高瓴资本创始人、中国人民大学校友张磊先生捐资支持建设。学院以打造一所能够影响和塑造未来人工智能时代的世界一流学院为愿景，培养有人类情怀（有温度）的人工智能本硕博人才。 作为贯彻落实党中央、国务院关于加快新一代人工智能的重要部署，加快构建赶超世界先进水平的人工智能人才培养体系，学院于2019年4月正式成立，时任中国科学技术协会党组书记怀进鹏院士、科学技术部副部长李萌、中国外文局局长杜占元等出席成立大会。中国工程院原常务副院长潘云鹤院士担任学院首任学术委员会主任，国家高层次人才专家文继荣担任执行院长，李艳丽担任学院党委书记。 引领未来的人才培养愿景 人工智能作为引领未来的技术，正在推动新一轮科技革命、产业变革和社会变革。以ChatGPT、DeepSeek、Sora和OpenClaw为代表的大语言模型和智能体技术不断突破，习近平总书记也多次强调人工智能的国家战略地位。国家紧缺与市场需求旺盛，因此培养更多高层次AI人才，已成为我国人工智能教育的紧迫任务。 高瓴人工智能学院的愿景是打造一所能够影响和塑造未来人工智能时代的世界一流学院，为全球思考并创造“智能而有温度”的未来。凭借国际一流的师资力量与科研实力，着力培育具有全球视野、扎实专业功底和人文关怀的一流人工智能科学家、一流人工智能工程师、具有创新精神的人工智能创业者以及人文社科领域的人工智能开拓者。 有人类情怀（有温度）的人工智能人才培养 “人工智能”本科专业于2020年2月通过教育部备案审批，首届本科、硕士、博士于2020年9月入学，现有学生736人。学院充分发挥人民大学学科优势，注重科技人才的伦理和职业道德教育，注重人文关怀和社会素养，强化人文社科与人工智能的交叉融合，引导学生在“智能而有温度”的道路上成长。一方面，依托中国人民大学完善的通识教育，鼓励学生选修人大精品的人文和社会学科基础课程；另一方面，开展前沿交叉研究，例如AI+司法、AI+经济等，并开设了一系列文理交叉课程。在中国人民大学的沃土中，深植人工智能种子，培养“有人类情怀（有温度）的人工智能”人才。 与国际接轨的课程建设 学院按照人工智能专业课程类型，组建6个课程组，包括专业核心课课程组、跨学科交叉课程组、部类基础课程组、实践类课程组、新生研讨课程组、通识核心课程组。开设一大批面向未来且具有人工智能专业特色的优质专业核心课程，例如《人工智能与Python程序设计》《人工智能引论》《人工智能数学基础》《机器学习基础》《最优化理论与方法》《深度学习导论》等，并开设两门全英文荣誉课程Optimization Theory and Methodology(Honor Course)、Introduction to Machine Learning (Honor Course)。其中，《人工智能与Python程序设计》《人工智能引论》《机器学习基础》《深度学习导论》《概率论与数理统计》《算法分析与设计》等课程已建设成为中国人民大学“123”金课项目。 一流的国际性培养平台 学院开展贯通培养，已与加拿大蒙特利尔大学、香港城市大学、香港理工大学开展双博士学位联培项目，与新加坡国立大学计算机学院签订合作协议，并获国家留基委“创新型人才国际合作培养项目”重点支持。学院支持学生申请校级交换项目，伙伴学校包括英国牛津大学、美国哥伦比亚大学、美国芝加哥大学、德国哥廷根大学等海外一流高校。2025年学院有160位师生赴美国、英国、日本、波兰、希腊等参加国际学术会议和交换访学。培养的学生可与国际顶尖大学学生同台竞争。通过与世界顶尖高校的交流互访和联合培养项目，学生们得以在国际舞台上展现才华，收获丰富的海外学习经历。 一流的实践平台 学院为加强学生科研能力训练和解决复杂问题的能力，设置“本科生科研‘瓴’航计划”。目前学院已和20多家企事业单位成立了实践实训基地，和腾讯、快手、阿里、百川智能、高途、OPPO、百融智能等开展了广泛的科研合作，使科研成果转化落地和学生实践能力培养紧密融合，助力专业建设勇闯一流。 未来已来。我国人工智能人才，尤其是高层次智能科学人才是国家战略急需。毕业生进入字节、阿里、腾讯、华为等科技企业，从事大模型训练、智能体研发等工作，也可凭借人大品牌优势与专业所长，进入国家部委、金融机构和科研院所，深度参与数字中国建设。 选择高瓴人工智能学院，你们将浸润于全球领先的教育资源，跟随国际知名学者的脚步，在人工智能的星辰大海中扬帆远航，让我们携手在人工智能的浪潮中乘风破浪，共同书写新时代的科技华章！ 教师风采 1、 中国人民大学文继荣教授：搜索，从相关性到有用性 2、 窦志成：从微软到人大，只为做有温度的AI 3、 “牛导”来了 | 魏哲巍：33岁破格晋升人大教授，致力于培养有温度的AI人才 4、 中国人民大学卢志武：ChatGPT对多模态通用生成模型的重要启发 5、 专访中国人民大学卢志武教授：AI的新突破，或从“文澜”开始 6、 宋睿华：我们赖以生存的意义 | CHEERS2021湛庐年度大会 7、 人大宋睿华：自然语言理解的重大突破为何是多模态？ 8、 对话33岁人大AI学院博导孙浩：用AI发现物理学规律，成果登Nature子刊 9、 毕业于斯坦福的美女博导祁琦：带你感受AI+计算经济学的温度 10、 AI“青椒”许洪腾：学生眼里的YYDS 11、 AI博导刘勇：行走的“段子手” 12、 人大高瓴人工智能学院李崇轩：我的生成模型修炼之路 13、 对话周骁：MIT归来的90后女科学家，在人大研究“AI+X” 14、 人大高瓴博士后朱倩男：从大厂到教职——行稳致远的科研路 15、 毕业于斯坦福的美女博导祁琦：带你感受AI+计算经济学的温度 16、 五育并举｜牛导制霸运动场，主打一个健康快乐！ 17、 AI“女神”王希廷：春风化雨，亦师亦友 18、 乘风破浪的高瓴人工智能学院 |“导师天团”C位出道！ 19、 人大高瓴沈蔚然：致力于AI+经济学研究的“i人暖男” 20、 人大高瓴王子贺：最强大脑+运动全能，带你感受AI+的魅力！ 21、 为什么来人大高瓴？有温度的AI导师长这样 22、 人大高瓴人工智能学院两位教师入选 “AI100青年先锋” 学生风采 1、 大神来了 | 人大毕业十星、发表7篇CCF-A类论文的高颜值博士长啥样 2、 大神来了 | 14岁上人大，这个博士小哥哥有点不一样！ 3、 2020年吴玉章奖学金得主刘炯楠：在人工智能领域勇攀高峰！ 4、 专访吴玉章奖学金获得者姚菁：天道酬勤，当自律和优秀成为一种习惯 5、 青研青语 | 算法攀登者王涵之：与大数据的“双向奔赴” 6、 “微软学者”、“字节跳动”奖学金双料得主周昆：勇敢追寻科研路上的“白月光” 7、 AI时代带来无限可能：刘炯楠同学在中国人民大学2021-2022学年开学典礼上发言 8、 AI学子之星 | 李军毅：用努力和汗水探寻科研进阶之路 9、 AI学子之星 | 单良：追求初心，从英国留学归来到高瓴人工智能学院读博 10、 保研分享 | 徐晨：为何选择到高瓴人工智能学院读直博 11、 戴孙浩同学：夏令营成功上岸经验分享 12、 夏令营倒计时 | 登上《人民日报》、获奖国际竞赛、还有民乐团鼓手……这届同学tql ！ 13、 徐澜玲：夏令营保研上岸经验分享 14、 刘文涵：夏令营为何选择人大高瓴人工智能学院读直博 15、 王榕甄：夏令营保研上岸经验分享 16、 访学分享| 周雨佳：从中国人民大学到新加坡国立大学——这一年的求学经历 17、 博士联培分享| 李军毅：加拿大蒙特利尔大学联培经历 18、 大神在身边，高瓴AI本科生写了一本200页的书！ 19、 人大高瓴人工智能学院“本科生科研领航”初见成效 20、 当AI遇到游戏+非遗：人大学子勇夺2022腾讯高校游戏大赛优秀作品奖！ 21、 京东特等奖学金获得者李军毅：人大10年，保持热爱，奔赴山海 22、 京东特等奖学金获得者唐天一：凡事尽力而为，但同时接受命运的安排 23、 海外交流经验| 优秀本科生王子涵在美暑期研究分享 24、 优秀博士生治学感悟 | 高瓴人工智能学院博士生钱泓锦:时代的呼唤——人工智能中的探索与自我超越 25、 学子风采| “宝钢优秀学生奖”获得者王子涵：恰同学少年 26、 优秀毕业生林宁：心怀热爱，整理200多页的”书“ 27、 “我在海外做科研”| 人大高瓴学子卡内基梅隆大学访学交流分享 28、 优秀毕业生专访 | 王涵之：追逐热爱、奔赴山海 29、 首届博士毕业生张恒：行而不辍，在热爱中绽放光彩 30、 首届博士毕业生梅朗：11载人大生活，且行且收获 31、 首届本科毕业生关开思：在最珍贵的时光，做好最重要的事 32、 中国人民大学吴玉章奖学金得主侯宇蓬：勇闯人工智能的无人区 33、 优秀毕业生普淏：认真对待每一个当下 34、 曹乾：人大7年，我在这里收获了三个“实” 35、 国家奖学金获得者王振磊：做“有温度”的科研 36、 优秀毕业生|徐澜玲：从“徐老师”到徐老师：我的扎根与绽放之旅 37、 高瓴人工智能学院智子引擎团队问鼎“京东杯”学生创新创业大赛最高奖！多支队伍斩获佳绩 38、 人大高瓴这位同学，上了《人民日报》！ 39、 文理交融、五育并举 | 写代码的TA，喜获人大校园歌手大赛\"十佳歌手\"！ 40、 人大高瓴人工智能学院师生团队荣获The Web Conference 2025 AI智能体比赛银牌 41、 人大高瓴人工智能学院卫雅珂荣获第十二届百度奖学金 42、 就读体验|与耶鲁学霸battle技术、人文关怀拉满，人大AI有爱有温度！ 43、 张令：平芜尽处是春山，追风赶月莫停留 44、 张鑫恺：国奖三连、参加人大-耶鲁对话，在算法和世界之间寻找答案 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "content_hash": "b7e6be18f0bf59c6cff9e004faf33bd2baf452a4590c6605fa9b97cb2472f9e6",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-09-04T02:33:25+00:00",
+      "changed_at": "2026-09-04T02:33:25+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 171,
+      "title": "数说学院_中国人民大学高瓴人工智能学院",
+      "url": "https://ai.ruc.edu.cn/overview/message/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "学院概况 学院简介 现任领导 数说学院 行政机构 首页 / 学院概况 / 数说学院 / 数说学院 有人类情怀（有温度）的高瓴人工智能学院 高瓴人工智能学院成立于2019年，负责学校人工智能学科的规划与建设。学院由高瓴资本创始人、中国人民大学校友张磊先生捐资支持建设。学院以打造一所能够影响和塑造未来人工智能时代的世界一流学院为愿景，培养有人类情怀（有温度）的人工智能本硕博人才。 人工智能学科科研实力在国际计算机排行榜CSRankings中位居世界前列 中国人民大学高瓴人工智能学院人工智能学科科研实力在国际计算机排行榜CSRankings中连续多年位居世界前列。互联网与信息检索方向2021—2026年在CSRankings排行榜位居世界第1。 13个高水平研究中心和实验室 学院以世界一流大学的基础设施为蓝本，重点建设“新一代智能搜索与推荐”教育部工程研究中心、“大模型与智慧治理”北京市重点实验室、京西智谷 中国人民大学人工智能与智慧治理研发中心，联合设立中国科协-中国人民大学智能社会治理研究中心、中国外文局-中国人民大学国际传播大数据智能实验室，与腾讯、快手、百川智能、OPPO、高途、百融智能分别建立校企联合实验室，为师生提供一流的“政产学研用”科研平台。 650余篇高水平期刊和会议论文 2019—2025年，学院师生以主要作者身份在学校A+/A类高水平期刊和会议上发表论文650余篇，《Nature》子刊论文8篇，获教育部高等学校科学研究优秀成果奖自然科学一等奖、北京市自然科学二等奖、吴文俊人工智能科学技术奖科技进步奖一等奖等。 有组织科研催生丰硕创新成果 学院教师承担国家和省部级课题60余项、横向课题260余项。学院前瞻性地布局大模型技术研究，研发首个中文超大规模多模态预训练模型“文澜”、自主研发“玉兰”系列大语言模型，创新提出扩散语言模型“玉兰-LLaDA”。运用人工智能技术加速科研范式变革，推出AI搜索引擎WebThinker，研发基于国产深度学习框架的图机器学习算法库Jittor-Geometric，研制短临降水智能预报系统“观天”等系列前沿创新成果。构建“人工智能+”人文社科交叉研究新模式，推出新一代大模型社会模拟平台“玉兰-万象”，推出多模态金融研报生成系统 “玉兰·融观（Yulan-FinSight）”，联合法学院研发全国高校首个涉外法治大模型，联合社会学",
+      "content": "学院概况 学院简介 现任领导 数说学院 行政机构 首页 / 学院概况 / 数说学院 / 数说学院 有人类情怀（有温度）的高瓴人工智能学院 高瓴人工智能学院成立于2019年，负责学校人工智能学科的规划与建设。学院由高瓴资本创始人、中国人民大学校友张磊先生捐资支持建设。学院以打造一所能够影响和塑造未来人工智能时代的世界一流学院为愿景，培养有人类情怀（有温度）的人工智能本硕博人才。 人工智能学科科研实力在国际计算机排行榜CSRankings中位居世界前列 中国人民大学高瓴人工智能学院人工智能学科科研实力在国际计算机排行榜CSRankings中连续多年位居世界前列。互联网与信息检索方向2021—2026年在CSRankings排行榜位居世界第1。 13个高水平研究中心和实验室 学院以世界一流大学的基础设施为蓝本，重点建设“新一代智能搜索与推荐”教育部工程研究中心、“大模型与智慧治理”北京市重点实验室、京西智谷 中国人民大学人工智能与智慧治理研发中心，联合设立中国科协-中国人民大学智能社会治理研究中心、中国外文局-中国人民大学国际传播大数据智能实验室，与腾讯、快手、百川智能、OPPO、高途、百融智能分别建立校企联合实验室，为师生提供一流的“政产学研用”科研平台。 650余篇高水平期刊和会议论文 2019—2025年，学院师生以主要作者身份在学校A+/A类高水平期刊和会议上发表论文650余篇，《Nature》子刊论文8篇，获教育部高等学校科学研究优秀成果奖自然科学一等奖、北京市自然科学二等奖、吴文俊人工智能科学技术奖科技进步奖一等奖等。 有组织科研催生丰硕创新成果 学院教师承担国家和省部级课题60余项、横向课题260余项。学院前瞻性地布局大模型技术研究，研发首个中文超大规模多模态预训练模型“文澜”、自主研发“玉兰”系列大语言模型，创新提出扩散语言模型“玉兰-LLaDA”。运用人工智能技术加速科研范式变革，推出AI搜索引擎WebThinker，研发基于国产深度学习框架的图机器学习算法库Jittor-Geometric，研制短临降水智能预报系统“观天”等系列前沿创新成果。构建“人工智能+”人文社科交叉研究新模式，推出新一代大模型社会模拟平台“玉兰-万象”，推出多模态金融研报生成系统 “玉兰·融观（Yulan-FinSight）”，联合法学院研发全国高校首个涉外法治大模型，联合社会学院等发布“亿心通”社区书记智能体，联合新闻学院发布明新大模型。 深化人工智能通识教育 学院面向全校学生开设“人工智能与数字社会”荣誉辅修项目，支持学校开设“AI+”系列创研课程，与本科生院联合举办3期37场“AI在人大，智启未来”系列讲座，助力学校推进人工智能普及教育。 国家高层次人才占比41% 学院师资队伍来自麻省理工学院、卡耐基梅隆大学、杜克大学等国际名校以及微软研究院、腾讯等头部科技企业。教师队伍中国家级高层次人才占比41%，有海外学习研究和工作背景的教师占比约70%，工业界背景师资占比超30%。 20+高端实践基地 学院与20多家企事业单位成立实践实训基地，和华为、快手、百度、京东等开展科研实践合作，将科研成果转化落地和学生实践能力培养紧密融合，全面提升人才培养质量。 师生约200人次/年赴海外交流 学院与50余所国际高校开展合作。每年师生近200人次出国参加国际顶会，近三年累计50余名学生赴海外一流高校交流学习，分别前往加州大学伯克利分校、戴维斯分校，卡耐基梅隆大学等世界名校。 30余名师生获创新创业国际国内奖项 本硕博毕业生实现高质量就业 学院创新创业氛围浓厚，博士毕业生高一钊创办智子引擎公司，团队获中国国际大学生创新大赛金奖等荣誉；累计30余名学生在国内外创新竞赛中获奖，代表性奖项包括本科生团队斩获2026机器人“勇士”挑战赛梅花桩唯一突破、技术分第一，高瓴信息联队RUC-HuHa战队获2025世界人形机器人运动会亚军，许一孟获第三届全国大学生职业规划大赛北京市赛决赛一等奖，孙忠祥团队获首届人工智能与智慧治理大学生创新创业大赛一等奖，金佳杰团队获AFAC2025金融智能创新大赛挑战组冠军等。近年来学院育人成效显著，3人获学校“吴玉章奖学金”（全校10人/年），2人获“中国计算机学会优秀博士学位论文奖”（全国10人/年），3人获“字节跳动奖学金”（全国10人/年），2人获“微软学者奖学金”（亚太地区12人/年），3人获“百度奖学金”（全球10人/年）。2025届本硕博毕业生实现高质量就业，硕博毕业生就业率均达100%。 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "raw_text": "学院概况 学院简介 现任领导 数说学院 行政机构 首页 / 学院概况 / 数说学院 / 数说学院 有人类情怀（有温度）的高瓴人工智能学院 高瓴人工智能学院成立于2019年，负责学校人工智能学科的规划与建设。学院由高瓴资本创始人、中国人民大学校友张磊先生捐资支持建设。学院以打造一所能够影响和塑造未来人工智能时代的世界一流学院为愿景，培养有人类情怀（有温度）的人工智能本硕博人才。 人工智能学科科研实力在国际计算机排行榜CSRankings中位居世界前列 中国人民大学高瓴人工智能学院人工智能学科科研实力在国际计算机排行榜CSRankings中连续多年位居世界前列。互联网与信息检索方向2021—2026年在CSRankings排行榜位居世界第1。 13个高水平研究中心和实验室 学院以世界一流大学的基础设施为蓝本，重点建设“新一代智能搜索与推荐”教育部工程研究中心、“大模型与智慧治理”北京市重点实验室、京西智谷 中国人民大学人工智能与智慧治理研发中心，联合设立中国科协-中国人民大学智能社会治理研究中心、中国外文局-中国人民大学国际传播大数据智能实验室，与腾讯、快手、百川智能、OPPO、高途、百融智能分别建立校企联合实验室，为师生提供一流的“政产学研用”科研平台。 650余篇高水平期刊和会议论文 2019—2025年，学院师生以主要作者身份在学校A+/A类高水平期刊和会议上发表论文650余篇，《Nature》子刊论文8篇，获教育部高等学校科学研究优秀成果奖自然科学一等奖、北京市自然科学二等奖、吴文俊人工智能科学技术奖科技进步奖一等奖等。 有组织科研催生丰硕创新成果 学院教师承担国家和省部级课题60余项、横向课题260余项。学院前瞻性地布局大模型技术研究，研发首个中文超大规模多模态预训练模型“文澜”、自主研发“玉兰”系列大语言模型，创新提出扩散语言模型“玉兰-LLaDA”。运用人工智能技术加速科研范式变革，推出AI搜索引擎WebThinker，研发基于国产深度学习框架的图机器学习算法库Jittor-Geometric，研制短临降水智能预报系统“观天”等系列前沿创新成果。构建“人工智能+”人文社科交叉研究新模式，推出新一代大模型社会模拟平台“玉兰-万象”，推出多模态金融研报生成系统 “玉兰·融观（Yulan-FinSight）”，联合法学院研发全国高校首个涉外法治大模型，联合社会学院等发布“亿心通”社区书记智能体，联合新闻学院发布明新大模型。 深化人工智能通识教育 学院面向全校学生开设“人工智能与数字社会”荣誉辅修项目，支持学校开设“AI+”系列创研课程，与本科生院联合举办3期37场“AI在人大，智启未来”系列讲座，助力学校推进人工智能普及教育。 国家高层次人才占比41% 学院师资队伍来自麻省理工学院、卡耐基梅隆大学、杜克大学等国际名校以及微软研究院、腾讯等头部科技企业。教师队伍中国家级高层次人才占比41%，有海外学习研究和工作背景的教师占比约70%，工业界背景师资占比超30%。 20+高端实践基地 学院与20多家企事业单位成立实践实训基地，和华为、快手、百度、京东等开展科研实践合作，将科研成果转化落地和学生实践能力培养紧密融合，全面提升人才培养质量。 师生约200人次/年赴海外交流 学院与50余所国际高校开展合作。每年师生近200人次出国参加国际顶会，近三年累计50余名学生赴海外一流高校交流学习，分别前往加州大学伯克利分校、戴维斯分校，卡耐基梅隆大学等世界名校。 30余名师生获创新创业国际国内奖项 本硕博毕业生实现高质量就业 学院创新创业氛围浓厚，博士毕业生高一钊创办智子引擎公司，团队获中国国际大学生创新大赛金奖等荣誉；累计30余名学生在国内外创新竞赛中获奖，代表性奖项包括本科生团队斩获2026机器人“勇士”挑战赛梅花桩唯一突破、技术分第一，高瓴信息联队RUC-HuHa战队获2025世界人形机器人运动会亚军，许一孟获第三届全国大学生职业规划大赛北京市赛决赛一等奖，孙忠祥团队获首届人工智能与智慧治理大学生创新创业大赛一等奖，金佳杰团队获AFAC2025金融智能创新大赛挑战组冠军等。近年来学院育人成效显著，3人获学校“吴玉章奖学金”（全校10人/年），2人获“中国计算机学会优秀博士学位论文奖”（全国10人/年），3人获“字节跳动奖学金”（全国10人/年），2人获“微软学者奖学金”（亚太地区12人/年），3人获“百度奖学金”（全球10人/年）。2025届本硕博毕业生实现高质量就业，硕博毕业生就业率均达100%。 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "content_hash": "b7745eb10729b9461ab426074b35cb5833fd4a198a723bbbd7e5929ac4dafad2",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-09-04T02:33:25+00:00",
+      "changed_at": "2026-09-04T02:33:25+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 174,
+      "title": "学院公告_中国人民大学高瓴人工智能学院",
+      "url": "https://ai.ruc.edu.cn/newslist/notice/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 人工智能教育发展专报 首页 / 新闻公告 / 学院公告 / 学院公告 Sep 04 中国人民大学2027年工程硕博士培养改革专项推免研究生招生报名通知 我校在电子信息专业（专业代码085400）人工智能领域开展专项招生。专项分为工程硕士和工程直博两个项目 Jun 23 中国人民大学高瓴人工智能学院2027年推免生接收工作报名通知 中国人民大学高瓴人工智能学院2027年推免生接收工作报名通知 Jun 23 全球人工智能创新·治理·安全大赛报名通知 全球人工智能创新·治理·安全大赛报名通知 Apr 10 中国人民大学高瓴人工智能学院2026年数据计算及应用（智能科学）强基计划专业介绍 中国人民大学高瓴人工智能学院2026年数据计算及应用（智能科学）强基计划专业介绍 Apr 10 中国人民大学2026年高瓴人工智能学院硕士复试成绩 中国人民大学2026年高瓴人工智能学院硕士复试成绩 Mar 31 中国人民大学2026高瓴人工智能学院“申请-考核”制博士综合考核成绩 中国人民大学2026年高瓴人工智能学院“申请-考核”制博士综合考核成绩 Mar 18 中国人民大学高瓴人工智能学院2026年硕士研究生招生考试复试录取工作方案 中国人民大学高瓴人工智能学院2026年硕士研究生招生考试复试录取工作方案 Mar 18 2026年高瓴人工智能学院硕士研究生招生考试复试分数线及复试名单公示 2026年高瓴人工智能学院硕士研究生招生考试复试分数线及复试名单公示 Mar 06 中国人民大学高瓴人工智能学院2026年博士研究生“申请—考核”制综合考核工作办法 中国人民大学高瓴人工智能学院2026年博士研究生“申请—考核”制综合考核工作办法 Mar 06 2026年高瓴人工智能学院“申请—考核”制博士研究生人工智能专业（北京智源人工智能研究院联合培养）综合考核名单 2026年高瓴人工智能学院“申请-考核”制博士研究生人工智能专业专业（北京智源人工智能研究院联合培养）综合考核名单 Mar 04 2026年硕士生初试成绩复核结果公示 Feb 28 高瓴人工智能学院关于2026年硕士研究生招生考试初试成绩复核工作的通知 我校2026年硕士生招生考试初试成绩已通过中国研究生招生信息网开通网上查询 Jan 12 2026年高瓴人工智能学院“申请",
+      "content": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 人工智能教育发展专报 首页 / 新闻公告 / 学院公告 / 学院公告 Sep 04 中国人民大学2027年工程硕博士培养改革专项推免研究生招生报名通知 我校在电子信息专业（专业代码085400）人工智能领域开展专项招生。专项分为工程硕士和工程直博两个项目 Jun 23 中国人民大学高瓴人工智能学院2027年推免生接收工作报名通知 中国人民大学高瓴人工智能学院2027年推免生接收工作报名通知 Jun 23 全球人工智能创新·治理·安全大赛报名通知 全球人工智能创新·治理·安全大赛报名通知 Apr 10 中国人民大学高瓴人工智能学院2026年数据计算及应用（智能科学）强基计划专业介绍 中国人民大学高瓴人工智能学院2026年数据计算及应用（智能科学）强基计划专业介绍 Apr 10 中国人民大学2026年高瓴人工智能学院硕士复试成绩 中国人民大学2026年高瓴人工智能学院硕士复试成绩 Mar 31 中国人民大学2026高瓴人工智能学院“申请-考核”制博士综合考核成绩 中国人民大学2026年高瓴人工智能学院“申请-考核”制博士综合考核成绩 Mar 18 中国人民大学高瓴人工智能学院2026年硕士研究生招生考试复试录取工作方案 中国人民大学高瓴人工智能学院2026年硕士研究生招生考试复试录取工作方案 Mar 18 2026年高瓴人工智能学院硕士研究生招生考试复试分数线及复试名单公示 2026年高瓴人工智能学院硕士研究生招生考试复试分数线及复试名单公示 Mar 06 中国人民大学高瓴人工智能学院2026年博士研究生“申请—考核”制综合考核工作办法 中国人民大学高瓴人工智能学院2026年博士研究生“申请—考核”制综合考核工作办法 Mar 06 2026年高瓴人工智能学院“申请—考核”制博士研究生人工智能专业（北京智源人工智能研究院联合培养）综合考核名单 2026年高瓴人工智能学院“申请-考核”制博士研究生人工智能专业专业（北京智源人工智能研究院联合培养）综合考核名单 Mar 04 2026年硕士生初试成绩复核结果公示 Feb 28 高瓴人工智能学院关于2026年硕士研究生招生考试初试成绩复核工作的通知 我校2026年硕士生招生考试初试成绩已通过中国研究生招生信息网开通网上查询 Jan 12 2026年高瓴人工智能学院“申请—考核”制博士研究生电子信息专业综合考核名单公示 2026年“申请—考核”制博士研究生电子信息专业综合考核名单 Jan 12 2026年高瓴人工智能学院“申请—考核”制博士研究生人工智能专业综合考核名单公示 2026年“申请—考核”制博士研究生人工智能专业综合考核公示名单 Jan 05 第二十八届“创新杯”学生课外学术科技作品竞赛高瓴人工智能学院分赛道评选推荐公告 参赛范围：全校各学院二年级（含）以上本科生，每篇成果作者不得多于5人。 Dec 30 中国人民大学-北京智源人工智能研究院2026年联合培养博士研究生招生简章 Nov 21 中国人民大学高瓴人工智能学院2026年“申请—考核”制博士研究生招生工作方案 中国人民大学高瓴人工智能学院2026年“申请—考核”制博士研究生招生工作方案 Nov 18 中国人民大学高瓴人工智能学院2026年非全日制电子信息博士专业学位研究生招生简章 中国人民大学高瓴人工智能学院2026年非全日制电子信息博士专业学位研究生招生简章 Nov 12 关于开展中国科协青年人才培育工程博士生专项计划推荐工作的通知 关于开展中国科协青年人才培育工程博士生专项计划推荐工作的通知 Sep 25 高瓴人工智能学院2025-2026学年国家奖学金评审结果公示 经学院工作程序，确定我院国家奖学金拟推荐名单及推荐顺序。 共167条新闻，分9页，当前第 1 页 最前页 上一页 下一页 最后页 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "raw_text": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 人工智能教育发展专报 首页 / 新闻公告 / 学院公告 / 学院公告 Sep 04 中国人民大学2027年工程硕博士培养改革专项推免研究生招生报名通知 我校在电子信息专业（专业代码085400）人工智能领域开展专项招生。专项分为工程硕士和工程直博两个项目 Jun 23 中国人民大学高瓴人工智能学院2027年推免生接收工作报名通知 中国人民大学高瓴人工智能学院2027年推免生接收工作报名通知 Jun 23 全球人工智能创新·治理·安全大赛报名通知 全球人工智能创新·治理·安全大赛报名通知 Apr 10 中国人民大学高瓴人工智能学院2026年数据计算及应用（智能科学）强基计划专业介绍 中国人民大学高瓴人工智能学院2026年数据计算及应用（智能科学）强基计划专业介绍 Apr 10 中国人民大学2026年高瓴人工智能学院硕士复试成绩 中国人民大学2026年高瓴人工智能学院硕士复试成绩 Mar 31 中国人民大学2026高瓴人工智能学院“申请-考核”制博士综合考核成绩 中国人民大学2026年高瓴人工智能学院“申请-考核”制博士综合考核成绩 Mar 18 中国人民大学高瓴人工智能学院2026年硕士研究生招生考试复试录取工作方案 中国人民大学高瓴人工智能学院2026年硕士研究生招生考试复试录取工作方案 Mar 18 2026年高瓴人工智能学院硕士研究生招生考试复试分数线及复试名单公示 2026年高瓴人工智能学院硕士研究生招生考试复试分数线及复试名单公示 Mar 06 中国人民大学高瓴人工智能学院2026年博士研究生“申请—考核”制综合考核工作办法 中国人民大学高瓴人工智能学院2026年博士研究生“申请—考核”制综合考核工作办法 Mar 06 2026年高瓴人工智能学院“申请—考核”制博士研究生人工智能专业（北京智源人工智能研究院联合培养）综合考核名单 2026年高瓴人工智能学院“申请-考核”制博士研究生人工智能专业专业（北京智源人工智能研究院联合培养）综合考核名单 Mar 04 2026年硕士生初试成绩复核结果公示 Feb 28 高瓴人工智能学院关于2026年硕士研究生招生考试初试成绩复核工作的通知 我校2026年硕士生招生考试初试成绩已通过中国研究生招生信息网开通网上查询 Jan 12 2026年高瓴人工智能学院“申请—考核”制博士研究生电子信息专业综合考核名单公示 2026年“申请—考核”制博士研究生电子信息专业综合考核名单 Jan 12 2026年高瓴人工智能学院“申请—考核”制博士研究生人工智能专业综合考核名单公示 2026年“申请—考核”制博士研究生人工智能专业综合考核公示名单 Jan 05 第二十八届“创新杯”学生课外学术科技作品竞赛高瓴人工智能学院分赛道评选推荐公告 参赛范围：全校各学院二年级（含）以上本科生，每篇成果作者不得多于5人。 Dec 30 中国人民大学-北京智源人工智能研究院2026年联合培养博士研究生招生简章 Nov 21 中国人民大学高瓴人工智能学院2026年“申请—考核”制博士研究生招生工作方案 中国人民大学高瓴人工智能学院2026年“申请—考核”制博士研究生招生工作方案 Nov 18 中国人民大学高瓴人工智能学院2026年非全日制电子信息博士专业学位研究生招生简章 中国人民大学高瓴人工智能学院2026年非全日制电子信息博士专业学位研究生招生简章 Nov 12 关于开展中国科协青年人才培育工程博士生专项计划推荐工作的通知 关于开展中国科协青年人才培育工程博士生专项计划推荐工作的通知 Sep 25 高瓴人工智能学院2025-2026学年国家奖学金评审结果公示 经学院工作程序，确定我院国家奖学金拟推荐名单及推荐顺序。 共167条新闻，分9页，当前第 1 页 最前页 上一页 下一页 最后页 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "content_hash": "dd9cc48ff6ecd535ea686a05aa426266db26725efd4cc63f253e444b75c06d5e",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-09-04T02:33:25+00:00",
+      "changed_at": "2026-09-04T02:33:25+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 25,
+      "title": "Beijing Institute of Mathematical Sciences and Applications",
+      "url": "https://www.bimsa.cn/",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "31st August, 2026 Review of Mathematical Economics vol.1 (2026), no.2 28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 7th September Triangulated ",
+      "content": "31st August, 2026 Review of Mathematical Economics vol.1 (2026), no.2 28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 7th September Triangulated Categories and Derived Categories Course Ping He 7th September The fundamental evolutionary theory of polygenic trait Course Qi Wu 7th September Calabi–Yau at 50: Legacy and Future Workshop Babak Haghighat , Bong Hor Lian , Artan Sheshmani , Albrecht Klemm , Si Li , Nicolai Reshetikhin , Kimyeong Lee 8th September From quantum topology to classical geometry Course Shuang Ming 9th September Theory of Operator Algebras, III Course Linzhe Huang 9th September Group-theoretical methods in classical integrable systems II Course Ivan Sechin Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "raw_text": "31st August, 2026 Review of Mathematical Economics vol.1 (2026), no.2 28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 7th September Triangulated Categories and Derived Categories Course Ping He 7th September The fundamental evolutionary theory of polygenic trait Course Qi Wu 7th September Calabi–Yau at 50: Legacy and Future Workshop Babak Haghighat , Bong Hor Lian , Artan Sheshmani , Albrecht Klemm , Si Li , Nicolai Reshetikhin , Kimyeong Lee 8th September From quantum topology to classical geometry Course Shuang Ming 9th September Theory of Operator Algebras, III Course Linzhe Huang 9th September Group-theoretical methods in classical integrable systems II Course Ivan Sechin Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "content_hash": "84b65174305cb32a9f7bffe78de2bc5d7284bb3da6849b43498c459922b80ad0",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-04T02:31:00+00:00",
+      "changed_at": "2026-09-04T02:31:00+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 26,
+      "title": "北京雁栖湖应用数学研究院",
+      "url": "https://www.bimsa.cn/zh-CN",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": "2026-08-28",
+      "deadline": null,
+      "event_date": "2026-02-23",
+      "location": null,
+      "summary": "2026-08-31 《The Review of Mathematical Economics》2026年第2期内容发布 2026-08-28 我院王雅晴入选IJCAI 2026青年学者聚焦计划 2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 07 9月 Triangulated Categories and Derived Categories 课程 何平 07 9月 The fundamental evolutionary theory of polygenic trait 课程 吴琦 07 9月 Calabi–Yau at 50: Legacy and Future 工作坊 巴巴克·哈吉加特 , 连文豪 , 阿尔坦·谢什马尼 , 阿尔布雷希特·克莱姆 , 李思 , 尼古拉·莱舍提金 , 李淇明 08 9月 From quantum topology to classical geometry 课程 明爽 09 9月 Theory of Operator Algebras, III 课程 黄林哲 09 9月 Group-theoretical met",
+      "content": "2026-08-31 《The Review of Mathematical Economics》2026年第2期内容发布 2026-08-28 我院王雅晴入选IJCAI 2026青年学者聚焦计划 2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 07 9月 Triangulated Categories and Derived Categories 课程 何平 07 9月 The fundamental evolutionary theory of polygenic trait 课程 吴琦 07 9月 Calabi–Yau at 50: Legacy and Future 工作坊 巴巴克·哈吉加特 , 连文豪 , 阿尔坦·谢什马尼 , 阿尔布雷希特·克莱姆 , 李思 , 尼古拉·莱舍提金 , 李淇明 08 9月 From quantum topology to classical geometry 课程 明爽 09 9月 Theory of Operator Algebras, III 课程 黄林哲 09 9月 Group-theoretical methods in classical integrable systems II 课程 伊万·谢钦 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "raw_text": "2026-08-31 《The Review of Mathematical Economics》2026年第2期内容发布 2026-08-28 我院王雅晴入选IJCAI 2026青年学者聚焦计划 2026-07-29 “飞雁”首飞成功 2026-06-25 当材料科学遇见数学：如何读懂复杂材料 2026-06-25 以数学之力赋能非洲发展 | 专访 Oluwole Daniel Makinde 院士 2026-06-22 BIMSA 团队在基础数学核心领域取得系列突破性进展 更多 当前活动 02.23-05.27 Optimization Methods for AI 03.02-04.20 Logic and Computation III 03.03-05.26 Data-driven multiscale modeling and computation 03.12-06.25 Optimal transport 03.25-05.15 RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 04.24-04.28 The 4th International Conference on Theoretical Physics and New Technologies 近期活动 +更多 BIMSA Course in 2026 Spring Course Updating 07 9月 Triangulated Categories and Derived Categories 课程 何平 07 9月 The fundamental evolutionary theory of polygenic trait 课程 吴琦 07 9月 Calabi–Yau at 50: Legacy and Future 工作坊 巴巴克·哈吉加特 , 连文豪 , 阿尔坦·谢什马尼 , 阿尔布雷希特·克莱姆 , 李思 , 尼古拉·莱舍提金 , 李淇明 08 9月 From quantum topology to classical geometry 课程 明爽 09 9月 Theory of Operator Algebras, III 课程 黄林哲 09 9月 Group-theoretical methods in classical integrable systems II 课程 伊万·谢钦 科研团队 基础数学 > 代数几何 分析和几何 数论和表示论 复杂系统 > 代数拓扑及其应用 人工智能和机器学习 概率, 应用统计和数据科学 数学物理 > 数学物理 量子计算 计算科学 > 数字经济 偏微分方程理论与计算 加入我们! 教研人员 > 博士后 >",
+      "content_hash": "60dbca855b864a9f70f740229d2d995335781f71251f9e4a8c40913f7ac9d279",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-04T02:31:00+00:00",
+      "changed_at": "2026-09-04T02:31:00+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 1,
+      "title": "ENGLISH",
+      "url": "https://ymsc.tsinghua.edu.cn/en",
+      "source_name": "清华丘成桐数学科学中心",
+      "source_url": "https://ymsc.tsinghua.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-09-07",
+      "location": "双清C654教室时间：2026年9月7日",
+      "summary": "Chinese Home About YMSC Profile Staff News about us Visit us People Leadership Councils Faculty Postdocs Visiting Scholars ThuRID Education Graduate Program International Graduate Program Summer School Yau Math Camp Graduate Student Students Life Alumni Calendar Activities YMSC Courses Mini Courses Seminars Lectures Conferences YMSC Room Booking Research Research Teams Birational Geometry Group String Theory Group Institute of Applied Mathematics Latest Publications Academic Resources Jobs Seminars Lectures more more Sep 16 2026 Geometry and Topology Colloquium Title: The StingrayAbstract: The Earle slice S is an open domain in a 1-dimensional (complex) curve of the SL(2,C) character variety of a rank 2 free group, which is a model for the Teichmuller space of a once-punctured torus. It bears a remarkable resemblance to J, the Julia set of z -> z^2 + 1/4. Connected quadratic Julia sets are parameterized by the Mandelbrot set. This raises the question:... Speaker：Danny Calegari (Univers",
+      "content": "Chinese Home About YMSC Profile Staff News about us Visit us People Leadership Councils Faculty Postdocs Visiting Scholars ThuRID Education Graduate Program International Graduate Program Summer School Yau Math Camp Graduate Student Students Life Alumni Calendar Activities YMSC Courses Mini Courses Seminars Lectures Conferences YMSC Room Booking Research Research Teams Birational Geometry Group String Theory Group Institute of Applied Mathematics Latest Publications Academic Resources Jobs Seminars Lectures more more Sep 16 2026 Geometry and Topology Colloquium Title: The StingrayAbstract: The Earle slice S is an open domain in a 1-dimensional (complex) curve of the SL(2,C) character variety of a rank 2 free group, which is a model for the Teichmuller space of a once-punctured torus. It bears a remarkable resemblance to J, the Julia set of z -> z^2 + 1/4. Connected quadratic Julia sets are parameterized by the Mandelbrot set. This raises the question:... Speaker：Danny Calegari (University of Chicago) Sep 07 2026 代数讨论班 报告人：AMNON NEEMAN 院士（米兰大学） 邀请人：邱宇地点：双清C654教室时间：2026年9月7日，下午3-4。Title: Excellent metrics on triangulated categoriesAbstract: There is a recipe for going back and forth, between the bounded derived category of coherent sheaves and the category of perfect complexes. It involves completing with respect to certain metrics. What this talk will focus on is recent work... Speaker：AMNON NEEMAN 院士（米兰大学） Sep 04 2026 Seminar in Quantum Algebra Title: Fusion actions and categorical orbifold theoryAbstract: I will discuss our recent investigation into the generalized symmetries of condensable algebras in modular tensor categories. The mian results inculde Schur-Weyl duality, Galois correspondence and categorical orbifold theory. This is a joint work with Siu-Hung Ng， Li Ren and Feng Xu. Speaker：Chongying Dong, University of California, Santa Cruz Aug 28 2026 Math+ML+X Seminar Series Are you interested in the intersection of Mathematics, Machine Learning, and real-world applications? Join us for a seminar this Fall 2026 that will explore recent advancements in these fields, including practical applications and emerging techniques.Speaker: Tsz Ching Chow (Lehigh University)Title: Convergent Bregman Plug-and-Play with Difference-of-Convex Algorithm for Nonconvex Imaging Pro... Speaker：Tsz Ching Chow (Lehigh University) Aug 25 2026 ADS seminar Title: Entanglement Bootstrap for 2+1D chiral gapped phasesSpeaker: Xiang Li (University of California, San Diego)Venue: Classroom B627, Shuangqing Complex Building ATime: 13:30-14:30, August 25 (Tuesday)Abstract:2+1D chiral gapped phases exhibit many interesting properties such as robust gapless edges that cannot be gapped out by local perturbations.In this talk, I will discuss the Entanglemen... Speaker：Xiang Li (University of California, San Diego) Jul 23 2026 Rethinking the theoretical foundation of reinforcement learning Abstract: Given two candidate functions, can we identify which one is the true value function of a large Markov decision process (MDP), given a \"benign\" dataset? Trivial as it might seem, a version of the question was open for 20+ years in reinforcement learning (RL), and the core difficulties are intimately related to the training instability of modern deep RL. In this talk, I will argue that ... Speaker：Nan Jiang (University of Illinois at Urbana-Champaign) Jul 07 2026 The asymptotic Plateau problem: past, current progress and future problems Abstract: The asymptotic Plateau problem is a set of problems in hyperbolic 3-space concerning the existence, multiplicity and applications of minimal surfaces asymptotic to a given Jordan curve on the sphere at infinity. I will address some past results, new progress, and open problems. This is based on joint work with Lowe and Seppi.Bio: Zeno Huang is currently a professor of mathematics at t... Speaker：Zeno Huang （ City University of New York） Jun 15 2026 Quantification of ergodicity for Hamilton–Jacobi equations in a dynamic random environment Abstract:Motivated by the tensionless KPZ equation (a model of stochastic growth), we consider quantitative large-time averages for Hamilton–Jacobi equations in a dynamic random environment that is stationary ergodic and has finite-range dependence in time. In this talk, we establish, up to slowly varying factors, convergence rates with exponent 1/2 for the large-time averages of both the solu... Speaker：Prof. GUO Xiaoqin (郭小钦), University of Cincinnati Jun 15 2026 Toward Convergent Adam-Type Methods Abstract:Adam is one of the most widely used optimizers in modern machine learning, but its convergence theory remains incomplete, even in relatively simple convex settings. A central difficulty is that Adam tightly couples momentum and adaptive preconditioning, which hides the dissipative structure needed for a Lyapunov analysis.In this talk, I will describe a Lyapunov-guided approach to Adam-... Speaker：Long Chen (University of California, Irvine) Jun 11 2026 A deep learning method for computing the spectrum of the Schrödinger operator: numerics and analysis Abstract: We present a novel deep learning method for computing eigenstates of the Schrödinger operator. Our approach combines a novel loss function with an innovative neural network architecture that incorporates a-prior knowledge of the problem. These improvements enable the method to handle both high-dimensional problems and problems posed on irregular bounded domains. We successfully compu... Speaker：Ming Pingbing (CAS) YMSC Courses more Sep 16 2026 Topics in Probabilistic and Analytic Number Theory and Discrete Analysis (PANDA) Description：This is a topics course introducing selected topics in analytic and probabilistic number theory, and discrete analysis. It focuses on the interaction and connections between these areas.Prerequisite：Most of the materials will be self-contained.Reference：Yufei Zhao’s online lecture notes/textbook on additive combinatorics, taught at MIT, might be useful for the discrete analysis ... Speaker：Max Wenqiang Xu (徐文强) Sep 14 2026 Deformation Quantization in Fedosov's approach Description:This course provides an introduction to the deformation quantization of symplectic manifolds, centered around Fedosov’s landmark theorem and its interplay with other quantization schemes in Kähler geometry. Designed for graduate students, the course equips participants with both intuitive foundations and core techniques required for advanced work in this field.This course consists ... Speaker：Yutung Yau (邱宇东) News Latest Publications more more Aug 14 2026 ​Global scientists convene in Beijing for the 2026 International Congress of Basic Science Apr 23 2026 Congratulations to Professor Nicolai Reshetikhin on His Election to the American Academy of Arts and Sciences Aug 17 2026 Lagrangians, SO(3)-instantons and the Atiyah--Floer Conjecture Aliakbar Daemi, Kenji Fukaya, Maksim Lipyanskiy （date of acceptance: 27 July 2026) Jul 20 2026 Large data global solution of the 3D RVM system with cylindircal symmetry I: Iterative smoothing scheme Xuecheng Wang Mini-courses more Oct 08 2026 Moduli spaces and modular forms Lecturer: Gerard van der GeerFields of research: Algebraic geometry, modular formsDescription:Both concepts, moduli spaces and modular forms, were formulated in the 19th century and became prominent in the second half of the 20th century. The course will advocate a geometric approach to modular forms using the geometry of moduli spaces to produce modular forms and uncover their fascinating prop... Speaker：Gerard van der Geer (University of Amsterdam) Sep 15 2026 CaTherine Wheels Abstract: The aim of the lectures will be to describe a unifying picture of dynamics (pseudo-Anosov flows), bounded cohomology (uniform quasimorphisms), Peano curves (CaTherine wheels) and some intermediate structures (laminations; zippers) in hyperbolic 3-manifolds together with applications, including some implications for the Cannon Conjecture (and a corresponding though less well-developed ... Speaker：Danny Calegari (University of Chicago) Jul 01 2026 Birational geometry of foliations Description：We will continue the study of the birational geometry of foliations on complex varieties and in positive characteristic. Although there will be minimal overlap with the previous lectures, no specific background will be assumed beyond general knowledge of birational geometry. We will begin with a review of the basic results in the birational geometry of foliated surfaces. We will th... Speaker：Paolo Cascini (Imperial College, London) Conferences more Jun 29 2026 Quantum Information in Quantum Gravity 2026 (QIQG 2026) QIQG2026 Handbook: QIQG2026-Handbook.pdfDaily Schedule: QIQG2026-Daily Schedule.pdfQIQG2026 News: QIQG2026-News.pdfInvitation letter: QIQG2026_Invitation_Letter.pdfVideo of QIQG2026: Click hereJune 29- July 3, 2026Beijing·Tsinghua UniversityBuilding on the discussions of QIQG 2025, QIQG 2026 will propel the dialogue into a new era of further synthesis of ideas in quantum information theory and ... Organizer：Bartek Czech, Janet Hung, Cheng Peng, Wei Song, Huajia Wang, Qiang Wen, Zhenbin Yang, Yang Zhou Jun 25 2026 Recent Developments in Gravity and Holography Date: June 25–26, 2026 Venue: Shuangqing Building, Yau Mathematical Sciences Center, Tsinghua University Organiser: Gabriel Arenas-Henriquez, YMSC, Tsinghua UniversityThe aim of the workshop is to bring together researchers working on recent developments in gravitational physics, holography, AdS/CFT, black holes, and related aspects of mathematical physics. The programme will consist of invite... Organizer：Gabriel Arenas-Henriquez, YMSC, Tsinghua University Jun 14 2026 The 2nd AI4Science Beijing Meet-up—Learned PDEs! The 2nd AI4Science Beijing Meet-up—Learned PDEs!We are thrilled to announce the 2nd AI4Science Beijing Meet-up — returning on 2026. Confimed Date June 14th, 2026!A huge thank you to everyone who made last year’s inaugural meet-up unforgettable.The reception was overwhelming: we had to close registration only a few days after opening. Many of you couldn’t get a spot — and we heard you.This... Organizer： Videos more Caucher Birkar: The rich world of Fano geometry Kenji Fukaya: Functoriality of open closed map Wei Song: Symmetry and operators in TTbar deformed CFTs Honghao Gao: Legendrian knots and Lagrangian fillings YMSC Mathematicians Li Si Vladimir Markovic Yang Yuhong Zhu Yihang Yitwah Cheung Caucher Birkar Chen Zhijie Yunhui Wu Fu Lei Akito Futaki Ling-Yan Hung Per Johansson Lin Yong Liu Zhengwei Qiu Yu Nicolai Reshetikhin Shan Peng Shi Zuoqiang Song Wei Wu Hao Yang Fan Zheng Hao Zhu Yi HIGH SCHOOL SCIENCE AWARD COLLEGE MATH CONTEST ICCM BEST THESIS AWARD ICCM MEDAL OF MATHEMATICS BEST PAPER AWARD HIGH SCHOOL GIRLS’ MATH CONTEST Home About People Education Calendar Activities Research Jobs Contact Tel：+86-10-62773561 Mail：ymsc@tsinghua.edu.cn Address：Yau Mathematical Sciences Center, Jingzhai, Tsinghua University, Haidian District, Beijing, China Postcode：100084 © YMSC, Tsinghua University. All Rights Reserved Campus links Tsinghua University Department Of Mathematical Sciences, Tsinghua University Tsinghua University Undergraduate Enrollment Network Graduate Enrollment Network Of Tsinghua University Tsinghua University Researcher ID Related links Shanghai Institute for Mathematics and Interdisciplinary Sciences Academy of Mathematics and Systems Science, CAS Center of Mathematical Sciences and Applications, Harvard University Center of Mathematical Sciences, Zhejiang University Morningside Center of Mathematics, Chinese Academy of Sciences Institute Of Mathematical Sciences, Chinese University of Hong Kong Shing-Tung Yau Center, NCTU Shing-Tung Yau Center of Southeast University TSIMF ICCM 2022 ICBS Download links Download",
+      "raw_text": "Chinese Home About YMSC Profile Staff News about us Visit us People Leadership Councils Faculty Postdocs Visiting Scholars ThuRID Education Graduate Program International Graduate Program Summer School Yau Math Camp Graduate Student Students Life Alumni Calendar Activities YMSC Courses Mini Courses Seminars Lectures Conferences YMSC Room Booking Research Research Teams Birational Geometry Group String Theory Group Institute of Applied Mathematics Latest Publications Academic Resources Jobs Seminars Lectures more more Sep 16 2026 Geometry and Topology Colloquium Title: The StingrayAbstract: The Earle slice S is an open domain in a 1-dimensional (complex) curve of the SL(2,C) character variety of a rank 2 free group, which is a model for the Teichmuller space of a once-punctured torus. It bears a remarkable resemblance to J, the Julia set of z -> z^2 + 1/4. Connected quadratic Julia sets are parameterized by the Mandelbrot set. This raises the question:... Speaker：Danny Calegari (University of Chicago) Sep 07 2026 代数讨论班 报告人：AMNON NEEMAN 院士（米兰大学） 邀请人：邱宇地点：双清C654教室时间：2026年9月7日，下午3-4。Title: Excellent metrics on triangulated categoriesAbstract: There is a recipe for going back and forth, between the bounded derived category of coherent sheaves and the category of perfect complexes. It involves completing with respect to certain metrics. What this talk will focus on is recent work... Speaker：AMNON NEEMAN 院士（米兰大学） Sep 04 2026 Seminar in Quantum Algebra Title: Fusion actions and categorical orbifold theoryAbstract: I will discuss our recent investigation into the generalized symmetries of condensable algebras in modular tensor categories. The mian results inculde Schur-Weyl duality, Galois correspondence and categorical orbifold theory. This is a joint work with Siu-Hung Ng， Li Ren and Feng Xu. Speaker：Chongying Dong, University of California, Santa Cruz Aug 28 2026 Math+ML+X Seminar Series Are you interested in the intersection of Mathematics, Machine Learning, and real-world applications? Join us for a seminar this Fall 2026 that will explore recent advancements in these fields, including practical applications and emerging techniques.Speaker: Tsz Ching Chow (Lehigh University)Title: Convergent Bregman Plug-and-Play with Difference-of-Convex Algorithm for Nonconvex Imaging Pro... Speaker：Tsz Ching Chow (Lehigh University) Aug 25 2026 ADS seminar Title: Entanglement Bootstrap for 2+1D chiral gapped phasesSpeaker: Xiang Li (University of California, San Diego)Venue: Classroom B627, Shuangqing Complex Building ATime: 13:30-14:30, August 25 (Tuesday)Abstract:2+1D chiral gapped phases exhibit many interesting properties such as robust gapless edges that cannot be gapped out by local perturbations.In this talk, I will discuss the Entanglemen... Speaker：Xiang Li (University of California, San Diego) Jul 23 2026 Rethinking the theoretical foundation of reinforcement learning Abstract: Given two candidate functions, can we identify which one is the true value function of a large Markov decision process (MDP), given a \"benign\" dataset? Trivial as it might seem, a version of the question was open for 20+ years in reinforcement learning (RL), and the core difficulties are intimately related to the training instability of modern deep RL. In this talk, I will argue that ... Speaker：Nan Jiang (University of Illinois at Urbana-Champaign) Jul 07 2026 The asymptotic Plateau problem: past, current progress and future problems Abstract: The asymptotic Plateau problem is a set of problems in hyperbolic 3-space concerning the existence, multiplicity and applications of minimal surfaces asymptotic to a given Jordan curve on the sphere at infinity. I will address some past results, new progress, and open problems. This is based on joint work with Lowe and Seppi.Bio: Zeno Huang is currently a professor of mathematics at t... Speaker：Zeno Huang （ City University of New York） Jun 15 2026 Quantification of ergodicity for Hamilton–Jacobi equations in a dynamic random environment Abstract:Motivated by the tensionless KPZ equation (a model of stochastic growth), we consider quantitative large-time averages for Hamilton–Jacobi equations in a dynamic random environment that is stationary ergodic and has finite-range dependence in time. In this talk, we establish, up to slowly varying factors, convergence rates with exponent 1/2 for the large-time averages of both the solu... Speaker：Prof. GUO Xiaoqin (郭小钦), University of Cincinnati Jun 15 2026 Toward Convergent Adam-Type Methods Abstract:Adam is one of the most widely used optimizers in modern machine learning, but its convergence theory remains incomplete, even in relatively simple convex settings. A central difficulty is that Adam tightly couples momentum and adaptive preconditioning, which hides the dissipative structure needed for a Lyapunov analysis.In this talk, I will describe a Lyapunov-guided approach to Adam-... Speaker：Long Chen (University of California, Irvine) Jun 11 2026 A deep learning method for computing the spectrum of the Schrödinger operator: numerics and analysis Abstract: We present a novel deep learning method for computing eigenstates of the Schrödinger operator. Our approach combines a novel loss function with an innovative neural network architecture that incorporates a-prior knowledge of the problem. These improvements enable the method to handle both high-dimensional problems and problems posed on irregular bounded domains. We successfully compu... Speaker：Ming Pingbing (CAS) YMSC Courses more Sep 16 2026 Topics in Probabilistic and Analytic Number Theory and Discrete Analysis (PANDA) Description：This is a topics course introducing selected topics in analytic and probabilistic number theory, and discrete analysis. It focuses on the interaction and connections between these areas.Prerequisite：Most of the materials will be self-contained.Reference：Yufei Zhao’s online lecture notes/textbook on additive combinatorics, taught at MIT, might be useful for the discrete analysis ... Speaker：Max Wenqiang Xu (徐文强) Sep 14 2026 Deformation Quantization in Fedosov's approach Description:This course provides an introduction to the deformation quantization of symplectic manifolds, centered around Fedosov’s landmark theorem and its interplay with other quantization schemes in Kähler geometry. Designed for graduate students, the course equips participants with both intuitive foundations and core techniques required for advanced work in this field.This course consists ... Speaker：Yutung Yau (邱宇东) News Latest Publications more more Aug 14 2026 ​Global scientists convene in Beijing for the 2026 International Congress of Basic Science Apr 23 2026 Congratulations to Professor Nicolai Reshetikhin on His Election to the American Academy of Arts and Sciences Aug 17 2026 Lagrangians, SO(3)-instantons and the Atiyah--Floer Conjecture Aliakbar Daemi, Kenji Fukaya, Maksim Lipyanskiy （date of acceptance: 27 July 2026) Jul 20 2026 Large data global solution of the 3D RVM system with cylindircal symmetry I: Iterative smoothing scheme Xuecheng Wang Mini-courses more Oct 08 2026 Moduli spaces and modular forms Lecturer: Gerard van der GeerFields of research: Algebraic geometry, modular formsDescription:Both concepts, moduli spaces and modular forms, were formulated in the 19th century and became prominent in the second half of the 20th century. The course will advocate a geometric approach to modular forms using the geometry of moduli spaces to produce modular forms and uncover their fascinating prop... Speaker：Gerard van der Geer (University of Amsterdam) Sep 15 2026 CaTherine Wheels Abstract: The aim of the lectures will be to describe a unifying picture of dynamics (pseudo-Anosov flows), bounded cohomology (uniform quasimorphisms), Peano curves (CaTherine wheels) and some intermediate structures (laminations; zippers) in hyperbolic 3-manifolds together with applications, including some implications for the Cannon Conjecture (and a corresponding though less well-developed ... Speaker：Danny Calegari (University of Chicago) Jul 01 2026 Birational geometry of foliations Description：We will continue the study of the birational geometry of foliations on complex varieties and in positive characteristic. Although there will be minimal overlap with the previous lectures, no specific background will be assumed beyond general knowledge of birational geometry. We will begin with a review of the basic results in the birational geometry of foliated surfaces. We will th... Speaker：Paolo Cascini (Imperial College, London) Conferences more Jun 29 2026 Quantum Information in Quantum Gravity 2026 (QIQG 2026) QIQG2026 Handbook: QIQG2026-Handbook.pdfDaily Schedule: QIQG2026-Daily Schedule.pdfQIQG2026 News: QIQG2026-News.pdfInvitation letter: QIQG2026_Invitation_Letter.pdfVideo of QIQG2026: Click hereJune 29- July 3, 2026Beijing·Tsinghua UniversityBuilding on the discussions of QIQG 2025, QIQG 2026 will propel the dialogue into a new era of further synthesis of ideas in quantum information theory and ... Organizer：Bartek Czech, Janet Hung, Cheng Peng, Wei Song, Huajia Wang, Qiang Wen, Zhenbin Yang, Yang Zhou Jun 25 2026 Recent Developments in Gravity and Holography Date: June 25–26, 2026 Venue: Shuangqing Building, Yau Mathematical Sciences Center, Tsinghua University Organiser: Gabriel Arenas-Henriquez, YMSC, Tsinghua UniversityThe aim of the workshop is to bring together researchers working on recent developments in gravitational physics, holography, AdS/CFT, black holes, and related aspects of mathematical physics. The programme will consist of invite... Organizer：Gabriel Arenas-Henriquez, YMSC, Tsinghua University Jun 14 2026 The 2nd AI4Science Beijing Meet-up—Learned PDEs! The 2nd AI4Science Beijing Meet-up—Learned PDEs!We are thrilled to announce the 2nd AI4Science Beijing Meet-up — returning on 2026. Confimed Date June 14th, 2026!A huge thank you to everyone who made last year’s inaugural meet-up unforgettable.The reception was overwhelming: we had to close registration only a few days after opening. Many of you couldn’t get a spot — and we heard you.This... Organizer： Videos more Caucher Birkar: The rich world of Fano geometry Kenji Fukaya: Functoriality of open closed map Wei Song: Symmetry and operators in TTbar deformed CFTs Honghao Gao: Legendrian knots and Lagrangian fillings YMSC Mathematicians Li Si Vladimir Markovic Yang Yuhong Zhu Yihang Yitwah Cheung Caucher Birkar Chen Zhijie Yunhui Wu Fu Lei Akito Futaki Ling-Yan Hung Per Johansson Lin Yong Liu Zhengwei Qiu Yu Nicolai Reshetikhin Shan Peng Shi Zuoqiang Song Wei Wu Hao Yang Fan Zheng Hao Zhu Yi HIGH SCHOOL SCIENCE AWARD COLLEGE MATH CONTEST ICCM BEST THESIS AWARD ICCM MEDAL OF MATHEMATICS BEST PAPER AWARD HIGH SCHOOL GIRLS’ MATH CONTEST Home About People Education Calendar Activities Research Jobs Contact Tel：+86-10-62773561 Mail：ymsc@tsinghua.edu.cn Address：Yau Mathematical Sciences Center, Jingzhai, Tsinghua University, Haidian District, Beijing, China Postcode：100084 © YMSC, Tsinghua University. All Rights Reserved Campus links Tsinghua University Department Of Mathematical Sciences, Tsinghua University Tsinghua University Undergraduate Enrollment Network Graduate Enrollment Network Of Tsinghua University Tsinghua University Researcher ID Related links Shanghai Institute for Mathematics and Interdisciplinary Sciences Academy of Mathematics and Systems Science, CAS Center of Mathematical Sciences and Applications, Harvard University Center of Mathematical Sciences, Zhejiang University Morningside Center of Mathematics, Chinese Academy of Sciences Institute Of Mathematical Sciences, Chinese University of Hong Kong Shing-Tung Yau Center, NCTU Shing-Tung Yau Center of Southeast University TSIMF ICCM 2022 ICBS Download links Download",
+      "content_hash": "44a2168658d5db4c39168b14e6f5e9761cee7d69277e797daa311ad85fbdf714",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:54:40+00:00",
+      "last_seen_at": "2026-09-04T02:30:26+00:00",
+      "changed_at": "2026-09-04T02:30:26+00:00",
+      "topics": [
+        "清华",
+        "数学",
+        "AI"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:31:00+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:33:25+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:32:45+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:31:48+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:32:03+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:30:26+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:31:35+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-04T02:31:19+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
