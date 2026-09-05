@@ -1,0 +1,389 @@
+{
+  "schema_version": 2,
+  "date": "2026-09-05",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 7,
+    "candidate_items": 7,
+    "selected_items": 7,
+    "last_updated_at": "2026-09-05T10:33:39.272373+08:00"
+  },
+  "digest": {
+    "report_date": "2026-09-05",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 7 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 7 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "学院新闻_中国人民大学高瓴人工智能学院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/newslist/newsdetail/index.htm"
+          },
+          {
+            "title": "教师主页系统",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国人民大学高瓴人工智能学院",
+            "url": "https://ai.ruc.edu.cn/academicfaculty/szdwn/index.htm"
+          },
+          {
+            "title": "副研究员----中国科学院数学与系统科学研究院",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "中国科学院数学与系统科学研究院",
+            "url": "https://amss.cas.cn/../../rcjy/fyjy"
+          },
+          {
+            "title": "Beijing Institute of Mathematical Sciences and Applications",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/"
+          },
+          {
+            "title": "Postdocs",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/postdoc/index.html"
+          },
+          {
+            "title": "Courses",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/research/course/index.html"
+          },
+          {
+            "title": "Seminars",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/research/seminar/current/page_1.html"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 173,
+      "title": "学院新闻_中国人民大学高瓴人工智能学院",
+      "url": "https://ai.ruc.edu.cn/newslist/newsdetail/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": "2026-07-18",
+      "location": "首页 - 新闻公告 - 学院新闻 - 学院新闻 智汇湾区谋创新 互学互鉴促发展 | 高瓴人工智能学院赴深圳调研交流 09",
+      "summary": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 您所在的位置： 首页 - 新闻公告 - 学院新闻 - 学院新闻 智汇湾区谋创新 互学互鉴促发展 | 高瓴人工智能学院赴深圳调研交流 09-05 8月25日至26日,中国人民大学深圳研究院、哈尔滨工业大学（深圳）及深圳河套学院交流座谈。 逐浪AI，新秀入列！高瓴人工智能学院喜迎2026级研究生新生 09-01 8月30日，高瓴人工智能学院125位2026级研究生新生齐聚中关村校区，顺利完成报到。 求是网专访曾毅教授：推进人工智能从“无善无恶”到“拥有道德”的探索 08-26 求是网专访曾毅教授:推进人工智能从“无善无恶”到“拥有道德”的探索 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 08-25 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 智启新章，AI（爱）聚高瓴｜高瓴人工智能学院2026级本科新生见面会举行 08-25 8月21日下午，高瓴人工智能学院2026级本科新生见面会在公共教学一楼1102教室举行 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 07-27 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 闪耀WAIC！人大高瓴李崇轩副教授获颁云帆奖 07-22 中国人民大学高瓴人工智能学院预聘副教授李崇轩荣获2026 WAIC 云帆奖“璀璨明星”。 高瓴人工智能学院第一时间学习习近平主席2026世界人工智能大会主旨讲话精神 07-18 学院第一时间在立德楼1826报告厅召开全体教师会议，认真学习习近平主席主旨讲话精神。 高瓴人工智能学院召开全体教职工会议 07-14 会议邀请学校雄安未来智造产业研究院副院长沈健、海淀区五方六力人大常设专班组长张莹和中关村科学城公司事业部总监郭晓乐围绕区域科技成果转化和创新创业政策展开介绍。 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 07-14 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 高瓴人工智能学院师生获ACL 2026杰出论文奖 07-14 高瓴人工智能学院师生获ACL 2026杰出论文奖 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 07-14 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 曾毅参加联合国首届人工智能",
+      "content": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 您所在的位置： 首页 - 新闻公告 - 学院新闻 - 学院新闻 智汇湾区谋创新 互学互鉴促发展 | 高瓴人工智能学院赴深圳调研交流 09-05 8月25日至26日,中国人民大学深圳研究院、哈尔滨工业大学（深圳）及深圳河套学院交流座谈。 逐浪AI，新秀入列！高瓴人工智能学院喜迎2026级研究生新生 09-01 8月30日，高瓴人工智能学院125位2026级研究生新生齐聚中关村校区，顺利完成报到。 求是网专访曾毅教授：推进人工智能从“无善无恶”到“拥有道德”的探索 08-26 求是网专访曾毅教授:推进人工智能从“无善无恶”到“拥有道德”的探索 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 08-25 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 智启新章，AI（爱）聚高瓴｜高瓴人工智能学院2026级本科新生见面会举行 08-25 8月21日下午，高瓴人工智能学院2026级本科新生见面会在公共教学一楼1102教室举行 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 07-27 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 闪耀WAIC！人大高瓴李崇轩副教授获颁云帆奖 07-22 中国人民大学高瓴人工智能学院预聘副教授李崇轩荣获2026 WAIC 云帆奖“璀璨明星”。 高瓴人工智能学院第一时间学习习近平主席2026世界人工智能大会主旨讲话精神 07-18 学院第一时间在立德楼1826报告厅召开全体教师会议，认真学习习近平主席主旨讲话精神。 高瓴人工智能学院召开全体教职工会议 07-14 会议邀请学校雄安未来智造产业研究院副院长沈健、海淀区五方六力人大常设专班组长张莹和中关村科学城公司事业部总监郭晓乐围绕区域科技成果转化和创新创业政策展开介绍。 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 07-14 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 高瓴人工智能学院师生获ACL 2026杰出论文奖 07-14 高瓴人工智能学院师生获ACL 2026杰出论文奖 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 07-14 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 07-14 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 瓴动夏夜！这一晚，毕业音符汇成璀璨星河 06-23 6月12日晚，高瓴人工智能学院2026年“瓴动夏夜”毕业晚会在学生活动中心133陕公大讲堂拉开帷幕。 中国社会科学杂志社与中国人民大学高瓴人工智能学院开展联学交流 06-17 6月11日上午，中国人民大学高瓴人工智能学院与中国社会科学杂志社开展联学交流。 高瓴人工智能学院第三次学生代表大会顺利召开 06-17 2026年6月10日中午，中国人民大学高瓴人工智能学院第三次学生代表大会在立德楼1826报告厅顺利召开 五育并举：他们是“瓴航”院长奖学金获奖者！ 06-12 五育并举，经过评审，最终5支团队和16位个人获评2026年“瓴航”院长奖学金。 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 06-08 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 创业“瓴”航|海淀区人工智能OPC校友行首期活动走进中国人民大学 06-08 人大高瓴人工智能学院创业“瓴”航讲座第五讲暨海淀区人工智能OPC校友行首期活动走进中国人民大学在立德楼607举办 健康“瓴”航|高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名！ 06-08 高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名 共578条新闻，分29页，当前第 1 页 最前页 上一页 下一页 最后页 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "raw_text": "新闻公告 学院新闻 学院公告 新闻人物 精彩视频 学术讲座 您所在的位置： 首页 - 新闻公告 - 学院新闻 - 学院新闻 智汇湾区谋创新 互学互鉴促发展 | 高瓴人工智能学院赴深圳调研交流 09-05 8月25日至26日,中国人民大学深圳研究院、哈尔滨工业大学（深圳）及深圳河套学院交流座谈。 逐浪AI，新秀入列！高瓴人工智能学院喜迎2026级研究生新生 09-01 8月30日，高瓴人工智能学院125位2026级研究生新生齐聚中关村校区，顺利完成报到。 求是网专访曾毅教授：推进人工智能从“无善无恶”到“拥有道德”的探索 08-26 求是网专访曾毅教授:推进人工智能从“无善无恶”到“拥有道德”的探索 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 08-25 智启新程，勇走新路——高瓴人工智能学院2026级本科新生报到工作圆满完成 智启新章，AI（爱）聚高瓴｜高瓴人工智能学院2026级本科新生见面会举行 08-25 8月21日下午，高瓴人工智能学院2026级本科新生见面会在公共教学一楼1102教室举行 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 07-27 中国人民大学文继荣教授在SIGIR 2026做大会主旨特邀报告 闪耀WAIC！人大高瓴李崇轩副教授获颁云帆奖 07-22 中国人民大学高瓴人工智能学院预聘副教授李崇轩荣获2026 WAIC 云帆奖“璀璨明星”。 高瓴人工智能学院第一时间学习习近平主席2026世界人工智能大会主旨讲话精神 07-18 学院第一时间在立德楼1826报告厅召开全体教师会议，认真学习习近平主席主旨讲话精神。 高瓴人工智能学院召开全体教职工会议 07-14 会议邀请学校雄安未来智造产业研究院副院长沈健、海淀区五方六力人大常设专班组长张莹和中关村科学城公司事业部总监郭晓乐围绕区域科技成果转化和创新创业政策展开介绍。 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 07-14 曾毅教授就世界人工智能大会“智能伙伴”主题接受CGTN专访 高瓴人工智能学院师生获ACL 2026杰出论文奖 07-14 高瓴人工智能学院师生获ACL 2026杰出论文奖 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 07-14 高瓴人工智能学院师生获WWW 2026唯一最佳长文奖 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 07-14 曾毅参加联合国首届人工智能治理全球对话全体会议并发言 瓴动夏夜！这一晚，毕业音符汇成璀璨星河 06-23 6月12日晚，高瓴人工智能学院2026年“瓴动夏夜”毕业晚会在学生活动中心133陕公大讲堂拉开帷幕。 中国社会科学杂志社与中国人民大学高瓴人工智能学院开展联学交流 06-17 6月11日上午，中国人民大学高瓴人工智能学院与中国社会科学杂志社开展联学交流。 高瓴人工智能学院第三次学生代表大会顺利召开 06-17 2026年6月10日中午，中国人民大学高瓴人工智能学院第三次学生代表大会在立德楼1826报告厅顺利召开 五育并举：他们是“瓴航”院长奖学金获奖者！ 06-12 五育并举，经过评审，最终5支团队和16位个人获评2026年“瓴航”院长奖学金。 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 06-08 人大高瓴发布“观天 短临降水智能预报系统”“玉兰-万象社会模拟平台2.0”成果 创业“瓴”航|海淀区人工智能OPC校友行首期活动走进中国人民大学 06-08 人大高瓴人工智能学院创业“瓴”航讲座第五讲暨海淀区人工智能OPC校友行首期活动走进中国人民大学在立德楼607举办 健康“瓴”航|高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名！ 06-08 高瓴人工智能学院在春季学期乒乓球团体赛中荣获团体第四名 共578条新闻，分29页，当前第 1 页 最前页 上一页 下一页 最后页 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn | 86-10-62511257 北京市海淀区中关村大街59号中国人民大学 copyright 2021 中国人民大学高瓴人工智能学院 关注我们 检测到您当前使用浏览器版本过于老旧，会导致无法正常浏览网站；请您使用电脑里的其他浏览器如：360、QQ、搜狗浏览器的速模式浏览，或者使用谷歌、火狐等浏览器。 下载Firefox 友情链接 中国人民大学信息学院 中国科学技术协会 中国外文出版发行事业局 联系 ai@ruc.edu.cn 86-10-62511257",
+      "content_hash": "8ab3c70e1555da689841e561eb03df609d308c2b8eddb07101e7127268a5cf60",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-09-05T02:33:39+00:00",
+      "changed_at": "2026-09-05T02:33:39+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 178,
+      "title": "教师主页系统",
+      "url": "https://ai.ruc.edu.cn/academicfaculty/szdwn/index.htm",
+      "source_name": "中国人民大学高瓴人工智能学院",
+      "source_url": "https://ai.ruc.edu.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣",
+      "summary": "您所在的位置：首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣，中国人民大学高瓴人工智能学院执行院长，国家高层次人才特聘专家。“大模型与智慧治理”北京市重点实验室主任，担任新一代智能搜索与推荐教育部工程研究中心主任。2018年入选首批“北京市卓越青年科学家... 中文 EN 窦志成 教授 中国人民大学高瓴人工智能学院副院长、教授、长聘教授、博士生导师，现任中国计算机学会大数据专家委员会秘书长，中文信息学会理事、信息检索专委会副主任。主要研究兴趣为智能信息检索、智能体、大模型检索增强、A... 中文 EN 魏哲巍 教授 魏哲巍，教授，博导，国家高层次人才。担任中国人民大学高瓴人工智能学院副院长，新一代智能搜索与推荐教育部工程研究中心副主任。2008年本科毕业于北京大学数学科学学院，2012年博士毕业于香港科技大学计算... 中文 EN 孙浩 教授 孙浩，现任中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家青A项目获得者（原国家杰青）。哥伦比亚大学博士、麻省理工学院博士后，先后任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高... 中文 EN 徐君 教授 徐君，中国人民大学高瓴人工智能学院教授、长聘教授、博士生导师。曾就职于微软亚洲研究院、华为诺亚方舟实验室（香港）和中科院计算所。研究领域为互联网搜索与推荐，在重要国际期刊和会议发表论文超过100篇，出... 中文 EN 赵鑫 教授 赵鑫，中国人民大学高瓴人工智能学院教授，长聘副教授，国家优青项目获得者。2014年7月于北京大学获得博士学位，随后进入中国人民大学工作至今。研究领域为信息检索与自然语言处理，共计发表论文200余篇，谷... 中文 EN 卢志武 教授 卢志武博士，中国人民大学高瓴人工智能学院教授，长聘副教授，博士生导师。2005年毕业于北京大学数学科学学院信息科学系，获理学硕士学位；2011年毕业于香港城市大学计算机系，获PhD学位。主要研究方向为... 中文 EN 曹朝 教授 曹朝，中国人民大学高瓴人工智能学院教授，分别于2004年和2010年获得北京理工大学学士和博士学位。于2025年5月加入中国人民大学，曾任华为泊松实验室主任、华为云EI（企业智能）服务产品部架构与设计... 中文 EN 曾毅 教授 曾毅，中国人民大学高瓴人工智能学院，吴玉章讲席教授，博导。北京前瞻",
+      "content": "您所在的位置：首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣，中国人民大学高瓴人工智能学院执行院长，国家高层次人才特聘专家。“大模型与智慧治理”北京市重点实验室主任，担任新一代智能搜索与推荐教育部工程研究中心主任。2018年入选首批“北京市卓越青年科学家... 中文 EN 窦志成 教授 中国人民大学高瓴人工智能学院副院长、教授、长聘教授、博士生导师，现任中国计算机学会大数据专家委员会秘书长，中文信息学会理事、信息检索专委会副主任。主要研究兴趣为智能信息检索、智能体、大模型检索增强、A... 中文 EN 魏哲巍 教授 魏哲巍，教授，博导，国家高层次人才。担任中国人民大学高瓴人工智能学院副院长，新一代智能搜索与推荐教育部工程研究中心副主任。2008年本科毕业于北京大学数学科学学院，2012年博士毕业于香港科技大学计算... 中文 EN 孙浩 教授 孙浩，现任中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家青A项目获得者（原国家杰青）。哥伦比亚大学博士、麻省理工学院博士后，先后任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高... 中文 EN 徐君 教授 徐君，中国人民大学高瓴人工智能学院教授、长聘教授、博士生导师。曾就职于微软亚洲研究院、华为诺亚方舟实验室（香港）和中科院计算所。研究领域为互联网搜索与推荐，在重要国际期刊和会议发表论文超过100篇，出... 中文 EN 赵鑫 教授 赵鑫，中国人民大学高瓴人工智能学院教授，长聘副教授，国家优青项目获得者。2014年7月于北京大学获得博士学位，随后进入中国人民大学工作至今。研究领域为信息检索与自然语言处理，共计发表论文200余篇，谷... 中文 EN 卢志武 教授 卢志武博士，中国人民大学高瓴人工智能学院教授，长聘副教授，博士生导师。2005年毕业于北京大学数学科学学院信息科学系，获理学硕士学位；2011年毕业于香港城市大学计算机系，获PhD学位。主要研究方向为... 中文 EN 曹朝 教授 曹朝，中国人民大学高瓴人工智能学院教授，分别于2004年和2010年获得北京理工大学学士和博士学位。于2025年5月加入中国人民大学，曾任华为泊松实验室主任、华为云EI（企业智能）服务产品部架构与设计... 中文 EN 曾毅 教授 曾毅，中国人民大学高瓴人工智能学院，吴玉章讲席教授，博导。北京前瞻人工智能安全与治理研究院院长，人工智能安全与超级对齐北京市重点实验室主任。中国人工智能学会（CAAI）心智计算专委会主任；世界互联网大... 中文 EN 宋睿华 长聘副教授 国家高层次人才特聘教授，现任中国人民大学高瓴人工智能学院长聘副教授。曾任微软亚洲研究院主管研究员、微软小冰首席科学家。近期研究兴趣为多模态理解、创作和交互。发表学术论文100余篇，申请专利30余项。曾... 中文 EN 祁琦 长聘副教授 长聘副教授，博导，国家高层次人才青年专家，CCF中国计算机学会计算经济学专委秘书长。博士毕业于美国斯坦福大学，师从冯·诺依曼奖得主叶荫宇教授。曾任香港科技大学助理教授，博士生导师，获十佳教师奖。主要研... 中文 EN 苏冰 长聘副教授 苏冰，中国人民大学高瓴人工智能学院长聘副教授、博导，国家高层次青年人才。2016年博士毕业于清华大学，2010年本科毕业于北京理工大学。研究方向为计算机视觉、机器学习和模式识别，主要研究序列数据的特征... 中文 EN 许洪腾 长聘副教授 2017年博士毕业于佐治亚理工学院，2013年硕士毕业于上海交通大学，2010年本科毕业于天津大学。其研究方向为通用人工智能技术及其应用，特别是（1）最优传输驱动的机器学习方法；（2）生成式大模型架构... 中文 EN 刘勇 长聘副教授 中国人民大学，长聘副教授、博士生导师、国家级高层次青年人才。从事机器学习研究，特别关注大模型机制分析、强化推理、统计机器学习等。发表高水平论文100多篇，其中以第一作者或通讯作者发表高水平文章60余篇... 中文 EN 王子贺 预聘副教授 本科就读于清华大学计算机科学实验班，2016年在清华大学获博士学位，博士导师为唐平中和姚期智，毕业后在上海财经大学工作4年，后加入中国人民大学高瓴人工智能学院。研究兴趣为理论计算机与经济学的交叉学科，... 中文 EN 毛佳昕 预聘副教授 毛佳昕于2013年和2018年获得清华大学学士和博士学位。博士毕业后曾在清华大学担任博士后研究员，于2020年加入中国人民大学高瓴人工智能学院，任预聘助理教授、预聘副教授。其主要研究方向为信息检索、网... 中文 EN 陈旭 预聘副教授 陈旭，中国人民大学高瓴人工智能学院预聘副教授，博士生导师，国家高层次青年人才。主要研究方向为大语言模型、强化学习、信息检索和因果推断等，发表高水平论文100余篇，谷歌引用1.7万余次。带领团队在大模型... 中文 EN 胡迪 预聘副教授 胡迪，现任中国人民大学高瓴人工智能学院预聘副教授，博导。主要研究方向为多模态交互智能，以主要作者在T-PAMI/ICML/CVPR/CoRL等人工智能顶级期刊及会议发表论文60余篇，六篇荣获CVPR、... 中文 EN 李崇轩 预聘副教授 李崇轩，中国人民大学高瓴人工智能学院预聘副教授、博士生导师，国家高层次青年人才，2010-2019年获清华大学学士和博士学位。主要研究机器学习、深度生成模型，代表性工作部署于DALL·E 2、Stab... 中文 EN 黄文炳 预聘副教授 黄文炳，中国人民大学高瓴人工智能学院预聘副教授、博导，国家高层次青年人才、北京科技新星。中国人民大学智慧治理学院兼职博导，中国人工智能学会组织工作委员会副秘书长。曾任职于清华大学与腾讯公司。主要研究几... 中文 EN 王希廷 预聘副教授 王希廷本科、博士毕业于清华大学，曾是MSRA社会计算组首席研究员。研究兴趣为可解释、负责任的人工智能，相关科研成果落地全球占有量第二的必应搜索引擎。两篇论文被CCF-A类期刊TVCG评选为封面论文，被... 中文 EN 张骁 预聘副教授 张骁，中国人民大学高瓴人工智能学院预聘副教授，博导，中国人民大学杰出学者青年学者，中国人民大学人工智能治理研究院研究员，北京中关村学院兼职导师，中国人民大学智慧治理学院兼职导师。主要研究方向为：自适应... 中文 EN 沈蔚然 预聘副教授 沈蔚然本科毕业于清华大学电子工程系，2019年于清华大学交叉信息研究院获博士学位，2019年至2020年于卡内基梅隆大学担任博士后研究员。主要研究方向为多智能体系统、博弈论、机制设计和机器学习，在相关... 中文 EN 林衍凯 预聘副教授 林衍凯于2014年和2019年获得清华大学学士和博士学位。博士毕业后曾在腾讯微信担任高级研究员，于2022年加入中国人民大学，任助理教授。其主要研究方向为预训练模型、自然语言处理。曾在ACL、EMNL... 中文 EN 周骁 预聘副教授 周骁分别于2015年和2019年获得英国剑桥大学硕士与博士学位，师从英国皇家工程院院士（FREng）、移动计算领域世界知名学者Cecilia Mascolo教授。博士毕业后赴美国麻省理工学院从事博士后... 中文 EN 朱余韬 预聘助理教授 朱余韬，现任高瓴人工智能学院预聘助理教授。主要研究方向为信息检索与智能体，以主要作者身份在ACL、NeurIPS、AAAI、SIGIR、TOIS等人工智能和信息检索领域顶级期刊和会议上发表论文20余篇... 中文 EN 马彦彪 讲师 马彦彪于2020年和2025年获得西安电子科技大学学士和博士学位。主要关注多模态大模型视觉理解，模态统一范式，长尾学习和联邦学习领域的研究。以第一作者在TPAMI、IJCV、CVPR、ICLR等人工智... 中文 EN 张瑞 讲师 张瑞，现任中国人民大学讲师，青年英才。于2024年获得中国科学院数学与系统科学研究院理学博士学位。2024年至2026年在中国人民大学高瓴人工智能学院从事博士后研究工作。主要研究方向为智能科学计算，关... 中文 EN 卫雅珂 讲师 中国人民大学高瓴人工智能学院讲师。主要研究方向为多模态感知与机理等。在TPAMI、NeurIPS、ICML、CVPR等人工智能顶级期刊及会议发表论文10余篇。多篇论文入选NeurIPS、CVPR等会议... 中文 EN 吴泳涛 讲师 中国人民大学高瓴人工智能学院讲师。2026年获瑞士洛桑联邦理工学院（EPFL）博士学位，曾任加州大学洛杉矶分校（UCLA）访问学者。主要研究方向为机器学习理论与优化，重点从优化理论视角研究神经网络的训... 中文 EN",
+      "raw_text": "您所在的位置：首页 - 师资队伍 - 专任教师 教师队伍 文继荣 教授 文继荣，中国人民大学高瓴人工智能学院执行院长，国家高层次人才特聘专家。“大模型与智慧治理”北京市重点实验室主任，担任新一代智能搜索与推荐教育部工程研究中心主任。2018年入选首批“北京市卓越青年科学家... 中文 EN 窦志成 教授 中国人民大学高瓴人工智能学院副院长、教授、长聘教授、博士生导师，现任中国计算机学会大数据专家委员会秘书长，中文信息学会理事、信息检索专委会副主任。主要研究兴趣为智能信息检索、智能体、大模型检索增强、A... 中文 EN 魏哲巍 教授 魏哲巍，教授，博导，国家高层次人才。担任中国人民大学高瓴人工智能学院副院长，新一代智能搜索与推荐教育部工程研究中心副主任。2008年本科毕业于北京大学数学科学学院，2012年博士毕业于香港科技大学计算... 中文 EN 孙浩 教授 孙浩，现任中国人民大学高瓴人工智能学院副院长、长聘教授、博导，国家青A项目获得者（原国家杰青）。哥伦比亚大学博士、麻省理工学院博士后，先后任美国匹兹堡大学、美国东北大学终身序列助理教授、中国人民大学高... 中文 EN 徐君 教授 徐君，中国人民大学高瓴人工智能学院教授、长聘教授、博士生导师。曾就职于微软亚洲研究院、华为诺亚方舟实验室（香港）和中科院计算所。研究领域为互联网搜索与推荐，在重要国际期刊和会议发表论文超过100篇，出... 中文 EN 赵鑫 教授 赵鑫，中国人民大学高瓴人工智能学院教授，长聘副教授，国家优青项目获得者。2014年7月于北京大学获得博士学位，随后进入中国人民大学工作至今。研究领域为信息检索与自然语言处理，共计发表论文200余篇，谷... 中文 EN 卢志武 教授 卢志武博士，中国人民大学高瓴人工智能学院教授，长聘副教授，博士生导师。2005年毕业于北京大学数学科学学院信息科学系，获理学硕士学位；2011年毕业于香港城市大学计算机系，获PhD学位。主要研究方向为... 中文 EN 曹朝 教授 曹朝，中国人民大学高瓴人工智能学院教授，分别于2004年和2010年获得北京理工大学学士和博士学位。于2025年5月加入中国人民大学，曾任华为泊松实验室主任、华为云EI（企业智能）服务产品部架构与设计... 中文 EN 曾毅 教授 曾毅，中国人民大学高瓴人工智能学院，吴玉章讲席教授，博导。北京前瞻人工智能安全与治理研究院院长，人工智能安全与超级对齐北京市重点实验室主任。中国人工智能学会（CAAI）心智计算专委会主任；世界互联网大... 中文 EN 宋睿华 长聘副教授 国家高层次人才特聘教授，现任中国人民大学高瓴人工智能学院长聘副教授。曾任微软亚洲研究院主管研究员、微软小冰首席科学家。近期研究兴趣为多模态理解、创作和交互。发表学术论文100余篇，申请专利30余项。曾... 中文 EN 祁琦 长聘副教授 长聘副教授，博导，国家高层次人才青年专家，CCF中国计算机学会计算经济学专委秘书长。博士毕业于美国斯坦福大学，师从冯·诺依曼奖得主叶荫宇教授。曾任香港科技大学助理教授，博士生导师，获十佳教师奖。主要研... 中文 EN 苏冰 长聘副教授 苏冰，中国人民大学高瓴人工智能学院长聘副教授、博导，国家高层次青年人才。2016年博士毕业于清华大学，2010年本科毕业于北京理工大学。研究方向为计算机视觉、机器学习和模式识别，主要研究序列数据的特征... 中文 EN 许洪腾 长聘副教授 2017年博士毕业于佐治亚理工学院，2013年硕士毕业于上海交通大学，2010年本科毕业于天津大学。其研究方向为通用人工智能技术及其应用，特别是（1）最优传输驱动的机器学习方法；（2）生成式大模型架构... 中文 EN 刘勇 长聘副教授 中国人民大学，长聘副教授、博士生导师、国家级高层次青年人才。从事机器学习研究，特别关注大模型机制分析、强化推理、统计机器学习等。发表高水平论文100多篇，其中以第一作者或通讯作者发表高水平文章60余篇... 中文 EN 王子贺 预聘副教授 本科就读于清华大学计算机科学实验班，2016年在清华大学获博士学位，博士导师为唐平中和姚期智，毕业后在上海财经大学工作4年，后加入中国人民大学高瓴人工智能学院。研究兴趣为理论计算机与经济学的交叉学科，... 中文 EN 毛佳昕 预聘副教授 毛佳昕于2013年和2018年获得清华大学学士和博士学位。博士毕业后曾在清华大学担任博士后研究员，于2020年加入中国人民大学高瓴人工智能学院，任预聘助理教授、预聘副教授。其主要研究方向为信息检索、网... 中文 EN 陈旭 预聘副教授 陈旭，中国人民大学高瓴人工智能学院预聘副教授，博士生导师，国家高层次青年人才。主要研究方向为大语言模型、强化学习、信息检索和因果推断等，发表高水平论文100余篇，谷歌引用1.7万余次。带领团队在大模型... 中文 EN 胡迪 预聘副教授 胡迪，现任中国人民大学高瓴人工智能学院预聘副教授，博导。主要研究方向为多模态交互智能，以主要作者在T-PAMI/ICML/CVPR/CoRL等人工智能顶级期刊及会议发表论文60余篇，六篇荣获CVPR、... 中文 EN 李崇轩 预聘副教授 李崇轩，中国人民大学高瓴人工智能学院预聘副教授、博士生导师，国家高层次青年人才，2010-2019年获清华大学学士和博士学位。主要研究机器学习、深度生成模型，代表性工作部署于DALL·E 2、Stab... 中文 EN 黄文炳 预聘副教授 黄文炳，中国人民大学高瓴人工智能学院预聘副教授、博导，国家高层次青年人才、北京科技新星。中国人民大学智慧治理学院兼职博导，中国人工智能学会组织工作委员会副秘书长。曾任职于清华大学与腾讯公司。主要研究几... 中文 EN 王希廷 预聘副教授 王希廷本科、博士毕业于清华大学，曾是MSRA社会计算组首席研究员。研究兴趣为可解释、负责任的人工智能，相关科研成果落地全球占有量第二的必应搜索引擎。两篇论文被CCF-A类期刊TVCG评选为封面论文，被... 中文 EN 张骁 预聘副教授 张骁，中国人民大学高瓴人工智能学院预聘副教授，博导，中国人民大学杰出学者青年学者，中国人民大学人工智能治理研究院研究员，北京中关村学院兼职导师，中国人民大学智慧治理学院兼职导师。主要研究方向为：自适应... 中文 EN 沈蔚然 预聘副教授 沈蔚然本科毕业于清华大学电子工程系，2019年于清华大学交叉信息研究院获博士学位，2019年至2020年于卡内基梅隆大学担任博士后研究员。主要研究方向为多智能体系统、博弈论、机制设计和机器学习，在相关... 中文 EN 林衍凯 预聘副教授 林衍凯于2014年和2019年获得清华大学学士和博士学位。博士毕业后曾在腾讯微信担任高级研究员，于2022年加入中国人民大学，任助理教授。其主要研究方向为预训练模型、自然语言处理。曾在ACL、EMNL... 中文 EN 周骁 预聘副教授 周骁分别于2015年和2019年获得英国剑桥大学硕士与博士学位，师从英国皇家工程院院士（FREng）、移动计算领域世界知名学者Cecilia Mascolo教授。博士毕业后赴美国麻省理工学院从事博士后... 中文 EN 朱余韬 预聘助理教授 朱余韬，现任高瓴人工智能学院预聘助理教授。主要研究方向为信息检索与智能体，以主要作者身份在ACL、NeurIPS、AAAI、SIGIR、TOIS等人工智能和信息检索领域顶级期刊和会议上发表论文20余篇... 中文 EN 马彦彪 讲师 马彦彪于2020年和2025年获得西安电子科技大学学士和博士学位。主要关注多模态大模型视觉理解，模态统一范式，长尾学习和联邦学习领域的研究。以第一作者在TPAMI、IJCV、CVPR、ICLR等人工智... 中文 EN 张瑞 讲师 张瑞，现任中国人民大学讲师，青年英才。于2024年获得中国科学院数学与系统科学研究院理学博士学位。2024年至2026年在中国人民大学高瓴人工智能学院从事博士后研究工作。主要研究方向为智能科学计算，关... 中文 EN 卫雅珂 讲师 中国人民大学高瓴人工智能学院讲师。主要研究方向为多模态感知与机理等。在TPAMI、NeurIPS、ICML、CVPR等人工智能顶级期刊及会议发表论文10余篇。多篇论文入选NeurIPS、CVPR等会议... 中文 EN 吴泳涛 讲师 中国人民大学高瓴人工智能学院讲师。2026年获瑞士洛桑联邦理工学院（EPFL）博士学位，曾任加州大学洛杉矶分校（UCLA）访问学者。主要研究方向为机器学习理论与优化，重点从优化理论视角研究神经网络的训... 中文 EN",
+      "content_hash": "3ad96557e9df06cd7a6c1279cca8f34903f9d552982946d598713d4e2a78b15f",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:57:16+00:00",
+      "last_seen_at": "2026-09-05T02:33:39+00:00",
+      "changed_at": "2026-09-05T02:33:39+00:00",
+      "topics": [
+        "人大",
+        "AI",
+        "高瓴"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 155,
+      "title": "副研究员----中国科学院数学与系统科学研究院",
+      "url": "https://amss.cas.cn/../../rcjy/fyjy",
+      "source_name": "中国科学院数学与系统科学研究院",
+      "source_url": "https://amss.cas.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": "首页 科研队伍 副研究员 中国科学院数学与系统科学研究院创建于1998年12月",
+      "summary": "ENGLISH SEARCH Close Form 副研究员 您当前的位置： 首页 科研队伍 副研究员 中国科学院数学与系统科学研究院创建于1998年12月，是由中科院数学研究所(建于1952年)、应用数学研究所(建于1979年)、系统科学研究所(建于1979年)及计算数学与科学工程计算研究所(建于1995年)等四个研究所整合而成。全院现有职工521人。 数学与系统科学研究院科研队伍实力雄厚，荟萃了我国许多著名的数学家和系统科学家，目前已形成了一支素质精良、具有很强竞争力的科研人才群体。研究院现有中国科学院院士14人，中国工程院院士1人，第三世界科学院院士8人，国家杰出青年基金获得者47人。 副研究员 曹亚龙 陈楚楚 陈山大 陈蕾 迟敬人 范晨捷 方 洲 房 勇 冯秀涛 Grégoire Véchambre 孟 琪 高 斌 高 翔 韩 靖 何 凯 何思奇 何 煦 黄记祖 黄瑞芝 黄治中 霍朝辉 简旺键 冷 伟 李 博 李 楠 李时璋 李 翀 李文博 李 伟 李 特 李天虹 李雪蓉 李阳阳 李怡蓓 李振坤 李子佳 刘 杰 刘九龙 刘 勇 刘 源 罗肖雨滔 罗旭丹 娄有成 Manolis C. Tsakiris 马俊杰 马思远 牟必强 穆义芬 欧文浩 潘文亮 Panu Lahti 彭银河 Quoc-Hung Nguyen（阮国兴） 齐 波 亓维维 钱子诚 乔柯南 秦国林 邱国寰 Rizos Sklinos Scott Smith 尚 维 邵长鹏 石 权 苏庆堂 孙黎明 孙玉莹 田开兰 王 彬 王长军 王 杰 王 健 王晋民 王兰宇 王 旭 王元龙 王 威 魏云捷 吴刘臻 吴小宁 肖 惠 谢松晏 徐 劼 许鹏程 夏 旭 姚昌龙 杨鹏宇 杨若涛 杨斯尧 杨 钊 叶 剑 殷 涛 余红杰 袁 谦 袁 旭 张海文 张建路 张 硕 张 维 张羊晶 赵 成 赵国焕 赵明阳 周 川 诸葛金平 周 喆 周正一 邹佛灵 查看更多 电子政务平台 科技网邮箱 ARP系统 会议服务平台 信息公开 违法违纪举报 联系我们 相关链接 个人简介 获更多信息，请访问个人网页",
+      "content": "ENGLISH SEARCH Close Form 副研究员 您当前的位置： 首页 科研队伍 副研究员 中国科学院数学与系统科学研究院创建于1998年12月，是由中科院数学研究所(建于1952年)、应用数学研究所(建于1979年)、系统科学研究所(建于1979年)及计算数学与科学工程计算研究所(建于1995年)等四个研究所整合而成。全院现有职工521人。 数学与系统科学研究院科研队伍实力雄厚，荟萃了我国许多著名的数学家和系统科学家，目前已形成了一支素质精良、具有很强竞争力的科研人才群体。研究院现有中国科学院院士14人，中国工程院院士1人，第三世界科学院院士8人，国家杰出青年基金获得者47人。 副研究员 曹亚龙 陈楚楚 陈山大 陈蕾 迟敬人 范晨捷 方 洲 房 勇 冯秀涛 Grégoire Véchambre 孟 琪 高 斌 高 翔 韩 靖 何 凯 何思奇 何 煦 黄记祖 黄瑞芝 黄治中 霍朝辉 简旺键 冷 伟 李 博 李 楠 李时璋 李 翀 李文博 李 伟 李 特 李天虹 李雪蓉 李阳阳 李怡蓓 李振坤 李子佳 刘 杰 刘九龙 刘 勇 刘 源 罗肖雨滔 罗旭丹 娄有成 Manolis C. Tsakiris 马俊杰 马思远 牟必强 穆义芬 欧文浩 潘文亮 Panu Lahti 彭银河 Quoc-Hung Nguyen（阮国兴） 齐 波 亓维维 钱子诚 乔柯南 秦国林 邱国寰 Rizos Sklinos Scott Smith 尚 维 邵长鹏 石 权 苏庆堂 孙黎明 孙玉莹 田开兰 王 彬 王长军 王 杰 王 健 王晋民 王兰宇 王 旭 王元龙 王 威 魏云捷 吴刘臻 吴小宁 肖 惠 谢松晏 徐 劼 许鹏程 夏 旭 姚昌龙 杨鹏宇 杨若涛 杨斯尧 杨 钊 叶 剑 殷 涛 余红杰 袁 谦 袁 旭 张海文 张建路 张 硕 张 维 张羊晶 赵 成 赵国焕 赵明阳 周 川 诸葛金平 周 喆 周正一 邹佛灵 查看更多 电子政务平台 科技网邮箱 ARP系统 会议服务平台 信息公开 违法违纪举报 联系我们 相关链接 个人简介 获更多信息，请访问个人网页",
+      "raw_text": "ENGLISH SEARCH Close Form 副研究员 您当前的位置： 首页 科研队伍 副研究员 中国科学院数学与系统科学研究院创建于1998年12月，是由中科院数学研究所(建于1952年)、应用数学研究所(建于1979年)、系统科学研究所(建于1979年)及计算数学与科学工程计算研究所(建于1995年)等四个研究所整合而成。全院现有职工521人。 数学与系统科学研究院科研队伍实力雄厚，荟萃了我国许多著名的数学家和系统科学家，目前已形成了一支素质精良、具有很强竞争力的科研人才群体。研究院现有中国科学院院士14人，中国工程院院士1人，第三世界科学院院士8人，国家杰出青年基金获得者47人。 副研究员 曹亚龙 陈楚楚 陈山大 陈蕾 迟敬人 范晨捷 方 洲 房 勇 冯秀涛 Grégoire Véchambre 孟 琪 高 斌 高 翔 韩 靖 何 凯 何思奇 何 煦 黄记祖 黄瑞芝 黄治中 霍朝辉 简旺键 冷 伟 李 博 李 楠 李时璋 李 翀 李文博 李 伟 李 特 李天虹 李雪蓉 李阳阳 李怡蓓 李振坤 李子佳 刘 杰 刘九龙 刘 勇 刘 源 罗肖雨滔 罗旭丹 娄有成 Manolis C. Tsakiris 马俊杰 马思远 牟必强 穆义芬 欧文浩 潘文亮 Panu Lahti 彭银河 Quoc-Hung Nguyen（阮国兴） 齐 波 亓维维 钱子诚 乔柯南 秦国林 邱国寰 Rizos Sklinos Scott Smith 尚 维 邵长鹏 石 权 苏庆堂 孙黎明 孙玉莹 田开兰 王 彬 王长军 王 杰 王 健 王晋民 王兰宇 王 旭 王元龙 王 威 魏云捷 吴刘臻 吴小宁 肖 惠 谢松晏 徐 劼 许鹏程 夏 旭 姚昌龙 杨鹏宇 杨若涛 杨斯尧 杨 钊 叶 剑 殷 涛 余红杰 袁 谦 袁 旭 张海文 张建路 张 硕 张 维 张羊晶 赵 成 赵国焕 赵明阳 周 川 诸葛金平 周 喆 周正一 邹佛灵 查看更多 电子政务平台 科技网邮箱 ARP系统 会议服务平台 信息公开 违法违纪举报 联系我们 相关链接 个人简介 获更多信息，请访问个人网页",
+      "content_hash": "6d55b7a298fb885eaaa30ee8fda17afbdfceabc0603ba43e67b63b1b0fa00095",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:56:50+00:00",
+      "last_seen_at": "2026-09-05T02:33:13+00:00",
+      "changed_at": "2026-09-05T02:33:13+00:00",
+      "topics": [
+        "中科院",
+        "数学",
+        "系统科学"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 25,
+      "title": "Beijing Institute of Mathematical Sciences and Applications",
+      "url": "https://www.bimsa.cn/",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "31st August, 2026 The Review of Mathematical Economics vol.1 (2026), no.2 has been published 28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 7th ",
+      "content": "31st August, 2026 The Review of Mathematical Economics vol.1 (2026), no.2 has been published 28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 7th September Triangulated Categories and Derived Categories Course Ping He 7th September The fundamental evolutionary theory of polygenic trait Course Qi Wu 7th September Calabi–Yau at 50: Legacy and Future Workshop Babak Haghighat , Bong Hor Lian , Artan Sheshmani , Albrecht Klemm , Si Li , Nicolai Reshetikhin , Kimyeong Lee 8th September From quantum topology to classical geometry Course Shuang Ming 9th September Theory of Operator Algebras, III Course Linzhe Huang 9th September Group-theoretical methods in classical integrable systems II Course Ivan Sechin Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "raw_text": "31st August, 2026 The Review of Mathematical Economics vol.1 (2026), no.2 has been published 28th August, 2026 Congratulations! Prof. Yaqing Wang Selected for IJCAI 2026 Early Career Spotlights 29th July, 2026 \"Feiyan\" Makes Successful Maiden Flight 25th June, 2026 When Materials Science Meets Mathematics: How to Understand Complex Materials 25th June, 2026 An Exclusive Interview with Fellow Oluwole Daniel Makinde 22nd June, 2026 BIMSA Team Publishes Two Major Achievements in Top International Mathematical Journals MORE NEWS Current Events 23rd February-27th May Optimization Methods for AI 2nd March-20th April Logic and Computation III 3rd March-26th May Data-driven multiscale modeling and computation 12th March-25th June Optimal transport 25th March-15th May RENORMALIZABILITY. NON-RENORMALIZABLE THEORIES.THE STANDARD MODEL. 24th-28th April The 4th International Conference on Theoretical Physics and New Technologies Upcoming Events +More BIMSA Course in 2026 Spring Course Updating 7th September Triangulated Categories and Derived Categories Course Ping He 7th September The fundamental evolutionary theory of polygenic trait Course Qi Wu 7th September Calabi–Yau at 50: Legacy and Future Workshop Babak Haghighat , Bong Hor Lian , Artan Sheshmani , Albrecht Klemm , Si Li , Nicolai Reshetikhin , Kimyeong Lee 8th September From quantum topology to classical geometry Course Shuang Ming 9th September Theory of Operator Algebras, III Course Linzhe Huang 9th September Group-theoretical methods in classical integrable systems II Course Ivan Sechin Research Groups Pure Mathematics > Algebraic Geometry Analysis and Geometry Number Theory and Representation Theory Applications in Complex Systems > Algebraic Topology and its Applications Artificial Intelligence and Machine Learning Probability, Applied Statistics and Data Science Applications in Physics > Mathematical Physics Quantum Symmetry Applications in Computer Science > Digital Economy Theory and Computation of PDE Join Us! Faculty > Postdocs >",
+      "content_hash": "e18a5c5ece9076a41c52167f32ff5baccd0b72351d2f4e0c7f3507fcb7ffbd97",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-05T02:31:56+00:00",
+      "changed_at": "2026-09-05T02:31:56+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 37,
+      "title": "Postdocs",
+      "url": "https://www.bimsa.cn/postdoc/index.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "BIMSA > Postdocs Postdocs Filter by Last Name Filter by Title Filter by Research Groups Reset ALL A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Chern Instructor Postdoc Algebraic Geometry Algebraic Topology and its Applications Analysis and Geometry Artificial Intelligence and Machine Learning Digital Economy Mathematical Physics Number Theory and Representation Theory Probability, Applied Statistics and Data Science Quantum Symmetry Theory and Computation of PDE ALL A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Chern Instructor Postdoc Hao Bai Postdoc Probability, Applied Statistics and Data Science baihao@bimsa.cn Nikita Belousov Postdoc Mathematical Physics belousov@bimsa.cn Chitradipa Chakraborty Postdoc Probability, Applied Statistics and Data Science chitradipachakraborty@bimsa.cn Ritankar Chatterjee Postdoc Mathematical Physics ritankar@bimsa.cn Hank Chen Postdoc Mathematical Physics chunhaochen@bimsa.cn Manyao Deng Postdoc Digital Economy dengmanyao@bimsa.cn Dey Dip",
+      "content": "BIMSA > Postdocs Postdocs Filter by Last Name Filter by Title Filter by Research Groups Reset ALL A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Chern Instructor Postdoc Algebraic Geometry Algebraic Topology and its Applications Analysis and Geometry Artificial Intelligence and Machine Learning Digital Economy Mathematical Physics Number Theory and Representation Theory Probability, Applied Statistics and Data Science Quantum Symmetry Theory and Computation of PDE ALL A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Chern Instructor Postdoc Hao Bai Postdoc Probability, Applied Statistics and Data Science baihao@bimsa.cn Nikita Belousov Postdoc Mathematical Physics belousov@bimsa.cn Chitradipa Chakraborty Postdoc Probability, Applied Statistics and Data Science chitradipachakraborty@bimsa.cn Ritankar Chatterjee Postdoc Mathematical Physics ritankar@bimsa.cn Hank Chen Postdoc Mathematical Physics chunhaochen@bimsa.cn Manyao Deng Postdoc Digital Economy dengmanyao@bimsa.cn Dey Dipanjan Postdoc Analysis and Geometry dipanjandey@bimsa.cn Haiming Du Postdoc Analysis and Geometry duhaiming@bimsa.cn Briony Eldridge Postdoc Algebraic Topology and its Applications eldridge@bimsa.cn Mehari Endalew Postdoc Artificial Intelligence and Machine Learning meharifentahun@bimsa.cn Sohail Farhangi Postdoc Probability, Applied Statistics and Data Science sohailfarhangi@bimsa.cn Zijian Feng Postdoc Digital Economy fengzijian@bimsa.cn Baptiste Filoche Postdoc Mathematical Physics bfiloche@bimsa.cn Shalabh Gautam Postdoc Analysis and Geometry shalabhgautam@bimsa.cn Amirmasoud Geevechi Postdoc Analysis and Geometry amirmasoud@bimsa.cn Huiying Gong Postdoc Probability, Applied Statistics and Data Science gonghuiying@bimsa.cn Xia Gu Postdoc Mathematical Physics guxia@bimsa.cn Yang He Postdoc Algebraic Geometry heyang@bimsa.cn Anton Iliashenko Postdoc Analysis and Geometry antoniliashenko@bimsa.cn KIM SEUNGGYU Postdoc seunggyukim@bimsa.cn Nikita Klemyatin Postdoc Analysis and Geometry nklemyatin@bimsa.cn Anatolii Korneev Postdoc Probability, Applied Statistics and Data Science korneev.anatolii@bimsa.cn Xin Lai Postdoc Probability, Applied Statistics and Data Science laixin@bimsa.cn Alyosha Latyntsev Chern Instructor Algebraic Geometry alexeilatyntsev@bimsa.cn",
+      "raw_text": "BIMSA > Postdocs Postdocs Filter by Last Name Filter by Title Filter by Research Groups Reset ALL A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Chern Instructor Postdoc Algebraic Geometry Algebraic Topology and its Applications Analysis and Geometry Artificial Intelligence and Machine Learning Digital Economy Mathematical Physics Number Theory and Representation Theory Probability, Applied Statistics and Data Science Quantum Symmetry Theory and Computation of PDE ALL A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Chern Instructor Postdoc Hao Bai Postdoc Probability, Applied Statistics and Data Science baihao@bimsa.cn Nikita Belousov Postdoc Mathematical Physics belousov@bimsa.cn Chitradipa Chakraborty Postdoc Probability, Applied Statistics and Data Science chitradipachakraborty@bimsa.cn Ritankar Chatterjee Postdoc Mathematical Physics ritankar@bimsa.cn Hank Chen Postdoc Mathematical Physics chunhaochen@bimsa.cn Manyao Deng Postdoc Digital Economy dengmanyao@bimsa.cn Dey Dipanjan Postdoc Analysis and Geometry dipanjandey@bimsa.cn Haiming Du Postdoc Analysis and Geometry duhaiming@bimsa.cn Briony Eldridge Postdoc Algebraic Topology and its Applications eldridge@bimsa.cn Mehari Endalew Postdoc Artificial Intelligence and Machine Learning meharifentahun@bimsa.cn Sohail Farhangi Postdoc Probability, Applied Statistics and Data Science sohailfarhangi@bimsa.cn Zijian Feng Postdoc Digital Economy fengzijian@bimsa.cn Baptiste Filoche Postdoc Mathematical Physics bfiloche@bimsa.cn Shalabh Gautam Postdoc Analysis and Geometry shalabhgautam@bimsa.cn Amirmasoud Geevechi Postdoc Analysis and Geometry amirmasoud@bimsa.cn Huiying Gong Postdoc Probability, Applied Statistics and Data Science gonghuiying@bimsa.cn Xia Gu Postdoc Mathematical Physics guxia@bimsa.cn Yang He Postdoc Algebraic Geometry heyang@bimsa.cn Anton Iliashenko Postdoc Analysis and Geometry antoniliashenko@bimsa.cn KIM SEUNGGYU Postdoc seunggyukim@bimsa.cn Nikita Klemyatin Postdoc Analysis and Geometry nklemyatin@bimsa.cn Anatolii Korneev Postdoc Probability, Applied Statistics and Data Science korneev.anatolii@bimsa.cn Xin Lai Postdoc Probability, Applied Statistics and Data Science laixin@bimsa.cn Alyosha Latyntsev Chern Instructor Algebraic Geometry alexeilatyntsev@bimsa.cn",
+      "content_hash": "6adc94880d7fb3f09383455662c07db34076cb37f7ef5351c5e350f4f5302803",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-05T02:31:56+00:00",
+      "changed_at": "2026-09-05T02:31:56+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 42,
+      "title": "Courses",
+      "url": "https://www.bimsa.cn/research/course/index.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "Research Courses Seminars BIMSA > Courses Courses 2026AU 2026SP 2025AU 2025SP 2024AU 2024SP 2023AU 2023SP 2022AU 2022SP 2021AU 2021SP 2020AU 6th November 2026 Recent developments in three-dimensional gravity II Course Luis Apolo Date: 6th November, 2026 - 18th December, 2026 Schedule: Friday 09:50 - 11:25, Friday 13:30 - 15:05, Address: A14-201 A14-201 26th October 2026 Formal Semantics of Programming Languages Course Hanru Jiang Date: 26th October, 2026 - 11th January, 2027 Schedule: Monday 14:20 - 17:50, Address: Shuimo 17th October 2026 Heat kernels and functional inequalities IV Course Qi Hou Date: 17th October, 2026 - 3rd January, 2027 Schedule: Saturday,Sunday 15:20 - 16:55, Address: A14-204 16th October 2026 Modern Fourier Analysis Course Mahdi Hormozi Date: 16th October, 2026 - 18th December, 2026 Schedule: Friday 15:20 - 16:55, Address: A14-101 16th October 2026 Algorithm of Tensor Network representations Course Song Cheng Date: 16th October, 2026 - 8th January, 2027 Schedule:",
+      "content": "Research Courses Seminars BIMSA > Courses Courses 2026AU 2026SP 2025AU 2025SP 2024AU 2024SP 2023AU 2023SP 2022AU 2022SP 2021AU 2021SP 2020AU 6th November 2026 Recent developments in three-dimensional gravity II Course Luis Apolo Date: 6th November, 2026 - 18th December, 2026 Schedule: Friday 09:50 - 11:25, Friday 13:30 - 15:05, Address: A14-201 A14-201 26th October 2026 Formal Semantics of Programming Languages Course Hanru Jiang Date: 26th October, 2026 - 11th January, 2027 Schedule: Monday 14:20 - 17:50, Address: Shuimo 17th October 2026 Heat kernels and functional inequalities IV Course Qi Hou Date: 17th October, 2026 - 3rd January, 2027 Schedule: Saturday,Sunday 15:20 - 16:55, Address: A14-204 16th October 2026 Modern Fourier Analysis Course Mahdi Hormozi Date: 16th October, 2026 - 18th December, 2026 Schedule: Friday 15:20 - 16:55, Address: A14-101 16th October 2026 Algorithm of Tensor Network representations Course Song Cheng Date: 16th October, 2026 - 8th January, 2027 Schedule: Friday 10:40 - 15:05, Address: Shuangqing 14th October 2026 Theory of Quantum Information Course Meng Cao Date: 14th October, 2026 - 30th December, 2026 Schedule: Wednesday 14:20 - 17:50, Address: A3-2a-302 14th October 2026 Agent for Finance Course Ruize Gao Date: 14th October, 2026 - 30th December, 2026 Schedule: Wednesday 14:20 - 17:50, Address: Qiuzhen 13th October 2026 Introduction to General Relativity Course Yongtao Guan Date: 13th October, 2026 - 31st December, 2026 Schedule: Tuesday,Thursday 16:10 - 17:50, Address: A14-203 13th October 2026 Orthogonal Polynomials, Random Matrices and Integrable Systems Course Li Wang Date: 13th October, 2026 - 29th December, 2026 Schedule: Tuesday 13:30 - 16:55, Address: A7-304 13th October 2026 The Laplacian on metrized graphs II Course Arnaud Plessis Date: 13th October, 2026 - 29th December, 2026 Schedule: Tuesday 13:30 - 16:55, Address: A3-2-301 13th October 2026 Physics-guided deep learning methods and applications Course Fansheng Xiong Date: 13th October, 2026 - 29th December, 2026 Schedule: Tuesday 13:30 - 16:55, Address: Shuimo 13th October 2026 Moduli spaces of vector bundles: curve case Course Jianping Wang Date: 13th October, 2026 - 30th December, 2026 Schedule: Tuesday,Wednesday 10:40 - 12:15, Address: Shuimo",
+      "raw_text": "Research Courses Seminars BIMSA > Courses Courses 2026AU 2026SP 2025AU 2025SP 2024AU 2024SP 2023AU 2023SP 2022AU 2022SP 2021AU 2021SP 2020AU 6th November 2026 Recent developments in three-dimensional gravity II Course Luis Apolo Date: 6th November, 2026 - 18th December, 2026 Schedule: Friday 09:50 - 11:25, Friday 13:30 - 15:05, Address: A14-201 A14-201 26th October 2026 Formal Semantics of Programming Languages Course Hanru Jiang Date: 26th October, 2026 - 11th January, 2027 Schedule: Monday 14:20 - 17:50, Address: Shuimo 17th October 2026 Heat kernels and functional inequalities IV Course Qi Hou Date: 17th October, 2026 - 3rd January, 2027 Schedule: Saturday,Sunday 15:20 - 16:55, Address: A14-204 16th October 2026 Modern Fourier Analysis Course Mahdi Hormozi Date: 16th October, 2026 - 18th December, 2026 Schedule: Friday 15:20 - 16:55, Address: A14-101 16th October 2026 Algorithm of Tensor Network representations Course Song Cheng Date: 16th October, 2026 - 8th January, 2027 Schedule: Friday 10:40 - 15:05, Address: Shuangqing 14th October 2026 Theory of Quantum Information Course Meng Cao Date: 14th October, 2026 - 30th December, 2026 Schedule: Wednesday 14:20 - 17:50, Address: A3-2a-302 14th October 2026 Agent for Finance Course Ruize Gao Date: 14th October, 2026 - 30th December, 2026 Schedule: Wednesday 14:20 - 17:50, Address: Qiuzhen 13th October 2026 Introduction to General Relativity Course Yongtao Guan Date: 13th October, 2026 - 31st December, 2026 Schedule: Tuesday,Thursday 16:10 - 17:50, Address: A14-203 13th October 2026 Orthogonal Polynomials, Random Matrices and Integrable Systems Course Li Wang Date: 13th October, 2026 - 29th December, 2026 Schedule: Tuesday 13:30 - 16:55, Address: A7-304 13th October 2026 The Laplacian on metrized graphs II Course Arnaud Plessis Date: 13th October, 2026 - 29th December, 2026 Schedule: Tuesday 13:30 - 16:55, Address: A3-2-301 13th October 2026 Physics-guided deep learning methods and applications Course Fansheng Xiong Date: 13th October, 2026 - 29th December, 2026 Schedule: Tuesday 13:30 - 16:55, Address: Shuimo 13th October 2026 Moduli spaces of vector bundles: curve case Course Jianping Wang Date: 13th October, 2026 - 30th December, 2026 Schedule: Tuesday,Wednesday 10:40 - 12:15, Address: Shuimo",
+      "content_hash": "a254bc9768927485bbb74ce4855b8f2a848f1a48ce34da12c8f002ba70541ca3",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-05T02:31:56+00:00",
+      "changed_at": "2026-09-05T02:31:56+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    },
+    {
+      "id": 43,
+      "title": "Seminars",
+      "url": "https://www.bimsa.cn/research/seminar/current/page_1.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 21st February 2023 Research seminar in Discrete Mathematics Seminar Jie Ma , Benjamin Sudakov , Ruijie Xu Date: 21st February, 2023 - 12th January, 2027 Schedule: Tuesday 17:05 - 18:15, Address: Online 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Min",
+      "content": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 21st February 2023 Research seminar in Discrete Mathematics Seminar Jie Ma , Benjamin Sudakov , Ruijie Xu Date: 21st February, 2023 - 12th January, 2027 Schedule: Tuesday 17:05 - 18:15, Address: Online 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 15th September 2025 Integrable systems blackboard seminar Seminar Nicolai Reshetikhin , Andrii Liashyk , Ruijie Xu Date: 15th September, 2025 - 31st January, 2027 Schedule: Monday 15:30 - 16:30, Address: A7-201 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 24th February 2026 BIMSA General Relativity Seminar Seminar Bowen Zhao , Piotr Chrusciel , Puskar Mondal Date: 24th February, 2026 - 21st December, 2026 Schedule: Tuesday 16:30 - 17:30, Address: 17th April 2026 Topics in Representation Theory Seminar Shamil Shakirov , Pavel Nikitin , Semen Artamonov , Yevgen Makedonskyi Date: 17th April, 2026 - 29th January, 2027 Schedule: Friday 13:00 - 14:30, Address: A3-2a-302 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 23rd February, 2027 Schedule: Tuesday 09:50 - 12:15, Address: A14-201 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 22nd February, 2027 Schedule: Tuesday 13:50 - 15:50, Address: A14-201 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301",
+      "raw_text": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 21st February 2023 Research seminar in Discrete Mathematics Seminar Jie Ma , Benjamin Sudakov , Ruijie Xu Date: 21st February, 2023 - 12th January, 2027 Schedule: Tuesday 17:05 - 18:15, Address: Online 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 15th September 2025 Integrable systems blackboard seminar Seminar Nicolai Reshetikhin , Andrii Liashyk , Ruijie Xu Date: 15th September, 2025 - 31st January, 2027 Schedule: Monday 15:30 - 16:30, Address: A7-201 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 24th February 2026 BIMSA General Relativity Seminar Seminar Bowen Zhao , Piotr Chrusciel , Puskar Mondal Date: 24th February, 2026 - 21st December, 2026 Schedule: Tuesday 16:30 - 17:30, Address: 17th April 2026 Topics in Representation Theory Seminar Shamil Shakirov , Pavel Nikitin , Semen Artamonov , Yevgen Makedonskyi Date: 17th April, 2026 - 29th January, 2027 Schedule: Friday 13:00 - 14:30, Address: A3-2a-302 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 23rd February, 2027 Schedule: Tuesday 09:50 - 12:15, Address: A14-201 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 22nd February, 2027 Schedule: Tuesday 13:50 - 15:50, Address: A14-201 27th August 2026 BIMSA Topology Seminar Seminar Jie Wu , Jingyan Li , Pravin Kumar Date: 27th August, 2026 - 14th January, 2027 Schedule: Thursday 15:00 - 16:00, Address: A3-4-301",
+      "content_hash": "7d52d768465481f37f54796ca3db9d7e27c77f6ace349ec879892ffe8546c681",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-05T02:31:56+00:00",
+      "changed_at": "2026-09-05T02:31:56+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:31:56+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:33:39+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:33:13+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:32:32+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:32:43+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:31:30+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:32:21+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-05T02:32:09+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
