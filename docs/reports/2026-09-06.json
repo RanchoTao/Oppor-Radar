@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "date": "2026-09-06",
+  "metrics": {
+    "configured_sources": 8,
+    "healthy_sources": 8,
+    "new_items": 0,
+    "changed_items": 1,
+    "candidate_items": 1,
+    "selected_items": 1,
+    "last_updated_at": "2026-09-06T10:30:54.841328+08:00"
+  },
+  "digest": {
+    "report_date": "2026-09-06",
+    "headline": "世界正在发生；这是今天与你最相关的变化。",
+    "overview": "本次共有 1 条信息进入日报。未配置大模型密钥，使用确定性回退编辑。",
+    "groups": [
+      {
+        "name": "学术",
+        "summary": "今日筛选出 1 条值得关注的新信息。",
+        "highlights": [
+          {
+            "title": "Seminars",
+            "why": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+            "action": "仅供了解",
+            "source": "BIMSA",
+            "url": "https://www.bimsa.cn/research/seminar/current/page_1.html"
+          }
+        ]
+      }
+    ],
+    "cross_group_signals": [],
+    "action_items": []
+  },
+  "items": [
+    {
+      "id": 43,
+      "title": "Seminars",
+      "url": "https://www.bimsa.cn/research/seminar/current/page_1.html",
+      "source_name": "BIMSA",
+      "source_url": "https://www.bimsa.cn/",
+      "source_group": "学术",
+      "publish_date": null,
+      "deadline": null,
+      "event_date": null,
+      "location": null,
+      "summary": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 16th September 2022 Number Theory Lunch Seminar Seminar Yongsuk Moon , Koji Shimizu Date: 16th September, 2022 - 1st July, 2027 Schedule: Thursday 12:15 - 13:00, Address: Website: https://www.bimsa.cn/newsinfo/755539.html 21st February 2023 Research seminar in Discrete Mathematics Seminar Jie Ma , Benjamin Sudakov , Ruijie Xu Date: 21st February, 2023 - 12th January, 2027 Schedule: Tuesday 17:05 - 18:15, Address: Online 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4",
+      "content": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 16th September 2022 Number Theory Lunch Seminar Seminar Yongsuk Moon , Koji Shimizu Date: 16th September, 2022 - 1st July, 2027 Schedule: Thursday 12:15 - 13:00, Address: Website: https://www.bimsa.cn/newsinfo/755539.html 21st February 2023 Research seminar in Discrete Mathematics Seminar Jie Ma , Benjamin Sudakov , Ruijie Xu Date: 21st February, 2023 - 12th January, 2027 Schedule: Tuesday 17:05 - 18:15, Address: Online 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 15th September 2025 Integrable systems blackboard seminar Seminar Nicolai Reshetikhin , Andrii Liashyk , Ruijie Xu Date: 15th September, 2025 - 31st January, 2027 Schedule: Monday 15:30 - 16:30, Address: A7-201 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 24th February 2026 BIMSA General Relativity Seminar Seminar Bowen Zhao , Piotr Chrusciel , Puskar Mondal Date: 24th February, 2026 - 21st December, 2026 Schedule: Tuesday 16:30 - 17:30, Address: 17th April 2026 Topics in Representation Theory Seminar Shamil Shakirov , Pavel Nikitin , Semen Artamonov , Yevgen Makedonskyi Date: 17th April, 2026 - 29th January, 2027 Schedule: Friday 13:00 - 14:30, Address: A3-2a-302 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 23rd February, 2027 Schedule: Tuesday 09:50 - 12:15, Address: A14-201 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 22nd February, 2027 Schedule: Tuesday 13:50 - 15:50, Address: A14-201",
+      "raw_text": "Research Courses Seminars BIMSA > Seminars Seminars Current Future Past 16th September 2022 Number Theory Lunch Seminar Seminar Yongsuk Moon , Koji Shimizu Date: 16th September, 2022 - 1st July, 2027 Schedule: Thursday 12:15 - 13:00, Address: Website: https://www.bimsa.cn/newsinfo/755539.html 21st February 2023 Research seminar in Discrete Mathematics Seminar Jie Ma , Benjamin Sudakov , Ruijie Xu Date: 21st February, 2023 - 12th January, 2027 Schedule: Tuesday 17:05 - 18:15, Address: Online 1st July 2024 Cryptography and Its Applications Seminar Yingjie Zhang Date: 1st July, 2024 - 31st December, 2026 Schedule: Address: 11th September 2024 Graphs: Structure, Spectra, and Extremes Seminar Shuliang Bai Date: 11th September, 2024 - 15th January, 2027 Schedule: Address: 30th September 2024 BIMSA Digital Economy Lab Seminar Seminar Manyao Deng , Ruize Gao , Liyan Han , Johansson Anders , Zhen Li , Jin Liu , Fei Long , Dongbo Shi , Ke Tang , Xing Yan , Qi Zhang Date: 30th September, 2024 - 4th December, 2026 Schedule: Friday 15:00 - 16:00, Address: A3-2-303 3rd September 2025 BIMSA-Tsinghua Quantum Symmetry Seminar Seminar Zhengwei Liu , Jinsong Wu , Sebastien Palcoux , Yilong Wang , Linzhe Huang , Shuang Ming , Quan Chen Date: 3rd September, 2025 - 31st December, 2026 Schedule: Wednesday 10:30 - 12:00, Address: A3-3-301 15th September 2025 Integrable systems blackboard seminar Seminar Nicolai Reshetikhin , Andrii Liashyk , Ruijie Xu Date: 15th September, 2025 - 31st January, 2027 Schedule: Monday 15:30 - 16:30, Address: A7-201 30th September 2025 Probability and Dynamical Systems Seminar Seminar Yuval Peres , Shuo Qin Date: 30th September, 2025 - 31st December, 2026 Schedule: Tuesday 15:15 - 16:15, Address: A3-3-301 Website: https://www.bimsa.net/activity/ProandDynSysSem/ 24th February 2026 BIMSA General Relativity Seminar Seminar Bowen Zhao , Piotr Chrusciel , Puskar Mondal Date: 24th February, 2026 - 21st December, 2026 Schedule: Tuesday 16:30 - 17:30, Address: 17th April 2026 Topics in Representation Theory Seminar Shamil Shakirov , Pavel Nikitin , Semen Artamonov , Yevgen Makedonskyi Date: 17th April, 2026 - 29th January, 2027 Schedule: Friday 13:00 - 14:30, Address: A3-2a-302 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 23rd February, 2027 Schedule: Tuesday 09:50 - 12:15, Address: A14-201 25th August 2026 Quantum Fields and Strings Group Seminar Seminar Luis Apolo , Wei Cui , Kimyeong Lee Date: 25th August, 2026 - 22nd February, 2027 Schedule: Tuesday 13:50 - 15:50, Address: A14-201",
+      "content_hash": "4d49a68100cef10e13217406dab77623ff18df7b7bd7ede6ac7877357ea39476",
+      "importance": 0.5,
+      "relevance": 0.5,
+      "novelty": 0.5,
+      "keep": true,
+      "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
+      "action": "仅供了解",
+      "time_sensitive": false,
+      "first_seen_at": "2026-08-19T00:55:08+00:00",
+      "last_seen_at": "2026-09-06T02:28:40+00:00",
+      "changed_at": "2026-09-06T02:28:40+00:00",
+      "topics": [
+        "BIMSA",
+        "数学",
+        "人工智能"
+      ],
+      "value_score": 0.5
+    }
+  ],
+  "diagnostics": {
+    "source_health": [
+      {
+        "source_name": "BIMSA",
+        "source_url": "https://www.bimsa.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:28:40+00:00"
+      },
+      {
+        "source_name": "中国人民大学高瓴人工智能学院",
+        "source_url": "https://ai.ruc.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:30:54+00:00"
+      },
+      {
+        "source_name": "中国科学院数学与系统科学研究院",
+        "source_url": "https://amss.cas.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:30:23+00:00"
+      },
+      {
+        "source_name": "北京大学人工智能研究院",
+        "source_url": "https://www.ai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:29:28+00:00"
+      },
+      {
+        "source_name": "北京大学智能学院",
+        "source_url": "https://sai.pku.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:29:42+00:00"
+      },
+      {
+        "source_name": "清华丘成桐数学科学中心",
+        "source_url": "https://ymsc.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:28:07+00:00"
+      },
+      {
+        "source_name": "清华交叉信息研究院",
+        "source_url": "https://iiis.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:29:13+00:00"
+      },
+      {
+        "source_name": "清华计算机系",
+        "source_url": "https://www.cs.tsinghua.edu.cn/",
+        "source_group": "学术",
+        "status": "healthy",
+        "message": "html: 24 discovered",
+        "discovered_items": 24,
+        "checked_at": "2026-09-06T02:28:57+00:00"
+      }
+    ],
+    "item_intelligence": {
+      "used": false,
+      "reason": "missing_api_key",
+      "model": null
+    },
+    "daily_editor": {
+      "used": false,
+      "model": null,
+      "reason": "未配置大模型密钥，使用确定性回退编辑。"
+    }
+  }
+}
