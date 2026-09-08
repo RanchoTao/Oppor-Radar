@@ -19,9 +19,11 @@ except ModuleNotFoundError:
 from src.crawler.discovery import crawl_source
 from src.extractor.rules import enrich_with_rules
 from src.llm.deepseek_digest import build_daily_digest, rank_items
+from src.llm.newspaper_editor import build_newspaper
 from src.notifier.markdown_report import generate_report
 from src.storage.db import (
     connect,
+    list_changed_on,
     list_changed_since,
     list_source_health,
     update_item_intelligence,
@@ -115,13 +117,21 @@ def main() -> None:
         conn.commit()
 
     report_date = _today(profile)
+
+    # Level 1 only spends model calls on information that is new or materially changed in this crawl.
     candidate_rows = list_changed_since(conn, run_started_at, kept_only=False)
     item_results, item_llm = rank_items(candidate_rows, sources, profile)
     _apply_intelligence(conn, candidate_rows, item_results)
     conn.commit()
 
-    selected_rows = list_changed_since(conn, run_started_at, kept_only=True)
-    digest = build_daily_digest(selected_rows, sources, report_date, profile)
+    # The published edition is cumulative across the current morning cycle instead of being
+    # rebuilt from only the latest crawl. Since storage timestamps are UTC and the product
+    # edition turns over at 08:00 Asia/Shanghai (= 00:00 UTC), a UTC day prefix is exactly the
+    # desired 08:00 -> next-day 07:59 window for the current deployment.
+    edition_rows = list_changed_on(conn, report_date, kept_only=True)
+    digest = build_daily_digest(edition_rows, sources, report_date, profile)
+    newspaper = build_newspaper(edition_rows, sources, report_date, profile)
+
     health_rows = list_source_health(conn)
     configured_names = {source["name"] for source in sources}
     active_health_rows = [row for row in health_rows if row["source_name"] in configured_names]
@@ -141,25 +151,26 @@ def main() -> None:
         "changed_items": changed_count,
         "unchanged_items": unchanged_count,
         "candidate_items": len(candidate_rows),
-        "selected_items": len(selected_rows),
+        "selected_items": len(edition_rows),
         "item_intelligence": item_llm,
         "last_updated_at": last_updated_at,
         "source_health": [dict(row) for row in active_health_rows],
     }
 
     report = generate_report(
-        selected_rows,
+        edition_rows,
         report_date,
         os.getenv("OPPORTUNITY_RADAR_REPORT_DIR", "data/reports"),
         digest=digest,
+        newspaper=newspaper,
         source_stats=source_stats,
     )
 
     LOGGER.info(
-        "Daily intelligence finished: new=%s changed=%s selected=%s sources=%s/%s report=%s",
+        "OR Morning refresh finished: new=%s changed=%s edition=%s sources=%s/%s report=%s",
         new_count,
         changed_count,
-        len(selected_rows),
+        len(edition_rows),
         healthy,
         len(sources),
         report,
