@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Opportunity Radar：把自选信息源压缩成每天真正值得看的个人日报。" />
+  <meta name="description" content="Opportunity Radar：每天替你巡视世界一次，只留下真正值得占用注意力的信息。" />
   <title>Opportunity Radar</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./newspaper.css" />
   <link rel="stylesheet" href="./admin.css" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#top">OR<span>Opportunity Radar</span></a>
     <nav>
+      <a href="#newspaper">时报</a>
       <a href="#reports">日报</a>
       <a href="#sources">信息源</a>
       <a href="#settings">设置</a>
@@ -20,36 +22,49 @@
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">PERSONAL INFORMATION INTELLIGENCE</p>
-        <h1 class="live-headline"><span id="live-time">----</span><span>世界正在发生。</span></h1>
-        <p class="hero-copy">几十、上百个信息源不该由人逐个打开。Opportunity Radar 持续读取你选择的来源，只把真正重要、相关、时效强的信息压缩成每天一份可读的个人日报。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#reports">查看最新日报</a>
-          <a class="button ghost" href="#sources">查看信息源</a>
+    <section id="newspaper" class="newspaper-shell" aria-label="OR Morning 个性化时报">
+      <div class="newspaper-paper">
+        <div class="paper-topline">
+          <span>PERSONAL INTELLIGENCE · WEB EDITION</span>
+          <span id="live-time">----</span>
         </div>
+
+        <header class="paper-masthead">
+          <div>
+            <p class="paper-kicker">OPPORTUNITY RADAR</p>
+            <h1>OR MORNING</h1>
+            <p class="paper-tagline">每天替你巡视世界一次。</p>
+          </div>
+          <div class="paper-status">
+            <p id="last-updated">尚无更新记录</p>
+            <div class="paper-metrics" aria-label="Radar 状态">
+              <div><strong id="source-count">—</strong><span>监控来源</span></div>
+              <div><strong id="new-count">—</strong><span>今日新增</span></div>
+              <div><strong id="selected-count">—</strong><span>入选日报</span></div>
+              <div><strong id="healthy-count">—</strong><span>状态正常</span></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="paper-controls">
+          <div class="paper-edition-title">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span>Latest intelligence</span>
+          </div>
+          <select id="newspaper-select" aria-label="选择时报日期"></select>
+        </div>
+
+        <div id="edition-tabs" class="edition-tabs" role="tablist" aria-label="时报版面"></div>
+        <div id="newspaper-viewer" class="newspaper-viewer loading">正在编排最新时报…</div>
       </div>
-      <aside class="status-card">
-        <div class="status-heading">
-          <span class="status-dot"></span>
-          <div><strong>Radar Online</strong><p id="last-updated">尚无更新记录</p></div>
-        </div>
-        <dl>
-          <div><dt>监控来源</dt><dd id="source-count">—</dd></div>
-          <div><dt>今日新增</dt><dd id="new-count">—</dd></div>
-          <div><dt>入选日报</dt><dd id="selected-count">—</dd></div>
-        </dl>
-        <p class="health-line"><span id="healthy-count">—</span> 个来源状态正常</p>
-      </aside>
     </section>
 
     <section id="reports" class="section">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">DAILY INTELLIGENCE</p>
-          <h2>个性化日报</h2>
-          <p class="section-copy">把今天真正值得注意的变化放在一起，而不是把所有新内容都交给你处理。</p>
+          <p class="eyebrow">DAILY INTELLIGENCE ARCHIVE</p>
+          <h2>日报档案</h2>
+          <p class="section-copy">保留现有日报、Markdown / LaTeX / PDF 输出与历史日期浏览。</p>
         </div>
         <select id="report-select" aria-label="选择日报"></select>
       </div>
@@ -85,5 +100,6 @@
 
   <footer>Opportunity Radar · RanchoTao/Oppor-Radar</footer>
   <script src="./app.js"></script>
+  <script src="./newspaper.js"></script>
 </body>
 </html>
