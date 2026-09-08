@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
 
 from src.storage.models import InformationItem
-from src.utils.text_utils import clean_text
+from src.utils.text_utils import clean_text, contains_any
 
 
 def discover_feed_urls(html: str, base_url: str) -> list[str]:
@@ -38,17 +38,23 @@ def _child_text(node: ET.Element, names: set[str]) -> str:
 
 
 def parse_feed(xml_text: str, source: dict) -> list[InformationItem]:
-    """Parse common RSS/Atom feeds without an extra dependency."""
+    """Parse common RSS/Atom feeds without an extra dependency.
+
+    ``watch`` is treated the same way as HTML discovery: it is a cheap optional
+    pre-filter that keeps extremely broad feeds (for example arXiv categories) from
+    consuming the entire model budget before semantic ranking begins.
+    """
     try:
         root = ET.fromstring(xml_text)
     except ET.ParseError:
         return []
 
     max_items = max(1, int(source.get("max_items", 30)))
+    watch = [str(x).strip() for x in source.get("watch", []) if str(x).strip()]
     entries = [node for node in root.iter() if _local(node.tag) in {"item", "entry"}]
     result: list[InformationItem] = []
 
-    for entry in entries[:max_items]:
+    for entry in entries:
         title = _child_text(entry, {"title"})
         if not title:
             continue
@@ -62,6 +68,9 @@ def parse_feed(xml_text: str, source: dict) -> list[InformationItem]:
         link = urljoin(source["url"], link) if link else source["url"]
 
         summary = _child_text(entry, {"description", "summary", "content"})
+        if watch and not contains_any(f"{title} {summary}", watch):
+            continue
+
         published = _child_text(entry, {"pubdate", "published", "updated", "date"}) or None
         result.append(
             InformationItem(
@@ -75,5 +84,7 @@ def parse_feed(xml_text: str, source: dict) -> list[InformationItem]:
                 raw_text=summary,
             )
         )
+        if len(result) >= max_items:
+            break
 
     return result
