@@ -32,9 +32,10 @@ def generate_report(
     report_date: str,
     report_dir: str = "data/reports",
     digest: dict | None = None,
+    newspaper: dict | None = None,
     source_stats: dict | None = None,
 ) -> Path:
-    """Write JSON as source-of-truth plus Markdown and LaTeX views."""
+    """Write JSON as source-of-truth plus Markdown and LaTeX compatibility views."""
     report_root = Path(report_dir)
     report_root.mkdir(parents=True, exist_ok=True)
     md_path = report_root / f"{report_date}.md"
@@ -47,6 +48,7 @@ def generate_report(
         "cross_group_signals": [],
         "action_items": [],
     }
+    newspaper = newspaper or {}
     source_stats = source_stats or {}
 
     lines = [
@@ -111,27 +113,32 @@ def generate_report(
         "last_updated_at": source_stats.get("last_updated_at"),
     }
 
+    payload = {
+        "schema_version": 2,
+        "date": report_date,
+        "metrics": metrics,
+        "digest": {
+            key: value
+            for key, value in digest.items()
+            if key not in {"llm"}
+        },
+        "items": [_row_json(row) for row in rows],
+        "diagnostics": {
+            "source_health": source_stats.get("source_health", []),
+            "item_intelligence": source_stats.get("item_intelligence", {}),
+            "daily_editor": digest.get("llm", {}),
+            "newspaper_editor": newspaper.get("llm", {}),
+        },
+    }
+    if newspaper.get("pages"):
+        payload["newspaper"] = {
+            key: value
+            for key, value in newspaper.items()
+            if key not in {"llm"}
+        }
+
     json_path.write_text(
-        json.dumps(
-            {
-                "schema_version": 2,
-                "date": report_date,
-                "metrics": metrics,
-                "digest": {
-                    key: value
-                    for key, value in digest.items()
-                    if key not in {"llm"}
-                },
-                "items": [_row_json(row) for row in rows],
-                "diagnostics": {
-                    "source_health": source_stats.get("source_health", []),
-                    "item_intelligence": source_stats.get("item_intelligence", {}),
-                    "daily_editor": digest.get("llm", {}),
-                },
-            },
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     return md_path
