@@ -1,22 +1,32 @@
 [
   {
-    "name": "学术",
+    "name": "AI / 前沿研究",
     "order": 10,
     "enabled": true
   },
   {
-    "name": "AI / 科技",
+    "name": "数学 / AI for Math",
     "order": 20,
     "enabled": true
   },
   {
-    "name": "金融",
+    "name": "科研 / 机会",
     "order": 30,
     "enabled": true
   },
   {
-    "name": "社会 / 政策",
+    "name": "工程 / 开源",
     "order": 40,
+    "enabled": true
+  },
+  {
+    "name": "产业 / 金融",
+    "order": 50,
+    "enabled": true
+  },
+  {
+    "name": "世界 / 政策",
+    "order": 60,
     "enabled": true
   }
 ]
