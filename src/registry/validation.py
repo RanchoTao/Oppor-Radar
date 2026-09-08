@@ -55,14 +55,14 @@ def validate_groups(groups) -> list[dict]:
     return result
 
 
-def _string_list(value, field: str, limit: int = 40) -> list[str]:
+def _string_list(value, field: str, limit: int = 40, max_length: int = 120) -> list[str]:
     if value is None:
         return []
     if not isinstance(value, list):
         raise RegistryValidationError(f"{field} must be a list")
     if len(value) > limit:
         raise RegistryValidationError(f"{field} has too many values")
-    return [_nonempty_string(item, field, 120) for item in value]
+    return [_nonempty_string(item, field, max_length) for item in value]
 
 
 def validate_sources(sources, groups: list[dict] | None = None) -> list[dict]:
@@ -115,6 +115,24 @@ def validate_sources(sources, groups: list[dict] | None = None) -> list[dict]:
                 "sections": sections,
                 "source_type": source_type,
                 "authority": _bounded_float(source.get("authority"), f"sources[{index}].authority"),
+                "include_url_patterns": _string_list(
+                    source.get("include_url_patterns"),
+                    f"sources[{index}].include_url_patterns",
+                    limit=30,
+                    max_length=300,
+                ),
+                "exclude_url_patterns": _string_list(
+                    source.get("exclude_url_patterns"),
+                    f"sources[{index}].exclude_url_patterns",
+                    limit=30,
+                    max_length=300,
+                ),
+                "exclude_titles": _string_list(
+                    source.get("exclude_titles"),
+                    f"sources[{index}].exclude_titles",
+                    limit=50,
+                    max_length=180,
+                ),
                 "max_items": max(1, min(100, int(source.get("max_items", 24)))),
                 "max_detail_items": max(0, min(100, int(source.get("max_detail_items", 16)))),
                 "fetch_details": bool(source.get("fetch_details", True)),
