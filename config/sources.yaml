@@ -1,79 +1,393 @@
+# OR Morning source registry.
+# `sections` are editorial hints, not hard partitions: one source can inform multiple pages.
+# authority: 1.0 ~= first-party / field-defining source; lower values are still useful but should lose ties.
+
+- name: OpenAI Research
+  url: https://openai.com/news/research/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: primary
+  authority: 1.0
+  sections: [ai, research, math, business]
+  tags: [OpenAI, Frontier AI, Agent, Reasoning, AI for Science]
+  watch: []
+  max_items: 14
+  max_detail_items: 10
+  fetch_details: true
+
+- name: Anthropic Research
+  url: https://www.anthropic.com/research
+  group: AI / 前沿研究
+  enabled: true
+  source_type: primary
+  authority: 1.0
+  sections: [ai, research, math]
+  tags: [Anthropic, Claude, Alignment, Interpretability, Agent, AI for Mathematics]
+  watch: []
+  max_items: 14
+  max_detail_items: 10
+  fetch_details: true
+
+- name: Google DeepMind News
+  url: https://deepmind.google/blog/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: primary
+  authority: 1.0
+  sections: [ai, research, math, engineering]
+  tags: [DeepMind, Gemini, Agent, RL, AI for Science, AI for Mathematics]
+  watch: []
+  max_items: 14
+  max_detail_items: 10
+  fetch_details: true
+
+- name: Google Research Blog
+  url: https://research.google/blog/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: research
+  authority: 0.97
+  sections: [ai, research, math, engineering]
+  tags: [Google Research, Machine Intelligence, Algorithms, Systems]
+  watch: []
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: Microsoft Research Blog
+  url: https://www.microsoft.com/en-us/research/blog/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: research
+  authority: 0.95
+  sections: [ai, research, engineering]
+  tags: [Microsoft Research, Agent, RL, ML Systems]
+  watch: []
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: Meta AI Blog
+  url: https://ai.meta.com/blog/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: primary
+  authority: 0.95
+  sections: [ai, research, engineering, business]
+  tags: [Meta AI, Open Source, Multimodal, Research]
+  watch: []
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: BAIR Blog
+  url: https://bair.berkeley.edu/blog/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: research
+  authority: 0.94
+  sections: [ai, research]
+  tags: [Berkeley, BAIR, RL, Robotics, ML]
+  watch: []
+  max_items: 10
+  max_detail_items: 8
+  fetch_details: true
+
+- name: arXiv cs.AI Recent
+  url: https://arxiv.org/list/cs.AI/recent
+  group: AI / 前沿研究
+  enabled: true
+  source_type: research
+  authority: 0.90
+  sections: [ai, research, math]
+  tags: [arXiv, AI, Agent, Reasoning]
+  watch: [agent, agentic, reasoning, reinforcement, interpretability, language model, foundation model, theorem, proof, formal]
+  max_items: 24
+  max_detail_items: 16
+  fetch_details: true
+
+- name: arXiv cs.LG Recent
+  url: https://arxiv.org/list/cs.LG/recent
+  group: AI / 前沿研究
+  enabled: true
+  source_type: research
+  authority: 0.90
+  sections: [ai, research, math]
+  tags: [arXiv, Machine Learning, RL, LLM]
+  watch: [reinforcement, agent, language model, reasoning, interpretability, world model, theorem, formal, inference, training]
+  max_items: 24
+  max_detail_items: 16
+  fetch_details: true
+
+- name: ICLR
+  url: https://iclr.cc/
+  group: 科研 / 机会
+  enabled: true
+  source_type: official
+  authority: 0.99
+  sections: [research, opportunity, ai]
+  tags: [ICLR, Top Conference, CFP, Deadline]
+  watch: [2027, call, deadline, submission, paper, workshop, reviewer, registration, accepted]
+  max_items: 16
+  max_detail_items: 10
+  fetch_details: true
+
+- name: ICML
+  url: https://icml.cc/
+  group: 科研 / 机会
+  enabled: true
+  source_type: official
+  authority: 0.99
+  sections: [research, opportunity, ai]
+  tags: [ICML, Top Conference, CFP, Deadline]
+  watch: [2027, call, deadline, submission, paper, workshop, reviewer, registration, accepted]
+  max_items: 16
+  max_detail_items: 10
+  fetch_details: true
+
+- name: NeurIPS
+  url: https://neurips.cc/
+  group: 科研 / 机会
+  enabled: true
+  source_type: official
+  authority: 0.99
+  sections: [research, opportunity, ai]
+  tags: [NeurIPS, Top Conference, CFP, Deadline]
+  watch: [2026, 2027, call, deadline, submission, paper, workshop, reviewer, registration, accepted]
+  max_items: 16
+  max_detail_items: 10
+  fetch_details: true
+
+- name: RLDM
+  url: https://rldm.org/
+  group: AI / 前沿研究
+  enabled: true
+  source_type: official
+  authority: 0.96
+  sections: [ai, research, opportunity]
+  tags: [RLDM, Reinforcement Learning, Decision Making]
+  watch: [2027, call, paper, deadline, workshop, registration, reinforcement]
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: Lean Community Blog
+  url: https://leanprover-community.github.io/blog/
+  group: 数学 / AI for Math
+  enabled: true
+  source_type: community
+  authority: 0.95
+  sections: [math, research, opportunity]
+  tags: [Lean, mathlib, Formal Mathematics, Theorem Proving]
+  watch: []
+  max_items: 12
+  max_detail_items: 10
+  fetch_details: true
+
+- name: mathlib Releases
+  url: https://github.com/leanprover-community/mathlib4/releases
+  group: 数学 / AI for Math
+  enabled: true
+  source_type: community
+  authority: 0.96
+  sections: [math, engineering, research]
+  tags: [Lean, mathlib, Formalization, Open Source]
+  watch: []
+  max_items: 10
+  max_detail_items: 6
+  fetch_details: true
+
+- name: PyTorch Blog
+  url: https://pytorch.org/blog/
+  group: 工程 / 开源
+  enabled: true
+  source_type: engineering
+  authority: 0.96
+  sections: [engineering, ai, research]
+  tags: [PyTorch, ML Systems, GPU, Open Source]
+  watch: []
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: Hugging Face Blog
+  url: https://huggingface.co/blog
+  group: 工程 / 开源
+  enabled: true
+  source_type: engineering
+  authority: 0.91
+  sections: [engineering, ai, research]
+  tags: [Hugging Face, Open Source, Models, Agents]
+  watch: [agent, reinforcement, reasoning, inference, training, open source, model, benchmark]
+  max_items: 14
+  max_detail_items: 8
+  fetch_details: true
+
+- name: GitHub AI and ML Blog
+  url: https://github.blog/ai-and-ml/
+  group: 工程 / 开源
+  enabled: true
+  source_type: engineering
+  authority: 0.91
+  sections: [engineering, ai]
+  tags: [GitHub, Coding Agent, Developer Tools, Open Source]
+  watch: [agent, copilot, model, ai, inference, developer, coding, open source]
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: NVIDIA Developer Blog
+  url: https://developer.nvidia.com/blog/
+  group: 工程 / 开源
+  enabled: true
+  source_type: engineering
+  authority: 0.94
+  sections: [engineering, ai, business]
+  tags: [NVIDIA, GPU, CUDA, Inference, Training]
+  watch: [AI, CUDA, GPU, inference, training, agent, LLM, transformer, reasoning]
+  max_items: 14
+  max_detail_items: 8
+  fetch_details: true
+
+- name: OpenAI Careers
+  url: https://openai.com/careers/
+  group: 科研 / 机会
+  enabled: true
+  source_type: opportunity
+  authority: 0.98
+  sections: [opportunity, ai, research]
+  tags: [OpenAI, Internship, Residency, Emerging Talent]
+  watch: [intern, internship, residency, emerging talent, research, fellowship]
+  max_items: 14
+  max_detail_items: 6
+  fetch_details: true
+
+- name: Anthropic Careers
+  url: https://www.anthropic.com/careers/jobs
+  group: 科研 / 机会
+  enabled: true
+  source_type: opportunity
+  authority: 0.98
+  sections: [opportunity, ai, research, engineering]
+  tags: [Anthropic, Fellows, Research Jobs, RL, Interpretability]
+  watch: [fellows, research, reinforcement learning, interpretability, internship, early career]
+  max_items: 18
+  max_detail_items: 4
+  fetch_details: false
+
+- name: BIMSA Ongoing Workshops
+  url: https://www.bimsa.cn/research/workshop/ongoing/page_1.html
+  group: 科研 / 机会
+  enabled: true
+  source_type: opportunity
+  authority: 0.95
+  sections: [opportunity, research, math]
+  tags: [BIMSA, Workshop, Mathematics, AI]
+  watch: []
+  max_items: 16
+  max_detail_items: 10
+  fetch_details: true
+
 - name: 清华丘成桐数学科学中心
   url: https://ymsc.tsinghua.edu.cn/
-  group: 学术
+  group: 科研 / 机会
   enabled: true
-  tags: [清华, 数学, AI]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
-  fetch_details: true
-
-- name: BIMSA
-  url: https://www.bimsa.cn/
-  group: 学术
-  enabled: true
-  tags: [BIMSA, 数学, 人工智能]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
-  fetch_details: true
-
-- name: 清华计算机系
-  url: https://www.cs.tsinghua.edu.cn/
-  group: 学术
-  enabled: true
-  tags: [清华, 计算机, AI]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
+  source_type: official
+  authority: 0.95
+  sections: [opportunity, research, math]
+  tags: [清华, YMSC, 数学, 讲座, 暑校]
+  watch: [workshop, summer, lecture, seminar, conference, 招生, 暑期, 讲座, 研讨会, 报名, 截止, 科研]
+  max_items: 16
+  max_detail_items: 10
   fetch_details: true
 
 - name: 清华交叉信息研究院
   url: https://iiis.tsinghua.edu.cn/
-  group: 学术
+  group: 科研 / 机会
   enabled: true
-  tags: [清华, 交叉信息, 理论计算机, AI]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
-  fetch_details: true
-
-- name: 北京大学人工智能研究院
-  url: https://www.ai.pku.edu.cn/
-  group: 学术
-  enabled: true
-  tags: [北大, 人工智能]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
+  source_type: official
+  authority: 0.94
+  sections: [opportunity, research, ai]
+  tags: [清华, 交叉信息, AI, 理论计算机]
+  watch: [招生, 暑期, 讲座, 研讨会, 报名, 截止, 科研, workshop, seminar, conference, research]
+  max_items: 14
+  max_detail_items: 8
   fetch_details: true
 
 - name: 北京大学智能学院
   url: https://sai.pku.edu.cn/
-  group: 学术
+  group: 科研 / 机会
   enabled: true
+  source_type: official
+  authority: 0.94
+  sections: [opportunity, research, ai]
   tags: [北大, 智能学院, AI]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
+  watch: [招生, 暑期, 讲座, 研讨会, 报名, 截止, 科研, workshop, seminar, conference, research]
+  max_items: 14
+  max_detail_items: 8
   fetch_details: true
 
-- name: 中国科学院数学与系统科学研究院
-  url: https://amss.cas.cn/
-  group: 学术
+- name: NVIDIA Newsroom
+  url: https://nvidianews.nvidia.com/
+  group: 产业 / 金融
   enabled: true
-  tags: [中科院, 数学, 系统科学]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
+  source_type: primary
+  authority: 0.96
+  sections: [business, engineering, ai]
+  tags: [NVIDIA, GPU, Datacenter, AI Industry]
+  watch: [AI, GPU, data center, Blackwell, Rubin, inference, training, revenue, partnership]
+  max_items: 12
+  max_detail_items: 8
   fetch_details: true
 
-- name: 中国人民大学高瓴人工智能学院
-  url: https://ai.ruc.edu.cn/
-  group: 学术
+- name: Federal Reserve News
+  url: https://www.federalreserve.gov/newsevents.htm
+  group: 世界 / 政策
   enabled: true
-  tags: [人大, AI, 高瓴]
-  watch: []
-  max_items: 24
-  max_detail_items: 16
+  source_type: official
+  authority: 0.98
+  sections: [world, business]
+  tags: [Federal Reserve, Macro, Monetary Policy]
+  watch: [FOMC, monetary policy, economic outlook, interest rate, inflation, employment, financial conditions]
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: White House Presidential Actions
+  url: https://www.whitehouse.gov/presidential-actions/
+  group: 世界 / 政策
+  enabled: true
+  source_type: official
+  authority: 0.96
+  sections: [world, business, ai]
+  tags: [US Policy, AI Policy, Technology, National Security]
+  watch: [artificial intelligence, AI, semiconductor, science, technology, export, computing, China, cyber]
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: European Commission Digital Strategy News
+  url: https://digital-strategy.ec.europa.eu/en/news
+  group: 世界 / 政策
+  enabled: true
+  source_type: official
+  authority: 0.96
+  sections: [world, business, ai]
+  tags: [EU, AI Regulation, Digital Policy, Chips]
+  watch: [artificial intelligence, AI, chips, semiconductor, data, digital, research, compute]
+  max_items: 12
+  max_detail_items: 8
+  fetch_details: true
+
+- name: 中国政府网最新政策
+  url: https://www.gov.cn/zhengce/zuixin/
+  group: 世界 / 政策
+  enabled: true
+  source_type: official
+  authority: 0.97
+  sections: [world, business, ai, opportunity]
+  tags: [中国政策, 科技政策, 教育, 经济]
+  watch: [人工智能, 科技, 教育, 芯片, 半导体, 数据, 算力, 科研, 金融, 经济, 青年, 高校]
+  max_items: 14
+  max_detail_items: 8
   fetch_details: true
