@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from urllib.parse import urlparse
 
@@ -51,33 +52,53 @@ def _should_fetch_detail(item: InformationItem, source: dict) -> bool:
     return bool(source_host and item_host and source_host == item_host)
 
 
+def _hydrate_one(item: InformationItem, source: dict) -> InformationItem:
+    html = fetch_url(item.url, timeout=int(source.get("detail_timeout", 8))) if item.url else None
+    if not html:
+        _fallback_content(item)
+        return item
+
+    document = extract_document(html)
+    text = document["text"]
+    if not text:
+        _fallback_content(item)
+        return item
+
+    item.content = text
+    item.raw_text = text
+    item.summary = compact_summary(text)
+    item.content_hash = content_hash(text)
+    detail_title = document.get("title") or ""
+    if len(item.title) < 6 and detail_title:
+        item.title = detail_title
+    return item
+
+
 def _hydrate_details(items: list[InformationItem], source: dict) -> list[InformationItem]:
+    """Hydrate a bounded number of detail pages without serializing network latency."""
     limit = max(0, int(source.get("max_detail_items", source.get("max_items", 30))))
-    fetched = 0
+    eligible = [item for item in items if _should_fetch_detail(item, source)][:limit]
+    eligible_ids = {id(item) for item in eligible}
 
+    # Every item needs a stable fingerprint even if it is not worth a detail request.
     for item in items:
-        if fetched >= limit or not _should_fetch_detail(item, source):
+        if id(item) not in eligible_ids:
             _fallback_content(item)
-            continue
 
-        html = fetch_url(item.url, timeout=int(source.get("detail_timeout", 8)))
-        fetched += 1
-        if not html:
-            _fallback_content(item)
-            continue
+    if not eligible:
+        return items
 
-        document = extract_document(html)
-        text = document["text"]
-        if text:
-            item.content = text
-            item.raw_text = text
-            item.summary = compact_summary(text)
-            item.content_hash = content_hash(text)
-            detail_title = document.get("title") or ""
-            if len(item.title) < 6 and detail_title:
-                item.title = detail_title
-        else:
-            _fallback_content(item)
+    workers = max(1, min(int(source.get("detail_workers", 4)), len(eligible), 8))
+    with ThreadPoolExecutor(max_workers=workers, thread_name_prefix="oppor-detail") as pool:
+        futures = {pool.submit(_hydrate_one, item, source): item for item in eligible}
+        for future in as_completed(futures):
+            item = futures[future]
+            try:
+                future.result()
+            except Exception:
+                # fetch_url already logs request failures; keep the list-page context
+                # so one malformed page never aborts the rest of a source.
+                _fallback_content(item)
 
     return items
 
