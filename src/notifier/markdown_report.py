@@ -101,7 +101,7 @@ def generate_report(
         lines.append("")
 
     md_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    generate_latex(digest, report_date, report_dir)
+    generate_latex(digest, report_date, report_dir, newspaper=newspaper)
 
     metrics = {
         "configured_sources": int(source_stats.get("configured", 0)),
