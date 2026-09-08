@@ -1,0 +1,50 @@
+name: Refresh OR Morning
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+      - "src/**"
+      - "scripts/build_site_data.py"
+      - "requirements.txt"
+      - ".github/workflows/refresh.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: or-morning-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: pytest -q
+      - name: Generate current edition
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
+        run: python -m src.scheduler.run_daily
+      - name: Build GitHub Pages data
+        run: python scripts/build_site_data.py
+      - name: Commit fresh edition
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reports docs/data docs/reports
+          git add -f data/opportunities.sqlite3
+          git diff --cached --quiet || git commit -m "chore: refresh OR Morning edition"
+          git pull --rebase origin main
+          git push origin HEAD:main
