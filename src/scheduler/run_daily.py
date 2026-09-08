@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 try:
@@ -41,12 +41,22 @@ def load_yaml(path: str):
         return yaml.safe_load(f.read())
 
 
-def _today(profile: dict) -> str:
+def _edition_date(profile: dict) -> str:
+    """Return the date printed on the current OR Morning edition.
+
+    The edition turns over at 08:00 local time by default. Subtracting that turnover
+    offset before taking the date keeps 00:00-07:59 attached to yesterday's edition.
+    For the current Asia/Shanghai deployment, this also matches the UTC date prefix
+    used by the SQLite timestamps exactly.
+    """
     timezone_name = profile.get("timezone", "Asia/Shanghai")
+    turnover_hour = int((profile.get("editorial_preferences") or {}).get("edition_turnover_hour", 8))
+    turnover_hour = max(0, min(23, turnover_hour))
     try:
-        return datetime.now(ZoneInfo(timezone_name)).date().isoformat()
+        now = datetime.now(ZoneInfo(timezone_name))
     except Exception:
-        return datetime.now(timezone.utc).date().isoformat()
+        now = datetime.now(timezone.utc)
+    return (now - timedelta(hours=turnover_hour)).date().isoformat()
 
 
 def _apply_intelligence(conn, rows, results: list[dict]) -> None:
@@ -116,7 +126,7 @@ def main() -> None:
         )
         conn.commit()
 
-    report_date = _today(profile)
+    report_date = _edition_date(profile)
 
     # Level 1 only spends model calls on information that is new or materially changed in this crawl.
     candidate_rows = list_changed_since(conn, run_started_at, kept_only=False)
@@ -125,9 +135,9 @@ def main() -> None:
     conn.commit()
 
     # The published edition is cumulative across the current morning cycle instead of being
-    # rebuilt from only the latest crawl. Since storage timestamps are UTC and the product
-    # edition turns over at 08:00 Asia/Shanghai (= 00:00 UTC), a UTC day prefix is exactly the
-    # desired 08:00 -> next-day 07:59 window for the current deployment.
+    # rebuilt from only the latest crawl. Storage timestamps are UTC. For the default
+    # Asia/Shanghai + 08:00 turnover, report_date is exactly the UTC date prefix covering
+    # 08:00 local through the following 07:59 local.
     edition_rows = list_changed_on(conn, report_date, kept_only=True)
     digest = build_daily_digest(edition_rows, sources, report_date, profile)
     newspaper = build_newspaper(edition_rows, sources, report_date, profile)
