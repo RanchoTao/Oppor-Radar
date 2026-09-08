@@ -12,6 +12,26 @@ LOGGER = logging.getLogger(__name__)
 DEFAULT_BASE_URL = "https://api.deepseek.com"
 DEFAULT_MODEL = "deepseek-v4-flash"
 
+HIGH_SIGNAL_TERMS = [
+    "announce", "introduc", "release", "research", "paper", "benchmark", "model", "agent",
+    "reinforcement", "reasoning", "theorem", "proof", "call for", "deadline", "internship",
+    "fellowship", "scholarship", "summer school", "workshop", "conference", "launch", "new ",
+    "发布", "推出", "研究", "论文", "模型", "智能体", "强化学习", "推理", "定理", "证明",
+    "征稿", "截止", "实习", "奖学金", "暑校", "工作坊", "会议", "上线", "重大", "最新",
+]
+
+LOW_SIGNAL_TITLE_TERMS = [
+    "about us", "contact", "privacy", "terms", "cookie", "site map", "faculty", "people",
+    "team", "history", "overview", "学院简介", "师资队伍", "教师主页", "联系我们", "网站地图",
+    "学科方向", "组织机构", "机构设置", "人才队伍", "校友", "首页",
+]
+
+OPPORTUNITY_TERMS = [
+    "deadline", "cfp", "internship", "fellowship", "scholarship", "summer school", "winter school",
+    "call for", "application", "apply", "residency", "招生", "报名", "截止", "实习", "奖学金",
+    "招聘", "申请", "暑校", "访问", "资助",
+]
+
 
 def _clean_json_text(text: str) -> str:
     text = (text or "").strip()
@@ -68,44 +88,104 @@ def _profile_text(profile: dict | None) -> dict:
         "interests": profile.get("interests", []),
         "high_priority_signals": profile.get("high_priority_signals", []),
         "low_priority_signals": profile.get("low_priority_signals", []),
+        "newspaper_sections": profile.get("newspaper_sections", []),
         "editorial_preferences": profile.get("editorial_preferences", {}),
     }
 
 
+def _row_value(row, key: str, default=None):
+    try:
+        value = row[key]
+    except (KeyError, IndexError, TypeError):
+        return default
+    return default if value is None else value
+
+
+def _bounded(value, default: float = 0.0) -> float:
+    try:
+        return max(0.0, min(1.0, float(value)))
+    except (TypeError, ValueError):
+        return default
+
+
 def _row_payload(row, sources_by_name: dict[str, dict], content_limit: int = 7000) -> dict[str, Any]:
-    source = sources_by_name.get(row["source_name"], {})
-    content = row["content"] or row["raw_text"] or row["summary"] or ""
+    source = sources_by_name.get(_row_value(row, "source_name", ""), {})
+    content = _row_value(row, "content", "") or _row_value(row, "raw_text", "") or _row_value(row, "summary", "") or ""
     return {
-        "title": row["title"],
-        "url": row["url"] or row["source_url"],
-        "source": row["source_name"],
-        "group": row["source_group"] if "source_group" in row.keys() else source.get("group", "未分组"),
+        "title": _row_value(row, "title", ""),
+        "url": _row_value(row, "url", "") or _row_value(row, "source_url", ""),
+        "source": _row_value(row, "source_name", ""),
+        "group": _row_value(row, "source_group", source.get("group", "未分组")),
         "source_tags": source.get("tags", []),
         "source_watch": source.get("watch", []),
-        "publish_date": row["publish_date"],
-        "deadline": row["deadline"],
-        "event_date": row["event_date"],
-        "location": row["location"],
-        "content": content[:content_limit],
+        "source_type": source.get("source_type", "primary"),
+        "source_authority": _bounded(source.get("authority", 0.75), 0.75),
+        "preferred_sections": source.get("sections", []),
+        "publish_date": _row_value(row, "publish_date"),
+        "deadline": _row_value(row, "deadline"),
+        "event_date": _row_value(row, "event_date"),
+        "location": _row_value(row, "location"),
+        "content": str(content)[:content_limit],
     }
 
 
 def _fallback_item_result(row, source: dict, profile: dict | None) -> dict:
-    text = (row["summary"] or row["content"] or row["raw_text"] or "")[:1000]
-    tags = list(source.get("tags", []))[:6]
+    title = str(_row_value(row, "title", "") or "")
+    text = str(_row_value(row, "summary", "") or _row_value(row, "content", "") or _row_value(row, "raw_text", "") or "")
+    haystack = f" {title} {text[:1800]} ".lower()
+    authority = _bounded(source.get("authority", 0.75), 0.75)
+    source_sections = [str(x) for x in source.get("sections", []) if str(x)]
+    tags = [str(x) for x in source.get("tags", []) if str(x)]
+
+    profile = profile or {}
+    interests = [str(x).lower() for x in profile.get("interests", []) if str(x)]
+    interest_hits = sum(1 for interest in interests if interest and interest in haystack)
+    high_signal = any(term in haystack for term in HIGH_SIGNAL_TERMS)
+    low_signal_title = any(term in title.lower() for term in LOW_SIGNAL_TITLE_TERMS)
+    opportunity = any(term in haystack for term in OPPORTUNITY_TERMS)
+
+    # Strong primary sources start with a high prior, but navigation pages are still rejected.
+    relevance = min(0.98, 0.42 + 0.09 * min(4, interest_hits) + 0.05 * min(3, len(source_sections)))
+    importance = min(0.98, 0.34 + 0.48 * authority + (0.12 if high_signal else 0.0))
+    novelty = 0.62 if high_signal else 0.48
+    value = 0.42 * relevance + 0.36 * importance + 0.22 * novelty
+
+    keep = not low_signal_title and (
+        high_signal
+        or opportunity
+        or value >= 0.59
+        or (authority >= 0.92 and len(title.strip()) >= 10)
+    )
+
+    reason_parts = []
+    if source_sections:
+        reason_parts.append("命中用户订阅版面：" + "、".join(source_sections[:3]))
+    if authority >= 0.9:
+        reason_parts.append("来源接近一手且权威度高")
+    if high_signal:
+        reason_parts.append("标题/正文包含高信号变化")
+    if interest_hits:
+        reason_parts.append("与用户长期兴趣直接相关")
+    reason = "；".join(reason_parts) or "来自用户主动订阅的信息源。"
+
+    action = "仅供了解"
+    if opportunity:
+        action = "检查资格、截止日期与申请成本，决定是否进入任务系统。"
+
+    summary = text.strip()[:1000] or title
     return {
-        "url": row["url"],
-        "title": row["title"],
-        "source": row["source_name"],
-        "keep": True,
-        "summary": text,
-        "topics": tags,
-        "importance": 0.5,
-        "relevance": 0.5,
-        "novelty": 0.5,
-        "reason": "来自用户主动订阅的信息源，等待大模型进一步判断。",
-        "action": "仅供了解",
-        "time_sensitive": bool(row["deadline"]),
+        "url": _row_value(row, "url"),
+        "title": title,
+        "source": _row_value(row, "source_name", ""),
+        "keep": keep,
+        "summary": summary,
+        "topics": list(dict.fromkeys(tags + source_sections))[:10],
+        "importance": round(importance, 4),
+        "relevance": round(relevance, 4),
+        "novelty": round(novelty, 4),
+        "reason": reason,
+        "action": action,
+        "time_sensitive": bool(_row_value(row, "deadline")) or opportunity,
     }
 
 
@@ -118,22 +198,24 @@ def rank_items(rows, sources: list[dict], profile: dict | None = None) -> tuple[
     api_key, model, _ = _client_config()
     if not api_key:
         return [
-            _fallback_item_result(row, sources_by_name.get(row["source_name"], {}), profile)
+            _fallback_item_result(row, sources_by_name.get(_row_value(row, "source_name", ""), {}), profile)
             for row in rows
         ], {"used": False, "reason": "missing_api_key", "model": None}
 
-    system_prompt = """你是 Opportunity Radar 的第一层信息过滤器。用户主动订阅了大量网页来源，你要判断每个新出现或发生变化的条目是否值得进入个人日报。
+    system_prompt = """你是 Opportunity Radar 的第一层信息过滤器。用户主动订阅了大量高质量来源，你要判断每个新出现或发生变化的条目是否值得进入个人日报候选池。
 
-你必须根据“输入正文 + 来源分组 + 用户兴趣画像”判断，而不是把所有条目都保留。不要把产品限定为申请/夏令营场景。
+输入包含正文、来源分组、来源类型、来源权威度、建议版面和用户兴趣画像。你不能因为来源权威就把所有页面保留；导航页、师资页、机构简介、重复常规更新仍应 keep=false。
 
 规则：
 1. 只能依据输入，不得虚构。
-2. keep=false 用于导航、广告、重复常规内容、明显无关内容或信息量极低的条目。
-3. importance/relevance/novelty 均为 0 到 1 的数值。
-4. summary 用中文压缩核心事实，不写空泛评价。
-5. reason 说明为什么值得用户看；action 没有必要行动时写“仅供了解”。
-6. time_sensitive 只在存在截止、即将发生、价格/政策快速变化等明显时效性时为 true。
-7. 只返回 JSON。
+2. keep=false 用于导航、广告、重复常规内容、纯宣传、明显无关或信息量极低的条目。
+3. 优先 frontier AI / Agent / RL / AI for Mathematics / 重要科研方法与顶会变化 / 可行动机会 / 真正有用的工程基础设施 / 足够重大的产业和政策变化。
+4. importance/relevance/novelty 均为 0 到 1。不要把普通更新统一打高分。
+5. summary 用中文压缩核心事实；reason 解释为什么值得当前用户占用注意力。
+6. action 没有必要行动时写“仅供了解”；有申请、截止、需要决策的机会时给具体动作。
+7. time_sensitive 只在存在截止、即将发生、价格/政策快速变化等明显时效性时为 true。
+8. 宁缺毋滥。第一层应主动丢掉大量噪声。
+9. 只返回 JSON。
 
 格式：
 {"items":[{"url":"","title":"","source":"","keep":true,"summary":"","topics":[],"importance":0.0,"relevance":0.0,"novelty":0.0,"reason":"","action":"","time_sensitive":false}]}
@@ -151,7 +233,7 @@ def rank_items(rows, sources: list[dict], profile: dict | None = None) -> tuple[
                 system_prompt,
                 {
                     "user_profile": _profile_text(profile),
-                    "instruction": "逐条判断这些新信息是否值得进入今天的个人日报。",
+                    "instruction": "逐条判断这些新信息是否值得进入今天的个人时报候选池。",
                     "items": batch,
                 },
             )
@@ -161,31 +243,31 @@ def rank_items(rows, sources: list[dict], profile: dict | None = None) -> tuple[
     except Exception as exc:
         LOGGER.exception("DeepSeek item intelligence failed")
         return [
-            _fallback_item_result(row, sources_by_name.get(row["source_name"], {}), profile)
+            _fallback_item_result(row, sources_by_name.get(_row_value(row, "source_name", ""), {}), profile)
             for row in rows
         ], {"used": False, "reason": f"api_failed: {exc}", "model": model}
 
 
 def _digest_item(row, source: dict) -> dict[str, Any]:
     try:
-        topics = json.loads(row["topics_json"] or "[]")
+        topics = json.loads(_row_value(row, "topics_json", "[]") or "[]")
     except (TypeError, json.JSONDecodeError):
         topics = []
     return {
-        "title": row["title"],
-        "url": row["url"] or row["source_url"],
-        "source": row["source_name"],
-        "group": row["source_group"],
-        "summary": row["summary"],
+        "title": _row_value(row, "title", ""),
+        "url": _row_value(row, "url", "") or _row_value(row, "source_url", ""),
+        "source": _row_value(row, "source_name", ""),
+        "group": _row_value(row, "source_group", source.get("group", "未分组")),
+        "summary": _row_value(row, "summary", ""),
         "topics": topics,
-        "importance": row["importance"],
-        "relevance": row["relevance"],
-        "novelty": row["novelty"],
-        "reason": row["reason"],
-        "action": row["action"],
-        "time_sensitive": bool(row["time_sensitive"]),
-        "deadline": row["deadline"],
-        "publish_date": row["publish_date"],
+        "importance": _bounded(_row_value(row, "importance", 0.0)),
+        "relevance": _bounded(_row_value(row, "relevance", 0.0)),
+        "novelty": _bounded(_row_value(row, "novelty", 0.0)),
+        "reason": _row_value(row, "reason", ""),
+        "action": _row_value(row, "action", ""),
+        "time_sensitive": bool(_row_value(row, "time_sensitive", False)),
+        "deadline": _row_value(row, "deadline"),
+        "publish_date": _row_value(row, "publish_date"),
         "source_tags": source.get("tags", []),
     }
 
@@ -231,9 +313,9 @@ def _fallback_digest(items: list[dict], report_date: str, reason: str) -> dict:
 
 
 def build_daily_digest(rows, sources: list[dict], report_date: str, profile: dict | None = None) -> dict:
-    """Level 2: edit already-filtered information into one coherent daily brief."""
+    """Compatibility digest used by Markdown/LaTeX and the legacy archive view."""
     sources_by_name = _source_meta(sources)
-    items = [_digest_item(row, sources_by_name.get(row["source_name"], {})) for row in rows]
+    items = [_digest_item(row, sources_by_name.get(_row_value(row, "source_name", ""), {})) for row in rows]
     if not items:
         return {
             "report_date": report_date,
@@ -253,7 +335,7 @@ def build_daily_digest(rows, sources: list[dict], report_date: str, profile: dic
     if not api_key:
         return _fallback_digest(selected, report_date, "未配置大模型密钥，使用确定性回退编辑。")
 
-    system_prompt = """你是 Opportunity Radar 的第二层日报主编。输入已经经过逐条筛选。你的任务是进一步压缩，而不是机械罗列。
+    system_prompt = """你是 Opportunity Radar 的兼容日报编辑器。输入已经经过逐条筛选。你的任务是进一步压缩，而不是机械罗列。
 
 要求：
 1. 用中文写给一个高信息密度用户，不解释系统内部实现。

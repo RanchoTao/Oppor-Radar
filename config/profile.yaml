@@ -3,34 +3,58 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 interests:
-  - 人工智能
-  - 机器学习
-  - 大模型
-  - Agent
-  - AI for Science
-  - 数学
-  - 概率与随机过程
-  - 科研机会
-  - 量化金融
-  - 宏观经济
-  - 科技产业
-  - 社会与政策
+  - Frontier AI / AGI
+  - AI Agent 与长期任务
+  - 强化学习与后训练
+  - 大模型推理与可解释性
+  - AI for Mathematics / Lean / 自动证明
+  - 机器学习前沿论文与顶会趋势
+  - 科研方法、科研自动化与研究工具
+  - Research Internship / Summer School / Workshop / CFP
+  - ML Systems / GPU / 推理与训练基础设施
+  - 高价值开源项目与开发者工具
+  - AI 公司战略、算力与半导体产业
+  - 宏观经济与会显著影响科技发展的政策
+  - 重大国际事件与全球科技政策
 
 high_priority_signals:
-  - 重要论文与研究成果
-  - 新模型与重要产品发布
-  - 研究机会与申请截止日期
-  - 宏观政策和市场结构变化
-  - 与多个订阅来源同时相关的事件
+  - Frontier lab 发布新模型、关键研究结果或重大能力变化
+  - Agent、RL、Reasoning、Interpretability 出现新的方法或范式变化
+  - AI for Mathematics 出现研究级数学成果、自动证明或形式化进展
+  - ICLR / ICML / NeurIPS 等顶会出现重要方法、趋势、截止或规则变化
+  - 与当前研究方向高度相关且值得认真阅读的新论文
+  - 本科生可申请的研究实习、暑校、workshop、fellowship、travel grant 或 CFP
+  - 能显著降低研究与工程成本的新框架、GPU、推理或训练基础设施
+  - AI 产业资本开支、芯片、公司战略发生结构性变化
+  - AI / 半导体 / 科研相关政策出现会改变长期判断的重要变化
 
 low_priority_signals:
-  - 重复转载
-  - 营销软文
-  - 纯宣传内容
-  - 与用户兴趣无明显关系的常规新闻
+  - 重复转载和二手改写
+  - 纯宣传、营销软文和标题党
+  - 导航页、师资页、机构简介、常规活动回顾
+  - 没有新事实的观点文章
+  - 普通产品小更新和低影响版本迭代
+  - 与长期目标无明显关系的日常市场波动
+  - 为了填满版面而加入的低价值内容
+
+newspaper_sections:
+  - 今日总览
+  - AI Frontier
+  - 科研前沿
+  - 数学 × AI
+  - 机会雷达
+  - Engineering
+  - AI 商业 / 产业
+  - 世界状态
 
 editorial_preferences:
-  max_daily_highlights: 24
+  max_daily_highlights: 28
+  max_editor_input_items: 64
   prefer_primary_sources: true
   explain_why_it_matters: true
   surface_cross_group_signals: true
+  allow_empty_sections: true
+  front_page_max_items: 7
+  section_max_items: 5
+  daily_reading_budget_chars: 3200
+  edition_turnover_hour: 8
