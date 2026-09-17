@@ -3,6 +3,9 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 interests:
+  - 北京及周边高校、研究院可参加的讲座、Workshop、科研活动与招募
+  - 全国或线上可参加的 AI Hackathon、算法竞赛、开源挑战与开发者活动
+  - 本科生科研招募、RA、研究实习、训练营、暑校与交流机会
   - Frontier AI / AGI
   - AI Agent 与长期任务
   - 强化学习与后训练
@@ -18,6 +21,9 @@ interests:
   - 重大国际事件与全球科技政策
 
 high_priority_signals:
+  - 未来 45 天内可以真实报名、申请、投稿、参赛或到场的机会，尤其是北京线下与全国线上机会
+  - 明确面向本科生、学生、个人开发者或开放报名的科研与工程机会
+  - 高校、研究院、AI 社区和企业举办的 Hackathon、竞赛、Workshop、Meetup、科研招募与实习
   - Frontier lab 发布新模型、关键研究结果或重大能力变化
   - Agent、RL、Reasoning、Interpretability 出现新的方法或范式变化
   - AI for Mathematics 出现研究级数学成果、自动证明或形式化进展
@@ -29,6 +35,8 @@ high_priority_signals:
   - AI / 半导体 / 科研相关政策出现会改变长期判断的重要变化
 
 low_priority_signals:
+  - 与当前资格明显不匹配的海外资深岗位、Research Manager 或高级 Research Scientist 招聘
+  - 只能了解、短期内无法参与且没有明显认知价值的远端机会
   - 重复转载和二手改写
   - 纯宣传、营销软文和标题党
   - 导航页、师资页、机构简介、常规活动回顾
@@ -39,10 +47,10 @@ low_priority_signals:
 
 newspaper_sections:
   - 今日总览
-  - AI Frontier
-  - 科研前沿
-  - 数学 × AI
   - 机会雷达
+  - 科研前沿
+  - AI Frontier
+  - 数学 × AI
   - Engineering
   - AI 商业 / 产业
   - 世界状态
@@ -53,8 +61,11 @@ editorial_preferences:
   prefer_primary_sources: true
   explain_why_it_matters: true
   surface_cross_group_signals: true
+  prefer_actionable_opportunities: true
+  home_region: 北京
+  opportunity_horizon_days: 45
   allow_empty_sections: true
   front_page_max_items: 7
   section_max_items: 5
-  daily_reading_budget_chars: 3200
+  daily_reading_budget_chars: 3600
   edition_turnover_hour: 8
