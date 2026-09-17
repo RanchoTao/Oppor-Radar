@@ -1,10 +1,10 @@
 (() => {
   const SECTION_DEFS = [
     { id: "front", number: "01", title: "今日总览", subtitle: "如果今天只能看三分钟，这一版必须已经足够。" },
-    { id: "ai", number: "02", title: "AI Frontier", subtitle: "Frontier model、Agent、RL、Reasoning、Safety。" },
+    { id: "opportunity", number: "02", title: "机会雷达", subtitle: "北京、全国与线上真正可报名的 Hackathon、竞赛、科研招募、实习、Workshop 与截止。" },
     { id: "research", number: "03", title: "科研前沿", subtitle: "真正会改变你接下来怎么做研究、怎么写、怎么投的信号。" },
-    { id: "math", number: "04", title: "数学 × AI", subtitle: "AI for Mathematics、Lean、证明与重要数学进展。" },
-    { id: "opportunity", number: "05", title: "机会雷达", subtitle: "Deadline、实习、Workshop、Summer School、奖学金与可行动机会。" },
+    { id: "ai", number: "04", title: "AI Frontier", subtitle: "Frontier model、Agent、RL、Reasoning、Safety。" },
+    { id: "math", number: "05", title: "数学 × AI", subtitle: "AI for Mathematics、Lean、证明与重要数学进展。" },
     { id: "engineering", number: "06", title: "Engineering", subtitle: "开源、框架、GPU、推理基础设施与真正值得使用的新工具。" },
     { id: "business", number: "07", title: "AI 商业 / 产业", subtitle: "公司、融资、市场与可能改变 AI 发展路径的产业信号。" },
     { id: "world", number: "08", title: "世界状态", subtitle: "重大政策、国际、宏观与不应因为沉浸在 AI 中而错过的变化。" },
@@ -14,7 +14,7 @@
     ai: ["ai", "gpt", "llm", "agent", "agentic", "claude", "openai", "anthropic", "deepmind", "qwen", "gemini", "reinforcement", "reasoning", "人工智能", "大模型", "智能体", "强化学习", "推理模型"],
     research: ["research", "paper", "arxiv", "openreview", "iclr", "icml", "neurips", "conference", "workshop", "academic", "科研", "学术", "论文", "研究", "会议", "大学", "学院", "实验室", "bimsa"],
     math: ["math", "mathematics", "lean", "theorem", "proof", "geometry", "algebra", "probability", "sde", "数学", "定理", "证明", "几何", "代数", "概率", "随机微分"],
-    opportunity: ["deadline", "cfp", "internship", "fellowship", "scholarship", "summer school", "winter school", "call for", "apply", "application", "招生", "报名", "截止", "实习", "奖学金", "招聘", "机会", "申请"],
+    opportunity: ["deadline", "cfp", "internship", "fellowship", "scholarship", "summer school", "winter school", "call for", "apply", "application", "hackathon", "competition", "contest", "meetup", "招生", "报名", "截止", "实习", "奖学金", "招聘", "机会", "申请", "黑客松", "竞赛", "比赛", "挑战赛", "活动", "招募", "本科生", "开发者"],
     engineering: ["github", "pytorch", "cuda", "vllm", "sglang", "code", "coding", "engineering", "open source", "framework", "tool", "开源", "工程", "框架", "工具", "gpu"],
     business: ["market", "finance", "funding", "ipo", "company", "startup", "nvidia", "revenue", "earnings", "市场", "金融", "融资", "公司", "创业", "财报", "商业", "产业"],
     world: ["policy", "regulation", "government", "global", "geopolit", "china", "united states", "政策", "监管", "国际", "中美", "全球", "宏观", "政府", "世界"],
@@ -58,13 +58,14 @@
       action: item.action || "",
       source: item.source || "未知来源",
       url: item.url || "",
+      locality: item.locality || "",
       group: group.name || "未分组",
       groupSummary: group.summary || "",
     })));
   }
 
   function itemHaystack(item) {
-    return [item.title, item.summary, item.why, item.source, item.group, item.groupSummary]
+    return [item.title, item.summary, item.why, item.source, item.locality, item.group, item.groupSummary]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();
@@ -104,7 +105,7 @@
       if (def.id === "front") {
         return {
           ...def,
-          headline: digest.headline || "世界正在发生；这是今天与你最相关的变化。",
+          headline: digest.headline || "先看今天能行动的机会，再看世界发生了什么。",
           overview: digest.overview || "",
           items: items.slice(0, 8),
         };
@@ -120,14 +121,15 @@
 
   function sourceLine(item) {
     const source = escapeHtml(item?.source || "未知来源");
-    if (!item?.url) return `<div class="story-source">来源：${source}</div>`;
-    return `<div class="story-source">来源：<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${source} ↗</a></div>`;
+    const locality = item?.locality ? ` · ${escapeHtml(item.locality)}` : "";
+    if (!item?.url) return `<div class="story-source">来源：${source}${locality}</div>`;
+    return `<div class="story-source">来源：<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${source} ↗</a>${locality}</div>`;
   }
 
   function renderFrontPage(page, pages, payload) {
     const items = page.items || [];
     const lead = items[0];
-    const briefs = items.slice(1, 6);
+    const briefs = items.slice(1, 4);
     const headline = lead?.title || page.headline || "今天没有需要占用注意力的重大更新";
     const deck = lead?.summary || page.overview || "OR 会继续监听你的信息源；没有高信号时，不用新闻填满注意力。";
 
@@ -141,7 +143,7 @@
           </div>
         </article>
       `).join("")
-      : `<div class="paper-empty" style="min-height:260px"><div><strong>没有更多高信号更新</strong><p>这是刻意的。OR 不为了填满版面而塞入低价值信息。</p></div></div>`;
+      : `<div class="paper-empty" style="min-height:180px"><div><strong>没有更多高信号更新</strong><p>这是刻意的。OR 不为了填满版面而塞入低价值信息。</p></div></div>`;
 
     const rundown = pages.slice(1).map((section) => {
       const first = section.items?.[0];
@@ -166,6 +168,7 @@
           <p class="front-deck">${escapeHtml(deck)}</p>
           ${page.overview && page.overview !== deck ? `<p class="front-overview">${escapeHtml(page.overview)}</p>` : ""}
           ${lead?.why ? `<div class="why-you"><b>与你有关</b>${escapeHtml(lead.why)}</div>` : ""}
+          ${lead?.action && lead.action !== "仅供了解" ? `<div class="why-you"><b>下一步</b>${escapeHtml(lead.action)}</div>` : ""}
           ${lead ? sourceLine(lead) : ""}
         </article>
         <aside class="front-briefs">
@@ -174,7 +177,7 @@
         </aside>
       </div>
       <div class="front-rundown">${rundown}</div>
-      <div class="newspaper-footnote">OR Morning · Web Edition · 页面会自动轮询最新日报；内容更新频率由后端抓取与编辑流程决定。</div>
+      <div class="newspaper-footnote">OR Morning · Web Edition · 优先展示可行动机会；页面会自动轮询最新日报。</div>
     `;
   }
 
@@ -200,10 +203,11 @@
       </div>
       <div class="section-grid">
         <article class="section-lead">
-          <p class="story-label">TOP SIGNAL</p>
+          <p class="story-label">${page.id === "opportunity" ? "TOP ACTION" : "TOP SIGNAL"}</p>
           <h3>${escapeHtml(lead.title || page.headline || "今日信号")}</h3>
           <div class="story-body">${escapeHtml(lead.summary || lead.why || page.overview || "")}</div>
           ${lead.why && lead.why !== lead.summary ? `<div class="why-you"><b>与你有关</b>${escapeHtml(lead.why)}</div>` : ""}
+          ${lead.action && lead.action !== "仅供了解" ? `<div class="why-you"><b>下一步</b>${escapeHtml(lead.action)}</div>` : ""}
           ${sourceLine(lead)}
           <p class="page-count">本版共筛出 ${items.length} 个高信号事件。</p>
         </article>
@@ -212,6 +216,8 @@
             <article class="section-item">
               <strong>${escapeHtml(item.title)}</strong>
               ${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ""}
+              ${item.action && item.action !== "仅供了解" ? `<p><b>下一步：</b>${escapeHtml(item.action)}</p>` : ""}
+              ${item.locality ? `<p>${escapeHtml(item.locality)}</p>` : ""}
               ${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">查看原文 ↗</a>` : ""}
             </article>
           `).join("") || `<div class="section-item"><strong>本版只有这一条值得占用注意力。</strong><p>低信息量不是缺陷；它意味着筛选器没有为了版面完整性降低标准。</p></div>`}

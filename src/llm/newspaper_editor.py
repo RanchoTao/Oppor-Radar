@@ -17,10 +17,10 @@ SECTION_DEFS = [
         "limit": 7,
     },
     {
-        "id": "ai",
-        "title": "AI Frontier",
-        "subtitle": "Frontier model、Agent、RL、Reasoning、Safety。",
-        "limit": 5,
+        "id": "opportunity",
+        "title": "机会雷达",
+        "subtitle": "北京、全国与线上真正可报名的 Hackathon、竞赛、科研招募、实习、Workshop 与截止。",
+        "limit": 6,
     },
     {
         "id": "research",
@@ -29,15 +29,15 @@ SECTION_DEFS = [
         "limit": 5,
     },
     {
-        "id": "math",
-        "title": "数学 × AI",
-        "subtitle": "AI for Mathematics、Lean、证明与重要数学进展。",
+        "id": "ai",
+        "title": "AI Frontier",
+        "subtitle": "Frontier model、Agent、RL、Reasoning、Safety。",
         "limit": 5,
     },
     {
-        "id": "opportunity",
-        "title": "机会雷达",
-        "subtitle": "Deadline、实习、Workshop、Summer School、奖学金与可行动机会。",
+        "id": "math",
+        "title": "数学 × AI",
+        "subtitle": "AI for Mathematics、Lean、证明与重要数学进展。",
         "limit": 5,
     },
     {
@@ -78,8 +78,10 @@ KEYWORDS = {
     ],
     "opportunity": [
         "deadline", "cfp", "internship", "fellowship", "scholarship", "summer school",
-        "winter school", "call for", "application", "apply", "residency", "招生", "报名", "截止",
-        "实习", "奖学金", "招聘", "申请", "暑校", "访问", "资助",
+        "winter school", "call for", "application", "apply", "residency", "hackathon", "competition",
+        "contest", "meetup", "developer event", "招生", "报名", "截止", "实习", "奖学金", "招聘",
+        "申请", "暑校", "访问", "资助", "黑客松", "竞赛", "比赛", "挑战赛", "活动", "招募",
+        "科研训练", "本科生", "学生", "开发者", "高校",
     ],
     "engineering": [
         "github", "pytorch", "cuda", "vllm", "sglang", "inference", "serving", "kernel",
@@ -96,6 +98,7 @@ KEYWORDS = {
 }
 
 GROUP_SECTION_HINTS = {
+    "机会 / 本地与在线": ["opportunity", "research", "engineering"],
     "AI / 前沿研究": ["ai", "research"],
     "数学 / AI for Math": ["math", "research"],
     "科研 / 机会": ["research", "opportunity"],
@@ -146,14 +149,18 @@ def _normalize_title(title: str) -> str:
 
 
 def _item_score(item: dict) -> float:
-    return round(
-        0.42 * item["relevance"]
-        + 0.34 * item["importance"]
-        + 0.14 * item["novelty"]
+    base = (
+        0.38 * item["relevance"]
+        + 0.30 * item["importance"]
+        + 0.12 * item["novelty"]
         + 0.10 * item["authority"]
-        + (0.05 if item.get("time_sensitive") else 0.0),
-        4,
+        + (0.05 if item.get("time_sensitive") else 0.0)
     )
+    if "opportunity" in item.get("sections", []):
+        base += 0.20 * item.get("reachability", 0.45)
+        if item.get("deadline"):
+            base += 0.04
+    return round(min(1.0, base), 4)
 
 
 def _editor_item(row, source: dict) -> dict[str, Any]:
@@ -174,6 +181,8 @@ def _editor_item(row, source: dict) -> dict[str, Any]:
         "group": str(_value(row, "source_group", source.get("group", "未分组"))),
         "source_type": str(source.get("source_type", "primary")),
         "authority": _bounded_float(source.get("authority", 0.75), 0.75),
+        "reachability": _bounded_float(source.get("reachability", 0.45), 0.45),
+        "locality": str(source.get("locality", "") or ""),
         "source_sections": _source_sections(source),
         "summary": summary[:1200],
         "reason": str(_value(row, "reason", "") or "")[:500],
@@ -218,6 +227,8 @@ def _public_item(item: dict) -> dict:
         "url": item.get("url") or "",
         "publish_date": item.get("publish_date"),
         "deadline": item.get("deadline"),
+        "locality": item.get("locality") or "",
+        "reachability": item.get("reachability", 0.45),
         "score": item.get("score", 0.0),
     }
 
@@ -228,10 +239,24 @@ def _diverse_front(items: list[dict], limit: int) -> list[dict]:
     represented_sections: set[str] = set()
     ranked = sorted(items, key=lambda item: item["score"], reverse=True)
 
-    # First pass: reward topical diversity and prevent one prolific source from taking the front page.
+    # Guarantee that a genuinely actionable opportunity gets front-page space when available.
+    actionable = [
+        item for item in ranked
+        if "opportunity" in item.get("sections", []) and item.get("reachability", 0.0) >= 0.75
+    ]
+    if actionable and limit > 0:
+        first = actionable[0]
+        selected.append(first)
+        source = first.get("source") or ""
+        source_counts[source] = 1
+        represented_sections.update(first.get("sections", []))
+
+    # Reward topical diversity and prevent one prolific source from taking the front page.
     for item in ranked:
         if len(selected) >= limit:
             break
+        if item in selected:
+            continue
         source = item.get("source") or ""
         if source_counts.get(source, 0) >= 2:
             continue
@@ -241,7 +266,6 @@ def _diverse_front(items: list[dict], limit: int) -> list[dict]:
             source_counts[source] = source_counts.get(source, 0) + 1
             represented_sections.update(item.get("sections", []))
 
-    # Second pass: fill only with genuinely high-scoring leftovers.
     selected_keys = {item.get("url") or _normalize_title(item.get("title", "")) for item in selected}
     for item in ranked:
         if len(selected) >= limit:
@@ -269,6 +293,8 @@ def _fallback_newspaper(items: list[dict], report_date: str, reason: str) -> dic
         if section["id"] == "front":
             continue
         candidates = [item for item in ranked if section["id"] in item.get("sections", [])]
+        if section["id"] == "opportunity":
+            candidates.sort(key=lambda item: (item.get("reachability", 0.0), item["score"]), reverse=True)
         page_map[section["id"]] = candidates[: section["limit"]]
 
     pages = []
@@ -325,6 +351,7 @@ def _normalize_llm_pages(data: dict, fallback: dict, report_date: str) -> dict:
                     "url": str(item.get("url") or "")[:2000],
                     "publish_date": item.get("publish_date"),
                     "deadline": item.get("deadline"),
+                    "locality": str(item.get("locality") or "")[:120],
                 }
             )
         pages.append(
@@ -377,6 +404,8 @@ def build_newspaper(rows, sources: list[dict], report_date: str, profile: dict |
             "source": item["source"],
             "source_type": item["source_type"],
             "authority": item["authority"],
+            "reachability": item["reachability"],
+            "locality": item["locality"],
             "sections": item["sections"],
             "summary": item["summary"],
             "reason": item["reason"],
@@ -394,20 +423,21 @@ def build_newspaper(rows, sources: list[dict], report_date: str, profile: dict |
     system_prompt = """你是 Opportunity Radar（OR Morning）的总编辑。输入是过去一个 edition window 中已经通过第一层过滤的高信号候选。你要把它们编辑成一份只服务于当前用户的八版个人时报。
 
 固定版面（id 必须完全一致）：
-front=今日总览；ai=AI Frontier；research=科研前沿；math=数学×AI；opportunity=机会雷达；engineering=Engineering；business=AI商业/产业；world=世界状态。
+front=今日总览；opportunity=机会雷达；research=科研前沿；ai=AI Frontier；math=数学×AI；engineering=Engineering；business=AI商业/产业；world=世界状态。
 
 编辑规则：
-1. front 只放全局最重要的 5-7 件事；其他版每版 0-5 件。没有足够重要内容时允许为空，绝不为了填版面降标准。
-2. 先判断“是否会改变用户未来几天到几年的认知或行动”，再判断热度。优先 frontier AI、Agent、RL、AI for Mathematics、科研方法/顶会变化、可申请机会、真正有用的工程基础设施，以及足够重大的产业/政策变化。
-3. 同一事件的多来源报道要合并成一个 story；优先选择最权威、最接近一手的来源作为 source/url。二手报道不能压过一手公告。
-4. summary 写核心事实；why 写“为什么这件事值得这个用户占用注意力”；action 只有确实需要行动时才写，否则写空字符串。
-5. 标题要像时报标题，准确、短、信息密度高，不要标题党。
-6. 只能使用输入事实，不得补充输入中不存在的数字、日期、结论或因果关系。
-7. front 可以复用各专题版的最重要 story；专题版之间尽量减少无意义重复。
-8. 输出中文 JSON，禁止 Markdown，禁止解释。
+1. front 只放全局最重要的 5-7 件事；其他版每版 0-6 件。没有足够重要内容时允许为空，绝不为了填版面降标准。
+2. “机会雷达”是产品第一优先级。先问用户能不能在未来约 45 天内真实报名、申请、参赛、投稿、到场或建立联系，再问这个机会有多知名。优先北京线下、全国/线上、本科生/学生/个人开发者开放、参与成本低且可能产生项目/人脉/科研/简历结果的机会。
+3. 输入中的 reachability 是可触达先验，locality 是地理/参与范围。高 reachability 的 Hackathon、竞赛、高校活动、科研招募、实习和 Workshop 不应被海外高级全职职位压过。海外 frontier 机会仍可保留，但若当前资格明显不匹配，只作为拓展信息。
+4. AI/科研/数学/工程版仍优先真正改变认知或工作方法的 frontier AI、Agent、RL、Interpretability、AI for Mathematics、顶会变化和基础设施进展。
+5. 同一事件的多来源报道要合并成一个 story；优先选择最权威、最接近一手的来源作为 source/url。二手报道不能压过一手公告。
+6. summary 用中文写核心事实；why 用中文解释“为什么这件事值得这个用户占用注意力”；action 只有确实需要行动时才写，并尽量写清下一步。英文来源标题可保留必要专名，但整份日报以中文为主。
+7. 标题要准确、短、信息密度高，不要标题党。只能使用输入事实，不得补充输入中不存在的数字、日期、结论或因果关系。
+8. front 可以复用各专题版的最重要 story；如果存在高 reachability 的时效机会，front 至少应出现一条。专题版之间尽量减少无意义重复。
+9. 输出中文 JSON，禁止 Markdown，禁止解释。
 
 输出格式：
-{"edition":"OR Morning","pages":[{"id":"front","title":"今日总览","subtitle":"","headline":"","overview":"","items":[{"title":"","summary":"","why":"","action":"","source":"","url":"","publish_date":null,"deadline":null}]}]}
+{"edition":"OR Morning","pages":[{"id":"front","title":"今日总览","subtitle":"","headline":"","overview":"","items":[{"title":"","summary":"","why":"","action":"","source":"","url":"","publish_date":null,"deadline":null,"locality":""}]}]}
 必须输出八个 page。
 """
 

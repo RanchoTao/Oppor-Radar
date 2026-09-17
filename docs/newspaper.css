@@ -162,13 +162,14 @@
 .edition-tab span { display: block; overflow: hidden; margin-top: 4px; font-size: 11px; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
 
 .newspaper-viewer {
-  min-height: 740px;
+  min-height: 0;
   padding: 26px 30px 30px;
   font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
 }
 
 .newspaper-viewer.loading {
   display: grid;
+  min-height: 320px;
   place-items: center;
   color: var(--paper-muted);
 }
@@ -211,6 +212,7 @@
   grid-template-columns: minmax(0, 1.62fr) minmax(250px, .72fr);
   gap: 24px;
   margin-top: 18px;
+  align-items: start;
 }
 
 .front-lead {
@@ -293,23 +295,34 @@
   border-top: 1px solid var(--paper-soft-line);
 }
 
+/* Desktop front page stays compact: three briefs are enough; the section rundown follows immediately. */
+.front-briefs .brief-item:nth-of-type(n+4) { display: none; }
 .brief-item:first-of-type { border-top: 2px solid var(--paper-line); }
 .brief-index { float: left; width: 24px; color: var(--paper-accent); font-family: Georgia, serif; font-size: 22px; font-weight: 800; line-height: 1; }
 .brief-copy { margin-left: 31px; }
 .brief-copy strong { display: block; font-size: 14px; line-height: 1.45; }
-.brief-copy p { margin: 5px 0 0; color: var(--paper-muted); font-size: 11px; line-height: 1.55; }
+.brief-copy p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 5px 0 0;
+  color: var(--paper-muted);
+  font-size: 11px;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
 
 .front-rundown {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  margin-top: 22px;
+  margin-top: 16px;
   border-top: 2px solid var(--paper-line);
   border-bottom: 1px solid var(--paper-line);
 }
 
 .rundown-card {
-  min-height: 118px;
+  min-height: 108px;
   padding: 14px;
   border-right: 1px solid var(--paper-soft-line);
 }
@@ -365,7 +378,7 @@
 
 .paper-empty {
   display: grid;
-  min-height: 560px;
+  min-height: 320px;
   place-items: center;
   text-align: center;
 }
@@ -391,6 +404,7 @@
   .front-grid, .section-grid { grid-template-columns: 1fr; }
   .front-lead, .section-lead { padding-right: 0; border-right: 0; }
   .front-briefs { border-top: 2px solid var(--paper-line); padding-top: 12px; }
+  .front-briefs .brief-item:nth-of-type(n+4) { display: block; }
   .front-rundown { grid-template-columns: repeat(2, 1fr); }
   .rundown-card:nth-child(2n) { border-right: 0; }
   .edition-page-head { align-items: start; flex-direction: column; }
@@ -409,7 +423,8 @@
   #newspaper-select { width: 100%; }
   .edition-tabs { grid-template-columns: repeat(2, 1fr); }
   .edition-tab:nth-child(2n) { border-right: 0; }
-  .newspaper-viewer { min-height: 620px; padding: 20px 18px 24px; }
+  .newspaper-viewer { min-height: 0; padding: 20px 18px 24px; }
+  .newspaper-viewer.loading { min-height: 240px; }
   .front-rundown { grid-template-columns: 1fr; }
   .rundown-card { border-right: 0; border-bottom: 1px solid var(--paper-soft-line); }
 }
