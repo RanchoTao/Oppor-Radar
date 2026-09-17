@@ -540,6 +540,8 @@
     "enabled": true,
     "source_type": "opportunity",
     "authority": 0.98,
+    "reachability": 0.25,
+    "locality": "全球 / 多为海外全职",
     "sections": [
       "opportunity",
       "ai",
@@ -570,6 +572,8 @@
     "enabled": true,
     "source_type": "opportunity",
     "authority": 0.98,
+    "reachability": 0.2,
+    "locality": "全球 / 多为海外全职",
     "sections": [
       "opportunity",
       "ai",
@@ -598,10 +602,12 @@
   {
     "name": "BIMSA Ongoing Workshops",
     "url": "https://www.bimsa.cn/research/workshop/ongoing/page_1.html",
-    "group": "科研 / 机会",
+    "group": "机会 / 本地与在线",
     "enabled": true,
     "source_type": "opportunity",
     "authority": 0.95,
+    "reachability": 1.0,
+    "locality": "北京 / 怀柔",
     "sections": [
       "opportunity",
       "research",
@@ -611,7 +617,8 @@
       "BIMSA",
       "Workshop",
       "Mathematics",
-      "AI"
+      "AI",
+      "北京"
     ],
     "watch": [],
     "max_items": 16,
@@ -621,10 +628,12 @@
   {
     "name": "清华丘成桐数学科学中心",
     "url": "https://ymsc.tsinghua.edu.cn/",
-    "group": "科研 / 机会",
+    "group": "机会 / 本地与在线",
     "enabled": true,
     "source_type": "official",
     "authority": 0.95,
+    "reachability": 0.95,
+    "locality": "北京 / 清华",
     "sections": [
       "opportunity",
       "research",
@@ -635,7 +644,8 @@
       "YMSC",
       "数学",
       "讲座",
-      "暑校"
+      "暑校",
+      "北京"
     ],
     "watch": [
       "workshop",
@@ -658,10 +668,12 @@
   {
     "name": "清华交叉信息研究院",
     "url": "https://iiis.tsinghua.edu.cn/",
-    "group": "科研 / 机会",
+    "group": "机会 / 本地与在线",
     "enabled": true,
     "source_type": "official",
     "authority": 0.94,
+    "reachability": 0.95,
+    "locality": "北京 / 清华",
     "sections": [
       "opportunity",
       "research",
@@ -671,7 +683,8 @@
       "清华",
       "交叉信息",
       "AI",
-      "理论计算机"
+      "理论计算机",
+      "北京"
     ],
     "watch": [
       "招生",
@@ -693,10 +706,12 @@
   {
     "name": "北京大学智能学院",
     "url": "https://sai.pku.edu.cn/",
-    "group": "科研 / 机会",
+    "group": "机会 / 本地与在线",
     "enabled": true,
     "source_type": "official",
     "authority": 0.94,
+    "reachability": 0.95,
+    "locality": "北京 / 北大",
     "sections": [
       "opportunity",
       "research",
@@ -705,7 +720,8 @@
     "tags": [
       "北大",
       "智能学院",
-      "AI"
+      "AI",
+      "北京"
     ],
     "watch": [
       "招生",
@@ -722,6 +738,233 @@
     ],
     "max_items": 14,
     "max_detail_items": 8,
+    "fetch_details": true
+  },
+  {
+    "name": "中国人民大学高瓴人工智能学院公告",
+    "url": "https://ai.ruc.edu.cn/xwgg/xygg/index.htm",
+    "group": "机会 / 本地与在线",
+    "enabled": true,
+    "source_type": "opportunity",
+    "authority": 0.96,
+    "reachability": 1.0,
+    "locality": "北京 / 人大",
+    "sections": [
+      "opportunity",
+      "research",
+      "ai"
+    ],
+    "tags": [
+      "人大",
+      "高瓴人工智能学院",
+      "AI",
+      "实习",
+      "活动",
+      "北京"
+    ],
+    "watch": [
+      "报名",
+      "活动",
+      "讲座",
+      "实习",
+      "招募",
+      "科研",
+      "Hackathon",
+      "Workshop",
+      "学术",
+      "本科生",
+      "学生"
+    ],
+    "max_items": 20,
+    "max_detail_items": 12,
+    "fetch_details": true
+  },
+  {
+    "name": "北京智源社区活动",
+    "url": "https://hub.baai.ac.cn/frontpage/",
+    "group": "机会 / 本地与在线",
+    "enabled": true,
+    "source_type": "community",
+    "authority": 0.93,
+    "reachability": 0.95,
+    "locality": "北京 / 线上",
+    "sections": [
+      "opportunity",
+      "ai",
+      "research",
+      "engineering"
+    ],
+    "tags": [
+      "智源",
+      "BAAI",
+      "AI",
+      "活动",
+      "Workshop",
+      "开发者",
+      "北京"
+    ],
+    "watch": [
+      "活动",
+      "报名",
+      "直播",
+      "论坛",
+      "Workshop",
+      "Meetup",
+      "训练营",
+      "Hackathon",
+      "开发者",
+      "北京"
+    ],
+    "max_items": 24,
+    "max_detail_items": 12,
+    "fetch_details": true
+  },
+  {
+    "name": "ModelScope 竞赛与活动",
+    "url": "https://modelscope.cn/events",
+    "group": "机会 / 本地与在线",
+    "enabled": true,
+    "source_type": "opportunity",
+    "authority": 0.92,
+    "reachability": 1.0,
+    "locality": "全国 / 线上 / 部分线下",
+    "sections": [
+      "opportunity",
+      "ai",
+      "engineering"
+    ],
+    "tags": [
+      "ModelScope",
+      "魔搭",
+      "Hackathon",
+      "竞赛",
+      "开发者",
+      "AI"
+    ],
+    "watch": [
+      "Hackathon",
+      "黑客松",
+      "竞赛",
+      "比赛",
+      "挑战赛",
+      "报名",
+      "开发者",
+      "高校",
+      "线上",
+      "截止"
+    ],
+    "max_items": 30,
+    "max_detail_items": 12,
+    "fetch_details": true
+  },
+  {
+    "name": "Datawhale AI+X 活动日历",
+    "url": "https://aixevents.datawhale.cn/",
+    "group": "机会 / 本地与在线",
+    "enabled": true,
+    "source_type": "community",
+    "authority": 0.9,
+    "reachability": 1.0,
+    "locality": "全国 / 线上 / 高校",
+    "sections": [
+      "opportunity",
+      "ai",
+      "engineering"
+    ],
+    "tags": [
+      "Datawhale",
+      "Hackathon",
+      "Meetup",
+      "Workshop",
+      "高校",
+      "开发者"
+    ],
+    "watch": [
+      "Hackathon",
+      "Meetup",
+      "Workshop",
+      "黑客松",
+      "比赛",
+      "竞赛",
+      "报名",
+      "高校",
+      "北京",
+      "线上"
+    ],
+    "max_items": 30,
+    "max_detail_items": 8,
+    "fetch_details": false
+  },
+  {
+    "name": "天池竞赛",
+    "url": "https://tianchi.aliyun.com/competition",
+    "group": "机会 / 本地与在线",
+    "enabled": true,
+    "source_type": "opportunity",
+    "authority": 0.94,
+    "reachability": 1.0,
+    "locality": "全国 / 线上",
+    "sections": [
+      "opportunity",
+      "ai",
+      "engineering"
+    ],
+    "tags": [
+      "天池",
+      "阿里云",
+      "AI",
+      "算法竞赛",
+      "数据竞赛"
+    ],
+    "watch": [
+      "竞赛",
+      "比赛",
+      "挑战赛",
+      "报名",
+      "算法",
+      "AI",
+      "大模型",
+      "开发者",
+      "截止"
+    ],
+    "max_items": 30,
+    "max_detail_items": 10,
+    "fetch_details": true
+  },
+  {
+    "name": "DataFountain 竞赛",
+    "url": "https://www.datafountain.cn/competitions?selectedType=-1&type=3",
+    "group": "机会 / 本地与在线",
+    "enabled": true,
+    "source_type": "opportunity",
+    "authority": 0.9,
+    "reachability": 1.0,
+    "locality": "全国 / 线上",
+    "sections": [
+      "opportunity",
+      "ai",
+      "engineering"
+    ],
+    "tags": [
+      "DataFountain",
+      "CCF",
+      "AI",
+      "算法竞赛",
+      "数据竞赛"
+    ],
+    "watch": [
+      "竞赛",
+      "比赛",
+      "挑战赛",
+      "报名",
+      "算法",
+      "AI",
+      "大模型",
+      "开发者",
+      "截止"
+    ],
+    "max_items": 30,
+    "max_detail_items": 10,
     "fetch_details": true
   },
   {

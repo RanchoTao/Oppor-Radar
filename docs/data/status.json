@@ -1,9 +1,9 @@
 {
-  "configured_sources": 30,
-  "healthy_sources": 29,
-  "new_items": 53,
-  "selected_items": 113,
-  "last_updated_at": "2026-09-17T11:01:39.523026+08:00",
-  "changed_items": 63,
-  "candidate_items": 114
+  "configured_sources": 36,
+  "healthy_sources": 35,
+  "new_items": 66,
+  "selected_items": 182,
+  "last_updated_at": "2026-09-17T20:04:02.876124+08:00",
+  "changed_items": 26,
+  "candidate_items": 91
 }
