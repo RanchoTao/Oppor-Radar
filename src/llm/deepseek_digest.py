@@ -10,14 +10,15 @@ import requests
 
 LOGGER = logging.getLogger(__name__)
 DEFAULT_BASE_URL = "https://api.deepseek.com"
-DEFAULT_MODEL = "deepseek-v4-flash"
+DEFAULT_MODEL = "deepseek-flash"
 
 HIGH_SIGNAL_TERMS = [
     "announce", "introduc", "release", "research", "paper", "benchmark", "model", "agent",
     "reinforcement", "reasoning", "theorem", "proof", "call for", "deadline", "internship",
     "fellowship", "scholarship", "summer school", "workshop", "conference", "launch", "new ",
-    "发布", "推出", "研究", "论文", "模型", "智能体", "强化学习", "推理", "定理", "证明",
-    "征稿", "截止", "实习", "奖学金", "暑校", "工作坊", "会议", "上线", "重大", "最新",
+    "hackathon", "competition", "contest", "meetup", "发布", "推出", "研究", "论文", "模型",
+    "智能体", "强化学习", "推理", "定理", "证明", "征稿", "截止", "实习", "奖学金", "暑校",
+    "工作坊", "会议", "上线", "重大", "最新", "黑客松", "竞赛", "比赛", "挑战赛", "招募",
 ]
 
 LOW_SIGNAL_TITLE_TERMS = [
@@ -28,8 +29,9 @@ LOW_SIGNAL_TITLE_TERMS = [
 
 OPPORTUNITY_TERMS = [
     "deadline", "cfp", "internship", "fellowship", "scholarship", "summer school", "winter school",
-    "call for", "application", "apply", "residency", "招生", "报名", "截止", "实习", "奖学金",
-    "招聘", "申请", "暑校", "访问", "资助",
+    "call for", "application", "apply", "residency", "hackathon", "competition", "contest", "meetup",
+    "developer event", "招生", "报名", "截止", "实习", "奖学金", "招聘", "申请", "暑校", "访问",
+    "资助", "黑客松", "竞赛", "比赛", "挑战赛", "活动", "招募", "科研训练", "本科生", "开发者",
 ]
 
 
@@ -120,6 +122,8 @@ def _row_payload(row, sources_by_name: dict[str, dict], content_limit: int = 700
         "source_watch": source.get("watch", []),
         "source_type": source.get("source_type", "primary"),
         "source_authority": _bounded(source.get("authority", 0.75), 0.75),
+        "source_reachability": _bounded(source.get("reachability", 0.45), 0.45),
+        "source_locality": source.get("locality", ""),
         "preferred_sections": source.get("sections", []),
         "publish_date": _row_value(row, "publish_date"),
         "deadline": _row_value(row, "deadline"),
@@ -134,6 +138,8 @@ def _fallback_item_result(row, source: dict, profile: dict | None) -> dict:
     text = str(_row_value(row, "summary", "") or _row_value(row, "content", "") or _row_value(row, "raw_text", "") or "")
     haystack = f" {title} {text[:1800]} ".lower()
     authority = _bounded(source.get("authority", 0.75), 0.75)
+    reachability = _bounded(source.get("reachability", 0.45), 0.45)
+    locality = str(source.get("locality", "") or "")
     source_sections = [str(x) for x in source.get("sections", []) if str(x)]
     tags = [str(x) for x in source.get("tags", []) if str(x)]
 
@@ -142,13 +148,15 @@ def _fallback_item_result(row, source: dict, profile: dict | None) -> dict:
     interest_hits = sum(1 for interest in interests if interest and interest in haystack)
     high_signal = any(term in haystack for term in HIGH_SIGNAL_TERMS)
     low_signal_title = any(term in title.lower() for term in LOW_SIGNAL_TITLE_TERMS)
-    opportunity = any(term in haystack for term in OPPORTUNITY_TERMS)
+    opportunity = any(term in haystack for term in OPPORTUNITY_TERMS) or "opportunity" in source_sections
 
-    # Strong primary sources start with a high prior, but navigation pages are still rejected.
-    relevance = min(0.98, 0.42 + 0.09 * min(4, interest_hits) + 0.05 * min(3, len(source_sections)))
+    relevance = 0.40 + 0.09 * min(4, interest_hits) + 0.05 * min(3, len(source_sections))
+    if opportunity:
+        relevance += 0.22 * reachability
+    relevance = min(0.98, relevance)
     importance = min(0.98, 0.34 + 0.48 * authority + (0.12 if high_signal else 0.0))
     novelty = 0.62 if high_signal else 0.48
-    value = 0.42 * relevance + 0.36 * importance + 0.22 * novelty
+    value = 0.40 * relevance + 0.32 * importance + 0.18 * novelty + (0.10 * reachability if opportunity else 0.0)
 
     keep = not low_signal_title and (
         high_signal
@@ -158,6 +166,10 @@ def _fallback_item_result(row, source: dict, profile: dict | None) -> dict:
     )
 
     reason_parts = []
+    if opportunity and reachability >= 0.75:
+        reason_parts.append("这是当前用户可实际参与或申请的高可触达机会")
+    if locality:
+        reason_parts.append(f"参与范围：{locality}")
     if source_sections:
         reason_parts.append("命中用户订阅版面：" + "、".join(source_sections[:3]))
     if authority >= 0.9:
@@ -170,7 +182,7 @@ def _fallback_item_result(row, source: dict, profile: dict | None) -> dict:
 
     action = "仅供了解"
     if opportunity:
-        action = "检查资格、截止日期与申请成本，决定是否进入任务系统。"
+        action = "检查报名资格、截止时间、参与形式和预期收益；合适则立即加入任务系统。"
 
     summary = text.strip()[:1000] or title
     return {
@@ -204,18 +216,18 @@ def rank_items(rows, sources: list[dict], profile: dict | None = None) -> tuple[
 
     system_prompt = """你是 Opportunity Radar 的第一层信息过滤器。用户主动订阅了大量高质量来源，你要判断每个新出现或发生变化的条目是否值得进入个人日报候选池。
 
-输入包含正文、来源分组、来源类型、来源权威度、建议版面和用户兴趣画像。你不能因为来源权威就把所有页面保留；导航页、师资页、机构简介、重复常规更新仍应 keep=false。
+输入包含正文、来源分组、来源类型、来源权威度、source_reachability（当前用户真实参与/申请的可触达程度）、source_locality（参与范围）、建议版面和用户兴趣画像。你不能因为来源权威就把所有页面保留；导航页、师资页、机构简介、重复常规更新仍应 keep=false。
 
 规则：
 1. 只能依据输入，不得虚构。
 2. keep=false 用于导航、广告、重复常规内容、纯宣传、明显无关或信息量极低的条目。
-3. 优先 frontier AI / Agent / RL / AI for Mathematics / 重要科研方法与顶会变化 / 可行动机会 / 真正有用的工程基础设施 / 足够重大的产业和政策变化。
-4. importance/relevance/novelty 均为 0 到 1。不要把普通更新统一打高分。
-5. summary 用中文压缩核心事实；reason 解释为什么值得当前用户占用注意力。
-6. action 没有必要行动时写“仅供了解”；有申请、截止、需要决策的机会时给具体动作。
-7. time_sensitive 只在存在截止、即将发生、价格/政策快速变化等明显时效性时为 true。
-8. 宁缺毋滥。第一层应主动丢掉大量噪声。
-9. 只返回 JSON。
+3. 可行动机会优先：北京线下、全国/线上、本科生/学生/个人开发者开放的 Hackathon、竞赛、科研招募、实习、Workshop、Meetup、暑校与截止，应得到更高 relevance；明显不符合当前资格的海外资深岗位应降低 relevance。
+4. 同时优先 frontier AI / Agent / RL / AI for Mathematics / 重要科研方法与顶会变化 / 真正有用的工程基础设施 / 足够重大的产业和政策变化。
+5. importance/relevance/novelty 均为 0 到 1。不要把普通更新统一打高分。
+6. summary 用中文压缩核心事实；reason 解释为什么值得当前用户占用注意力；英文专名可保留，但不要整段照搬英文网页。
+7. action 没有必要行动时写“仅供了解”；有申请、截止、需要决策的机会时给具体下一步。
+8. time_sensitive 只在存在截止、即将发生、价格/政策快速变化等明显时效性时为 true。
+9. 宁缺毋滥。第一层应主动丢掉大量噪声。只返回 JSON。
 
 格式：
 {"items":[{"url":"","title":"","source":"","keep":true,"summary":"","topics":[],"importance":0.0,"relevance":0.0,"novelty":0.0,"reason":"","action":"","time_sensitive":false}]}
@@ -269,6 +281,8 @@ def _digest_item(row, source: dict) -> dict[str, Any]:
         "deadline": _row_value(row, "deadline"),
         "publish_date": _row_value(row, "publish_date"),
         "source_tags": source.get("tags", []),
+        "reachability": _bounded(source.get("reachability", 0.45), 0.45),
+        "locality": source.get("locality", ""),
     }
 
 
@@ -279,7 +293,10 @@ def _fallback_digest(items: list[dict], report_date: str, reason: str) -> dict:
 
     groups = []
     for name, group_items in grouped.items():
-        group_items.sort(key=lambda x: (x["relevance"], x["importance"], x["novelty"]), reverse=True)
+        if name == "机会 / 本地与在线":
+            group_items.sort(key=lambda x: (x.get("reachability", 0.0), x["relevance"], x["importance"]), reverse=True)
+        else:
+            group_items.sort(key=lambda x: (x["relevance"], x["importance"], x["novelty"]), reverse=True)
         groups.append(
             {
                 "name": name,
@@ -297,9 +314,10 @@ def _fallback_digest(items: list[dict], report_date: str, reason: str) -> dict:
             }
         )
 
+    groups.sort(key=lambda group: 0 if group["name"] == "机会 / 本地与在线" else 1)
     return {
         "report_date": report_date,
-        "headline": "世界正在发生；这是今天与你最相关的变化。",
+        "headline": "先看今天能行动的机会，再看世界发生了什么。",
         "overview": f"本次共有 {len(items)} 条信息进入日报。{reason}",
         "groups": groups,
         "cross_group_signals": [],
@@ -329,7 +347,16 @@ def build_daily_digest(rows, sources: list[dict], report_date: str, profile: dic
 
     api_key, model, _ = _client_config()
     max_highlights = int((profile or {}).get("editorial_preferences", {}).get("max_daily_highlights", 24))
-    items.sort(key=lambda x: (x["relevance"], x["importance"], x["novelty"]), reverse=True)
+    items.sort(
+        key=lambda x: (
+            1 if x["group"] == "机会 / 本地与在线" else 0,
+            x.get("reachability", 0.0),
+            x["relevance"],
+            x["importance"],
+            x["novelty"],
+        ),
+        reverse=True,
+    )
     selected = items[: max(1, max_highlights * 2)]
 
     if not api_key:
@@ -339,12 +366,12 @@ def build_daily_digest(rows, sources: list[dict], report_date: str, profile: dic
 
 要求：
 1. 用中文写给一个高信息密度用户，不解释系统内部实现。
-2. 优先保留真正重要、相关、时效强、跨来源互相印证的信息。
-3. 同一事件多个来源应合并理解，避免重复占版面。
-4. 如果不同分组之间存在可靠联系，写入 cross_group_signals；证据不足则不写。
-5. action_items 只放确实需要用户行动的事项。
-6. 只能依据输入，严禁补充未提供事实。
-7. 只输出 JSON。
+2. 优先真实可行动的机会：北京线下、全国/线上、本科生/学生/个人开发者开放；再保留真正重要、相关、时效强、跨来源互相印证的信息。
+3. 明显不符合当前资格的海外高级岗位不能压过可报名的 Hackathon、竞赛、科研招募、实习、Workshop 与高校活动。
+4. 同一事件多个来源应合并理解，避免重复占版面。
+5. 如果不同分组之间存在可靠联系，写入 cross_group_signals；证据不足则不写。
+6. action_items 只放确实需要用户行动的事项。
+7. 只能依据输入，严禁补充未提供事实。只输出 JSON。
 
 格式：
 {"headline":"","overview":"","groups":[{"name":"","summary":"","highlights":[{"title":"","why":"","action":"","source":"","url":""}]}],"cross_group_signals":[],"action_items":[]}
