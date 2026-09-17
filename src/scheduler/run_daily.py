@@ -20,6 +20,7 @@ from src.crawler.discovery import crawl_source
 from src.extractor.rules import enrich_with_rules
 from src.llm.deepseek_digest import build_daily_digest, rank_items
 from src.llm.newspaper_editor import build_newspaper
+from src.notifier.email_digest import send_daily_email
 from src.notifier.markdown_report import generate_report
 from src.storage.db import (
     connect,
@@ -91,6 +92,12 @@ def main() -> None:
     sources = load_yaml("config/sources.yaml") or []
     profile = load_yaml("config/profile.yaml") or {}
     sources = [source for source in sources if source.get("enabled", True)]
+
+    if not os.getenv("DEEPSEEK_API_KEY", "").strip():
+        LOGGER.warning(
+            "DEEPSEEK_API_KEY is missing: OR will use deterministic fallback editing; "
+            "English source text may appear untranslated."
+        )
 
     conn = connect(os.getenv("OPPORTUNITY_RADAR_DB", "data/opportunities.sqlite3"))
     new_count = 0
@@ -175,6 +182,10 @@ def main() -> None:
         newspaper=newspaper,
         source_stats=source_stats,
     )
+
+    email_result = send_daily_email(newspaper, report_date)
+    if not email_result.get("sent"):
+        LOGGER.info("OR Morning email not sent: %s", email_result.get("reason", "unknown"))
 
     LOGGER.info(
         "OR Morning refresh finished: new=%s changed=%s edition=%s sources=%s/%s report=%s",
