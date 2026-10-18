@@ -1,0 +1,2 @@
+# Optional local browser QA only; not required for GitHub Pages or Daily.
+playwright==1.64.0

@@ -7,17 +7,18 @@
   <title>Opportunity Radar</title>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./newspaper.css" />
-  <link rel="stylesheet" href="./admin.css" />
+  <link rel="icon" href="data:," />
 </head>
 <body>
+  <a class="skip-link" href="#newspaper-viewer">跳至今日内容</a>
   <header class="topbar">
     <a class="brand" href="#top">OR<span>Opportunity Radar</span></a>
-    <nav>
-      <a href="#newspaper">时报</a>
+    <nav aria-label="主导航">
+      <a href="#newspaper" aria-current="location">时报</a>
       <a href="#reports">日报</a>
       <a href="#sources">信息源</a>
       <a href="#settings">设置</a>
-      <a href="https://github.com/RanchoTao/Oppor-Radar">GitHub</a>
+      <a class="nav-external" href="https://github.com/RanchoTao/Oppor-Radar">GitHub ↗</a>
     </nav>
   </header>
 
@@ -25,37 +26,40 @@
     <section id="newspaper" class="newspaper-shell" aria-label="OR Morning 个性化时报">
       <div class="newspaper-paper">
         <div class="paper-topline">
-          <span>PERSONAL INTELLIGENCE · WEB EDITION</span>
+          <span>独立视野 · 每日精选 / PERSONAL INTELLIGENCE</span>
           <span id="live-time">----</span>
         </div>
 
         <header class="paper-masthead">
           <div>
-            <p class="paper-kicker">OPPORTUNITY RADAR</p>
+            <p class="paper-kicker">OPPORTUNITY RADAR / 机会与远见</p>
             <h1>OR MORNING</h1>
-            <p class="paper-tagline">每天替你巡视世界一次。</p>
+            <p class="paper-tagline">每天巡视世界，读到与你有关。</p>
           </div>
           <div class="paper-status">
-            <p id="last-updated">尚无更新记录</p>
-            <div class="paper-metrics" aria-label="Radar 状态">
+            <details id="run-status" open>
+            <summary id="last-updated">尚无更新记录</summary>
+            <div class="paper-metrics" role="group" aria-label="Radar 状态">
               <div><strong id="source-count">—</strong><span>监控来源</span></div>
               <div><strong id="new-count">—</strong><span>今日新增</span></div>
               <div><strong id="selected-count">—</strong><span>入选日报</span></div>
               <div><strong id="healthy-count">—</strong><span>状态正常</span></div>
             </div>
+            </details>
           </div>
         </header>
 
         <div class="paper-controls">
           <div class="paper-edition-title">
-            <span class="live-dot" aria-hidden="true"></span>
-            <span>Latest intelligence</span>
+            <span id="edition-date-label">每日时报</span><span class="edition-state" id="edition-state">载入中</span>
           </div>
-          <select id="newspaper-select" aria-label="选择时报日期"></select>
+          <label class="date-field"><span>阅读日期</span><select id="newspaper-select" aria-label="选择时报日期"></select></label>
         </div>
 
         <div id="edition-tabs" class="edition-tabs" role="tablist" aria-label="时报版面"></div>
-        <div id="newspaper-viewer" class="newspaper-viewer loading">正在编排最新时报…</div>
+        <p class="tab-hint hidden">八个版面 · 左右滑动，或用方向键切换</p>
+        <details id="edition-notice" class="edition-notice hidden"></details>
+        <div id="newspaper-viewer" class="newspaper-viewer loading" role="tabpanel" tabindex="0" aria-busy="true">正在编排最新时报…</div>
       </div>
     </section>
 
@@ -64,11 +68,11 @@
         <div>
           <p class="eyebrow">DAILY INTELLIGENCE ARCHIVE</p>
           <h2>日报档案</h2>
-          <p class="section-copy">保留现有日报、Markdown / LaTeX / PDF 输出与历史日期浏览。</p>
+          <p class="section-copy">值得回看的信号，按日留存。选择一天阅读，或下载已生成的日报。</p>
         </div>
-        <select id="report-select" aria-label="选择日报"></select>
+        <label class="date-field"><span>归档日期</span><select id="report-select" aria-label="选择日报"></select></label>
       </div>
-      <article id="report-viewer" class="report-viewer loading">今天的日报尚未生成。</article>
+      <article id="report-viewer" class="report-viewer loading" aria-busy="true">正在载入日报…</article>
     </section>
 
     <section id="sources" class="section">
@@ -80,7 +84,8 @@
         </div>
         <a id="registry-admin-button" class="button primary hidden" href="./admin.html">管理信息源</a>
       </div>
-      <div id="source-groups" class="group-tabs"></div>
+      <div id="source-groups" class="group-tabs" role="group" aria-label="按领域筛选信息源"></div>
+      <p id="source-summary" class="source-summary" role="status"></p>
       <div id="source-list" class="source-list"></div>
     </section>
 
@@ -91,14 +96,16 @@
         <p class="section-copy">信息源决定你观察世界的窗口，兴趣画像决定什么值得占用你的注意力。</p>
       </div>
       <div class="settings-actions">
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/groups.yaml"><strong>分组</strong><span>组织你的信息领域</span></a>
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/profile.yaml"><strong>兴趣画像</strong><span>定义长期关注与优先信号</span></a>
-        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml"><strong>来源</strong><span>维护当前监控清单</span></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/groups.yaml"><strong>分组</strong><span>组织你的信息领域</span><b aria-hidden="true">↗</b></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/profile.yaml"><strong>兴趣画像</strong><span>定义长期关注与优先信号</span><b aria-hidden="true">↗</b></a>
+        <a class="settings-card" href="https://github.com/RanchoTao/Oppor-Radar/edit/main/config/sources.yaml"><strong>来源</strong><span>维护当前监控清单</span><b aria-hidden="true">↗</b></a>
+        <p class="settings-note">在 GitHub 编辑配置，需要仓库写入权限。</p>
       </div>
     </section>
   </main>
 
-  <footer>Opportunity Radar · RanchoTao/Oppor-Radar</footer>
+  <footer><span>OR MORNING / 保持好奇，审慎行动。</span><a href="https://github.com/RanchoTao/Oppor-Radar">查看项目与数据来源 ↗</a></footer>
+  <noscript><p class="inline-notice">请启用 JavaScript 以读取日报。也可在 GitHub 的 docs/reports 目录查看原始日报。</p></noscript>
   <script src="./app.js"></script>
   <script src="./newspaper.js"></script>
 </body>

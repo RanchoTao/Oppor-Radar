@@ -3,6 +3,8 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+.qa-tools/
+artifacts/design/*.log
 .env
 *.sqlite3
 *.db
