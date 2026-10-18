@@ -1,0 +1,38 @@
+{
+  "stage": "before",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "navVisible": true,
+      "leadTop": 648.390625,
+      "smallText": 243
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "navVisible": false,
+      "leadTop": 801.5625,
+      "smallText": 243
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "navVisible": false,
+      "leadTop": 960.375,
+      "smallText": 243
+    },
+    {
+      "width": 320,
+      "height": 720,
+      "scrollWidth": 320,
+      "navVisible": false,
+      "leadTop": 1003.5625,
+      "smallText": 243
+    }
+  ],
+  "console_errors": []
+}

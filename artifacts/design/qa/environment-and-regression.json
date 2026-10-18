@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-18T08:00:27.423495+00:00",
+  "python": "3.13.9",
+  "chrome": "155.0.8059.41",
+  "playwright": "1.64.0",
+  "axe_core": "4.14.0",
+  "pytest": {
+    "passed": 24,
+    "duration_seconds": 0.68
+  },
+  "js_syntax": "PASS: app.js, newspaper.js, admin.js",
+  "unchanged_scopes": [
+    "src",
+    "api",
+    "config",
+    "data",
+    "docs/data",
+    "docs/reports",
+    ".github",
+    "scripts/build_site_data.py"
+  ],
+  "unchanged_scope_diff_exit": 0,
+  "diff_check": "PASS",
+  "browser_acceptance": "26 PASS; qa/results.json",
+  "long_title": "4 viewports PASS; qa/long-title-qa.json",
+  "production_registry_used": false
+}

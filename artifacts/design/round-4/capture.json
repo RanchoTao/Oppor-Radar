@@ -1,0 +1,38 @@
+{
+  "stage": "round-4",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "navVisible": true,
+      "leadTop": 543.5625,
+      "smallText": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "navVisible": true,
+      "leadTop": 558.140625,
+      "smallText": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "navVisible": true,
+      "leadTop": 537.640625,
+      "smallText": 0
+    },
+    {
+      "width": 320,
+      "height": 720,
+      "scrollWidth": 320,
+      "navVisible": true,
+      "leadTop": 531.078125,
+      "smallText": 0
+    }
+  ],
+  "console_errors": []
+}

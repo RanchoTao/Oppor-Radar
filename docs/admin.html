@@ -7,18 +7,20 @@
   <title>Opportunity Radar · Registry</title>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./admin.css" />
+  <link rel="icon" href="data:," />
 </head>
 <body>
+  <a class="skip-link" href="#admin-main">跳至管理服务</a>
   <header class="topbar">
     <a class="brand" href="./">OR<span>Opportunity Radar</span></a>
-    <nav><a href="./">返回日报</a><a href="https://github.com/RanchoTao/Oppor-Radar">GitHub</a></nav>
+    <nav aria-label="主导航"><a href="./#newspaper">时报</a><a href="./#reports">日报</a><a href="./#sources">信息源</a><a href="./#settings">设置</a></nav>
   </header>
 
-  <main class="admin-main">
+  <main id="admin-main" class="admin-main" tabindex="-1">
     <section class="admin-hero">
       <p class="eyebrow">SOURCE REGISTRY ADMIN</p>
-      <h1>管理你的信息边界。</h1>
-      <p class="section-copy">这里不是浏览器本地草稿。连接 Registry API 后，保存操作会直接写回仓库配置，下一次 Daily 将按新来源运行。</p>
+      <h1>选择你观察世界的窗口。</h1>
+      <p class="section-copy">管理分组与来源。保存后会更新 GitHub 仓库配置，下一次日报将按新来源运行。</p>
     </section>
 
     <section class="admin-connect surface-card">
@@ -27,10 +29,11 @@
         <p id="registry-endpoint" class="muted">正在读取运行配置…</p>
       </div>
       <div class="admin-token-row">
-        <label>Admin Token<input id="admin-token" type="password" autocomplete="current-password" placeholder="仅用于本次页面会话" /></label>
-        <button id="connect-registry" class="button primary" type="button">连接</button>
+        <label>Admin Token<input id="admin-token" type="password" autocomplete="off" placeholder="仅用于本次页面会话" disabled /></label>
+        <button id="connect-registry" class="button primary" type="button" disabled>连接</button>
+        <button id="disconnect-registry" class="button hidden" type="button">断开连接</button>
       </div>
-      <p id="admin-message" class="admin-message"></p>
+      <p id="admin-message" class="admin-message" role="status" aria-live="polite"></p>
     </section>
 
     <section id="registry-editor" class="admin-editor hidden">
@@ -38,7 +41,7 @@
         <section class="surface-card">
           <div class="admin-section-heading"><div><p class="eyebrow">GROUPS</p><h2>分组</h2></div></div>
           <form id="add-group-form" class="inline-form">
-            <input id="new-group-name" required placeholder="例如：金融" />
+            <input id="new-group-name" required aria-label="新分组名称" placeholder="例如：金融" />
             <button class="button ghost" type="submit">添加</button>
           </form>
           <div id="admin-groups" class="admin-list"></div>
@@ -59,11 +62,12 @@
       </div>
 
       <div class="admin-savebar surface-card">
-        <div><strong>尚未保存的修改只存在当前页面内存。</strong><p class="muted">点击保存后才会写入 GitHub main 配置。</p></div>
-        <button id="save-registry" class="button primary" type="button">保存到 Registry</button>
+        <div><strong id="save-state" role="status">没有未保存的修改。</strong><p class="muted">保存将写入 GitHub main 配置。</p></div>
+        <div class="save-actions"><button id="discard-changes" class="button" type="button" disabled>撤销修改</button><button id="save-registry" class="button primary" type="button" disabled>保存到 Registry</button></div>
       </div>
     </section>
   </main>
+  <footer><span>OR MORNING / Source Registry</span><a href="./">返回阅读 ↗</a></footer>
 
   <script src="./admin.js"></script>
 </body>

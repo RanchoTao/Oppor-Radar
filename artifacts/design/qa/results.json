@@ -1,0 +1,933 @@
+{
+  "checks": [
+    {
+      "name": "real manifest, metrics, eight sections and disconnected Registry",
+      "status": "PASS",
+      "dates": 61
+    },
+    {
+      "name": "all eight sections show their real payload items",
+      "status": "PASS"
+    },
+    {
+      "name": "manual keyboard sequence: Home, arrows, End, Tab and visible panel focus",
+      "status": "PASS"
+    },
+    {
+      "name": "rundown opens section; independent newspaper and archive date selection",
+      "status": "PASS"
+    },
+    {
+      "name": "real Markdown and LaTeX downloads match files; unavailable PDF absent",
+      "status": "PASS"
+    },
+    {
+      "name": "original source opens in a new tab",
+      "status": "PASS",
+      "url": "https://modelscope.cn/events/383/%E6%AF%94%E8%B5%9B%E4%BB%8B%E7%BB%8D"
+    },
+    {
+      "name": "source group filter, pressed state and actual health records",
+      "status": "PASS"
+    },
+    {
+      "name": "1440x900: navigation, eight tabs, target sizes, no page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "768x1024: navigation, eight tabs, target sizes, no page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "390x844: navigation, eight tabs, target sizes, no page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "320x720: navigation, eight tabs, target sizes, no page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "1920x1080: navigation, eight tabs, target sizes, no page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced-motion disables smooth scrolling and transitions",
+      "status": "PASS"
+    },
+    {
+      "name": "real-data browser console has no errors",
+      "status": "PASS"
+    },
+    {
+      "name": "actual five-minute refresh: expanded text preserved, failure/recovery, history remains selected",
+      "status": "PASS"
+    },
+    {
+      "name": "loading shown and delayed old date responses cannot overwrite a newer selection",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: manifest-error",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: report-error",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: sources-error",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: high-tags",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: empty-manifest",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: empty-pages",
+      "status": "PASS"
+    },
+    {
+      "name": "isolated fixture: long-content",
+      "status": "PASS"
+    },
+    {
+      "name": "admin unconfigured: disabled token/connect, explicit disconnected state",
+      "status": "PASS"
+    },
+    {
+      "name": "local Registry fixture: connection failure/recovery, edits, discard, save failure/recovery, disconnect",
+      "status": "PASS",
+      "requests": [
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:8765/__qa_registry"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:8765/__qa_registry"
+        },
+        {
+          "method": "PUT",
+          "url": "http://127.0.0.1:8765/__qa_registry"
+        },
+        {
+          "method": "PUT",
+          "url": "http://127.0.0.1:8765/__qa_registry"
+        }
+      ]
+    },
+    {
+      "name": "credential remains memory-only; input cleared; storage empty",
+      "status": "PASS"
+    }
+  ],
+  "axe": [
+    {
+      "surface": "home-desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "button[data-open-page=\"opportunity\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"research\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"ai\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"math\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"engineering\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"business\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"world\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passes": 28
+    },
+    {
+      "surface": "home-320",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#tab-research > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-ai > b"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-ai > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-math > b"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-math > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-engineering > b"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-engineering > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-business > b"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-business > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-world > b"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "#tab-world > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"opportunity\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"research\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"ai\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"math\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"engineering\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"business\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-open-page=\"world\"] > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "surface": "admin-disconnected",
+      "violations": [],
+      "incomplete": [],
+      "passes": 21
+    },
+    {
+      "surface": "admin-configured-local-fixture",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    }
+  ],
+  "real_console_errors": [],
+  "lab": {
+    "initial": {
+      "lcp": 332,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:8765/styles.css",
+          "bytes": 11015,
+          "duration": 9.799999982118607
+        },
+        {
+          "name": "http://127.0.0.1:8765/newspaper.css",
+          "bytes": 11695,
+          "duration": 14.400000005960464
+        },
+        {
+          "name": "http://127.0.0.1:8765/app.js",
+          "bytes": 13528,
+          "duration": 10.700000017881393
+        },
+        {
+          "name": "http://127.0.0.1:8765/newspaper.js",
+          "bytes": 20389,
+          "duration": 12.099999994039536
+        },
+        {
+          "name": "http://127.0.0.1:8765/data/sources.json",
+          "bytes": 23530,
+          "duration": 3.5
+        },
+        {
+          "name": "http://127.0.0.1:8765/data/groups.json",
+          "bytes": 895,
+          "duration": 3.7000000178813934
+        },
+        {
+          "name": "http://127.0.0.1:8765/data/reports.json",
+          "bytes": 9821,
+          "duration": 4.5
+        },
+        {
+          "name": "http://127.0.0.1:8765/data/status.json",
+          "bytes": 512,
+          "duration": 5.0999999940395355
+        },
+        {
+          "name": "http://127.0.0.1:8765/data/runtime.json",
+          "bytes": 334,
+          "duration": 5.399999976158142
+        },
+        {
+          "name": "http://127.0.0.1:8765/reports/2026-10-18.json",
+          "bytes": 686933,
+          "duration": 6.4000000059604645
+        }
+      ],
+      "navigation": 86.7999999821186
+    },
+    "interactions": {
+      "events": [
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 48
+        },
+        {
+          "name": "pointerover",
+          "duration": 48
+        },
+        {
+          "name": "pointerenter",
+          "duration": 48
+        },
+        {
+          "name": "pointerenter",
+          "duration": 48
+        },
+        {
+          "name": "pointerenter",
+          "duration": 48
+        },
+        {
+          "name": "pointerenter",
+          "duration": 48
+        },
+        {
+          "name": "pointerenter",
+          "duration": 48
+        },
+        {
+          "name": "mouseout",
+          "duration": 48
+        },
+        {
+          "name": "mouseover",
+          "duration": 48
+        },
+        {
+          "name": "pointerout",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerover",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "mouseout",
+          "duration": 32
+        },
+        {
+          "name": "mouseover",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "mousedown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "mouseup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        }
+      ],
+      "cls": 0
+    }
+  }
+}
