@@ -6,14 +6,14 @@
 
 生产环境由 GitHub Actions 驱动，不需要常驻服务器。
 
-北京时间每天 08:00，`.github/workflows/daily.yml` 自动执行：
+北京时间每天约 08:23，`.github/workflows/daily.yml` 自动执行：
 
 1. checkout `main`
 2. 安装 Python 依赖
 3. `pytest -q`
 4. `python -m src.scheduler.run_daily`
 5. `python scripts/build_site_data.py`
-6. 提交当日日报、Pages 数据和 SQLite 数据库
+6. 把 SQLite 数据库强推到 `data-store` 分支，再把当日日报和 Pages 数据提交到 `main`
 7. Pages workflow 发布 `docs/` 到网站
 
 `run_daily` 内部流程：
@@ -39,7 +39,7 @@ JSON / Markdown / LaTeX
 Provider: **DeepSeek official API**
 
 - Base URL: `https://api.deepseek.com`
-- Production model: `deepseek-flash`
+- Production model: `deepseek-flash`（`deepseek-v4-flash` 是已下线模型的临时兼容名，不要使用）
 - 代码入口: `src/llm/deepseek_digest.py`
 - GitHub Secret: `DEEPSEEK_API_KEY`
 

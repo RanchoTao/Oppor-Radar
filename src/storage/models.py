@@ -27,6 +27,10 @@ class InformationItem:
     content: str = ""
     raw_text: str = ""
     content_hash: str = ""
+    # "detail" when the fingerprint comes from the item's own page, "listing" when it
+    # only comes from the feed/listing snippet. Fingerprints of different bases are
+    # never compared with each other (see storage.db.upsert_item).
+    hash_basis: str = "listing"
 
     topics: list[str] = field(default_factory=list)
     importance: float = 0.0
