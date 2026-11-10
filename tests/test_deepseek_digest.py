@@ -72,6 +72,7 @@ def test_empty_digest_does_not_call_llm(monkeypatch):
 
 def test_successful_deepseek_json_response(monkeypatch):
     monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    monkeypatch.setenv("OPPOR_LLM_LEGACY_DIGEST", "1")
     captured = {}
 
     class FakeResponse:
@@ -80,7 +81,7 @@ def test_successful_deepseek_json_response(monkeypatch):
 
         def json(self):
             return {
-                "model": "deepseek-v4-flash",
+                "model": "deepseek-flash",
                 "choices": [
                     {
                         "message": {
@@ -100,7 +101,7 @@ def test_successful_deepseek_json_response(monkeypatch):
     digest = build_daily_digest([selected_row()], sample_sources(), "2026-08-18")
 
     assert digest["llm"]["used"] is True
-    assert digest["llm"]["model"] == "deepseek-v4-flash"
+    assert digest["llm"]["model"] == "deepseek-flash"
     assert captured["url"] == "https://api.deepseek.com/chat/completions"
     assert captured["payload"]["response_format"] == {"type": "json_object"}
     assert captured["payload"]["thinking"] == {"type": "disabled"}

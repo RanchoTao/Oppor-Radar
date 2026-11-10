@@ -61,27 +61,12 @@ def _edition_date(profile: dict) -> str:
 
 
 def _apply_intelligence(conn, rows, results: list[dict]) -> None:
-    by_url = {str(result.get("url")): result for result in results if result.get("url")}
-    by_identity = {
-        (str(result.get("source")), str(result.get("title"))): result
-        for result in results
-        if result.get("source") and result.get("title")
-    }
-    for row in rows:
-        result = None
-        if row["url"]:
-            result = by_url.get(str(row["url"]))
-        if result is None:
-            result = by_identity.get((str(row["source_name"]), str(row["title"])))
-        if result is None:
-            continue
-        update_item_intelligence(
-            conn,
-            row["url"],
-            row["source_name"],
-            row["title"],
-            result,
-        )
+    """rank_items returns exactly one result per input row, in input order."""
+    if len(results) != len(rows):
+        LOGGER.error("Item intelligence returned %s results for %s rows; skipping update", len(results), len(rows))
+        return
+    for row, result in zip(rows, results):
+        update_item_intelligence(conn, row["url"], row["source_name"], row["title"], result)
 
 
 def main() -> None:

@@ -10,8 +10,16 @@ def _safe(value: str | None, fallback: str = "未提供") -> str:
     return value.strip() if isinstance(value, str) and value.strip() else fallback
 
 
+# Full page text stays in SQLite. Publishing it made each daily JSON several MB
+# (content and raw_text are usually the same 24k-character page) while the web UI
+# never reads it.
+_REPORT_EXCLUDED_FIELDS = ("content", "raw_text", "content_hash", "hash_basis")
+
+
 def _row_json(row) -> dict:
     data = dict(row)
+    for field in _REPORT_EXCLUDED_FIELDS:
+        data.pop(field, None)
     try:
         data["topics"] = json.loads(data.pop("topics_json", "[]") or "[]")
     except (TypeError, json.JSONDecodeError):

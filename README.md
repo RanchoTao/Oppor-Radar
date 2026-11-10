@@ -182,11 +182,15 @@ OPPOR_ALLOWED_ORIGINS    # 例如 https://ranchotao.github.io
 ```env
 DEEPSEEK_API_KEY=your_key_here
 DEEPSEEK_BASE_URL=https://api.deepseek.com
-DEEPSEEK_MODEL=deepseek-v4-flash
-OPPOR_LLM_ITEM_BATCH=32
+DEEPSEEK_MODEL=deepseek-flash
+OPPOR_LLM_ITEM_BATCH=16
 ```
 
 不要提交真实 API Key。GitHub Actions 使用仓库 Secret `DEEPSEEK_API_KEY`。
+
+`deepseek-flash` 是 DeepSeek 自 2026-09-10 起的现行 Flash 模型 ID；旧名 `deepseek-v4-flash` 只是临时兼容路由，不要再使用。
+
+**检查大模型是否真的在工作**：打开任意一期 `data/reports/YYYY-MM-DD.json` 的 `diagnostics`。`item_intelligence.used` 应为 `true`；若为 `missing_api_key`，说明 Secret 没有配置，整期日报都是规则兜底。
 
 ## 本地运行
 
@@ -204,11 +208,11 @@ Windows PowerShell：
 .\.venv\Scripts\Activate.ps1
 ```
 
-数据库文件仍保留为 `data/opportunities.sqlite3` 以兼容历史数据和 Actions，但内部主表已经迁移到 `information_items`。旧 `opportunities` 表仅作为迁移来源。
+本地数据库为 `data/opportunities.sqlite3`（不进 git）。在 Actions 中，数据库保存在单提交分支 `data-store` 上：每次运行前 `scripts/db_store.sh restore`，运行后 `scripts/db_store.sh save`（强推覆盖），因此 main 的历史不再随每日二进制快照膨胀。本地想用线上数据时可执行 `bash scripts/db_store.sh restore`。
 
 ## 自动运行
 
-`.github/workflows/daily.yml` 每天北京时间 08:00：
+`.github/workflows/daily.yml` 每天北京时间约 08:23（刻意避开整点，GitHub 整点定时任务排队严重）：
 
 1. 测试
 2. 抓取来源
@@ -217,7 +221,7 @@ Windows PowerShell：
 5. Daily Editor
 6. 生成 JSON / Markdown / LaTeX
 7. 刷新 Pages 数据
-8. 提交报告和数据库
+8. 数据库保存到 `data-store` 分支，报告提交到 main
 
 `.github/workflows/pages.yml` 负责 Pages 部署；来源配置变化和 Daily 完成都能触发重新构建。
 

@@ -95,7 +95,7 @@
   fetch_details: true
 
 - name: arXiv cs.AI Recent
-  url: https://arxiv.org/list/cs.AI/recent
+  url: https://rss.arxiv.org/rss/cs.AI
   group: AI / 前沿研究
   enabled: true
   source_type: research
@@ -104,11 +104,11 @@
   tags: [arXiv, AI, Agent, Reasoning]
   watch: [agent, agentic, reasoning, reinforcement, interpretability, language model, foundation model, theorem, proof, formal]
   max_items: 24
-  max_detail_items: 16
-  fetch_details: true
+  max_detail_items: 0
+  fetch_details: false
 
 - name: arXiv cs.LG Recent
-  url: https://arxiv.org/list/cs.LG/recent
+  url: https://rss.arxiv.org/rss/cs.LG
   group: AI / 前沿研究
   enabled: true
   source_type: research
@@ -117,8 +117,8 @@
   tags: [arXiv, Machine Learning, RL, LLM]
   watch: [reinforcement, agent, language model, reasoning, interpretability, world model, theorem, formal, inference, training]
   max_items: 24
-  max_detail_items: 16
-  fetch_details: true
+  max_detail_items: 0
+  fetch_details: false
 
 - name: ICLR
   url: https://iclr.cc/
