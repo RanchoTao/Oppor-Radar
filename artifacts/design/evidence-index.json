@@ -894,22 +894,22 @@
       "sha256": "8f57d78c5c6a8ebbeb4793fb76579624c55bc96e6ab087f284c23a1914d1cf64"
     },
     {
-      "path": "CHANGELOG_DESIGN.md",
+      "path": "design/CHANGELOG_DESIGN.md",
       "bytes": 4598,
       "sha256": "2ec03637931aaee02d6a864a6702e4d16f01b0c1a84c33cc75c621efda75e92e"
     },
     {
-      "path": "DESIGN_AUDIT_BEFORE.md",
+      "path": "design/DESIGN_AUDIT_BEFORE.md",
       "bytes": 4642,
       "sha256": "4daa69c0fdb1562ee42eba8316a1bccc0dc7339afbef039530b1e65e382a7813"
     },
     {
-      "path": "DESIGN_QA_REPORT.md",
+      "path": "design/DESIGN_QA_REPORT.md",
       "bytes": 10602,
       "sha256": "0fce68694603d004bd9e40a2c90bb5de281f7420f4dc2a468761db364768b638"
     },
     {
-      "path": "DESIGN_SYSTEM.md",
+      "path": "design/DESIGN_SYSTEM.md",
       "bytes": 4493,
       "sha256": "1ec7edadc28ceb912ea6d896657d4d2c693cdfadab13deb76ffc6943b97ec873"
     },
