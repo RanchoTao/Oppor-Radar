@@ -3,6 +3,7 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 from urllib.parse import urljoin
 
+from src.crawler.quality import is_safe_http_url
 from src.storage.models import InformationItem
 from src.utils.text_utils import clean_text, contains_any
 
@@ -59,13 +60,23 @@ def parse_feed(xml_text: str, source: dict) -> list[InformationItem]:
         if not title:
             continue
 
-        link = _child_text(entry, {"link", "guid"})
+        link = _child_text(entry, {"link"})
         if not link:
+            # Atom: prefer rel="alternate" (or no rel) over self/replies/enclosure links.
             for child in list(entry):
                 if _local(child.tag) == "link" and child.attrib.get("href"):
-                    link = child.attrib["href"]
-                    break
-        link = urljoin(source["url"], link) if link else source["url"]
+                    if child.attrib.get("rel", "alternate") == "alternate":
+                        link = child.attrib["href"]
+                        break
+                    link = link or child.attrib["href"]
+        if not link:
+            guid = _child_text(entry, {"guid", "id"})
+            link = guid if is_safe_http_url(guid) else ""
+        link = urljoin(source["url"], link) if link else ""
+        # Without a per-entry URL, every entry would collide on the source URL and
+        # overwrite each other in storage, so the entry is skipped instead.
+        if not is_safe_http_url(link):
+            continue
 
         summary = _child_text(entry, {"description", "summary", "content"})
         if watch and not contains_any(f"{title} {summary}", watch):

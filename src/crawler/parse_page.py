@@ -2,16 +2,14 @@ from __future__ import annotations
 
 from html.parser import HTMLParser
 
+from src.crawler.quality import is_low_signal_title, is_safe_http_url
 from src.storage.models import InformationItem
 from src.utils.text_utils import clean_text, contains_any, normalize_url
 
-
-NAVIGATION_TEXT = {
-    "首页", "主页", "关于我们", "联系我们", "网站地图", "English", "EN",
-    "登录", "注册", "更多", "more", "返回顶部", "下一页", "上一页",
-}
-
-NAVIGATION_PREFIXES = ("首页", "关于", "联系", "导航", "菜单", "版权", "隐私", "登录", "注册")
+# A link's container text is only trusted as "its" context when it is reasonably small.
+# Larger containers are list pages (e.g. a whole arXiv listing), where the surrounding
+# text belongs to many links and would make every link match every keyword.
+MAX_CONTEXT_CHARS = 600
 
 
 class _LinkParser(HTMLParser):
@@ -44,8 +42,16 @@ def _links(html: str):
         soup = BeautifulSoup(html, "html.parser")
         for a in soup.find_all("a"):
             title = clean_text(a.get_text(" "))
-            parent = a.find_parent(["article", "li", "section", "div", "p"])
-            surrounding = clean_text(parent.get_text(" ") if parent else title)
+            surrounding = title
+            for parent in a.parents:
+                if parent.name not in {"article", "li", "dd", "dt", "p", "div", "section", "tr"}:
+                    continue
+                text = clean_text(parent.get_text(" "))
+                if len(text) > MAX_CONTEXT_CHARS:
+                    break
+                surrounding = text
+                if parent.name in {"article", "li", "tr"}:
+                    break
             yield a.get("href"), title, surrounding
     except ModuleNotFoundError:
         parser = _LinkParser()
@@ -55,12 +61,9 @@ def _links(html: str):
 
 
 def _looks_like_content(title: str, surrounding: str) -> bool:
-    if len(title) < 4 or len(title) > 180:
+    if len(title) > 180:
         return False
-    if title in NAVIGATION_TEXT or any(title.startswith(prefix) for prefix in NAVIGATION_PREFIXES):
-        return False
-    # A little surrounding context is usually a better signal than site navigation.
-    return len(surrounding) >= len(title)
+    return not is_low_signal_title(title)
 
 
 def parse_items(html: str, source: dict) -> list[InformationItem]:
@@ -82,9 +85,7 @@ def parse_items(html: str, source: dict) -> list[InformationItem]:
             continue
 
         href = normalize_url(href_raw, source["url"])
-        if not href or href in seen:
-            continue
-        if href.startswith(("mailto:", "tel:", "javascript:")):
+        if not href or href in seen or not is_safe_http_url(href):
             continue
 
         candidate_text = f"{title} {surrounding}"

@@ -4,6 +4,7 @@ import json
 import sqlite3
 from pathlib import Path
 
+from src.crawler.content import text_similarity
 from src.storage.models import InformationItem
 from src.utils.time_utils import utc_now_iso
 
@@ -23,6 +24,7 @@ CREATE TABLE IF NOT EXISTS information_items (
   content TEXT NOT NULL DEFAULT '',
   raw_text TEXT NOT NULL DEFAULT '',
   content_hash TEXT NOT NULL DEFAULT '',
+  hash_basis TEXT NOT NULL DEFAULT '',
   topics_json TEXT NOT NULL DEFAULT '[]',
   importance REAL NOT NULL DEFAULT 0,
   relevance REAL NOT NULL DEFAULT 0,
@@ -65,7 +67,7 @@ CREATE TABLE IF NOT EXISTS source_health (
 ITEM_COLUMNS = (
     "id", "title", "url", "source_name", "source_url", "source_group",
     "publish_date", "deadline", "event_date", "location", "summary", "content",
-    "raw_text", "content_hash", "topics_json", "importance", "relevance", "novelty",
+    "raw_text", "content_hash", "hash_basis", "topics_json", "importance", "relevance", "novelty",
     "keep", "reason", "action", "time_sensitive", "first_seen_at", "last_seen_at", "changed_at",
 )
 
@@ -128,6 +130,28 @@ def _ensure_information_schema(conn: sqlite3.Connection) -> None:
         conn.execute(f"DROP TABLE {backup}")
 
     conn.executescript(ITEM_INDEXES)
+    _add_missing_columns(conn)
+
+
+def _add_missing_columns(conn: sqlite3.Connection) -> None:
+    existing = {column["name"] for column in conn.execute("PRAGMA table_info(information_items)")}
+    if "hash_basis" not in existing:
+        # Legacy rows get '' (unknown basis): their next fingerprint is adopted silently
+        # instead of being reported as a change.
+        conn.execute("ALTER TABLE information_items ADD COLUMN hash_basis TEXT NOT NULL DEFAULT ''")
+
+
+# Below this similarity a re-fetched page counts as materially changed. Rotating
+# sidebars, counters and relative dates typically stay well above it.
+MATERIAL_CHANGE_SIMILARITY = 0.85
+
+
+def _materially_changed(old_content: str, old_hash: str, new_content: str, new_hash: str) -> bool:
+    if not new_hash or new_hash == old_hash:
+        return False
+    if not old_content:
+        return bool(old_hash)
+    return text_similarity(old_content, new_content) < MATERIAL_CHANGE_SIMILARITY
 
 
 def _migrate_legacy_opportunities(conn: sqlite3.Connection) -> None:
@@ -183,7 +207,8 @@ def upsert_item(conn: sqlite3.Connection, item: InformationItem) -> str:
     now = utc_now_iso()
     key_clause, params = _key(item)
     row = conn.execute(
-        f"SELECT id, content_hash FROM information_items WHERE {key_clause}", params
+        f"SELECT id, content, content_hash, hash_basis FROM information_items WHERE {key_clause}",
+        params,
     ).fetchone()
 
     if row is None:
@@ -192,9 +217,9 @@ def upsert_item(conn: sqlite3.Connection, item: InformationItem) -> str:
             INSERT INTO information_items (
               title, url, source_name, source_url, source_group,
               publish_date, deadline, event_date, location,
-              summary, content, raw_text, content_hash,
+              summary, content, raw_text, content_hash, hash_basis,
               first_seen_at, last_seen_at, changed_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 item.title,
@@ -210,6 +235,7 @@ def upsert_item(conn: sqlite3.Connection, item: InformationItem) -> str:
                 item.content,
                 item.raw_text,
                 item.content_hash,
+                item.hash_basis,
                 now,
                 now,
                 now,
@@ -218,13 +244,29 @@ def upsert_item(conn: sqlite3.Connection, item: InformationItem) -> str:
         return "new"
 
     old_hash = row["content_hash"] or ""
-    changed = bool(item.content_hash and item.content_hash != old_hash)
+    old_basis = row["hash_basis"] or ""
+    new_basis = item.hash_basis or "listing"
+
+    if old_basis == "detail" and new_basis != "detail":
+        # The detail page could not be read this time (budget, timeout, error). A
+        # listing snippet is not comparable with the stored page text, so keep the
+        # stored version and only record that the item is still listed.
+        conn.execute("UPDATE information_items SET last_seen_at=? WHERE id=?", (now, row["id"]))
+        return "unchanged"
+
+    if old_basis != new_basis:
+        # Unknown legacy basis, or first successful detail read: adopt the new
+        # fingerprint without reporting it as news.
+        changed = False
+    else:
+        changed = _materially_changed(row["content"] or "", old_hash, item.content, item.content_hash)
+
     conn.execute(
         """
         UPDATE information_items SET
           title=?, source_url=?, source_group=?, publish_date=?, deadline=?,
           event_date=?, location=?, summary=?, content=?, raw_text=?, content_hash=?,
-          last_seen_at=?, changed_at=CASE WHEN ? THEN ? ELSE changed_at END
+          hash_basis=?, last_seen_at=?, changed_at=CASE WHEN ? THEN ? ELSE changed_at END
         WHERE id=?
         """,
         (
@@ -239,6 +281,7 @@ def upsert_item(conn: sqlite3.Connection, item: InformationItem) -> str:
             item.content,
             item.raw_text,
             item.content_hash or old_hash,
+            new_basis,
             now,
             1 if changed else 0,
             now,

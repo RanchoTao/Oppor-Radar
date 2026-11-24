@@ -8,8 +8,10 @@ on:
       - "config/**"
       - "scripts/build_site_data.py"
       - ".github/workflows/pages.yml"
+  # Pushes made with GITHUB_TOKEN do not trigger other workflows, so every workflow
+  # that commits a new edition must be listed here or its edition is never deployed.
   workflow_run:
-    workflows: ["Opportunity Radar Daily"]
+    workflows: ["Opportunity Radar Daily", "Refresh OR Morning"]
     types: [completed]
   workflow_dispatch:
 

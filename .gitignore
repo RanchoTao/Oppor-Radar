@@ -11,3 +11,6 @@ artifacts/design/*.log
 data/*.sqlite3
 data/*.db
 data/snapshots/*.html
+
+# Generated at deploy time by scripts/build_site_data.py (pages.yml) from data/reports
+docs/reports/

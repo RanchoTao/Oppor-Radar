@@ -31,6 +31,7 @@ def _fallback_content(item: InformationItem) -> None:
     base = item.raw_text or item.summary or item.title
     item.content = base
     item.content_hash = content_hash(base)
+    item.hash_basis = "listing"
 
 
 def _should_fetch_detail(item: InformationItem, source: dict) -> bool:
@@ -73,6 +74,7 @@ def _hydrate_details(items: list[InformationItem], source: dict) -> list[Informa
             item.raw_text = text
             item.summary = compact_summary(text)
             item.content_hash = content_hash(text)
+            item.hash_basis = "detail"
             detail_title = document.get("title") or ""
             if len(item.title) < 6 and detail_title:
                 item.title = detail_title
