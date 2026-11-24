@@ -1,0 +1,5 @@
+# Generated output: keep it out of GitHub's language statistics
+data/** linguist-generated
+docs/reports/** linguist-generated
+docs/data/** linguist-generated
+artifacts/** linguist-generated
